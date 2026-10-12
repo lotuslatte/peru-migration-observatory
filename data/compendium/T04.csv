@@ -1,0 +1,485 @@
+origen,destino,personas_por_anio,n,grado
+Amazonas,Áncash,152,4,S
+Amazonas,Cajamarca,1187,13,S
+Amazonas,Callao,435,8,S
+Amazonas,Junín,47,1,S
+Amazonas,La Libertad,1397,13,S
+Amazonas,Lambayeque,3057,65,B
+Amazonas,Lima,3802,20,S
+Amazonas,Loreto,474,17,S
+Amazonas,Madre de Dios,94,9,S
+Amazonas,Pasco,16,1,S
+Amazonas,Piura,253,3,S
+Amazonas,San Martín,2723,71,B
+Amazonas,Ucayali,311,8,S
+Áncash,Amazonas,251,5,S
+Áncash,Apurímac,124,2,S
+Áncash,Arequipa,335,6,S
+Áncash,Ayacucho,32,1,S
+Áncash,Cajamarca,577,5,S
+Áncash,Callao,1383,23,S
+Áncash,Cusco,169,2,S
+Áncash,Huancavelica,43,2,S
+Áncash,Huánuco,582,20,S
+Áncash,Ica,295,10,S
+Áncash,Junín,45,1,S
+Áncash,La Libertad,2124,26,S
+Áncash,Lambayeque,206,3,S
+Áncash,Lima,20201,131,A
+Áncash,Loreto,1,2,S
+Áncash,Madre de Dios,1,1,S
+Áncash,Pasco,35,2,S
+Áncash,Piura,373,4,S
+Áncash,San Martín,358,13,S
+Áncash,Tacna,69,9,S
+Áncash,Ucayali,81,3,S
+Apurímac,Áncash,43,1,S
+Apurímac,Arequipa,1230,22,S
+Apurímac,Ayacucho,415,8,S
+Apurímac,Callao,460,6,S
+Apurímac,Cusco,2082,33,S
+Apurímac,Huancavelica,31,1,S
+Apurímac,Huánuco,25,1,S
+Apurímac,Ica,845,18,S
+Apurímac,Junín,580,11,S
+Apurímac,Lima,8435,43,B
+Apurímac,Madre de Dios,649,27,S
+Apurímac,Pasco,125,8,S
+Apurímac,Puno,569,8,S
+Apurímac,Tacna,90,2,S
+Apurímac,Tumbes,21,1,S
+Apurímac,Ucayali,55,4,S
+Arequipa,Amazonas,15,1,S
+Arequipa,Áncash,44,1,S
+Arequipa,Apurímac,1176,30,S
+Arequipa,Ayacucho,1110,18,S
+Arequipa,Cajamarca,32,5,S
+Arequipa,Callao,179,3,S
+Arequipa,Cusco,7004,92,B
+Arequipa,Huancavelica,1,3,S
+Arequipa,Huánuco,249,4,S
+Arequipa,Ica,929,20,S
+Arequipa,Junín,641,12,S
+Arequipa,La Libertad,360,5,S
+Arequipa,Lambayeque,39,1,S
+Arequipa,Lima,5096,39,B
+Arequipa,Loreto,230,5,S
+Arequipa,Madre de Dios,532,46,S
+Arequipa,Moquegua,1704,134,A
+Arequipa,Pasco,74,4,S
+Arequipa,Piura,632,7,S
+Arequipa,Puno,7299,90,B
+Arequipa,San Martín,302,6,S
+Arequipa,Tacna,1957,98,B
+Arequipa,Tumbes,7,4,S
+Arequipa,Ucayali,420,13,S
+Ayacucho,Amazonas,165,3,S
+Ayacucho,Apurímac,667,21,S
+Ayacucho,Arequipa,351,12,S
+Ayacucho,Callao,320,4,S
+Ayacucho,Cusco,2788,33,S
+Ayacucho,Huancavelica,1510,41,S
+Ayacucho,Huánuco,44,1,S
+Ayacucho,Ica,2536,63,B
+Ayacucho,Junín,2563,50,B
+Ayacucho,Lambayeque,72,1,S
+Ayacucho,Lima,9107,47,B
+Ayacucho,Loreto,141,3,S
+Ayacucho,Madre de Dios,230,28,S
+Ayacucho,Moquegua,13,1,S
+Ayacucho,Pasco,237,12,S
+Ayacucho,Piura,49,1,S
+Ayacucho,Puno,144,2,S
+Ayacucho,San Martín,45,2,S
+Ayacucho,Ucayali,495,16,S
+Cajamarca,Amazonas,3256,143,B
+Cajamarca,Áncash,121,3,S
+Cajamarca,Apurímac,143,2,S
+Cajamarca,Arequipa,51,3,S
+Cajamarca,Ayacucho,30,1,S
+Cajamarca,Callao,562,10,S
+Cajamarca,Cusco,46,1,S
+Cajamarca,Huánuco,156,4,S
+Cajamarca,Ica,129,3,S
+Cajamarca,Junín,98,2,S
+Cajamarca,La Libertad,7125,92,B
+Cajamarca,Lambayeque,4653,91,B
+Cajamarca,Lima,13134,63,B
+Cajamarca,Loreto,201,9,S
+Cajamarca,Madre de Dios,211,8,S
+Cajamarca,Moquegua,19,4,S
+Cajamarca,Pasco,50,3,S
+Cajamarca,Piura,1711,25,S
+Cajamarca,San Martín,3110,85,B
+Cajamarca,Tacna,45,5,S
+Cajamarca,Tumbes,386,13,S
+Cajamarca,Ucayali,146,5,S
+Callao,Amazonas,393,19,S
+Callao,Áncash,1809,25,S
+Callao,Apurímac,675,16,S
+Callao,Arequipa,227,5,S
+Callao,Ayacucho,425,13,S
+Callao,Cajamarca,476,5,S
+Callao,Cusco,347,4,S
+Callao,Huancavelica,215,6,S
+Callao,Huánuco,817,22,S
+Callao,Ica,1163,30,S
+Callao,Junín,937,20,S
+Callao,La Libertad,1296,15,S
+Callao,Lambayeque,2311,40,B
+Callao,Lima,33424,201,A
+Callao,Loreto,2864,66,B
+Callao,Madre de Dios,28,6,S
+Callao,Moquegua,8,1,S
+Callao,Pasco,296,13,S
+Callao,Piura,1932,34,B
+Callao,Puno,314,4,S
+Callao,San Martín,2230,53,S
+Callao,Tacna,75,5,S
+Callao,Tumbes,93,6,S
+Callao,Ucayali,608,26,S
+Cusco,Amazonas,16,1,S
+Cusco,Áncash,130,2,S
+Cusco,Apurímac,3283,82,B
+Cusco,Arequipa,9548,193,A
+Cusco,Ayacucho,1877,31,B
+Cusco,Callao,635,11,S
+Cusco,Huancavelica,92,2,S
+Cusco,Huánuco,24,2,S
+Cusco,Ica,44,1,S
+Cusco,Junín,739,14,S
+Cusco,La Libertad,28,1,S
+Cusco,Lambayeque,21,2,S
+Cusco,Lima,10225,50,B
+Cusco,Loreto,26,2,S
+Cusco,Madre de Dios,3045,200,A
+Cusco,Moquegua,310,22,S
+Cusco,Pasco,40,2,S
+Cusco,Puno,2885,27,S
+Cusco,San Martín,84,1,S
+Cusco,Tacna,602,29,S
+Cusco,Ucayali,463,27,S
+Huancavelica,Amazonas,28,2,S
+Huancavelica,Apurímac,92,2,S
+Huancavelica,Arequipa,100,3,S
+Huancavelica,Ayacucho,573,23,S
+Huancavelica,Callao,172,3,S
+Huancavelica,Ica,1197,31,S
+Huancavelica,Junín,4493,72,B
+Huancavelica,Lima,7020,35,B
+Huancavelica,Loreto,44,1,S
+Huancavelica,Madre de Dios,7,1,S
+Huancavelica,Pasco,152,4,S
+Huancavelica,San Martín,456,5,S
+Huancavelica,Tacna,2,2,S
+Huancavelica,Ucayali,115,6,S
+Huánuco,Amazonas,77,5,S
+Huánuco,Áncash,366,8,S
+Huánuco,Apurímac,15,1,S
+Huánuco,Arequipa,310,8,S
+Huánuco,Ayacucho,26,1,S
+Huánuco,Callao,863,16,S
+Huánuco,Cusco,112,2,S
+Huánuco,Huancavelica,221,6,S
+Huánuco,Ica,327,8,S
+Huánuco,Junín,1085,21,S
+Huánuco,La Libertad,313,4,S
+Huánuco,Lambayeque,257,3,S
+Huánuco,Lima,9338,65,B
+Huánuco,Loreto,241,6,S
+Huánuco,Madre de Dios,606,15,S
+Huánuco,Moquegua,8,1,S
+Huánuco,Pasco,2209,115,B
+Huánuco,Piura,94,1,S
+Huánuco,San Martín,1561,55,B
+Huánuco,Tacna,135,18,S
+Huánuco,Tumbes,6,3,S
+Huánuco,Ucayali,3377,138,A
+Ica,Amazonas,154,10,S
+Ica,Áncash,82,2,S
+Ica,Apurímac,1244,44,S
+Ica,Arequipa,751,15,S
+Ica,Ayacucho,2258,54,B
+Ica,Cajamarca,219,2,S
+Ica,Callao,372,5,S
+Ica,Cusco,3,1,S
+Ica,Huancavelica,2067,65,B
+Ica,Huánuco,156,5,S
+Ica,Junín,141,3,S
+Ica,La Libertad,156,2,S
+Ica,Lambayeque,256,5,S
+Ica,Lima,3972,38,B
+Ica,Loreto,666,17,S
+Ica,Madre de Dios,68,7,S
+Ica,Moquegua,191,9,S
+Ica,Pasco,20,1,S
+Ica,Piura,1225,15,S
+Ica,Puno,290,4,S
+Ica,San Martín,108,5,S
+Ica,Tacna,28,4,S
+Ica,Tumbes,141,4,S
+Ica,Ucayali,288,13,S
+Junín,Áncash,207,5,S
+Junín,Apurímac,390,10,S
+Junín,Arequipa,330,10,S
+Junín,Ayacucho,1162,28,S
+Junín,Cajamarca,207,3,S
+Junín,Callao,698,10,S
+Junín,Cusco,1192,13,S
+Junín,Huancavelica,4135,127,A
+Junín,Huánuco,1112,30,B
+Junín,Ica,977,23,S
+Junín,La Libertad,346,4,S
+Junín,Lambayeque,188,2,S
+Junín,Lima,21368,146,A
+Junín,Loreto,161,4,S
+Junín,Madre de Dios,177,10,S
+Junín,Moquegua,32,2,S
+Junín,Pasco,2381,117,B
+Junín,Puno,62,1,S
+Junín,San Martín,606,10,S
+Junín,Tacna,15,5,S
+Junín,Ucayali,1532,60,B
+La Libertad,Amazonas,815,33,B
+La Libertad,Áncash,1789,28,S
+La Libertad,Apurímac,11,1,S
+La Libertad,Arequipa,312,6,S
+La Libertad,Ayacucho,196,2,S
+La Libertad,Cajamarca,2751,45,B
+La Libertad,Callao,816,12,S
+La Libertad,Cusco,158,2,S
+La Libertad,Huánuco,158,6,S
+La Libertad,Ica,287,9,S
+La Libertad,Junín,276,4,S
+La Libertad,Lambayeque,1340,27,S
+La Libertad,Lima,6991,55,B
+La Libertad,Loreto,712,16,S
+La Libertad,Madre de Dios,92,10,S
+La Libertad,Moquegua,34,3,S
+La Libertad,Piura,1503,26,S
+La Libertad,Puno,36,1,S
+La Libertad,San Martín,2554,94,B
+La Libertad,Tacna,36,6,S
+La Libertad,Tumbes,185,12,S
+La Libertad,Ucayali,213,12,S
+Lambayeque,Amazonas,2304,92,B
+Lambayeque,Áncash,1592,17,S
+Lambayeque,Apurímac,40,1,S
+Lambayeque,Ayacucho,157,2,S
+Lambayeque,Cajamarca,3802,49,B
+Lambayeque,Callao,1397,21,S
+Lambayeque,Huánuco,91,4,S
+Lambayeque,Ica,186,5,S
+Lambayeque,Junín,43,1,S
+Lambayeque,La Libertad,2311,32,S
+Lambayeque,Lima,7222,53,B
+Lambayeque,Loreto,812,17,S
+Lambayeque,Madre de Dios,36,1,S
+Lambayeque,Moquegua,20,3,S
+Lambayeque,Pasco,16,1,S
+Lambayeque,Piura,1926,31,B
+Lambayeque,San Martín,2340,72,B
+Lambayeque,Tacna,14,2,S
+Lambayeque,Tumbes,276,15,S
+Lambayeque,Ucayali,80,6,S
+Lima,Amazonas,7391,347,A
+Lima,Áncash,12885,285,A
+Lima,Apurímac,7929,237,A
+Lima,Arequipa,9652,216,A
+Lima,Ayacucho,11394,248,A
+Lima,Cajamarca,9581,129,A
+Lima,Callao,27328,476,A
+Lima,Cusco,6305,98,B
+Lima,Huancavelica,6039,178,A
+Lima,Huánuco,17639,355,A
+Lima,Ica,10683,274,A
+Lima,Junín,25061,376,A
+Lima,La Libertad,11358,153,A
+Lima,Lambayeque,14167,258,A
+Lima,Loreto,15771,404,A
+Lima,Madre de Dios,1179,101,B
+Lima,Moquegua,816,68,B
+Lima,Pasco,7031,295,A
+Lima,Piura,17933,266,A
+Lima,Puno,3968,52,B
+Lima,San Martín,16480,386,A
+Lima,Tacna,2599,116,B
+Lima,Tumbes,935,74,B
+Lima,Ucayali,9639,352,A
+Loreto,Amazonas,442,20,S
+Loreto,Áncash,96,1,S
+Loreto,Apurímac,63,3,S
+Loreto,Arequipa,88,2,S
+Loreto,Ayacucho,133,2,S
+Loreto,Cajamarca,67,1,S
+Loreto,Callao,4648,56,B
+Loreto,Cusco,307,2,S
+Loreto,Huánuco,524,15,S
+Loreto,Ica,1036,21,S
+Loreto,Junín,196,4,S
+Loreto,La Libertad,358,5,S
+Loreto,Lima,11739,76,B
+Loreto,Madre de Dios,230,23,S
+Loreto,Moquegua,25,4,S
+Loreto,Pasco,61,3,S
+Loreto,Piura,407,7,S
+Loreto,Puno,167,2,S
+Loreto,San Martín,3969,109,B
+Loreto,Tacna,70,9,S
+Loreto,Tumbes,5,2,S
+Loreto,Ucayali,5972,186,B
+Madre de Dios,Áncash,60,1,S
+Madre de Dios,Apurímac,209,7,S
+Madre de Dios,Arequipa,142,4,S
+Madre de Dios,Ayacucho,14,1,S
+Madre de Dios,Cusco,1938,30,S
+Madre de Dios,Huánuco,64,2,S
+Madre de Dios,Junín,295,3,S
+Madre de Dios,Lambayeque,137,2,S
+Madre de Dios,Lima,243,2,S
+Madre de Dios,Loreto,134,5,S
+Madre de Dios,Moquegua,4,1,S
+Madre de Dios,Puno,357,5,S
+Madre de Dios,San Martín,388,8,S
+Madre de Dios,Tacna,27,5,S
+Madre de Dios,Ucayali,243,8,S
+Moquegua,Amazonas,18,1,S
+Moquegua,Apurímac,77,1,S
+Moquegua,Arequipa,2564,39,B
+Moquegua,Junín,78,2,S
+Moquegua,La Libertad,107,1,S
+Moquegua,Lima,952,8,S
+Moquegua,Madre de Dios,36,2,S
+Moquegua,Puno,1983,23,S
+Moquegua,Tacna,1056,86,S
+Moquegua,Ucayali,80,4,S
+Pasco,Amazonas,29,1,S
+Pasco,Apurímac,140,1,S
+Pasco,Arequipa,221,3,S
+Pasco,Ayacucho,55,2,S
+Pasco,Callao,81,2,S
+Pasco,Cusco,44,1,S
+Pasco,Huancavelica,11,1,S
+Pasco,Huánuco,4360,76,B
+Pasco,Ica,195,6,S
+Pasco,Junín,4166,55,B
+Pasco,Lima,5869,34,B
+Pasco,Loreto,244,5,S
+Pasco,Madre de Dios,38,1,S
+Pasco,San Martín,489,7,S
+Pasco,Tumbes,61,2,S
+Pasco,Ucayali,405,21,S
+Piura,Amazonas,234,13,S
+Piura,Áncash,605,9,S
+Piura,Apurímac,64,4,S
+Piura,Arequipa,1179,21,S
+Piura,Ayacucho,227,12,S
+Piura,Cajamarca,485,9,S
+Piura,Callao,967,21,S
+Piura,Cusco,88,2,S
+Piura,Huancavelica,71,1,S
+Piura,Huánuco,726,7,S
+Piura,Ica,228,4,S
+Piura,Junín,8,1,S
+Piura,La Libertad,1124,16,S
+Piura,Lambayeque,1225,26,S
+Piura,Lima,12318,69,B
+Piura,Loreto,537,11,S
+Piura,Madre de Dios,24,1,S
+Piura,Moquegua,81,5,S
+Piura,San Martín,1408,33,B
+Piura,Tacna,6,5,S
+Piura,Tumbes,1175,69,B
+Piura,Ucayali,181,8,S
+Puno,Amazonas,20,2,S
+Puno,Áncash,52,1,S
+Puno,Apurímac,215,8,S
+Puno,Arequipa,9263,160,B
+Puno,Ayacucho,188,4,S
+Puno,Cajamarca,804,8,S
+Puno,Callao,617,12,S
+Puno,Cusco,1931,18,S
+Puno,Huancavelica,60,2,S
+Puno,Ica,263,5,S
+Puno,Junín,156,7,S
+Puno,Lambayeque,247,3,S
+Puno,Lima,1969,10,S
+Puno,Loreto,29,2,S
+Puno,Madre de Dios,1007,69,B
+Puno,Moquegua,1400,93,B
+Puno,Pasco,15,1,S
+Puno,San Martín,245,3,S
+Puno,Tacna,4957,254,B
+Puno,Ucayali,385,13,S
+San Martín,Amazonas,1533,82,B
+San Martín,Áncash,187,3,S
+San Martín,Apurímac,23,1,S
+San Martín,Arequipa,182,6,S
+San Martín,Ayacucho,387,9,S
+San Martín,Cajamarca,1778,31,B
+San Martín,Callao,822,12,S
+San Martín,Huánuco,1918,53,S
+San Martín,Junín,338,7,S
+San Martín,La Libertad,1781,20,S
+San Martín,Lambayeque,2740,44,B
+San Martín,Lima,6234,36,B
+San Martín,Loreto,3660,80,B
+San Martín,Madre de Dios,1117,59,S
+San Martín,Moquegua,6,1,S
+San Martín,Pasco,57,3,S
+San Martín,Piura,1652,21,S
+San Martín,Tacna,16,3,S
+San Martín,Tumbes,2,1,S
+San Martín,Ucayali,1612,75,B
+Tacna,Áncash,95,2,S
+Tacna,Apurímac,51,2,S
+Tacna,Arequipa,872,23,S
+Tacna,Ayacucho,67,2,S
+Tacna,Cusco,154,1,S
+Tacna,Huancavelica,63,2,S
+Tacna,Huánuco,18,1,S
+Tacna,La Libertad,338,8,S
+Tacna,Lambayeque,72,1,S
+Tacna,Lima,2221,12,S
+Tacna,Loreto,56,2,S
+Tacna,Madre de Dios,8,6,S
+Tacna,Moquegua,745,57,B
+Tacna,Puno,4574,41,S
+Tacna,San Martín,114,1,S
+Tacna,Tumbes,2,1,S
+Tacna,Ucayali,170,5,S
+Tumbes,Amazonas,43,3,S
+Tumbes,Áncash,35,1,S
+Tumbes,Cajamarca,143,2,S
+Tumbes,Callao,329,7,S
+Tumbes,Cusco,276,2,S
+Tumbes,Huánuco,48,1,S
+Tumbes,Ica,275,5,S
+Tumbes,La Libertad,25,3,S
+Tumbes,Lambayeque,526,8,S
+Tumbes,Lima,1133,7,S
+Tumbes,Loreto,284,5,S
+Tumbes,Madre de Dios,2,1,S
+Tumbes,Piura,1747,29,S
+Tumbes,San Martín,303,8,S
+Tumbes,Tacna,2,2,S
+Tumbes,Ucayali,42,1,S
+Ucayali,Amazonas,100,7,S
+Ucayali,Áncash,47,1,S
+Ucayali,Ayacucho,67,2,S
+Ucayali,Cajamarca,90,1,S
+Ucayali,Callao,299,6,S
+Ucayali,Huancavelica,31,1,S
+Ucayali,Huánuco,1774,56,B
+Ucayali,Ica,904,20,S
+Ucayali,Junín,1219,26,S
+Ucayali,La Libertad,342,6,S
+Ucayali,Lambayeque,414,7,S
+Ucayali,Lima,6666,55,B
+Ucayali,Loreto,2767,80,B
+Ucayali,Madre de Dios,614,40,S
+Ucayali,Moquegua,70,3,S
+Ucayali,Pasco,180,10,S
+Ucayali,San Martín,2321,56,B
+Ucayali,Tacna,36,10,S
+Ucayali,Tumbes,32,1,S

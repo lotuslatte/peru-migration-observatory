@@ -1,0 +1,1 @@
+const n=(r,t=1)=>r==null||Number.isNaN(r)?"—":r.toLocaleString("es-PE",{minimumFractionDigits:t,maximumFractionDigits:t}),a=(r,t,i)=>r==null?"—":t==="S/"?"S/ "+n(r,i??0):t==="%"?n(r,i??1)+" %":t==="pp"?n(r,i??1)+" pp":n(r,i??2),m=r=>r==="S/"?0:r==="ratio"?2:1;export{n as a,m as d,a as f};

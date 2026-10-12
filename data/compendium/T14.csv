@@ -1,0 +1,221 @@
+table_id,year,domain,row_key,row_label,indicator,category,col_label,estimate,se,rse,ci_lo,ci_hi,n,grade,unit
+T14,2014,national,all,Nacional,born_ven,,Nacidos en Venezuela,,,,,,0,S,%
+T14,2014,national,all,Nacional,life_abroad,,Nacidos en el extranjero,,,,,,0,S,%
+T14,2014,national,all,Nacional,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.337,0.039,11.467,0.262,0.413,107166,A,%
+T14,2014,national,all,Nacional,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,107166,S,%
+T14,2014,region_nat,1,Costa,born_ven,,Nacidos en Venezuela,,,,,,0,S,%
+T14,2014,region_nat,1,Costa,life_abroad,,Nacidos en el extranjero,,,,,,0,S,%
+T14,2014,region_nat,1,Costa,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.296,0.051,17.212,0.196,0.395,28453,B,%
+T14,2014,region_nat,1,Costa,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,28453,S,%
+T14,2014,region_nat,2,Sierra,born_ven,,Nacidos en Venezuela,,,,,,0,S,%
+T14,2014,region_nat,2,Sierra,life_abroad,,Nacidos en el extranjero,,,,,,0,S,%
+T14,2014,region_nat,2,Sierra,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.138,0.03,21.623,0.08,0.196,41007,B,%
+T14,2014,region_nat,2,Sierra,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,41007,S,%
+T14,2014,region_nat,3,Selva,born_ven,,Nacidos en Venezuela,,,,,,0,S,%
+T14,2014,region_nat,3,Selva,life_abroad,,Nacidos en el extranjero,,,,,,0,S,%
+T14,2014,region_nat,3,Selva,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.106,0.029,26.821,0.05,0.162,23363,B,%
+T14,2014,region_nat,3,Selva,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,23363,S,%
+T14,2014,region_nat,4,Lima Metropolitana,born_ven,,Nacidos en Venezuela,,,,,,0,S,%
+T14,2014,region_nat,4,Lima Metropolitana,life_abroad,,Nacidos en el extranjero,,,,,,0,S,%
+T14,2014,region_nat,4,Lima Metropolitana,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.663,0.112,16.833,0.445,0.882,14343,B,%
+T14,2014,region_nat,4,Lima Metropolitana,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,14343,S,%
+T14,2015,national,all,Nacional,born_ven,,Nacidos en Venezuela,,,,,,0,S,%
+T14,2015,national,all,Nacional,life_abroad,,Nacidos en el extranjero,,,,,,0,S,%
+T14,2015,national,all,Nacional,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.252,0.031,12.385,0.191,0.313,108562,A,%
+T14,2015,national,all,Nacional,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,108562,S,%
+T14,2015,region_nat,1,Costa,born_ven,,Nacidos en Venezuela,,,,,,0,S,%
+T14,2015,region_nat,1,Costa,life_abroad,,Nacidos en el extranjero,,,,,,0,S,%
+T14,2015,region_nat,1,Costa,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.259,0.064,24.544,0.135,0.384,29950,B,%
+T14,2015,region_nat,1,Costa,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,29950,S,%
+T14,2015,region_nat,2,Sierra,born_ven,,Nacidos en Venezuela,,,,,,0,S,%
+T14,2015,region_nat,2,Sierra,life_abroad,,Nacidos en el extranjero,,,,,,0,S,%
+T14,2015,region_nat,2,Sierra,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.098,0.021,21.899,0.056,0.14,40610,B,%
+T14,2015,region_nat,2,Sierra,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,40610,S,%
+T14,2015,region_nat,3,Selva,born_ven,,Nacidos en Venezuela,,,,,,0,S,%
+T14,2015,region_nat,3,Selva,life_abroad,,Nacidos en el extranjero,,,,,,0,S,%
+T14,2015,region_nat,3,Selva,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.09,0.026,29.292,0.039,0.142,24471,B,%
+T14,2015,region_nat,3,Selva,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,24471,S,%
+T14,2015,region_nat,4,Lima Metropolitana,born_ven,,Nacidos en Venezuela,,,,,,0,S,%
+T14,2015,region_nat,4,Lima Metropolitana,life_abroad,,Nacidos en el extranjero,,,,,,0,S,%
+T14,2015,region_nat,4,Lima Metropolitana,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.467,0.083,17.863,0.304,0.631,13531,B,%
+T14,2015,region_nat,4,Lima Metropolitana,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,13531,S,%
+T14,2016,national,all,Nacional,born_ven,,Nacidos en Venezuela,,,,,,0,S,%
+T14,2016,national,all,Nacional,life_abroad,,Nacidos en el extranjero,,,,,,0,S,%
+T14,2016,national,all,Nacional,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.29,0.029,10.048,0.233,0.347,119550,A,%
+T14,2016,national,all,Nacional,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,119550,S,%
+T14,2016,region_nat,1,Costa,born_ven,,Nacidos en Venezuela,,,,,,0,S,%
+T14,2016,region_nat,1,Costa,life_abroad,,Nacidos en el extranjero,,,,,,0,S,%
+T14,2016,region_nat,1,Costa,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.325,0.051,15.837,0.224,0.426,37634,B,%
+T14,2016,region_nat,1,Costa,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,37634,S,%
+T14,2016,region_nat,2,Sierra,born_ven,,Nacidos en Venezuela,,,,,,0,S,%
+T14,2016,region_nat,2,Sierra,life_abroad,,Nacidos en el extranjero,,,,,,0,S,%
+T14,2016,region_nat,2,Sierra,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.112,0.026,23.553,0.06,0.164,43157,B,%
+T14,2016,region_nat,2,Sierra,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,43157,S,%
+T14,2016,region_nat,3,Selva,born_ven,,Nacidos en Venezuela,,,,,,0,S,%
+T14,2016,region_nat,3,Selva,life_abroad,,Nacidos en el extranjero,,,,,,0,S,%
+T14,2016,region_nat,3,Selva,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,24614,S,%
+T14,2016,region_nat,3,Selva,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,24614,S,%
+T14,2016,region_nat,4,Lima Metropolitana,born_ven,,Nacidos en Venezuela,,,,,,0,S,%
+T14,2016,region_nat,4,Lima Metropolitana,life_abroad,,Nacidos en el extranjero,,,,,,0,S,%
+T14,2016,region_nat,4,Lima Metropolitana,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.503,0.077,15.338,0.352,0.655,14145,B,%
+T14,2016,region_nat,4,Lima Metropolitana,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,14145,S,%
+T14,2017,national,all,Nacional,born_ven,,Nacidos en Venezuela,,,,,,0,S,%
+T14,2017,national,all,Nacional,life_abroad,,Nacidos en el extranjero,,,,,,0,S,%
+T14,2017,national,all,Nacional,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.241,0.03,12.535,0.182,0.3,114181,A,%
+T14,2017,national,all,Nacional,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,114181,S,%
+T14,2017,region_nat,1,Costa,born_ven,,Nacidos en Venezuela,,,,,,0,S,%
+T14,2017,region_nat,1,Costa,life_abroad,,Nacidos en el extranjero,,,,,,0,S,%
+T14,2017,region_nat,1,Costa,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.243,0.038,15.831,0.167,0.318,34543,B,%
+T14,2017,region_nat,1,Costa,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,34543,S,%
+T14,2017,region_nat,2,Sierra,born_ven,,Nacidos en Venezuela,,,,,,0,S,%
+T14,2017,region_nat,2,Sierra,life_abroad,,Nacidos en el extranjero,,,,,,0,S,%
+T14,2017,region_nat,2,Sierra,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.096,0.023,24.363,0.05,0.142,40872,B,%
+T14,2017,region_nat,2,Sierra,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,40872,S,%
+T14,2017,region_nat,3,Selva,born_ven,,Nacidos en Venezuela,,,,,,0,S,%
+T14,2017,region_nat,3,Selva,life_abroad,,Nacidos en el extranjero,,,,,,0,S,%
+T14,2017,region_nat,3,Selva,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,24773,S,%
+T14,2017,region_nat,3,Selva,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,24773,S,%
+T14,2017,region_nat,4,Lima Metropolitana,born_ven,,Nacidos en Venezuela,,,,,,0,S,%
+T14,2017,region_nat,4,Lima Metropolitana,life_abroad,,Nacidos en el extranjero,,,,,,0,S,%
+T14,2017,region_nat,4,Lima Metropolitana,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.437,0.086,19.598,0.269,0.605,13993,B,%
+T14,2017,region_nat,4,Lima Metropolitana,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,13993,S,%
+T14,2018,national,all,Nacional,born_ven,,Nacidos en Venezuela,0.093,0.023,25.005,0.048,0.139,131135,B,%
+T14,2018,national,all,Nacional,life_abroad,,Nacidos en el extranjero,0.343,0.035,10.069,0.276,0.411,131135,A,%
+T14,2018,national,all,Nacional,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.37,0.049,13.271,0.274,0.466,121573,A,%
+T14,2018,national,all,Nacional,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.174,0.043,24.692,0.09,0.259,121573,B,%
+T14,2018,region_nat,1,Costa,born_ven,,Nacidos en Venezuela,,,,,,37826,S,%
+T14,2018,region_nat,1,Costa,life_abroad,,Nacidos en el extranjero,0.345,0.053,15.27,0.242,0.448,37826,B,%
+T14,2018,region_nat,1,Costa,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.302,0.051,16.75,0.203,0.402,35170,B,%
+T14,2018,region_nat,1,Costa,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,35170,S,%
+T14,2018,region_nat,2,Sierra,born_ven,,Nacidos en Venezuela,,,,,,49781,S,%
+T14,2018,region_nat,2,Sierra,life_abroad,,Nacidos en el extranjero,0.084,0.017,20.72,0.05,0.117,49781,B,%
+T14,2018,region_nat,2,Sierra,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.113,0.031,27.237,0.053,0.174,46478,B,%
+T14,2018,region_nat,2,Sierra,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,46478,S,%
+T14,2018,region_nat,3,Selva,born_ven,,Nacidos en Venezuela,,,,,,28777,S,%
+T14,2018,region_nat,3,Selva,life_abroad,,Nacidos en el extranjero,0.173,0.032,18.559,0.11,0.235,28777,B,%
+T14,2018,region_nat,3,Selva,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,26082,S,%
+T14,2018,region_nat,3,Selva,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,26082,S,%
+T14,2018,region_nat,4,Lima Metropolitana,born_ven,,Nacidos en Venezuela,0.24,0.069,28.871,0.104,0.376,14751,B,%
+T14,2018,region_nat,4,Lima Metropolitana,life_abroad,,Nacidos en el extranjero,0.665,0.099,14.897,0.471,0.859,14751,A,%
+T14,2018,region_nat,4,Lima Metropolitana,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.783,0.144,18.435,0.5,1.065,13843,B,%
+T14,2018,region_nat,4,Lima Metropolitana,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.497,0.132,26.494,0.239,0.756,13843,B,%
+T14,2019,national,all,Nacional,born_ven,,Nacidos en Venezuela,0.523,0.102,19.484,0.323,0.723,120607,B,%
+T14,2019,national,all,Nacional,life_abroad,,Nacidos en el extranjero,0.819,0.109,13.343,0.605,1.033,120607,A,%
+T14,2019,national,all,Nacional,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.698,0.099,14.246,0.503,0.893,112138,A,%
+T14,2019,national,all,Nacional,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.507,0.094,18.465,0.324,0.691,112138,B,%
+T14,2019,region_nat,1,Costa,born_ven,,Nacidos en Venezuela,0.314,0.079,25.041,0.16,0.468,36457,B,%
+T14,2019,region_nat,1,Costa,life_abroad,,Nacidos en el extranjero,0.53,0.084,15.917,0.365,0.695,36457,B,%
+T14,2019,region_nat,1,Costa,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.525,0.084,15.959,0.36,0.689,33983,B,%
+T14,2019,region_nat,1,Costa,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.308,0.076,24.503,0.16,0.456,33983,B,%
+T14,2019,region_nat,2,Sierra,born_ven,,Nacidos en Venezuela,,,,,,42943,S,%
+T14,2019,region_nat,2,Sierra,life_abroad,,Nacidos en el extranjero,0.078,0.02,25.614,0.039,0.116,42943,B,%
+T14,2019,region_nat,2,Sierra,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.076,0.023,29.917,0.031,0.12,40190,B,%
+T14,2019,region_nat,2,Sierra,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,40190,S,%
+T14,2019,region_nat,3,Selva,born_ven,,Nacidos en Venezuela,,,,,,26834,S,%
+T14,2019,region_nat,3,Selva,life_abroad,,Nacidos en el extranjero,,,,,,26834,S,%
+T14,2019,region_nat,3,Selva,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,24390,S,%
+T14,2019,region_nat,3,Selva,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,24390,S,%
+T14,2019,region_nat,4,Lima Metropolitana,born_ven,,Nacidos en Venezuela,1.327,0.307,23.161,0.725,1.93,14373,B,%
+T14,2019,region_nat,4,Lima Metropolitana,life_abroad,,Nacidos en el extranjero,1.959,0.33,16.857,1.312,2.606,14373,B,%
+T14,2019,region_nat,4,Lima Metropolitana,mig5_intl,,Llegaron del extranjero en los últimos 5 años,1.597,0.296,18.564,1.016,2.178,13575,B,%
+T14,2019,region_nat,4,Lima Metropolitana,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,1.281,0.28,21.899,0.731,1.83,13575,B,%
+T14,2020,national,all,Nacional,born_ven,,Nacidos en Venezuela,0.515,0.101,19.616,0.317,0.713,59273,B,%
+T14,2020,national,all,Nacional,life_abroad,,Nacidos en el extranjero,0.807,0.108,13.396,0.595,1.019,59273,A,%
+T14,2020,national,all,Nacional,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.432,0.053,12.197,0.329,0.536,111102,A,%
+T14,2020,national,all,Nacional,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.282,0.047,16.62,0.19,0.373,111102,B,%
+T14,2020,region_nat,1,Costa,born_ven,,Nacidos en Venezuela,0.477,0.135,28.293,0.212,0.741,18283,B,%
+T14,2020,region_nat,1,Costa,life_abroad,,Nacidos en el extranjero,0.828,0.153,18.44,0.529,1.127,18283,B,%
+T14,2020,region_nat,1,Costa,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.442,0.081,18.235,0.284,0.599,33555,B,%
+T14,2020,region_nat,1,Costa,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.282,0.071,25.316,0.142,0.421,33555,B,%
+T14,2020,region_nat,2,Sierra,born_ven,,Nacidos en Venezuela,,,,,,19598,S,%
+T14,2020,region_nat,2,Sierra,life_abroad,,Nacidos en el extranjero,,,,,,19598,S,%
+T14,2020,region_nat,2,Sierra,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,39971,S,%
+T14,2020,region_nat,2,Sierra,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,39971,S,%
+T14,2020,region_nat,3,Selva,born_ven,,Nacidos en Venezuela,,,,,,13605,S,%
+T14,2020,region_nat,3,Selva,life_abroad,,Nacidos en el extranjero,0.391,0.114,29.015,0.169,0.614,13605,B,%
+T14,2020,region_nat,3,Selva,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,23940,S,%
+T14,2020,region_nat,3,Selva,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,23940,S,%
+T14,2020,region_nat,4,Lima Metropolitana,born_ven,,Nacidos en Venezuela,1.076,0.275,25.533,0.537,1.614,7787,B,%
+T14,2020,region_nat,4,Lima Metropolitana,life_abroad,,Nacidos en el extranjero,1.51,0.29,19.226,0.941,2.079,7787,B,%
+T14,2020,region_nat,4,Lima Metropolitana,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.878,0.147,16.699,0.591,1.166,13636,B,%
+T14,2020,region_nat,4,Lima Metropolitana,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.604,0.131,21.763,0.346,0.861,13636,B,%
+T14,2021,national,all,Nacional,born_ven,,Nacidos en Venezuela,0.483,0.088,18.218,0.311,0.656,107954,B,%
+T14,2021,national,all,Nacional,life_abroad,,Nacidos en el extranjero,0.686,0.092,13.371,0.506,0.866,107954,A,%
+T14,2021,national,all,Nacional,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.569,0.083,14.54,0.407,0.731,105499,A,%
+T14,2021,national,all,Nacional,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.42,0.08,19.029,0.263,0.576,105499,B,%
+T14,2021,region_nat,1,Costa,born_ven,,Nacidos en Venezuela,0.356,0.068,19.087,0.223,0.489,33935,B,%
+T14,2021,region_nat,1,Costa,life_abroad,,Nacidos en el extranjero,0.573,0.075,13.151,0.426,0.721,33935,A,%
+T14,2021,region_nat,1,Costa,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.584,0.079,13.588,0.428,0.739,32752,A,%
+T14,2021,region_nat,1,Costa,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.35,0.067,19.28,0.217,0.482,32752,B,%
+T14,2021,region_nat,2,Sierra,born_ven,,Nacidos en Venezuela,,,,,,36713,S,%
+T14,2021,region_nat,2,Sierra,life_abroad,,Nacidos en el extranjero,,,,,,36713,S,%
+T14,2021,region_nat,2,Sierra,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,36424,S,%
+T14,2021,region_nat,2,Sierra,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,36424,S,%
+T14,2021,region_nat,3,Selva,born_ven,,Nacidos en Venezuela,,,,,,25050,S,%
+T14,2021,region_nat,3,Selva,life_abroad,,Nacidos en el extranjero,0.28,0.065,23.412,0.151,0.408,25050,B,%
+T14,2021,region_nat,3,Selva,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,23492,S,%
+T14,2021,region_nat,3,Selva,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,23492,S,%
+T14,2021,region_nat,4,Lima Metropolitana,born_ven,,Nacidos en Venezuela,1.173,0.27,22.989,0.644,1.701,12256,B,%
+T14,2021,region_nat,4,Lima Metropolitana,life_abroad,,Nacidos en el extranjero,1.532,0.28,18.259,0.983,2.08,12256,B,%
+T14,2021,region_nat,4,Lima Metropolitana,mig5_intl,,Llegaron del extranjero en los últimos 5 años,1.163,0.241,20.71,0.691,1.635,12831,B,%
+T14,2021,region_nat,4,Lima Metropolitana,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.949,0.235,24.724,0.489,1.409,12831,B,%
+T14,2022,national,all,Nacional,born_ven,,Nacidos en Venezuela,0.627,0.082,13.014,0.467,0.787,113539,A,%
+T14,2022,national,all,Nacional,life_abroad,,Nacidos en el extranjero,0.844,0.086,10.241,0.675,1.013,113539,A,%
+T14,2022,national,all,Nacional,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.68,0.08,11.735,0.524,0.837,105951,A,%
+T14,2022,national,all,Nacional,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.527,0.073,13.821,0.385,0.67,105951,A,%
+T14,2022,region_nat,1,Costa,born_ven,,Nacidos en Venezuela,0.425,0.078,18.292,0.273,0.578,35253,B,%
+T14,2022,region_nat,1,Costa,life_abroad,,Nacidos en el extranjero,0.632,0.087,13.804,0.461,0.803,35253,A,%
+T14,2022,region_nat,1,Costa,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.517,0.078,15.188,0.363,0.67,32892,B,%
+T14,2022,region_nat,1,Costa,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.375,0.069,18.349,0.24,0.51,32892,B,%
+T14,2022,region_nat,2,Sierra,born_ven,,Nacidos en Venezuela,,,,,,38217,S,%
+T14,2022,region_nat,2,Sierra,life_abroad,,Nacidos en el extranjero,,,,,,38217,S,%
+T14,2022,region_nat,2,Sierra,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.126,0.037,29.078,0.054,0.197,35922,B,%
+T14,2022,region_nat,2,Sierra,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,35922,S,%
+T14,2022,region_nat,3,Selva,born_ven,,Nacidos en Venezuela,,,,,,26290,S,%
+T14,2022,region_nat,3,Selva,life_abroad,,Nacidos en el extranjero,0.248,0.049,19.724,0.152,0.344,26290,B,%
+T14,2022,region_nat,3,Selva,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.125,0.037,29.16,0.054,0.197,23978,B,%
+T14,2022,region_nat,3,Selva,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,23978,S,%
+T14,2022,region_nat,4,Lima Metropolitana,born_ven,,Nacidos en Venezuela,1.52,0.241,15.876,1.047,1.992,13779,B,%
+T14,2022,region_nat,4,Lima Metropolitana,life_abroad,,Nacidos en el extranjero,1.895,0.252,13.315,1.401,2.39,13779,A,%
+T14,2022,region_nat,4,Lima Metropolitana,mig5_intl,,Llegaron del extranjero en los últimos 5 años,1.52,0.23,15.142,1.069,1.971,13159,B,%
+T14,2022,region_nat,4,Lima Metropolitana,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,1.238,0.212,17.139,0.822,1.654,13159,B,%
+T14,2023,national,all,Nacional,born_ven,,Nacidos en Venezuela,0.654,0.075,11.458,0.507,0.801,111220,A,%
+T14,2023,national,all,Nacional,life_abroad,,Nacidos en el extranjero,0.918,0.084,9.126,0.754,1.082,111220,A,%
+T14,2023,national,all,Nacional,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.465,0.054,11.652,0.359,0.571,104462,A,%
+T14,2023,national,all,Nacional,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.323,0.049,15.112,0.228,0.419,104462,B,%
+T14,2023,region_nat,1,Costa,born_ven,,Nacidos en Venezuela,0.41,0.078,19.05,0.257,0.563,34862,B,%
+T14,2023,region_nat,1,Costa,life_abroad,,Nacidos en el extranjero,0.696,0.089,12.819,0.521,0.871,34862,A,%
+T14,2023,region_nat,1,Costa,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.492,0.082,16.617,0.332,0.652,32726,B,%
+T14,2023,region_nat,1,Costa,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.26,0.066,25.383,0.131,0.39,32726,B,%
+T14,2023,region_nat,2,Sierra,born_ven,,Nacidos en Venezuela,,,,,,37144,S,%
+T14,2023,region_nat,2,Sierra,life_abroad,,Nacidos en el extranjero,0.156,0.039,24.781,0.08,0.232,37144,B,%
+T14,2023,region_nat,2,Sierra,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,35040,S,%
+T14,2023,region_nat,2,Sierra,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,35040,S,%
+T14,2023,region_nat,3,Selva,born_ven,,Nacidos en Venezuela,,,,,,25641,S,%
+T14,2023,region_nat,3,Selva,life_abroad,,Nacidos en el extranjero,0.229,0.045,19.818,0.14,0.318,25641,B,%
+T14,2023,region_nat,3,Selva,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.224,0.059,26.355,0.108,0.339,23535,B,%
+T14,2023,region_nat,3,Selva,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,23535,S,%
+T14,2023,region_nat,4,Lima Metropolitana,born_ven,,Nacidos en Venezuela,1.611,0.22,13.634,1.18,2.041,13573,A,%
+T14,2023,region_nat,4,Lima Metropolitana,life_abroad,,Nacidos en el extranjero,2.07,0.245,11.854,1.589,2.551,13573,A,%
+T14,2023,region_nat,4,Lima Metropolitana,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.884,0.147,16.588,0.596,1.171,13161,B,%
+T14,2023,region_nat,4,Lima Metropolitana,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.736,0.137,18.622,0.467,1.005,13161,B,%
+T14,2024,national,all,Nacional,born_ven,,Nacidos en Venezuela,0.551,0.075,13.651,0.403,0.698,109175,A,%
+T14,2024,national,all,Nacional,life_abroad,,Nacidos en el extranjero,0.835,0.081,9.653,0.677,0.993,109175,A,%
+T14,2024,national,all,Nacional,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.357,0.05,13.973,0.259,0.454,102990,A,%
+T14,2024,national,all,Nacional,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.182,0.039,21.693,0.104,0.259,102990,B,%
+T14,2024,region_nat,1,Costa,born_ven,,Nacidos en Venezuela,0.309,0.055,17.87,0.201,0.418,33807,B,%
+T14,2024,region_nat,1,Costa,life_abroad,,Nacidos en el extranjero,0.608,0.076,12.455,0.459,0.756,33807,A,%
+T14,2024,region_nat,1,Costa,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.32,0.055,17.145,0.212,0.427,31883,B,%
+T14,2024,region_nat,1,Costa,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,31883,S,%
+T14,2024,region_nat,2,Sierra,born_ven,,Nacidos en Venezuela,,,,,,36541,S,%
+T14,2024,region_nat,2,Sierra,life_abroad,,Nacidos en el extranjero,0.167,0.039,23.199,0.091,0.243,36541,B,%
+T14,2024,region_nat,2,Sierra,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,34697,S,%
+T14,2024,region_nat,2,Sierra,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,34697,S,%
+T14,2024,region_nat,3,Selva,born_ven,,Nacidos en Venezuela,,,,,,25533,S,%
+T14,2024,region_nat,3,Selva,life_abroad,,Nacidos en el extranjero,0.299,0.048,16.05,0.205,0.393,25533,B,%
+T14,2024,region_nat,3,Selva,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.133,0.035,26.635,0.063,0.202,23464,B,%
+T14,2024,region_nat,3,Selva,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,23464,S,%
+T14,2024,region_nat,4,Lima Metropolitana,born_ven,,Nacidos en Venezuela,1.389,0.224,16.16,0.949,1.829,13294,B,%
+T14,2024,region_nat,4,Lima Metropolitana,life_abroad,,Nacidos en el extranjero,1.833,0.236,12.898,1.37,2.297,13294,A,%
+T14,2024,region_nat,4,Lima Metropolitana,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.724,0.141,19.545,0.446,1.001,12946,B,%
+T14,2024,region_nat,4,Lima Metropolitana,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.455,0.115,25.26,0.23,0.68,12946,B,%

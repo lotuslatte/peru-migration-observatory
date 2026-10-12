@@ -1,0 +1,10 @@
+table_id,year,domain,row_key,row_label,indicator,category,col_label,estimate,se,rse,ci_lo,ci_hi,n,grade,unit
+T01,2024,national,all,Nacional,born_ven,,Nacidos en Venezuela,0.551,0.075,13.651,0.403,0.698,109175,A,%
+T01,2024,national,all,Nacional,life_abroad,,Nacidos en el extranjero,0.835,0.081,9.653,0.677,0.993,109175,A,%
+T01,2024,national,all,Nacional,life_cross,,Nacidos en otro departamento (migración de toda la vida),19.84,0.29,1.461,19.272,20.408,109175,A,%
+T01,2024,national,all,Nacional,mig5_any,,Cambió de distrito en los últimos 5 años,6.171,0.185,2.993,5.809,6.533,102990,A,%
+T01,2024,national,all,Nacional,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.504,0.102,4.076,2.304,2.704,102990,A,%
+T01,2024,national,all,Nacional,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.357,0.05,13.973,0.259,0.454,102990,A,%
+T01,2024,national,all,Nacional,mig5_intra,,Se mudaron dentro del departamento,3.311,0.139,4.203,3.038,3.583,102990,A,%
+T01,2024,national,all,Nacional,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.182,0.039,21.693,0.104,0.259,102990,B,%
+T01,2024,national,all,Nacional,native_here,,Nacidos en el mismo departamento (retención),79.3,0.296,0.373,78.72,79.88,109175,A,%
