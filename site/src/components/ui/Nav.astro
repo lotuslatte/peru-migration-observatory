@@ -1,0 +1,33 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+const items = [
+  ['/', 'Inicio'], ['/atlas/', 'Atlas'], ['/flujos/', 'Flujos'], ['/venezuela/', 'Venezuela'], ['/clima/', 'Clima'], ['/historias/', 'Historias'], ['/analisis/', 'Análisis'], ['/novedades/', 'Novedades'], ['/compendio/', 'Compendio'],
+  ['/acerca/metodologia/', 'Metodología'], ['/acerca/validacion/', 'Validación'], ['/datos/', 'Datos'], ['/acerca/', 'Acerca de'],
+];
+const path = Astro.url.pathname;
+---
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="/"><span class="mark">OMP</span><span class="name">Observatorio de Migración <em>del Perú</em></span></a>
+    <nav aria-label="Principal">
+      {items.map(([href, label]) => <a href={href} aria-current={path === href || (href !== '/' && path.startsWith(href)) ? 'page' : undefined}>{label}</a>)}
+    </nav>
+    <div class="tools">
+      <button class="btn small kbd" data-open-palette aria-label="Buscar (Ctrl+K)"><span>Buscar</span><kbd>⌘K</kbd></button>
+      <ThemeToggle />
+    </div>
+  </div>
+</header>
+<style>
+  .top { position: sticky; top: 0; z-index: 30; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  .bar { display: flex; align-items: center; gap: 18px; min-height: 58px; }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+  .mark { font-family: var(--font-mono); font-weight: 600; font-size: .8rem; background: var(--accent); color: var(--accent-ink); padding: 3px 7px; border-radius: 6px; }
+  .name { font-family: var(--font-serif); font-size: 1.05rem; white-space: nowrap; } .name em { font-style: italic; color: var(--accent); }
+  nav { display: flex; gap: 2px; flex: 1; overflow-x: auto; scrollbar-width: none; }
+  nav a { padding: 8px 10px; border-radius: 8px; color: var(--ink-2); text-decoration: none; font-size: .9rem; white-space: nowrap; }
+  nav a:hover { background: var(--panel-2); } nav a[aria-current="page"] { color: var(--accent); font-weight: 600; }
+  .tools { display: flex; gap: 6px; align-items: center; }
+  .kbd { display: flex; gap: 8px; align-items: center; } .kbd kbd { font-family: var(--font-mono); font-size: .68rem; color: var(--muted); border: 1px solid var(--line); padding: 0 4px; border-radius: 4px; }
+  @media (max-width: 760px) { .name { display: none; } .kbd span { display: none; } }
+</style>

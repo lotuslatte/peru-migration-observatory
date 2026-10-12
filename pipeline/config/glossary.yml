@@ -1,0 +1,16 @@
+- {term: "PET", def: "Población en edad de trabajar: personas de 14 años o más (convención INEI)."}
+- {term: "PEA", def: "Población económicamente activa: ocupados más desocupados abiertos (buscaron trabajo la semana de referencia)."}
+- {term: "Tasa de actividad", def: "PEA dividida entre la PET. Mide cuántos participan, no cuántos tienen buen empleo."}
+- {term: "Tasa de desempleo", def: "Desocupados abiertos entre la PEA. En el Perú es baja porque sin seguro de desempleo la gente se autoemplea."}
+- {term: "Empleo informal", def: "Definición INEI/OIT: trabajar en una unidad no registrada en SUNAT, o como asalariado sin seguro de salud ni pensión ligados al empleo, o como familiar no remunerado."}
+- {term: "Empleo adecuado", def: "Ocupado sin subempleo por horas (quiere y puede trabajar más) ni por ingresos (gana menos que la remuneración mínima)."}
+- {term: "Sello de confiabilidad", def: "Resumen de la precisión: Sólido (error relativo < 15 %), Cautela (15–30 %), Suprimido (≥ 30 % o menos de 30 casos)."}
+- {term: "Error estándar de diseño", def: "Incertidumbre que reconoce que la ENAHO muestrea conglomerados y estratos, no personas al azar; se calcula por linealización de Taylor."}
+- {term: "IC 95 %", def: "Intervalo de confianza: rango que contendría el valor verdadero en 95 de cada 100 muestras."}
+- {term: "Brecha ajustada", def: "Diferencia entre grupos después de comparar personas con la misma edad, educación, región, etc. (modelo con controles)."}
+- {term: "Oaxaca–Blinder", def: "Descomposición de una brecha en la parte explicada por características distintas y la parte no explicada (retornos distintos a las mismas características)."}
+- {term: "Shift-share", def: "Descomposición de un cambio en el tiempo entre cambio de composición (quién trabaja dónde) y cambio de tasas dentro de cada grupo."}
+- {term: "Migrante reciente", def: "Persona que hace cinco años vivía en otro departamento o país (ENAHO, módulo 400)."}
+- {term: "Migración de toda la vida", def: "Persona cuya madre vivía en otro departamento cuando nació (pregunta disponible desde 2018)."}
+- {term: "Saldo migratorio neto", def: "Inmigrantes menos emigrantes de un departamento, por cada mil habitantes."}
+- {term: "Factor de expansión", def: "Peso que convierte cada persona entrevistada en el número de personas que representa (fac500a, facpob07, factor07)."}

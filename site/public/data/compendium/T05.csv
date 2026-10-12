@@ -1,0 +1,16 @@
+table_id,year,domain,row_key,row_label,indicator,category,col_label,estimate,se,rse,ci_lo,ci_hi,n,grade,unit
+T05,2024,mig3,0,No se mudó,age_dist,0.0,Grupo de edad: 5–14,18.214,0.186,1.021,17.85,18.579,96540,A,%
+T05,2024,mig3,0,No se mudó,age_dist,1.0,Grupo de edad: 15–29,23.13,0.211,0.912,22.717,23.543,96540,A,%
+T05,2024,mig3,0,No se mudó,age_dist,2.0,Grupo de edad: 30–44,20.36,0.205,1.006,19.959,20.762,96540,A,%
+T05,2024,mig3,0,No se mudó,age_dist,3.0,Grupo de edad: 45–64,24.87,0.217,0.873,24.444,25.296,96540,A,%
+T05,2024,mig3,0,No se mudó,age_dist,4.0,Grupo de edad: 65 y más,13.426,0.216,1.611,13.002,13.849,96540,A,%
+T05,2024,mig3,1,Se mudó dentro del departamento,age_dist,0.0,Grupo de edad: 5–14,19.3,1.075,5.572,17.192,21.407,3138,A,%
+T05,2024,mig3,1,Se mudó dentro del departamento,age_dist,1.0,Grupo de edad: 15–29,29.962,1.204,4.018,27.603,32.322,3138,A,%
+T05,2024,mig3,1,Se mudó dentro del departamento,age_dist,2.0,Grupo de edad: 30–44,27.025,1.076,3.981,24.917,29.134,3138,A,%
+T05,2024,mig3,1,Se mudó dentro del departamento,age_dist,3.0,Grupo de edad: 45–64,16.484,1.03,6.248,14.465,18.502,3138,A,%
+T05,2024,mig3,1,Se mudó dentro del departamento,age_dist,4.0,Grupo de edad: 65 y más,7.229,0.754,10.425,5.752,8.706,3138,A,%
+T05,2024,mig3,2,Llegó de otro departamento o país,age_dist,0.0,Grupo de edad: 5–14,20.807,1.039,4.993,18.77,22.843,3312,A,%
+T05,2024,mig3,2,Llegó de otro departamento o país,age_dist,1.0,Grupo de edad: 15–29,34.524,1.271,3.683,32.033,37.016,3312,A,%
+T05,2024,mig3,2,Llegó de otro departamento o país,age_dist,2.0,Grupo de edad: 30–44,27.678,1.121,4.051,25.481,29.876,3312,A,%
+T05,2024,mig3,2,Llegó de otro departamento o país,age_dist,3.0,Grupo de edad: 45–64,11.526,0.808,7.007,9.943,13.109,3312,A,%
+T05,2024,mig3,2,Llegó de otro departamento o país,age_dist,4.0,Grupo de edad: 65 y más,5.464,0.616,11.265,4.258,6.671,3312,A,%

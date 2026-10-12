@@ -1,0 +1,5 @@
+# Cifras oficiales de referencia para migración (tolerancias explícitas; varias son de fuentes distintas a la ENAHO → "referencial").
+targets:
+  - {indicator: life_cross, domain: national, key: all, year: 2018, value: 20.3, tolerance_pp: 2.5, source: "Censo 2017 (INEI): 20,3 % de la población nació en un departamento distinto al de residencia (referencial: censo vs encuesta, 2017 vs 2018)"}
+  - {indicator: mig5_cross, domain: national, key: all, year: 2018, value: 2.9, tolerance_pp: 1.0, source: "Censo 2017 (INEI): migración interdepartamental reciente (2012–2017) ≈ 2,9 % de la población de 5+ (referencial)"}
+  - {indicator: born_ven, domain: national, key: all, year: 2024, value: 4.5, tolerance_pp: 5.0, source: "Superintendencia Nacional de Migraciones / R4V (2024): ~1,5 millones de venezolanos ≈ 4,5 % de la población; la ENAHO capta 0,55 % (subcobertura documentada)"}

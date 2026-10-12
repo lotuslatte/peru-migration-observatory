@@ -1,0 +1,14 @@
+models:
+  inf_mig: {label_es: "Informalidad: migrante reciente vs residente", outcome: informal, den: ocupado, key: {var: mig2, val: 2, ref: 1, label: "Migrante reciente"}, family: lpm, logit: true, weight: w500,
+            controls: [{var: age, kind: num, square: true}, {var: sex}, {var: educ4, ref: 1}, {var: area}, {var: region_nat, ref: 4}, {var: lengua3, ref: 2}], subsamples: [area, region_nat, sex, educ4]}
+  inc_mig: {label_es: "Ingreso laboral (log): migrante reciente vs residente", outcome: log_inc, den: has_income, key: {var: mig2, val: 2, ref: 1, label: "Migrante reciente"}, family: lpm, weight: w500,
+            controls: [{var: age, kind: num, square: true}, {var: sex}, {var: educ4, ref: 1}, {var: area}, {var: region_nat, ref: 4}, {var: lengua3, ref: 2}], subsamples: [area, region_nat, sex, educ4]}
+  ur_mig:  {label_es: "Desempleo: migrante reciente vs residente", outcome: desocupado, den: pea, key: {var: mig2, val: 2, ref: 1, label: "Migrante reciente"}, family: lpm, weight: w500,
+            controls: [{var: age, kind: num, square: true}, {var: sex}, {var: educ4, ref: 1}, {var: area}, {var: region_nat, ref: 4}], subsamples: [area, sex]}
+  pobre_mig: {label_es: "Pobreza monetaria: migrante reciente vs residente", outcome: pobre, den: pop5, key: {var: mig2, val: 2, ref: 1, label: "Migrante reciente"}, family: lpm, weight: w_pop,
+            controls: [{var: age, kind: num, square: true}, {var: sex}, {var: educ4, ref: 1}, {var: area}, {var: region_nat, ref: 4}], subsamples: [area, region_nat]}
+oaxaca:
+  inc_mig_2024: {label_es: "Brecha de ingreso (log) migrante − residente, 2024", outcome: log_inc, den: has_income, group: mig2, a: 2, b: 1, a_label: "Migrantes recientes", b_label: "Residentes",
+                 vars: [{var: age, kind: num, square: true}, {var: sex, contrast: dev}, {var: educ4, contrast: dev}, {var: area, contrast: dev}, {var: region_nat, contrast: dev}]}
+  inf_mig_2024: {label_es: "Brecha de informalidad migrante − residente, 2024", outcome: informal, den: ocupado, group: mig2, a: 2, b: 1, a_label: "Migrantes recientes", b_label: "Residentes",
+                 vars: [{var: age, kind: num, square: true}, {var: sex, contrast: dev}, {var: educ4, contrast: dev}, {var: area, contrast: dev}, {var: region_nat, contrast: dev}]}

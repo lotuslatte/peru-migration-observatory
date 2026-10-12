@@ -1,0 +1,37 @@
+---
+import Base from '../../layouts/Base.astro';
+import GradeLegend from '../../components/ui/GradeLegend.astro';
+import EmbedSnippet from '../../components/ui/EmbedSnippet.astro';
+import AtlasMap from '../../components/charts/AtlasMap';
+import RadarComparator from '../../components/charts/RadarComparator';
+import BivariateScatter from '../../components/charts/BivariateScatter';
+import { loadAtlas } from '../../data/loaders';
+const a = loadAtlas();
+const f = (c: any, n = 1) => c?.v == null ? '—' : c.v.toLocaleString('es-PE', { minimumFractionDigits: n, maximumFractionDigits: n });
+const depts = a.regions.filter(r => !r.parent);
+const top = (dim: string, hi = true) => [...depts].filter(r => r.values[dim].v != null).sort((x, y) => ((y.values[dim].v ?? 0) - (x.values[dim].v ?? 0)) * (hi ? 1 : -1))[0];
+const explain: Record<string, string> = {
+  net_rate: 'Inmigrantes menos emigrantes interdepartamentales de los últimos cinco años, por cada mil habitantes de 5+ años. Promedio 2020–2024. Positivo = atrae población.',
+  mig5_cross: 'Porcentaje de residentes que hace cinco años vivían en otro departamento.',
+  out_rate: 'Porcentaje de quienes vivían en el departamento hace cinco años y hoy viven en otro. Se observa en destino; promedio 2020–2024.',
+  life_cross: 'Porcentaje de residentes cuya madre vivía en otro departamento cuando nacieron (desde 2018).',
+  gap_inf_mig: 'Informalidad de los migrantes recientes menos la de los residentes de siempre. Positivo = a los migrantes les va peor.',
+  gap_inc_mig: 'Ingreso laboral mediano de los migrantes recientes dividido entre el de los locales. Mayor que 1 = los migrantes ganan más.',
+};
+---
+<Base title="Atlas de movilidad" wide>
+  <div class="eyebrow" style="margin-top:28px">Atlas de movilidad · ENAHO {a.year}</div>
+  <h1>Departamentos que atraen, <em>departamentos que expulsan.</em></h1>
+  <p class="lede">Seis dimensiones primarias —saldo, inmigración, emigración, nacidos fuera, y dos brechas laborales migrante/local— y seis secundarias. Las tasas de flujo se promedian sobre 2020–2024 porque una sola encuesta anual capta muy pocos migrantes por departamento.</p>
+  <div class="grid grid-3" style="margin-bottom:18px">
+    {a.dims.filter(d => d.primary).map(d => <div class="card dim"><div class="eyebrow">{d.label_es}</div><p class="small">{explain[d.id]}</p><p class="small"><span class="muted">Mayor:</span> <strong>{top(d.id, true)?.name}</strong> ({f(top(d.id, true)?.values[d.id], d.unit === 'ratio' ? 2 : 1)}) · <span class="muted">Menor:</span> <strong>{top(d.id, false)?.name}</strong> ({f(top(d.id, false)?.values[d.id], d.unit === 'ratio' ? 2 : 1)})</p></div>)}
+  </div>
+  <section class="card"><GradeLegend compact /><EmbedSnippet path="/atlas/net_rate/" /><AtlasMap client:load regions={a.regions} dims={a.dims} year={a.year} initial="net_rate" /></section>
+  <section class="grid grid-2" style="margin-top:20px">
+    <div class="card"><h2>Comparar dos departamentos</h2><RadarComparator client:visible regions={a.regions} dims={a.dims} a="15" b="21" /></div>
+    <div class="card"><h2>Dos dimensiones a la vez</h2><p class="takeaway">¿Atraen los departamentos donde a los migrantes les va bien? Cruza el saldo con la brecha de ingreso.</p><BivariateScatter client:visible regions={a.regions} dims={a.dims} x0="gap_inc_mig" y0="net_rate" /></div>
+  </section>
+  <p style="margin:16px 0"><a class="btn primary" href="/atlas/provincias/">Ver el atlas provincial (196 provincias) →</a></p>
+  <section class="card" style="margin-top:20px"><h2>Perfiles departamentales</h2><div class="grid grid-4">{a.regions.map(r => <a class="btn" href={`/atlas/${r.id}/`}>{r.name}</a>)}</div></section>
+  <style>.dim { padding: 12px 14px; } .dim p { margin: 4px 0 0; }</style>
+</Base>

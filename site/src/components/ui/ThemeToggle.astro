@@ -1,0 +1,11 @@
+<button class="btn" id="theme-toggle" aria-label="Cambiar tema" title="Tema claro / oscuro">◐</button>
+<script>
+  const b = document.getElementById('theme-toggle');
+  b?.addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme');
+    const sys = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    const next = (cur ?? sys) === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('olp-theme', next); } catch {}
+  });
+</script>

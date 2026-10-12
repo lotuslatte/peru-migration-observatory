@@ -1,0 +1,53 @@
+table_id,year,domain,row_key,row_label,indicator,category,col_label,estimate,se,rse,ci_lo,ci_hi,n,grade,unit
+T02,2024,age5,0,5–14,life_cross,,Nacidos en otro departamento (migración de toda la vida),5.612,0.233,4.159,5.155,6.07,26425,A,%
+T02,2024,age5,0,5–14,mig5_any,,Cambió de distrito en los últimos 5 años,6.735,0.338,5.02,6.072,7.397,19710,A,%
+T02,2024,age5,0,5–14,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.821,0.2,7.084,2.43,3.213,19710,A,%
+T02,2024,age5,0,5–14,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.427,0.118,27.68,0.195,0.658,19710,B,%
+T02,2024,age5,1,15–29,life_cross,,Nacidos en otro departamento (migración de toda la vida),13.135,0.437,3.324,12.279,13.991,23709,A,%
+T02,2024,age5,1,15–29,mig5_any,,Cambió de distrito en los últimos 5 años,8.358,0.314,3.752,7.744,8.973,23834,A,%
+T02,2024,age5,1,15–29,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",3.687,0.194,5.26,3.307,4.067,23834,A,%
+T02,2024,age5,1,15–29,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.483,0.088,18.178,0.311,0.655,23834,B,%
+T02,2024,age5,2,30–44,life_cross,,Nacidos en otro departamento (migración de toda la vida),25.125,0.64,2.547,23.87,26.379,20686,A,%
+T02,2024,age5,2,30–44,mig5_any,,Cambió de distrito en los últimos 5 años,8.111,0.329,4.05,7.468,8.755,20803,A,%
+T02,2024,age5,2,30–44,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",3.381,0.207,6.118,2.975,3.786,20803,A,%
+T02,2024,age5,2,30–44,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.427,0.082,19.071,0.268,0.587,20803,B,%
+T02,2024,age5,3,45–64,life_cross,,Nacidos en otro departamento (migración de toda la vida),28.748,0.608,2.114,27.557,29.939,24757,A,%
+T02,2024,age5,3,45–64,mig5_any,,Cambió de distrito en los últimos 5 años,3.616,0.21,5.804,3.204,4.027,24918,A,%
+T02,2024,age5,3,45–64,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",1.107,0.086,7.734,0.939,1.275,24918,A,%
+T02,2024,age5,3,45–64,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.255,0.053,20.816,0.151,0.359,24918,B,%
+T02,2024,age5,4,65 y más,life_cross,,Nacidos en otro departamento (migración de toda la vida),34.138,0.732,2.145,32.703,35.573,13598,A,%
+T02,2024,age5,4,65 y más,mig5_any,,Cambió de distrito en los últimos 5 años,3.045,0.242,7.944,2.571,3.519,13725,A,%
+T02,2024,age5,4,65 y más,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",1.099,0.129,11.74,0.846,1.351,13725,A,%
+T02,2024,age5,4,65 y más,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,13725,S,%
+T02,2024,area,1,Urbano,life_cross,,Nacidos en otro departamento (migración de toda la vida),22.712,0.348,1.533,22.03,23.395,72644,A,%
+T02,2024,area,1,Urbano,mig5_any,,Cambió de distrito en los últimos 5 años,6.632,0.224,3.38,6.193,7.071,68887,A,%
+T02,2024,area,1,Urbano,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.57,0.122,4.751,2.33,2.809,68887,A,%
+T02,2024,area,1,Urbano,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.433,0.061,14.181,0.313,0.554,68887,A,%
+T02,2024,area,2,Rural,life_cross,,Nacidos en otro departamento (migración de toda la vida),7.788,0.27,3.463,7.26,8.317,36531,A,%
+T02,2024,area,2,Rural,mig5_any,,Cambió de distrito en los últimos 5 años,4.203,0.183,4.344,3.845,4.561,34103,A,%
+T02,2024,area,2,Rural,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.223,0.134,6.007,1.961,2.485,34103,A,%
+T02,2024,area,2,Rural,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,34103,S,%
+T02,2024,region_nat,1,Costa,life_cross,,Nacidos en otro departamento (migración de toda la vida),17.322,0.4,2.312,16.537,18.107,33807,A,%
+T02,2024,region_nat,1,Costa,mig5_any,,Cambió de distrito en los últimos 5 años,4.789,0.228,4.751,4.343,5.235,31883,A,%
+T02,2024,region_nat,1,Costa,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.047,0.142,6.927,1.769,2.325,31883,A,%
+T02,2024,region_nat,1,Costa,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.32,0.055,17.145,0.212,0.427,31883,B,%
+T02,2024,region_nat,2,Sierra,life_cross,,Nacidos en otro departamento (migración de toda la vida),8.838,0.334,3.778,8.183,9.492,36541,A,%
+T02,2024,region_nat,2,Sierra,mig5_any,,Cambió de distrito en los últimos 5 años,5.572,0.242,4.334,5.099,6.046,34697,A,%
+T02,2024,region_nat,2,Sierra,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.392,0.142,5.941,2.113,2.671,34697,A,%
+T02,2024,region_nat,2,Sierra,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,34697,S,%
+T02,2024,region_nat,3,Selva,life_cross,,Nacidos en otro departamento (migración de toda la vida),19.891,0.546,2.742,18.822,20.961,25533,A,%
+T02,2024,region_nat,3,Selva,mig5_any,,Cambió de distrito en los últimos 5 años,8.777,0.405,4.616,7.983,9.571,23464,A,%
+T02,2024,region_nat,3,Selva,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",4.442,0.259,5.833,3.934,4.95,23464,A,%
+T02,2024,region_nat,3,Selva,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.133,0.035,26.635,0.063,0.202,23464,B,%
+T02,2024,region_nat,4,Lima Metropolitana,life_cross,,Nacidos en otro departamento (migración de toda la vida),31.973,0.693,2.169,30.614,33.332,13294,A,%
+T02,2024,region_nat,4,Lima Metropolitana,mig5_any,,Cambió de distrito en los últimos 5 años,6.729,0.457,6.797,5.833,7.626,12946,A,%
+T02,2024,region_nat,4,Lima Metropolitana,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.212,0.238,10.765,1.746,2.679,12946,A,%
+T02,2024,region_nat,4,Lima Metropolitana,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.724,0.141,19.545,0.446,1.001,12946,B,%
+T02,2024,sex,1,Hombres,life_cross,,Nacidos en otro departamento (migración de toda la vida),18.972,0.325,1.711,18.335,19.608,53002,A,%
+T02,2024,sex,1,Hombres,mig5_any,,Cambió de distrito en los últimos 5 años,6.12,0.198,3.239,5.731,6.508,49890,A,%
+T02,2024,sex,1,Hombres,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.539,0.112,4.41,2.319,2.758,49890,A,%
+T02,2024,sex,1,Hombres,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.308,0.047,15.277,0.215,0.4,49890,B,%
+T02,2024,sex,2,Mujeres,life_cross,,Nacidos en otro departamento (migración de toda la vida),20.652,0.335,1.622,19.996,21.309,56173,A,%
+T02,2024,sex,2,Mujeres,mig5_any,,Cambió de distrito en los últimos 5 años,6.219,0.215,3.458,5.797,6.64,53100,A,%
+T02,2024,sex,2,Mujeres,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.471,0.123,4.974,2.23,2.712,53100,A,%
+T02,2024,sex,2,Mujeres,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.402,0.068,16.974,0.268,0.536,53100,B,%

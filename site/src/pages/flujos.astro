@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import ODMatrix from '../components/charts/ODMatrix';
+import FlowChord from '../components/charts/FlowChord';
+import FlowArrows from '../components/charts/FlowArrows';
+import TrendLine from '../components/charts/TrendLine';
+import { loadFlows, loadHeadline, loadAtlas } from '../data/loaders';
+const fl = loadFlows(); const h = loadHeadline(); const a = loadAtlas();
+const net = Object.fromEntries(a.regions.filter(r => !r.parent).map(r => [r.id, r.values.net_rate.v]));
+const top = fl.top_flows.slice(0, 15);
+const lima_in = fl.by_dept['15'].top_origins, lima_out = fl.by_dept['15'].top_destinations;
+---
+<Base title="Flujos origen–destino" wide>
+  <div class="eyebrow" style="margin-top:28px">Flujos · ENAHO 2020–2024 (promedio anual)</div>
+  <h1>De dónde <em>a dónde.</em></h1>
+  <p class="lede">La ENAHO pregunta a cada persona dónde vivía hace cinco años. Sumando con los factores de expansión se obtiene una matriz de 25 × 25 departamentos: pequeña en cada celda, pero suficiente para ver los corredores del país cuando se promedian cinco años.</p>
+  <section class="grid grid-2">
+    <div class="card"><h2>Las cuerdas</h2><p class="takeaway">Cada cinta es un corredor; el grosor, su volumen. Los arcos jade son departamentos que ganan población; los carmín, los que la pierden.</p><FlowChord client:load chord={fl.chord} net={net} /></div>
+    <div class="card"><h2>El mapa</h2><p class="takeaway">Los mismos flujos sobre el territorio: la costa y Lima concentran las flechas gruesas; la selva recibe desde la sierra.</p><FlowArrows client:visible chord={fl.chord} /></div>
+  </section>
+  <section class="card" style="margin-top:20px"><h2>La matriz completa</h2><ODMatrix client:visible matrix={fl.matrix} names={fl.dept_names} /></section>
+  <section class="grid grid-2" style="margin-top:20px">
+    <div class="card"><h2>Los 15 corredores mayores</h2><table class="data"><thead><tr><th style="text-align:left">#</th><th style="text-align:left">Origen → destino</th><th>Personas / año</th><th>n</th><th></th></tr></thead><tbody>{top.map((t, i) => <tr><td style="text-align:left">{i + 1}</td><td style="text-align:left"><a href={`/atlas/${t.o}/`}>{fl.dept_names[t.o]}</a> → <a href={`/atlas/${t.d}/`}>{fl.dept_names[t.d]}</a></td><td>{t.flow.toLocaleString('es-PE')}</td><td class="mono">{t.n}</td><td><span class={`badge compact ${t.g}`} /></td></tr>)}</tbody></table></div>
+    <div class="card"><h2>Lima: imán y expulsor</h2><p class="takeaway">Lima recibe de todo el país y a la vez envía población a la costa y la selva: los flujos de salida no son menores que los de entrada.</p>
+      <div class="grid grid-2"><div><div class="eyebrow">Llegan a Lima desde</div><table class="data"><tbody>{lima_in.map((x: any) => <tr><td style="text-align:left">{x.name}</td><td>{x.flow.toLocaleString('es-PE')}</td></tr>)}</tbody></table></div><div><div class="eyebrow">Salen de Lima hacia</div><table class="data"><tbody>{lima_out.map((x: any) => <tr><td style="text-align:left">{x.name}</td><td>{x.flow.toLocaleString('es-PE')}</td></tr>)}</tbody></table></div></div>
+      <TrendLine client:visible years={h.years} unit="%" title="Tasa de inmigración reciente, Lima Metropolitana vs nacional" series={[{ label: 'Lima Metropolitana', cells: [] }, { label: 'Nacional', cells: h.trend.mig5_cross }].filter(s => s.cells.length)} height={220} yZero /></div>
+  </section>
+  <p class="small muted" style="margin-top:16px">{fl.note} Descarga: <a href="/data/compendium/T04.csv">T04 (matriz)</a>, <a href="/data/compendium/T03.csv">T03 (saldos por departamento)</a>, <a href="/data/flows.json">flows.json</a>.</p>
+</Base>

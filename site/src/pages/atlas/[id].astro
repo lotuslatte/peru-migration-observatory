@@ -1,0 +1,49 @@
+---
+import Base from '../../layouts/Base.astro';
+import KpiTile from '../../components/ui/KpiTile.astro';
+import GradeLegend from '../../components/ui/GradeLegend.astro';
+import PrintBar from '../../components/ui/PrintBar.astro';
+import EmbedSnippet from '../../components/ui/EmbedSnippet.astro';
+import BarDist from '../../components/charts/BarDist';
+import Dumbbell from '../../components/charts/Dumbbell';
+import TrendLine from '../../components/charts/TrendLine';
+import RadarComparator from '../../components/charts/RadarComparator';
+import ODMatrix from '../../components/charts/ODMatrix';
+import { loadAtlas, loadProfile, loadHeadline, loadFlows } from '../../data/loaders';
+export async function getStaticPaths() { return loadAtlas().regions.map(r => ({ params: { id: r.id } })); }
+const { id } = Astro.params; const p: any = loadProfile(id!); const a = loadAtlas(); const h = loadHeadline(); const fl = loadFlows();
+const dims = a.dims.filter(d => d.primary);
+const f = (c: any, n = 1) => c?.v == null ? '—' : c.v.toLocaleString('es-PE', { minimumFractionDigits: n, maximumFractionDigits: n });
+const labels: Record<string, string> = { lfpr: 'Tasa de actividad', ur: 'Desempleo', informality: 'Informalidad', median_inc_real: 'Ingreso mediano' };
+const lm = p.labour_mig || {};
+const dumb = Object.keys(lm).map(k => ({ label: labels[k], a: { ...lm[k]['2'], label: 'Migrantes recientes' }, b: { ...lm[k]['1'], label: 'Residentes de siempre' } }));
+const mob: Record<string, string> = { mig5_any: 'Cambió de distrito (5 años)', mig5_cross: 'Llegó de otro departamento', mig5_intra: 'Se mudó dentro del departamento', mig5_intl: 'Llegó del extranjero', mig5_ven: 'Llegó de Venezuela', life_cross: 'Nació en otro departamento', life_abroad: 'Nació en el extranjero', native_here: 'Nació aquí (retención)', youth_share: 'Población 15–29' };
+const origins = (p.od?.top_origins ?? []).map((x: any) => ({ k: x.id, label: x.name, v: x.flow, g: x.g }));
+const dests = (p.od?.top_destinations ?? []).map((x: any) => ({ k: x.id, label: x.name, v: x.flow, g: x.g }));
+---
+<Base title={`${p.name} · perfil migratorio`} wide image={`/share/${p.id}.png`}>
+  <div class="eyebrow" style="margin-top:28px"><a href="/atlas/">Atlas</a> › {p.region_nat} · ENAHO {p.year} · n = {p.n.toLocaleString('es-PE')} personas 5+ · {(p.pop5_weighted / 1e6).toFixed(2)} M representadas</div>
+  <div class="toolbar" style="justify-content:space-between"><h1 style="margin:0">{p.name}</h1><span><a class="btn primary" href={`/atlas/${p.id}/resumen/`}>Resumen de una página (PDF)</a></span></div>
+  {p.summary?.length > 0 && <div class="card summary"><div class="eyebrow">En cinco frases · generado desde las estimaciones</div><ol>{p.summary.map((t: string) => <li>{t}</li>)}</ol></div>}
+  <div class="grid grid-3">
+    {dims.map(d => <KpiTile label={d.label_es} cell={p.dims[d.id]} unit={d.unit === '%' ? '%' : d.unit === 'pp' ? ' pp' : d.unit === '‰' ? ' ‰' : ''} decimals={d.unit === 'ratio' ? 2 : d.id === 'mig5_cross' ? 2 : 1} note={p.rank?.[d.id] ? `Puesto ${p.rank[d.id]} de 25 · percentil ${p.pct[d.id]}` : undefined} kind={['net_rate', 'mig5_cross', 'out_rate', 'life_cross'].includes(d.id) ? 'informal' : 'formal'} />)}
+  </div>
+  <GradeLegend /><EmbedSnippet path="/atlas/net_rate/" />
+  {p.od && <section class="grid grid-2" style="margin-top:24px">
+    <div class="card"><h2>De dónde llegan</h2><p class="takeaway">Promedio anual 2020–2024 de personas que hace cinco años vivían en otro departamento.</p><BarDist client:visible items={origins} title="Principales orígenes (personas / año)" unit="" /></div>
+    <div class="card"><h2>A dónde se van</h2><p class="takeaway">Quienes vivían aquí hace cinco años y hoy viven en otro departamento (observados en destino).</p><BarDist client:visible items={dests} title="Principales destinos (personas / año)" unit="" color={1} /></div>
+  </section>}
+  <section class="grid grid-2" style="margin-top:24px">
+    <div class="card"><h2>Movilidad de la población</h2><div class="scroll-x"><table class="data"><tbody>{Object.entries(p.mobility).map(([k, c]: any) => <tr><td style="text-align:left">{mob[k]}</td><td>{f(c, k.startsWith('mig5') || k === 'life_abroad' ? 2 : 1)} %</td><td><span class={`badge ${c.g}`} /></td></tr>)}</tbody></table></div>
+      {p.flows && <p class="small muted">Inmigrantes 5 años: ~{p.flows.inm?.toLocaleString('es-PE')} · emigrantes: ~{p.flows.emi?.toLocaleString('es-PE')} · del extranjero: ~{p.flows.intl?.toLocaleString('es-PE')} (promedio anual 2020–2024 × 5).</p>}</div>
+    <div class="card"><h2>¿Cómo les va a los migrantes?</h2>{dumb.length ? <><p class="takeaway">Migrantes recientes (llegaron de otro departamento o país) frente a residentes de siempre, entre las personas de 14+ del departamento.</p><Dumbbell client:visible rows={dumb.filter(r => r.label !== 'Ingreso mediano')} title="Actividad, desempleo e informalidad (%)" unit="%" aLabel="Migrantes" bLabel="Locales" /><Dumbbell client:visible rows={dumb.filter(r => r.label === 'Ingreso mediano')} title="Ingreso mediano (S/ 2024)" unit="S/" aLabel="Migrantes" bLabel="Locales" /></> : <p class="muted">Sin desagregación para Lima Metropolitana / Lima Región.</p>}
+      {p.origin_outcomes?.informality?.v != null && <p class="small muted">Quienes salieron de {p.name}: informalidad {f(p.origin_outcomes.informality)} %, ingreso mediano S/ {f(p.origin_outcomes.median_inc_real, 0)} en destino.</p>}</div>
+  </section>
+  <section class="grid grid-2" style="margin-top:24px">
+    <div class="card"><h2>Tendencia 2014–2024</h2>{p.od?.net_rate_cells && <TrendLine client:visible years={p.od.years} unit="‰" title="Saldo migratorio neto por mil (IC 95 %)" series={[{ label: 'Saldo neto', cells: p.od.net_rate_cells }]} smooth={[p.od.net_rate_smooth]} height={220} />}<TrendLine client:visible years={h.years} unit="%" title={`${p.name}: inmigración reciente y nacidos fuera`} series={[{ label: 'Llegó de otro dpto. (5 años)', cells: p.trend.mig5_cross }, { label: 'Del extranjero (5 años)', cells: p.trend.mig5_intl }, { label: 'Nació en otro dpto.', cells: p.trend.life_cross }]} notes={{ '2018': 'Inicio de la pregunta de toda la vida', '2020': 'Pandemia' }} yZero /></div>
+    <div class="card"><h2>Comparar con otro departamento</h2>{!p.parent ? <RadarComparator client:visible regions={a.regions} dims={a.dims} a={p.id} /> : <p class="muted">El radar compara los 25 departamentos.</p>}</div>
+  </section>
+  {!p.parent && <section class="card" style="margin-top:24px"><h2>{p.name} en la matriz origen–destino</h2><ODMatrix client:visible matrix={fl.matrix} names={fl.dept_names} focus={p.id} /></section>}
+  <p class="small muted" style="margin-top:20px">Fuente: INEI – ENAHO {p.year} (módulos 200/400/500). Tasas de flujo promediadas 2020–2024. Errores estándar por linealización de Taylor. Descarga: <a href="/compendio/">compendio T03, T11–T13</a>.</p>
+  <style>.summary ol { margin: 0; padding-left: 20px; font-family: var(--font-serif); font-size: 1.05rem; line-height: 1.5; } .summary li { margin: 4px 0; }</style>
+</Base>

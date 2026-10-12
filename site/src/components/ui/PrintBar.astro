@@ -1,0 +1,4 @@
+---
+const { label = 'Imprimir / guardar como PDF' } = Astro.props;
+---
+<div class="printbar toolbar" style="justify-content:flex-end"><button class="btn" onclick="window.print()">🖨 {label}</button><span class="small muted">En el diálogo de impresión elige "Guardar como PDF".</span></div>

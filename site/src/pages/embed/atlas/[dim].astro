@@ -1,0 +1,8 @@
+---
+import Embed from '../../../layouts/Embed.astro';
+import AtlasMap from '../../../components/charts/AtlasMap';
+import { loadAtlas } from '../../../data/loaders';
+export async function getStaticPaths() { return loadAtlas().dims.map(d => ({ params: { dim: d.id } })); }
+const { dim } = Astro.params; const a = loadAtlas(); const d = a.dims.find(x => x.id === dim)!;
+---
+<Embed title={`${d.label_es} por departamento, ${a.year}`}><AtlasMap client:load regions={a.regions} dims={a.dims} year={a.year} initial={dim} compact showModeToggle={false} /></Embed>

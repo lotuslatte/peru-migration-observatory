@@ -1,0 +1,15 @@
+---
+const { compact = false } = Astro.props;
+---
+<div class={`glegend ${compact ? 'compact' : ''}`} role="note" aria-label="Cómo leer los sellos de confiabilidad">
+  <span class="k">Confiabilidad</span>
+  <span class="badge A"></span><span class="d">error relativo &lt; 15 %</span>
+  <span class="badge B"></span><span class="d">15–30 %: leer con cuidado</span>
+  <span class="badge S"></span><span class="d">≥ 30 % o menos de 30 casos: no se publica (—)</span>
+</div>
+<style>
+  .glegend { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-size: .78rem; color: var(--muted); margin: 8px 0 14px; }
+  .glegend .k { font-family: var(--font-mono); font-size: .68rem; text-transform: uppercase; letter-spacing: .08em; margin-right: 4px; }
+  .glegend .d { margin-right: 8px; }
+  .glegend.compact .d { display: none; }
+</style>

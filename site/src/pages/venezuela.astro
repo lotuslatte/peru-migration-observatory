@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+import GradeLegend from '../components/ui/GradeLegend.astro';
+import BarDist from '../components/charts/BarDist';
+import Dumbbell from '../components/charts/Dumbbell';
+import { loadVenezuela } from '../data/loaders';
+const vz = loadVenezuela(); const W = vz.waves; const w18 = W['2018'], w22 = W['2022'], w24 = W['2024'];
+const f = (c: any, n = 1) => c?.v == null ? '—' : c.v.toLocaleString('es-PE', { minimumFractionDigits: n, maximumFractionDigits: n });
+const inds = ['employed', 'informal', 'regular', 'superior', 'insured', 'remit', 'discrim', 'discrim_work', 'discrim_street', 'stay'];
+const row = (k: string) => ({ label: vz.indicators[k].label_es, a: { ...w24.all[k], label: '2024' }, b: { ...w18.all[k], label: '2018' } });
+const cohortBars = (w: any, k: string) => Object.entries(w.by_cohort).map(([c, cells]: any) => ({ k: c, label: c, ...cells[k] }));
+const statusBars = (w: any, k: string) => Object.entries(w.by_status).map(([c, cells]: any) => ({ k: c, label: c, ...cells[k] }));
+const geoBars = (w: any, k: string) => Object.entries(w.by_geo).sort((x: any, y: any) => (y[1].pop ?? 0) - (x[1].pop ?? 0)).map(([c, cells]: any) => ({ k: c, label: `${c} (${(cells.pop / 1000).toFixed(0)} mil)`, ...cells[k] }));
+const arr = Object.entries(w24.arrival_dist).map(([y, v]: any) => ({ k: y, label: y, v: v / 1000, g: 'A' }));
+---
+<Base title="Población venezolana" wide>
+  <div class="eyebrow" style="margin-top:28px">Migración internacional · ENPOVE 2018 · ENPOVE 2022 · ENAHO-PV 2024</div>
+  <h1>Un millón de personas <em>en tres encuestas.</em></h1>
+  <p class="lede">La ENAHO general apenas capta a la población extranjera (0,4 % llegó del exterior en cinco años). Para verla hace falta ir a las encuestas dirigidas a la población venezolana: ENPOVE 2018 (seis ciudades), ENPOVE 2022 (ocho ciudades) y la ENAHO de población venezolana 2024 (nacional). No son estrictamente comparables entre sí —cambia la cobertura— pero cuentan la misma trayectoria: llegada masiva, regularización a saltos, e inserción laboral casi enteramente informal.</p>
+  <div class="grid grid-3">
+    {['2018', '2022', '2024'].map(y => <div class="card"><div class="eyebrow">{vz.sources[y]}</div><div class="kpi informal" style="border:0;padding:8px 0"><div class="n">{(W[y].pop / 1e6).toFixed(2)}<span class="u"> M</span></div><div class="l">personas representadas · n = {W[y].n.toLocaleString('es-PE')}</div></div>
+      <table class="data"><tbody>{['employed', 'informal', 'regular', 'discrim', 'stay'].map(k => <tr><td style="text-align:left">{vz.indicators[k].label_es}</td><td>{f(W[y].all[k])}{W[y].all[k].v == null ? '' : ' %'}</td><td><span class={`badge compact ${W[y].all[k].g}`} /></td></tr>)}</tbody></table></div>)}
+  </div>
+  <GradeLegend />
+  <section class="grid grid-2" style="margin-top:20px">
+    <div class="card"><h2>2018 → 2024: lo que cambió</h2><p class="takeaway">La regularización avanzó (de {f(w22.all.regular)} % con permiso en 2022 a {f(w24.all.regular)} % en 2024) y la discriminación declarada bajó de {f(w18.all.discrim)} % a {f(w24.all.discrim)} %, pero la informalidad apenas se movió: <b>{f(w18.all.informal)} % → {f(w24.all.informal)} %</b>.</p>
+      <Dumbbell client:visible rows={['employed', 'informal', 'regular', 'superior', 'discrim', 'discrim_work', 'discrim_street', 'stay'].map(row)} title="Indicadores 2018 vs 2024 (%)" unit="%" aLabel="2024 (nacional)" bLabel="2018 (6 ciudades)" /></div>
+    <div class="card"><h2>Llegar después cuesta más</h2><p class="takeaway">A igual encuesta, quienes llegaron a partir de 2020 tienen más informalidad que quienes llegaron antes de 2018: el tiempo en el país es el mejor predictor de inserción.</p>
+      <BarDist client:visible items={cohortBars(w24, 'informal')} title="Informalidad por año de llegada, 2024 (%)" /><BarDist client:visible items={cohortBars(w22, 'informal')} title="Informalidad por año de llegada, 2022 (%)" color={1} /></div>
+  </section>
+  <section class="grid grid-2" style="margin-top:20px">
+    <div class="card"><h2>El permiso importa, pero no basta</h2><p class="takeaway">Quienes tienen carné de extranjería trabajan con menos informalidad que quienes no tienen permiso —pero incluso con carné la informalidad supera el 75 %.</p><BarDist client:visible items={statusBars(w24, 'informal')} title="Informalidad por situación migratoria, 2024 (%)" /><BarDist client:visible items={statusBars(w22, 'informal')} title="Informalidad por situación migratoria, 2022 (%)" color={1} /></div>
+    <div class="card"><h2>Dónde viven y cuándo llegaron</h2><BarDist client:visible items={geoBars(w24, 'informal')} title="Informalidad por departamento, 2024 (%) · entre paréntesis, población" /><BarDist client:visible items={arr} title="Año de llegada al Perú (miles de personas, ENAHO-PV 2024)" unit="" color={2} /></div>
+  </section>
+  <section class="card" style="margin-top:20px"><h2>La misma cohorte, tres encuestas</h2><p class="takeaway">Siguiendo a quienes llegaron antes de 2018 a través de las tres encuestas, la informalidad pasa de {f(vz.cohort_series['Hasta 2017'].informal['2018'])} % (2018) a {f(vz.cohort_series['Hasta 2017'].informal['2022'])} % (2022) y {f(vz.cohort_series['Hasta 2017'].informal['2024'])} % (2024): el tiempo mejora la inserción, pero muy lentamente y sin acercarse a la formalidad de los peruanos.</p>
+    <div class="scroll-x"><table class="data"><thead><tr><th style="text-align:left">Cohorte de llegada</th><th style="text-align:left">Indicador</th><th>2018</th><th>2022</th><th>2024</th></tr></thead><tbody>{Object.entries(vz.cohort_series).flatMap(([c, inds]: any) => ['employed', 'informal', 'regular', 'discrim', 'stay'].map(k => <tr><td style="text-align:left">{c}</td><td style="text-align:left">{vz.indicators[k].label_es}</td>{['2018', '2022', '2024'].map(y => <td>{f(inds[k][y])}{inds[k][y]?.v == null ? '' : ' %'} {inds[k][y] && <span class={`badge compact ${inds[k][y].g}`} />}</td>)}</tr>))}</tbody></table></div><p class="small muted">Las encuestas no son un panel: cada ola es una muestra nueva; la comparación por cohorte de llegada aproxima la trayectoria.</p></section>
+  <section class="card" style="margin-top:20px"><h2>Mujeres y hombres</h2><div class="grid grid-3">{['2018', '2022', '2024'].map(y => <div><div class="eyebrow">{y}</div><table class="data"><thead><tr><th style="text-align:left">Indicador</th><th>Hombres</th><th>Mujeres</th></tr></thead><tbody>{['employed', 'informal', 'income', 'discrim', 'remit'].map(k => <tr><td style="text-align:left">{vz.indicators[k].label_es}</td><td>{f(W[y].by_sex['1'][k], k === 'income' ? 0 : 1)}</td><td>{f(W[y].by_sex['2'][k], k === 'income' ? 0 : 1)}</td></tr>)}</tbody></table></div>)}</div></section>
+  <p class="small muted" style="margin-top:16px">Informalidad: ENPOVE = asalariados sin contrato firmado + independientes y familiares no remunerados (definición de Samillan, VZ_regularization); ENAHO-PV 2024 = <code>ocupinf</code> de INEI. Ingreso 2024 no comparable (variable anualizada) y se omite. Descarga: <a href="/data/compendium/T15.csv">T15</a>, <a href="/data/venezuela.json">venezuela.json</a>.</p>
+</Base>

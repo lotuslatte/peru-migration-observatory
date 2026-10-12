@@ -1,0 +1,52 @@
+---
+import '../styles/global.css';
+import '../styles/print.css';
+import Nav from '../components/ui/Nav.astro';
+import CommandPalette from '../components/charts/CommandPalette';
+import { loadAtlas } from '../data/loaders';
+interface Props { title: string; description?: string; wide?: boolean; image?: string }
+const { title, description = 'Observatorio abierto de la migración interna e internacional en el Perú a partir de microdatos del INEI (ENAHO 2014–2024, ENPOVE 2018/2022, ENAHO-PV 2024).', wide = false, image = '/share/default.png' } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://example.org').toString();
+const ogImage = new URL(image, Astro.site ?? 'https://example.org').toString();
+const regions = loadAtlas().regions.map(r => ({ id: r.id, name: r.name }));
+---
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} · Observatorio de Migración del Perú</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Favio Samillan Flores" />
+    <meta property="og:type" content="website" /><meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:url" content={canonical} /><meta property="og:image" content={ogImage} /><meta property="og:locale" content="es_PE" />
+    <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={title} /><meta name="twitter:description" content={description} /><meta name="twitter:image" content={ogImage} />
+    <link rel="canonical" href={canonical} />
+    <link rel="author" href="https://lotuslatte.github.io/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100;1,9..144,400..700,0..100&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <script is:inline>
+      (function(){try{var t=localStorage.getItem('olp-theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();
+    </script>
+  </head>
+  <body>
+    <a class="sr-only" href="#main">Saltar al contenido</a>
+    <Nav />
+    <main id="main" class={wide ? 'wrap wrap-wide' : 'wrap'}>
+      <slot />
+    </main>
+    <footer class="wrap footer">
+      <div>
+        <strong>Observatorio de Migración del Perú</strong> · Fuente: INEI – Encuesta Nacional de Hogares (ENAHO) 2014–2024, módulo 500.
+        Estimaciones con factores oficiales y errores estándar de diseño. Licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a>.
+      </div>
+      <div class="credit">Creado por <a href="https://lotuslatte.github.io/" rel="author">Favio Samillan Flores</a> · economista (PUCP) · <a href="https://www.linkedin.com/in/favio-samillan-flores-367054295/" rel="me">LinkedIn</a></div>
+      <div class="muted small">Código y datos reproducibles · <a href="/acerca/metodologia/">Metodología</a> · <a href="/datos/">Descargas</a> · <a href="/acerca/">Acerca de</a></div>
+    </footer>
+    <CommandPalette client:idle regions={regions} />
+    <style>
+      .credit { font-family: var(--font-serif); font-size: 1.05rem; } .credit a { color: var(--informal); }
+      .footer { margin-top: 64px; padding: 28px 20px 48px; border-top: 1px solid var(--line); display: grid; gap: 8px; font-size: .9rem; color: var(--ink-2); }
+      .wrap-wide { max-width: 1380px; }
+    </style>
+  </body>
+</html>

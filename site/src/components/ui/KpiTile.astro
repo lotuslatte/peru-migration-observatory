@@ -1,0 +1,19 @@
+---
+interface Delta { d: number; se: number | null; sig: boolean }
+import Sparkline from '../charts/Sparkline';
+interface Props { spark?: { v: number | null }[]; label: string; cell: { v: number | null; g: string; lo?: number; hi?: number; n?: number }; unit?: string; decimals?: number; note?: string; code?: string; delta?: Delta | null; deltaLabel?: string; higherBetter?: boolean; kind?: 'formal' | 'informal' }
+const { label, cell, unit = '%', decimals = 1, note, code, delta, deltaLabel = 'vs. 2023', higherBetter = true, kind = 'formal', spark } = Astro.props;
+const fmt = (x: number | null | undefined) => x == null ? '—' : x.toLocaleString('es-PE', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+const dUnit = unit === '%' ? ' pp' : unit === ' pp' ? ' pp' : ' S/';
+const dv = delta ? (Math.abs(delta.d) < 0.05 ? 0 : delta.d) : 0;
+const cls = delta ? (!delta.sig ? 'flat' : ((delta.d > 0) === higherBetter ? 'good' : 'badv')) : '';
+---
+<div class={`kpi ${kind}`}>
+  {code && <span class="code" style="position:absolute;right:10px;top:8px">{code}</span>}
+  <div class="n">{cell.v == null ? '—' : fmt(cell.v)}<span class="u">{cell.v == null ? '' : unit}</span>{spark && <span class="sp"><Sparkline cells={spark} color={kind === 'informal' ? 'var(--informal)' : 'var(--formal)'} /></span>}</div>
+<style>.kpi .n { display: flex; align-items: flex-end; gap: 10px; } .kpi .sp { margin-left: auto; opacity: .85; }</style>
+  <div class="l">{label}</div>
+  <div class="ci"><span class={`badge ${cell.g}`}></span>{cell.lo != null && <span> · IC 95 % {fmt(cell.lo)}–{fmt(cell.hi)}</span>}</div>
+  {delta && <div class={`delta ${cls}`}>{delta.sig ? (delta.d > 0 ? '▲' : '▼') : '≈'} {dv > 0 ? '+' : ''}{dv.toLocaleString('es-PE', { maximumFractionDigits: decimals })}{dUnit} {deltaLabel}{delta.sig ? '' : ' (sin cambio significativo)'}</div>}
+  {note && <div class="ci">{note}</div>}
+</div>

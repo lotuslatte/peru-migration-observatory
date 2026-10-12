@@ -1,0 +1,28 @@
+---
+import Base from '../layouts/Base.astro';
+import BivariateScatter from '../components/charts/BivariateScatter';
+import BarDist from '../components/charts/BarDist';
+import { loadClimate, loadDrought } from '../data/loaders';
+import CoefPlot from '../components/charts/CoefPlot';
+const c = loadClimate(); const dr = loadDrought();
+const dm = (s: any) => ({ ...s, label_es: s.label, key: s.exposure, key_label: s.label, raw_gap: s.raw, adj_gap: s.adj, unit: 'pp', controls: ['edad', 'sexo', 'educación', 'área', 'región', 'año'], n: s.n, r2: s.r2 });
+const terc = (v: string, k: string) => c.terciles[v].map((t: any) => ({ k: t.tercile, label: ['Tercil 1 (menor exposición)', 'Tercil 2', 'Tercil 3 (mayor exposición)'][t.tercile - 1], v: t[k], g: 'A' }));
+// scatter needs region-like objects; build from dept-year points averaged over years
+const byDept: Record<string, any> = {};
+c.points.forEach((p: any) => { const b = byDept[p.dept] ??= { id: p.dept, name: p.name, region_nat: p.region_nat, parent: null, n: 0, s: {} }; b.n++; ['out_rate', 'in_rate', 'net_rate', 'dry_years', 'hot_years', 'temp_anom', 'precip_anom', 'climate_risk_index'].forEach(k => { b.s[k] = (b.s[k] ?? 0) + (p[k] ?? 0); }); });
+const regions = Object.values(byDept).map((b: any) => ({ id: b.id, name: b.name, region_nat: b.region_nat, parent: null, values: Object.fromEntries(Object.entries(b.s).map(([k, v]: any) => [k, { v: +(v / b.n).toFixed(3), g: 'A', n: b.n }])) }));
+const dims = [{ id: 'out_rate', label_es: 'Tasa de emigración (%, prom. 2014–2023)', unit: '%' }, { id: 'in_rate', label_es: 'Tasa de inmigración (%)', unit: '%' }, { id: 'net_rate', label_es: 'Saldo neto (‰)', unit: '‰' }, { id: 'dry_years', label_es: 'Años secos (n, últimos 5)', unit: '' }, { id: 'hot_years', label_es: 'Años cálidos (n)', unit: '' }, { id: 'temp_anom', label_es: 'Anomalía de temperatura (°C vs 1991–2020)', unit: '' }, { id: 'precip_anom', label_es: 'Anomalía de precipitación (mm)', unit: '' }, { id: 'climate_risk_index', label_es: 'Índice de riesgo climático', unit: '' }];
+---
+<Base title="Clima y migración" wide>
+  <div class="eyebrow" style="margin-top:28px">Clima y migración · ENAHO 2014–2023 × ERA5/CHIRPS</div>
+  <h1>¿Expulsan las sequías? <em>Los datos no lo muestran.</em></h1>
+  <p class="lede">Cruzamos la tasa de emigración de cada departamento-año con la exposición climática promedio de sus distritos (anomalías de temperatura y lluvia respecto a 1991–2020, años secos y cálidos), tomada del panel distrital de <em>peru_climate_integrated</em>. Es una lectura descriptiva —no causal— del vínculo que la literatura documenta para los Andes.</p>
+  <section class="grid grid-2">
+    <div class="card"><h2>Emigración por tercil de exposición</h2><p class="takeaway">Contra la intuición, los departamentos-año más expuestos a años secos muestran <b>menos</b> emigración ({c.terciles.dry_years[2].out_rate} % vs {c.terciles.dry_years[0].out_rate} %). Pero esa diferencia desaparece con controles (ver abajo): los departamentos secos son también más rurales y andinos, donde se migra menos por otras razones.</p>
+      <BarDist client:visible items={terc('dry_years', 'out_rate')} title="Tasa de emigración por tercil de años secos (%)" /><BarDist client:visible items={terc('temp_anom', 'out_rate')} title="Tasa de emigración por tercil de anomalía térmica (%)" color={1} /><BarDist client:visible items={terc('climate_risk_index', 'net_rate')} title="Saldo neto por tercil del índice de riesgo (‰)" unit="‰" color={2} /></div>
+    <div class="card"><h2>Departamentos: exposición y salida</h2><p class="takeaway">Correlaciones departamento-año con la tasa de emigración: {Object.entries(c.corr_out_rate).map(([k, v]: any) => `${k} ${v == null ? '—' : v}`).join(' · ')}.</p>
+      <BivariateScatter client:visible regions={regions as any} dims={dims as any} x0="dry_years" y0="out_rate" /></div>
+  </section>
+  <section class="card" style="margin-top:20px"><h2>Con controles individuales: sin efecto detectable</h2><p class="takeaway">A nivel de persona (2019–2023, n = {dr.specs.dry.n.toLocaleString('es-PE')}), un año seco adicional en el departamento de origen cambia la probabilidad de haber emigrado en <b>{dr.specs.dry.adj.v} pp</b> (IC {dr.specs.dry.adj.lo} a {dr.specs.dry.adj.hi}); agrupando errores por departamento de origen el intervalo se ensancha aún más. Las anomalías térmica y de lluvia tampoco son significativas. Con los datos disponibles no se puede afirmar que el clima expulse ni que atrape: el patrón descriptivo de terciles desaparece al controlar por ruralidad y región.</p><div class="grid grid-3">{['dry', 'temp', 'precip'].map(k => <CoefPlot client:visible model={dm(dr.specs[k])} title={dr.specs[k].label} />)}</div><p class="small muted">{dr.note}</p></section>
+  <p class="small muted" style="margin-top:16px">{c.note} Descarga: <a href="/data/compendium/T16.csv">T16</a>, <a href="/data/climate.json">climate.json</a>.</p>
+</Base>

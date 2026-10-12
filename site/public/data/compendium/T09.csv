@@ -1,0 +1,273 @@
+table_id,year,domain,row_key,row_label,indicator,category,col_label,estimate,se,rse,ci_lo,ci_hi,n,grade,unit
+T09,2024,age4_mig2,1|1,14–24 × No migrante,contract_any,,Asalariados con contrato,33.426,1.056,3.158,31.357,35.495,4793,A,%
+T09,2024,age4_mig2,1|1,14–24 × No migrante,informality,,Empleo informal,84.64,0.673,0.795,83.32,85.959,7996,A,%
+T09,2024,age4_mig2,1|1,14–24 × No migrante,lfpr,,Tasa de actividad (14+),48.663,0.567,1.166,47.551,49.775,18876,A,%
+T09,2024,age4_mig2,1|1,14–24 × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1022.083,6.675,0.653,1000.583,1026.75,5967,A,S/
+T09,2024,age4_mig2,1|1,14–24 × No migrante,neet,,NiNi 15–29,22.156,0.518,2.34,21.14,23.172,16730,A,%
+T09,2024,age4_mig2,1|1,14–24 × No migrante,pension,,Ocupados con pensión,20.358,0.707,3.474,18.972,21.745,7996,A,%
+T09,2024,age4_mig2,1|1,14–24 × No migrante,self_emp,,Independientes,15.158,0.571,3.767,14.039,16.278,7996,A,%
+T09,2024,age4_mig2,1|1,14–24 × No migrante,ur,,Tasa de desempleo,11.579,0.558,4.815,10.487,12.672,8826,A,%
+T09,2024,age4_mig2,1|2,14–24 × Migrante reciente (otro dpto. o país),contract_any,,Asalariados con contrato,36.737,4.844,13.186,27.242,46.231,207,A,%
+T09,2024,age4_mig2,1|2,14–24 × Migrante reciente (otro dpto. o país),informality,,Empleo informal,84.12,2.79,3.317,78.651,89.589,325,A,%
+T09,2024,age4_mig2,1|2,14–24 × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),56.844,2.931,5.155,51.1,62.587,673,A,%
+T09,2024,age4_mig2,1|2,14–24 × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1228.417,52.913,4.307,1103.583,1311.0,264,A,S/
+T09,2024,age4_mig2,1|2,14–24 × Migrante reciente (otro dpto. o país),neet,,NiNi 15–29,20.258,2.353,11.617,15.645,24.87,621,A,%
+T09,2024,age4_mig2,1|2,14–24 × Migrante reciente (otro dpto. o país),pension,,Ocupados con pensión,23.858,3.135,13.14,17.714,30.002,325,A,%
+T09,2024,age4_mig2,1|2,14–24 × Migrante reciente (otro dpto. o país),self_emp,,Independientes,19.669,3.277,16.661,13.247,26.092,325,B,%
+T09,2024,age4_mig2,1|2,14–24 × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,6.443,1.729,26.841,3.053,9.832,355,B,%
+T09,2024,age4_mig2,2|1,25–44 × No migrante,contract_any,,Asalariados con contrato,56.063,0.792,1.413,54.51,57.615,11087,A,%
+T09,2024,age4_mig2,2|1,25–44 × No migrante,informality,,Empleo informal,68.715,0.556,0.809,67.626,69.804,21143,A,%
+T09,2024,age4_mig2,2|1,25–44 × No migrante,lfpr,,Tasa de actividad (14+),84.196,0.33,0.392,83.549,84.843,25891,A,%
+T09,2024,age4_mig2,2|1,25–44 × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1405.917,16.582,1.179,1373.167,1438.167,19523,A,S/
+T09,2024,age4_mig2,2|1,25–44 × No migrante,neet,,NiNi 15–29,20.342,0.757,3.72,18.859,21.825,6016,A,%
+T09,2024,age4_mig2,2|1,25–44 × No migrante,pension,,Ocupados con pensión,43.476,0.595,1.369,42.31,44.643,21143,A,%
+T09,2024,age4_mig2,2|1,25–44 × No migrante,self_emp,,Independientes,33.99,0.465,1.368,33.079,34.902,21143,A,%
+T09,2024,age4_mig2,2|1,25–44 × No migrante,ur,,Tasa de desempleo,4.012,0.199,4.952,3.623,4.402,21882,A,%
+T09,2024,age4_mig2,2|2,25–44 × Migrante reciente (otro dpto. o país),contract_any,,Asalariados con contrato,46.502,2.995,6.442,40.631,52.373,645,A,%
+T09,2024,age4_mig2,2|2,25–44 × Migrante reciente (otro dpto. o país),informality,,Empleo informal,75.679,1.826,2.412,72.101,79.258,1120,A,%
+T09,2024,age4_mig2,2|2,25–44 × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),82.831,1.478,1.784,79.935,85.728,1395,A,%
+T09,2024,age4_mig2,2|2,25–44 × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1435.083,53.594,3.735,1300.667,1510.75,1045,A,S/
+T09,2024,age4_mig2,2|2,25–44 × Migrante reciente (otro dpto. o país),neet,,NiNi 15–29,18.572,2.658,14.314,13.361,23.782,467,A,%
+T09,2024,age4_mig2,2|2,25–44 × Migrante reciente (otro dpto. o país),pension,,Ocupados con pensión,42.494,2.137,5.029,38.306,46.683,1120,A,%
+T09,2024,age4_mig2,2|2,25–44 × Migrante reciente (otro dpto. o país),self_emp,,Independientes,32.445,1.929,5.945,28.664,36.225,1120,A,%
+T09,2024,age4_mig2,2|2,25–44 × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,4.301,0.906,21.071,2.525,6.078,1161,B,%
+T09,2024,age4_mig2,3|1,45–64 × No migrante,contract_any,,Asalariados con contrato,58.328,0.952,1.633,56.462,60.195,7384,A,%
+T09,2024,age4_mig2,3|1,45–64 × No migrante,informality,,Empleo informal,70.398,0.588,0.835,69.245,71.551,20351,A,%
+T09,2024,age4_mig2,3|1,45–64 × No migrante,lfpr,,Tasa de actividad (14+),82.07,0.375,0.457,81.335,82.805,24517,A,%
+T09,2024,age4_mig2,3|1,45–64 × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1271.833,13.244,1.041,1243.25,1295.167,18562,A,S/
+T09,2024,age4_mig2,3|1,45–64 × No migrante,neet,,NiNi 15–29,,,,,,0,S,%
+T09,2024,age4_mig2,3|1,45–64 × No migrante,pension,,Ocupados con pensión,37.867,0.594,1.568,36.703,39.031,20351,A,%
+T09,2024,age4_mig2,3|1,45–64 × No migrante,self_emp,,Independientes,47.408,0.546,1.151,46.338,48.478,20351,A,%
+T09,2024,age4_mig2,3|1,45–64 × No migrante,ur,,Tasa de desempleo,2.428,0.175,7.187,2.086,2.77,20715,A,%
+T09,2024,age4_mig2,3|2,45–64 × Migrante reciente (otro dpto. o país),contract_any,,Asalariados con contrato,54.285,6.582,12.125,41.384,67.186,123,A,%
+T09,2024,age4_mig2,3|2,45–64 × Migrante reciente (otro dpto. o país),informality,,Empleo informal,75.321,3.47,4.607,68.519,82.123,326,A,%
+T09,2024,age4_mig2,3|2,45–64 × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),78.941,3.092,3.917,72.881,85.001,401,A,%
+T09,2024,age4_mig2,3|2,45–64 × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1356.75,115.67,8.525,1200.917,1654.333,301,A,S/
+T09,2024,age4_mig2,3|2,45–64 × Migrante reciente (otro dpto. o país),neet,,NiNi 15–29,,,,,,0,S,%
+T09,2024,age4_mig2,3|2,45–64 × Migrante reciente (otro dpto. o país),pension,,Ocupados con pensión,39.263,3.913,9.967,31.593,46.932,326,A,%
+T09,2024,age4_mig2,3|2,45–64 × Migrante reciente (otro dpto. o país),self_emp,,Independientes,49.171,3.942,8.016,41.446,56.897,326,A,%
+T09,2024,age4_mig2,3|2,45–64 × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,331,S,%
+T09,2024,age4_mig2,4|1,65 y más × No migrante,contract_any,,Asalariados con contrato,49.05,2.587,5.273,43.98,54.119,1001,A,%
+T09,2024,age4_mig2,4|1,65 y más × No migrante,informality,,Empleo informal,86.228,0.738,0.856,84.781,87.675,6999,A,%
+T09,2024,age4_mig2,4|1,65 y más × No migrante,lfpr,,Tasa de actividad (14+),46.877,0.7,1.492,45.506,48.248,13547,A,%
+T09,2024,age4_mig2,4|1,65 y más × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),569.314,18.049,3.17,534.0,604.75,6184,A,S/
+T09,2024,age4_mig2,4|1,65 y más × No migrante,neet,,NiNi 15–29,,,,,,0,S,%
+T09,2024,age4_mig2,4|1,65 y más × No migrante,pension,,Ocupados con pensión,28.134,0.933,3.315,26.306,29.961,6999,A,%
+T09,2024,age4_mig2,4|1,65 y más × No migrante,self_emp,,Independientes,66.432,0.88,1.324,64.708,68.157,6999,A,%
+T09,2024,age4_mig2,4|1,65 y más × No migrante,ur,,Tasa de desempleo,3.483,0.394,11.319,2.71,4.256,7147,A,%
+T09,2024,age4_mig2,4|2,65 y más × Migrante reciente (otro dpto. o país),contract_any,,Asalariados con contrato,,,,,,6,S,%
+T09,2024,age4_mig2,4|2,65 y más × Migrante reciente (otro dpto. o país),informality,,Empleo informal,93.104,3.642,3.912,85.965,100.242,78,A,%
+T09,2024,age4_mig2,4|2,65 y más × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),35.562,5.404,15.197,24.969,46.154,178,B,%
+T09,2024,age4_mig2,4|2,65 y más × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),494.083,82.846,16.768,289.833,614.583,65,B,S/
+T09,2024,age4_mig2,4|2,65 y más × Migrante reciente (otro dpto. o país),neet,,NiNi 15–29,,,,,,0,S,%
+T09,2024,age4_mig2,4|2,65 y más × Migrante reciente (otro dpto. o país),pension,,Ocupados con pensión,42.675,5.874,13.764,31.162,54.188,78,A,%
+T09,2024,age4_mig2,4|2,65 y más × Migrante reciente (otro dpto. o país),self_emp,,Independientes,72.403,6.23,8.604,60.193,84.613,78,A,%
+T09,2024,age4_mig2,4|2,65 y más × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,80,S,%
+T09,2024,area_mig2,1|1,Urbano × No migrante,contract_any,,Asalariados con contrato,55.031,0.672,1.222,53.713,56.348,19430,A,%
+T09,2024,area_mig2,1|1,Urbano × No migrante,informality,,Empleo informal,67.617,0.481,0.711,66.675,68.559,35866,A,%
+T09,2024,area_mig2,1|1,Urbano × No migrante,lfpr,,Tasa de actividad (14+),69.472,0.266,0.382,68.952,69.993,56000,A,%
+T09,2024,area_mig2,1|1,Urbano × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1325.403,11.735,0.885,1305.0,1351.0,34042,A,S/
+T09,2024,area_mig2,1|1,Urbano × No migrante,neet,,NiNi 15–29,22.453,0.52,2.317,21.433,23.472,15920,A,%
+T09,2024,area_mig2,1|1,Urbano × No migrante,pension,,Ocupados con pensión,42.832,0.51,1.191,41.833,43.832,35866,A,%
+T09,2024,area_mig2,1|1,Urbano × No migrante,self_emp,,Independientes,34.772,0.374,1.076,34.039,35.505,35866,A,%
+T09,2024,area_mig2,1|1,Urbano × No migrante,ur,,Tasa de desempleo,5.493,0.178,3.248,5.143,5.843,37703,A,%
+T09,2024,area_mig2,1|2,Urbano × Migrante reciente (otro dpto. o país),contract_any,,Asalariados con contrato,47.039,2.61,5.549,41.923,52.155,774,A,%
+T09,2024,area_mig2,1|2,Urbano × Migrante reciente (otro dpto. o país),informality,,Empleo informal,74.626,1.659,2.223,71.375,77.877,1283,A,%
+T09,2024,area_mig2,1|2,Urbano × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),71.58,1.47,2.054,68.697,74.462,1912,A,%
+T09,2024,area_mig2,1|2,Urbano × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1422.349,48.13,3.384,1311.0,1499.667,1205,A,S/
+T09,2024,area_mig2,1|2,Urbano × Migrante reciente (otro dpto. o país),neet,,NiNi 15–29,20.808,1.993,9.58,16.901,24.715,797,A,%
+T09,2024,area_mig2,1|2,Urbano × Migrante reciente (otro dpto. o país),pension,,Ocupados con pensión,41.344,1.953,4.723,37.517,45.17,1283,A,%
+T09,2024,area_mig2,1|2,Urbano × Migrante reciente (otro dpto. o país),self_emp,,Independientes,30.751,1.809,5.882,27.205,34.296,1283,A,%
+T09,2024,area_mig2,1|2,Urbano × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,5.109,0.819,16.033,3.504,6.715,1354,B,%
+T09,2024,area_mig2,2|1,Rural × No migrante,contract_any,,Asalariados con contrato,27.072,0.943,3.485,25.223,28.922,4835,A,%
+T09,2024,area_mig2,2|1,Rural × No migrante,informality,,Empleo informal,94.001,0.29,0.308,93.433,94.568,20623,A,%
+T09,2024,area_mig2,2|1,Rural × No migrante,lfpr,,Tasa de actividad (14+),78.485,0.33,0.421,77.838,79.132,26831,A,%
+T09,2024,area_mig2,2|1,Rural × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),727.75,10.747,1.477,707.372,749.5,16194,A,S/
+T09,2024,area_mig2,2|1,Rural × No migrante,neet,,NiNi 15–29,17.758,0.605,3.409,16.571,18.944,6826,A,%
+T09,2024,area_mig2,2|1,Rural × No migrante,pension,,Ocupados con pensión,14.366,0.436,3.034,13.512,15.22,20623,A,%
+T09,2024,area_mig2,2|1,Rural × No migrante,self_emp,,Independientes,48.577,0.453,0.933,47.689,49.466,20623,A,%
+T09,2024,area_mig2,2|1,Rural × No migrante,ur,,Tasa de desempleo,1.689,0.136,8.024,1.423,1.954,20867,A,%
+T09,2024,area_mig2,2|2,Rural × Migrante reciente (otro dpto. o país),contract_any,,Asalariados con contrato,30.07,4.184,13.915,21.869,38.271,207,A,%
+T09,2024,area_mig2,2|2,Rural × Migrante reciente (otro dpto. o país),informality,,Empleo informal,92.013,1.496,1.626,89.08,94.946,566,A,%
+T09,2024,area_mig2,2|2,Rural × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),81.116,2.015,2.484,77.167,85.064,735,A,%
+T09,2024,area_mig2,2|2,Rural × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),950.667,60.843,6.4,797.583,1036.083,470,A,S/
+T09,2024,area_mig2,2|2,Rural × Migrante reciente (otro dpto. o país),neet,,NiNi 15–29,12.931,2.376,18.374,8.274,17.588,291,B,%
+T09,2024,area_mig2,2|2,Rural × Migrante reciente (otro dpto. o país),pension,,Ocupados con pensión,23.448,2.258,9.631,19.022,27.874,566,A,%
+T09,2024,area_mig2,2|2,Rural × Migrante reciente (otro dpto. o país),self_emp,,Independientes,41.517,2.457,5.919,36.701,46.333,566,A,%
+T09,2024,area_mig2,2|2,Rural × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,573,S,%
+T09,2024,educ4_mig2,1|1,Hasta primaria × No migrante,contract_any,,Asalariados con contrato,19.516,1.055,5.407,17.448,21.584,3078,A,%
+T09,2024,educ4_mig2,1|1,Hasta primaria × No migrante,informality,,Empleo informal,94.422,0.303,0.321,93.828,95.016,16743,A,%
+T09,2024,educ4_mig2,1|1,Hasta primaria × No migrante,lfpr,,Tasa de actividad (14+),68.885,0.495,0.719,67.914,69.856,23667,A,%
+T09,2024,educ4_mig2,1|1,Hasta primaria × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),715.583,12.468,1.742,691.25,740.125,13816,A,S/
+T09,2024,educ4_mig2,1|1,Hasta primaria × No migrante,neet,,NiNi 15–29,37.622,1.962,5.215,33.777,41.468,1222,A,%
+T09,2024,educ4_mig2,1|1,Hasta primaria × No migrante,pension,,Ocupados con pensión,13.469,0.461,3.425,12.564,14.373,16743,A,%
+T09,2024,educ4_mig2,1|1,Hasta primaria × No migrante,self_emp,,Independientes,58.862,0.561,0.952,57.763,59.96,16743,A,%
+T09,2024,educ4_mig2,1|1,Hasta primaria × No migrante,ur,,Tasa de desempleo,2.435,0.22,9.046,2.003,2.866,17010,A,%
+T09,2024,educ4_mig2,1|2,Hasta primaria × Migrante reciente (otro dpto. o país),contract_any,,Asalariados con contrato,23.46,6.735,28.709,10.259,36.661,83,B,%
+T09,2024,educ4_mig2,1|2,Hasta primaria × Migrante reciente (otro dpto. o país),informality,,Empleo informal,93.237,2.7,2.896,87.945,98.529,272,A,%
+T09,2024,educ4_mig2,1|2,Hasta primaria × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),60.068,3.576,5.954,53.058,67.077,425,A,%
+T09,2024,educ4_mig2,1|2,Hasta primaria × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),877.917,135.908,15.481,690.417,1223.167,234,B,S/
+T09,2024,educ4_mig2,1|2,Hasta primaria × Migrante reciente (otro dpto. o país),neet,,NiNi 15–29,29.504,8.344,28.281,13.15,45.858,44,B,%
+T09,2024,educ4_mig2,1|2,Hasta primaria × Migrante reciente (otro dpto. o país),pension,,Ocupados con pensión,15.447,3.284,21.26,9.011,21.884,272,B,%
+T09,2024,educ4_mig2,1|2,Hasta primaria × Migrante reciente (otro dpto. o país),self_emp,,Independientes,51.19,4.714,9.208,41.951,60.429,272,A,%
+T09,2024,educ4_mig2,1|2,Hasta primaria × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,279,S,%
+T09,2024,educ4_mig2,2|1,Secundaria × No migrante,contract_any,,Asalariados con contrato,34.574,0.813,2.353,32.98,36.168,9754,A,%
+T09,2024,educ4_mig2,2|1,Secundaria × No migrante,informality,,Empleo informal,82.361,0.409,0.497,81.559,83.163,22669,A,%
+T09,2024,educ4_mig2,2|1,Secundaria × No migrante,lfpr,,Tasa de actividad (14+),67.685,0.354,0.523,66.991,68.38,35582,A,%
+T09,2024,educ4_mig2,2|1,Secundaria × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1165.083,14.435,1.239,1136.5,1193.083,20039,A,S/
+T09,2024,educ4_mig2,2|1,Secundaria × No migrante,neet,,NiNi 15–29,24.813,0.592,2.387,23.652,25.974,13085,A,%
+T09,2024,educ4_mig2,2|1,Secundaria × No migrante,pension,,Ocupados con pensión,28.926,0.506,1.749,27.934,29.917,22669,A,%
+T09,2024,educ4_mig2,2|1,Secundaria × No migrante,self_emp,,Independientes,39.557,0.478,1.207,38.621,40.493,22669,A,%
+T09,2024,educ4_mig2,2|1,Secundaria × No migrante,ur,,Tasa de desempleo,5.145,0.233,4.53,4.688,5.601,23599,A,%
+T09,2024,educ4_mig2,2|2,Secundaria × Migrante reciente (otro dpto. o país),contract_any,,Asalariados con contrato,32.647,3.104,9.508,26.563,38.731,452,A,%
+T09,2024,educ4_mig2,2|2,Secundaria × Migrante reciente (otro dpto. o país),informality,,Empleo informal,83.642,1.775,2.122,80.164,87.12,883,A,%
+T09,2024,educ4_mig2,2|2,Secundaria × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),72.426,1.805,2.492,68.888,75.964,1314,A,%
+T09,2024,educ4_mig2,2|2,Secundaria × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1293.167,37.21,2.877,1194.917,1340.778,788,A,S/
+T09,2024,educ4_mig2,2|2,Secundaria × Migrante reciente (otro dpto. o país),neet,,NiNi 15–29,19.336,2.246,11.616,14.934,23.738,648,A,%
+T09,2024,educ4_mig2,2|2,Secundaria × Migrante reciente (otro dpto. o país),pension,,Ocupados con pensión,30.869,2.077,6.73,26.797,34.94,883,A,%
+T09,2024,educ4_mig2,2|2,Secundaria × Migrante reciente (otro dpto. o país),self_emp,,Independientes,32.897,2.23,6.78,28.526,37.269,883,A,%
+T09,2024,educ4_mig2,2|2,Secundaria × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,4.46,1.09,24.429,2.324,6.595,919,B,%
+T09,2024,educ4_mig2,3|1,Superior no universitaria × No migrante,contract_any,,Asalariados con contrato,66.354,1.019,1.536,64.356,68.352,4954,A,%
+T09,2024,educ4_mig2,3|1,Superior no universitaria × No migrante,informality,,Empleo informal,56.051,0.854,1.523,54.378,57.725,8036,A,%
+T09,2024,educ4_mig2,3|1,Superior no universitaria × No migrante,lfpr,,Tasa de actividad (14+),79.963,0.579,0.724,78.829,81.097,10632,A,%
+T09,2024,educ4_mig2,3|1,Superior no universitaria × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1500.917,16.042,1.069,1470.782,1533.667,7675,A,S/
+T09,2024,educ4_mig2,3|1,Superior no universitaria × No migrante,neet,,NiNi 15–29,15.799,0.915,5.79,14.006,17.592,3401,A,%
+T09,2024,educ4_mig2,3|1,Superior no universitaria × No migrante,pension,,Ocupados con pensión,55.478,0.85,1.531,53.813,57.143,8036,A,%
+T09,2024,educ4_mig2,3|1,Superior no universitaria × No migrante,self_emp,,Independientes,27.096,0.734,2.709,25.657,28.535,8036,A,%
+T09,2024,educ4_mig2,3|1,Superior no universitaria × No migrante,ur,,Tasa de desempleo,4.427,0.324,7.328,3.791,5.063,8355,A,%
+T09,2024,educ4_mig2,3|2,Superior no universitaria × Migrante reciente (otro dpto. o país),contract_any,,Asalariados con contrato,51.82,5.008,9.665,42.004,61.636,192,A,%
+T09,2024,educ4_mig2,3|2,Superior no universitaria × Migrante reciente (otro dpto. o país),informality,,Empleo informal,71.042,3.336,4.696,64.503,77.581,324,A,%
+T09,2024,educ4_mig2,3|2,Superior no universitaria × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),81.048,2.64,3.258,75.873,86.223,427,A,%
+T09,2024,educ4_mig2,3|2,Superior no universitaria × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1386.75,85.354,6.155,1159.75,1494.333,300,A,S/
+T09,2024,educ4_mig2,3|2,Superior no universitaria × Migrante reciente (otro dpto. o país),neet,,NiNi 15–29,14.215,3.02,21.249,8.295,20.135,176,B,%
+T09,2024,educ4_mig2,3|2,Superior no universitaria × Migrante reciente (otro dpto. o país),pension,,Ocupados con pensión,51.226,3.813,7.444,43.752,58.699,324,A,%
+T09,2024,educ4_mig2,3|2,Superior no universitaria × Migrante reciente (otro dpto. o país),self_emp,,Independientes,31.738,3.534,11.134,24.812,38.665,324,A,%
+T09,2024,educ4_mig2,3|2,Superior no universitaria × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,6.55,1.48,22.594,3.65,9.451,348,B,%
+T09,2024,educ4_mig2,4|1,Universitaria y posgrado × No migrante,contract_any,,Asalariados con contrato,80.653,0.826,1.024,79.033,82.272,6468,A,%
+T09,2024,educ4_mig2,4|1,Universitaria y posgrado × No migrante,informality,,Empleo informal,41.162,0.869,2.111,39.459,42.864,9023,A,%
+T09,2024,educ4_mig2,4|1,Universitaria y posgrado × No migrante,lfpr,,Tasa de actividad (14+),75.02,0.584,0.778,73.876,76.164,12923,A,%
+T09,2024,educ4_mig2,4|1,Universitaria y posgrado × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),2070.0,50.554,2.442,2001.25,2199.417,8690,A,S/
+T09,2024,educ4_mig2,4|1,Universitaria y posgrado × No migrante,neet,,NiNi 15–29,15.311,0.841,5.491,13.663,16.959,5030,A,%
+T09,2024,educ4_mig2,4|1,Universitaria y posgrado × No migrante,pension,,Ocupados con pensión,66.822,0.816,1.221,65.223,68.422,9023,A,%
+T09,2024,educ4_mig2,4|1,Universitaria y posgrado × No migrante,self_emp,,Independientes,18.018,0.604,3.351,16.835,19.202,9023,A,%
+T09,2024,educ4_mig2,4|1,Universitaria y posgrado × No migrante,ur,,Tasa de desempleo,6.66,0.383,5.755,5.908,7.411,9588,A,%
+T09,2024,educ4_mig2,4|2,Universitaria y posgrado × Migrante reciente (otro dpto. o país),contract_any,,Asalariados con contrato,73.902,4.142,5.605,65.783,82.021,254,A,%
+T09,2024,educ4_mig2,4|2,Universitaria y posgrado × Migrante reciente (otro dpto. o país),informality,,Empleo informal,58.399,3.726,6.381,51.096,65.703,370,A,%
+T09,2024,educ4_mig2,4|2,Universitaria y posgrado × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),77.35,2.954,3.819,71.56,83.139,480,A,%
+T09,2024,educ4_mig2,4|2,Universitaria y posgrado × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1802.583,129.212,7.168,1668.833,2175.333,353,A,S/
+T09,2024,educ4_mig2,4|2,Universitaria y posgrado × Migrante reciente (otro dpto. o país),neet,,NiNi 15–29,22.458,4.423,19.696,13.789,31.128,219,B,%
+T09,2024,educ4_mig2,4|2,Universitaria y posgrado × Migrante reciente (otro dpto. o país),pension,,Ocupados con pensión,59.12,3.697,6.253,51.875,66.366,370,A,%
+T09,2024,educ4_mig2,4|2,Universitaria y posgrado × Migrante reciente (otro dpto. o país),self_emp,,Independientes,22.306,3.23,14.481,15.975,28.637,370,A,%
+T09,2024,educ4_mig2,4|2,Universitaria y posgrado × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,381,S,%
+T09,2024,mig2,1,No migrante,contract_any,,Asalariados con contrato,52.051,0.609,1.17,50.857,53.245,24265,A,%
+T09,2024,mig2,1,No migrante,informality,,Empleo informal,72.932,0.388,0.531,72.172,73.691,56489,A,%
+T09,2024,mig2,1,No migrante,lfpr,,Tasa de actividad (14+),71.065,0.228,0.32,70.619,71.511,82831,A,%
+T09,2024,mig2,1,No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1240.667,11.012,0.888,1216.417,1259.583,50236,A,S/
+T09,2024,mig2,1,No migrante,neet,,NiNi 15–29,21.563,0.438,2.029,20.706,22.421,22746,A,%
+T09,2024,mig2,1,No migrante,pension,,Ocupados con pensión,37.098,0.416,1.122,36.282,37.914,56489,A,%
+T09,2024,mig2,1,No migrante,self_emp,,Independientes,37.553,0.313,0.835,36.939,38.167,56489,A,%
+T09,2024,mig2,1,No migrante,ur,,Tasa de desempleo,4.75,0.147,3.095,4.462,5.039,58570,A,%
+T09,2024,mig2,2,Migrante reciente (otro dpto. o país),contract_any,,Asalariados con contrato,44.876,2.332,5.197,40.305,49.447,981,A,%
+T09,2024,mig2,2,Migrante reciente (otro dpto. o país),informality,,Empleo informal,77.786,1.387,1.783,75.067,80.504,1849,A,%
+T09,2024,mig2,2,Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),73.095,1.285,1.758,70.577,75.613,2647,A,%
+T09,2024,mig2,2,Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1311.0,36.569,2.789,1279.0,1422.349,1675,A,S/
+T09,2024,mig2,2,Migrante reciente (otro dpto. o país),neet,,NiNi 15–29,19.55,1.724,8.816,16.172,22.928,1088,A,%
+T09,2024,mig2,2,Migrante reciente (otro dpto. o país),pension,,Ocupados con pensión,38.091,1.646,4.321,34.865,41.317,1849,A,%
+T09,2024,mig2,2,Migrante reciente (otro dpto. o país),self_emp,,Independientes,32.708,1.55,4.738,29.67,35.745,1849,A,%
+T09,2024,mig2,2,Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,4.485,0.688,15.333,3.137,5.833,1927,B,%
+T09,2024,region_mig2,1|1,Costa × No migrante,contract_any,,Asalariados con contrato,48.578,0.85,1.751,46.911,50.244,9100,A,%
+T09,2024,region_mig2,1|1,Costa × No migrante,informality,,Empleo informal,71.757,0.591,0.824,70.598,72.915,16967,A,%
+T09,2024,region_mig2,1|1,Costa × No migrante,lfpr,,Tasa de actividad (14+),70.403,0.362,0.513,69.694,71.111,25935,A,%
+T09,2024,region_mig2,1|1,Costa × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1294.5,8.355,0.645,1268.833,1301.583,16091,A,S/
+T09,2024,region_mig2,1|1,Costa × No migrante,neet,,NiNi 15–29,22.191,0.702,3.161,20.816,23.566,7343,A,%
+T09,2024,region_mig2,1|1,Costa × No migrante,pension,,Ocupados con pensión,42.395,0.652,1.537,41.118,43.672,16967,A,%
+T09,2024,region_mig2,1|1,Costa × No migrante,self_emp,,Independientes,36.843,0.506,1.373,35.851,37.835,16967,A,%
+T09,2024,region_mig2,1|1,Costa × No migrante,ur,,Tasa de desempleo,4.345,0.212,4.873,3.93,4.76,17666,A,%
+T09,2024,region_mig2,1|2,Costa × Migrante reciente (otro dpto. o país),contract_any,,Asalariados con contrato,46.001,3.91,8.5,38.337,53.665,301,A,%
+T09,2024,region_mig2,1|2,Costa × Migrante reciente (otro dpto. o país),informality,,Empleo informal,72.998,2.741,3.755,67.625,78.371,480,A,%
+T09,2024,region_mig2,1|2,Costa × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),75.376,1.995,2.647,71.466,79.285,695,A,%
+T09,2024,region_mig2,1|2,Costa × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1473.083,83.505,5.669,1327.0,1654.333,455,A,S/
+T09,2024,region_mig2,1|2,Costa × Migrante reciente (otro dpto. o país),neet,,NiNi 15–29,22.381,3.06,13.672,16.383,28.378,279,A,%
+T09,2024,region_mig2,1|2,Costa × Migrante reciente (otro dpto. o país),pension,,Ocupados con pensión,48.572,3.275,6.743,42.153,54.992,480,A,%
+T09,2024,region_mig2,1|2,Costa × Migrante reciente (otro dpto. o país),self_emp,,Independientes,31.283,2.817,9.005,25.761,36.804,480,A,%
+T09,2024,region_mig2,1|2,Costa × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,5.911,1.359,22.99,3.248,8.575,510,B,%
+T09,2024,region_mig2,2|1,Sierra × No migrante,contract_any,,Asalariados con contrato,43.964,1.045,2.378,41.915,46.013,6542,A,%
+T09,2024,region_mig2,2|1,Sierra × No migrante,informality,,Empleo informal,82.727,0.527,0.637,81.694,83.76,20631,A,%
+T09,2024,region_mig2,2|1,Sierra × No migrante,lfpr,,Tasa de actividad (14+),74.961,0.348,0.465,74.278,75.644,28371,A,%
+T09,2024,region_mig2,2|1,Sierra × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),994.167,12.759,1.283,961.333,1011.346,17088,A,S/
+T09,2024,region_mig2,2|1,Sierra × No migrante,neet,,NiNi 15–29,20.138,0.659,3.271,18.847,21.429,7361,A,%
+T09,2024,region_mig2,2|1,Sierra × No migrante,pension,,Ocupados con pensión,25.949,0.599,2.307,24.776,27.122,20631,A,%
+T09,2024,region_mig2,2|1,Sierra × No migrante,self_emp,,Independientes,43.684,0.509,1.165,42.687,44.681,20631,A,%
+T09,2024,region_mig2,2|1,Sierra × No migrante,ur,,Tasa de desempleo,4.686,0.235,5.019,4.225,5.147,21317,A,%
+T09,2024,region_mig2,2|2,Sierra × Migrante reciente (otro dpto. o país),contract_any,,Asalariados con contrato,48.207,4.105,8.515,40.162,56.253,249,A,%
+T09,2024,region_mig2,2|2,Sierra × Migrante reciente (otro dpto. o país),informality,,Empleo informal,81.737,2.193,2.682,77.44,86.034,533,A,%
+T09,2024,region_mig2,2|2,Sierra × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),76.287,2.111,2.768,72.149,80.426,740,A,%
+T09,2024,region_mig2,2|2,Sierra × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1137.9,60.524,5.319,1040.0,1277.25,465,A,S/
+T09,2024,region_mig2,2|2,Sierra × Migrante reciente (otro dpto. o país),neet,,NiNi 15–29,15.085,2.486,16.482,10.212,19.958,304,B,%
+T09,2024,region_mig2,2|2,Sierra × Migrante reciente (otro dpto. o país),pension,,Ocupados con pensión,37.325,2.502,6.704,32.42,42.23,533,A,%
+T09,2024,region_mig2,2|2,Sierra × Migrante reciente (otro dpto. o país),self_emp,,Independientes,34.544,2.477,7.169,29.69,39.398,533,A,%
+T09,2024,region_mig2,2|2,Sierra × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,4.07,0.907,22.284,2.292,5.848,558,B,%
+T09,2024,region_mig2,3|1,Selva × No migrante,contract_any,,Asalariados con contrato,38.422,1.228,3.197,36.014,40.83,4410,A,%
+T09,2024,region_mig2,3|1,Selva × No migrante,informality,,Empleo informal,84.659,0.576,0.68,83.531,85.787,12439,A,%
+T09,2024,region_mig2,3|1,Selva × No migrante,lfpr,,Tasa de actividad (14+),74.916,0.468,0.625,73.999,75.834,17600,A,%
+T09,2024,region_mig2,3|1,Selva × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1069.167,15.817,1.479,1035.917,1097.917,10699,A,S/
+T09,2024,region_mig2,3|1,Selva × No migrante,neet,,NiNi 15–29,20.799,0.749,3.599,19.332,22.266,5208,A,%
+T09,2024,region_mig2,3|1,Selva × No migrante,pension,,Ocupados con pensión,22.835,0.666,2.916,21.53,24.14,12439,A,%
+T09,2024,region_mig2,3|1,Selva × No migrante,self_emp,,Independientes,45.097,0.643,1.427,43.836,46.358,12439,A,%
+T09,2024,region_mig2,3|1,Selva × No migrante,ur,,Tasa de desempleo,2.494,0.206,8.271,2.09,2.898,12732,A,%
+T09,2024,region_mig2,3|2,Selva × Migrante reciente (otro dpto. o país),contract_any,,Asalariados con contrato,40.457,3.915,9.676,32.784,48.13,295,A,%
+T09,2024,region_mig2,3|2,Selva × Migrante reciente (otro dpto. o país),informality,,Empleo informal,81.471,2.296,2.818,76.97,85.971,633,A,%
+T09,2024,region_mig2,3|2,Selva × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),77.437,1.752,2.262,74.004,80.87,879,A,%
+T09,2024,region_mig2,3|2,Selva × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1295.75,65.503,5.055,1165.583,1422.349,559,A,S/
+T09,2024,region_mig2,3|2,Selva × Migrante reciente (otro dpto. o país),neet,,NiNi 15–29,18.356,2.399,13.067,13.655,23.057,356,A,%
+T09,2024,region_mig2,3|2,Selva × Migrante reciente (otro dpto. o país),pension,,Ocupados con pensión,34.834,2.647,7.6,29.645,40.023,633,A,%
+T09,2024,region_mig2,3|2,Selva × Migrante reciente (otro dpto. o país),self_emp,,Independientes,35.678,2.474,6.935,30.829,40.528,633,A,%
+T09,2024,region_mig2,3|2,Selva × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,645,S,%
+T09,2024,region_mig2,4|1,Lima Metropolitana × No migrante,contract_any,,Asalariados con contrato,62.277,1.231,1.977,59.864,64.69,4213,A,%
+T09,2024,region_mig2,4|1,Lima Metropolitana × No migrante,informality,,Empleo informal,59.298,1.019,1.719,57.3,61.296,6452,A,%
+T09,2024,region_mig2,4|1,Lima Metropolitana × No migrante,lfpr,,Tasa de actividad (14+),66.777,0.504,0.754,65.79,67.764,10925,A,%
+T09,2024,region_mig2,4|1,Lima Metropolitana × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1494.833,22.322,1.493,1422.75,1510.25,6358,A,S/
+T09,2024,region_mig2,4|1,Lima Metropolitana × No migrante,neet,,NiNi 15–29,22.69,1.007,4.436,20.717,24.663,2834,A,%
+T09,2024,region_mig2,4|1,Lima Metropolitana × No migrante,pension,,Ocupados con pensión,50.044,1.06,2.118,47.966,52.121,6452,A,%
+T09,2024,region_mig2,4|1,Lima Metropolitana × No migrante,self_emp,,Independientes,28.916,0.708,2.449,27.528,30.304,6452,A,%
+T09,2024,region_mig2,4|1,Lima Metropolitana × No migrante,ur,,Tasa de desempleo,5.999,0.349,5.825,5.315,6.684,6855,A,%
+T09,2024,region_mig2,4|2,Lima Metropolitana × Migrante reciente (otro dpto. o país),contract_any,,Asalariados con contrato,44.111,5.169,11.719,33.98,54.243,136,A,%
+T09,2024,region_mig2,4|2,Lima Metropolitana × Migrante reciente (otro dpto. o país),informality,,Empleo informal,74.335,3.384,4.553,67.702,80.967,203,A,%
+T09,2024,region_mig2,4|2,Lima Metropolitana × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),66.368,2.99,4.505,60.508,72.227,333,A,%
+T09,2024,region_mig2,4|2,Lima Metropolitana × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1449.083,103.595,7.149,1297.917,1704.0,196,A,S/
+T09,2024,region_mig2,4|2,Lima Metropolitana × Migrante reciente (otro dpto. o país),neet,,NiNi 15–29,22.359,3.876,17.335,14.762,29.956,149,B,%
+T09,2024,region_mig2,4|2,Lima Metropolitana × Migrante reciente (otro dpto. o país),pension,,Ocupados con pensión,34.275,3.936,11.483,26.561,41.989,203,A,%
+T09,2024,region_mig2,4|2,Lima Metropolitana × Migrante reciente (otro dpto. o país),self_emp,,Independientes,29.632,3.836,12.946,22.113,37.15,203,A,%
+T09,2024,region_mig2,4|2,Lima Metropolitana × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,214,S,%
+T09,2024,sex_mig2,1|1,Hombres × No migrante,contract_any,,Asalariados con contrato,51.528,0.717,1.391,50.123,52.933,14042,A,%
+T09,2024,sex_mig2,1|1,Hombres × No migrante,informality,,Empleo informal,71.063,0.464,0.652,70.154,71.971,30216,A,%
+T09,2024,sex_mig2,1|1,Hombres × No migrante,lfpr,,Tasa de actividad (14+),79.922,0.283,0.354,79.368,80.477,39667,A,%
+T09,2024,sex_mig2,1|1,Hombres × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1400.5,12.033,0.859,1375.583,1422.75,28431,A,S/
+T09,2024,sex_mig2,1|1,Hombres × No migrante,neet,,NiNi 15–29,16.043,0.533,3.321,14.998,17.087,11430,A,%
+T09,2024,sex_mig2,1|1,Hombres × No migrante,pension,,Ocupados con pensión,41.843,0.499,1.191,40.865,42.82,30216,A,%
+T09,2024,sex_mig2,1|1,Hombres × No migrante,self_emp,,Independientes,36.249,0.411,1.133,35.444,37.054,30216,A,%
+T09,2024,sex_mig2,1|1,Hombres × No migrante,ur,,Tasa de desempleo,3.876,0.184,4.747,3.515,4.237,31167,A,%
+T09,2024,sex_mig2,1|2,Hombres × Migrante reciente (otro dpto. o país),contract_any,,Asalariados con contrato,45.639,2.904,6.362,39.948,51.33,619,A,%
+T09,2024,sex_mig2,1|2,Hombres × Migrante reciente (otro dpto. o país),informality,,Empleo informal,74.961,1.91,2.549,71.216,78.705,1047,A,%
+T09,2024,sex_mig2,1|2,Hombres × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),84.967,1.433,1.687,82.158,87.776,1297,A,%
+T09,2024,sex_mig2,1|2,Hombres × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1522.667,61.817,4.06,1422.349,1664.667,983,A,S/
+T09,2024,sex_mig2,1|2,Hombres × Migrante reciente (otro dpto. o país),neet,,NiNi 15–29,11.288,2.076,18.395,7.218,15.358,518,B,%
+T09,2024,sex_mig2,1|2,Hombres × Migrante reciente (otro dpto. o país),pension,,Ocupados con pensión,44.679,2.191,4.905,40.384,48.974,1047,A,%
+T09,2024,sex_mig2,1|2,Hombres × Migrante reciente (otro dpto. o país),self_emp,,Independientes,30.198,2.005,6.638,26.269,34.127,1047,A,%
+T09,2024,sex_mig2,1|2,Hombres × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,3.936,0.942,23.928,2.09,5.782,1078,B,%
+T09,2024,sex_mig2,2|1,Mujeres × No migrante,contract_any,,Asalariados con contrato,52.839,0.827,1.566,51.218,54.46,10223,A,%
+T09,2024,sex_mig2,2|1,Mujeres × No migrante,informality,,Empleo informal,75.373,0.48,0.637,74.432,76.314,26273,A,%
+T09,2024,sex_mig2,2|1,Mujeres × No migrante,lfpr,,Tasa de actividad (14+),62.243,0.354,0.569,61.55,62.937,43164,A,%
+T09,2024,sex_mig2,2|1,Mujeres × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1024.667,5.697,0.556,1015.417,1037.75,21805,A,S/
+T09,2024,sex_mig2,2|1,Mujeres × No migrante,neet,,NiNi 15–29,27.281,0.638,2.34,26.03,28.532,11316,A,%
+T09,2024,sex_mig2,2|1,Mujeres × No migrante,pension,,Ocupados con pensión,30.901,0.52,1.683,29.882,31.921,26273,A,%
+T09,2024,sex_mig2,2|1,Mujeres × No migrante,self_emp,,Independientes,39.256,0.457,1.163,38.361,40.15,26273,A,%
+T09,2024,sex_mig2,2|1,Mujeres × No migrante,ur,,Tasa de desempleo,5.869,0.237,4.046,5.403,6.334,27403,A,%
+T09,2024,sex_mig2,2|2,Mujeres × Migrante reciente (otro dpto. o país),contract_any,,Asalariados con contrato,43.517,3.931,9.032,35.814,51.221,362,A,%
+T09,2024,sex_mig2,2|2,Mujeres × Migrante reciente (otro dpto. o país),informality,,Empleo informal,81.88,2.029,2.478,77.902,85.857,802,A,%
+T09,2024,sex_mig2,2|2,Mujeres × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),60.929,2.046,3.358,56.919,64.939,1350,A,%
+T09,2024,sex_mig2,2|2,Mujeres × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1040.75,50.235,4.827,971.5,1168.417,692,A,S/
+T09,2024,sex_mig2,2|2,Mujeres × Migrante reciente (otro dpto. o país),neet,,NiNi 15–29,27.507,2.692,9.788,22.23,32.783,570,A,%
+T09,2024,sex_mig2,2|2,Mujeres × Migrante reciente (otro dpto. o país),pension,,Ocupados con pensión,28.544,2.464,8.631,23.715,33.373,802,A,%
+T09,2024,sex_mig2,2|2,Mujeres × Migrante reciente (otro dpto. o país),self_emp,,Independientes,36.345,2.537,6.982,31.371,41.318,802,A,%
+T09,2024,sex_mig2,2|2,Mujeres × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,5.27,1.045,19.826,3.222,7.317,849,B,%

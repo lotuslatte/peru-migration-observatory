@@ -1,0 +1,7 @@
+- {q: "¿Por qué la tasa de desempleo aquí (4,7 %) no coincide con la que sale en prensa (5,6 %)?", a: "La cifra de prensa proviene de la EPEN (Encuesta Permanente de Empleo Nacional), una encuesta distinta. Este observatorio usa la ENAHO anual, cuya serie oficial de INEI coincide con la nuestra en ±0,1 pp."}
+- {q: "¿Puedo citar una cifra con sello Cautela?", a: "Sí, siempre con su intervalo de confianza. Una cifra Cautela tiene un error relativo de 15–30 %; su intervalo es ancho y las comparaciones con ella suelen no ser concluyentes."}
+- {q: "¿Por qué algunas celdas dicen — ?", a: "Están suprimidas: menos de 30 observaciones o error relativo mayor a 30 %. Publicarlas induciría a error."}
+- {q: "¿Los datos son oficiales?", a: "Los microdatos sí (INEI). Las estimaciones son del Observatorio, con definiciones INEI/OIT y validadas contra tablas oficiales; ver Metodología → Validación."}
+- {q: "¿Cómo descargo todo?", a: "En /datos/: JSON por página, CSV por tabla (T01…), diccionario de variables y un índice machine-readable (/data/index.json)."}
+- {q: "¿Puedo insertar un gráfico en mi web o informe?", a: "Sí: cada gráfico tiene botones CSV/SVG/PNG y muchas páginas ofrecen un snippet <iframe>. Licencia CC BY 4.0: cita al Observatorio."}
+- {q: "¿Cómo se actualiza?", a: "Cuando INEI publica la ENAHO anual (mayo) se reejecuta el pipeline completo; la fecha de generación aparece en el pie y en meta.json."}

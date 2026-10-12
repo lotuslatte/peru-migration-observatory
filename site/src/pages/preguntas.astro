@@ -1,0 +1,9 @@
+---
+import Base from '../layouts/Base.astro';
+import { loadIndex } from '../data/loaders';
+const ix = loadIndex();
+---
+<Base title="Preguntas frecuentes">
+  <div class="eyebrow" style="margin-top:28px">Preguntas frecuentes</div><h1>Antes de citar una cifra</h1>
+  <div class="prose">{ix.faq.map((q: any) => <details class="card" style="margin-top:10px"><summary style="cursor:pointer;font-family:var(--font-serif);font-size:1.1rem">{q.q}</summary><p style="margin-top:8px">{q.a}</p></details>)}</div>
+</Base>

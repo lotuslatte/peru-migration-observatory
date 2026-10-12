@@ -1,0 +1,116 @@
+# Esquema canónico de variables. Cada entrada: módulo fuente, nombre en el archivo INEI (por defecto),
+# excepciones por año (by_year), y notas. La armonización (olp/harmonise.py) renombra al nombre canónico.
+# Módulos: m02 (miembros), m03 (educación), m04 (salud), m05 (empleo e ingresos), m34 (sumaria).
+keys: [conglome, vivienda, hogar, codperso]
+key_widths: {conglome: 6, vivienda: 3, hogar: 2, codperso: 2}
+
+modules:
+  m05:
+    weight: fac500a
+    vars:
+      ubigeo:   {src: ubigeo}
+      dominio:  {src: dominio}
+      estrato:  {src: estrato}
+      mes:      {src: mes}
+      w500:     {src: fac500a}
+      sex:      {src: p207}
+      age:      {src: p208a}
+      ocu500:   {src: ocu500, note: "1 ocupado, 2 desocupado abierto, 3 desocupado oculto, 4 no PEA"}
+      cat_ocup: {src: p507, note: "1 empleador 2 independiente 3 empleado 4 obrero 5 TFNR 6 trab. hogar 7 otro"}
+      employer_type: {src: p510}
+      sunat_reg: {src: p510a1, note: "1 persona jurídica 2 persona natural con RUC 3 no registrado"}
+      books:     {src: p510b, note: "1 lleva libros 2 no"}
+      contract:  {src: p511a, note: "1 indefinido ... 7 sin contrato 8 otro"}
+      firm_size: {src: p512a}
+      firm_size_n: {src: p512b}
+      hours_lastweek_main: {src: p513t}
+      hours_sec: {src: p518}
+      hours_usual_raw: {src: p520}
+      hours_usual: {src: i520, note: "horas normales semanales, todas las ocupaciones (imputado INEI)"}
+      normal_hours: {src: p519}
+      wants_more: {src: p521}
+      avail_more: {src: p521a}
+      cat_ocup_sec: {src: p517}
+      inc_main_month_raw: {src: p524a1}
+      inc_main_annual: {src: i524a1, note: "ingreso monetario ocup. principal dependiente, anualizado e imputado"}
+      inc_main_net: {src: i524e1, note: "ingreso líquido ocup. principal (no es especie)"}
+      inc_main_inkind: {src: d529t, note: "pago en especie ocup. principal dependiente, deflactado anualizado"}
+      inc_self_annual: {src: i530a, note: "ganancia neta independiente ocup. principal, anualizada"}
+      inc_self_autoconsumo: {src: d536}
+      inc_sec_annual:  {src: i538a1}
+      inc_sec_inkind:  {src: d540t}
+      inc_sec_self:    {src: i541a}
+      inc_sec_autoconsumo: {src: d543}
+      inc_extra_annual: {src: d544t, note: "ingresos extraordinarios últimos 12 meses (gratificaciones, CTS, utilidades...)"}
+      job_search: {src: p545}
+      wants_work: {src: p547}
+      available:  {src: p548}
+      pension_none: {src: p558a5, note: "5 = no afiliado; 0 = pase (afiliado a algún sistema p558a1-a4)"}
+      etnia_raw: {src: p558c}
+      ciuo: {src: p505r4}
+      ciiu4: {src: p506r4}
+      educ_raw_m05: {src: p301a}
+      ocupinf_inei: {src: ocupinf, optional: true, note: "presente 2014–2023; ausente 2024"}
+      emplpsec_inei: {src: emplpsec, optional: true}
+  m02:
+    weight: facpob07
+    vars:
+      w_pop: {src: facpob07}
+      member: {src: p204}
+      rel_head: {src: p203}
+      sex_m02: {src: p207}
+      age_m02: {src: p208a}
+  m03:
+    weight: factor07
+    vars:
+      lengua_raw: {src: p300a}
+      educ_raw: {src: p301a}
+      enrolled: {src: p306}
+      attends:  {src: p307}
+  m04:
+    weight: factor07
+    vars:
+      w400: {src: factor07}
+      ubigeo_m04: {src: ubigeo}
+      dominio_m04: {src: dominio}
+      estrato_m04: {src: estrato}
+      res5_same: {src: p401f, note: "1 sí 2 no 3 aún no había nacido"}
+      res5_ubigeo: {src: p401g}
+      birth_same: {src: p401g1, optional: true, note: "2018+"}
+      birth_ubigeo: {src: p401g2, optional: true}
+      ins_essalud: {src: p4191}
+      ins_priv:    {src: p4192}
+      ins_eps:     {src: p4193}
+      ins_ffaa:    {src: p4194}
+      ins_sis:     {src: p4195}
+      ins_univ:    {src: p4196}
+      ins_other1:  {src: p4197}
+      ins_other:   {src: p4198}
+  m34:
+    weight: factor07
+    vars:
+      pobreza: {src: pobreza}
+      estrsocial: {src: estrsocial, optional: true}
+      mieperho: {src: mieperho}
+
+recodes:
+  educ4:
+    from: educ_raw
+    map: {1: 1, 2: 1, 3: 1, 4: 1, 12: 1, 5: 2, 6: 2, 7: 3, 8: 3, 9: 4, 10: 4, 11: 4}
+    labels_es: {1: "Hasta primaria", 2: "Secundaria", 3: "Superior no universitaria", 4: "Universitaria y posgrado"}
+  lengua3:
+    from: lengua_raw
+    map: {1: 1, 2: 1, 3: 1, 10: 1, 11: 1, 12: 1, 13: 1, 14: 1, 15: 1, 4: 2, 6: 3, 7: 3, 8: 3, 9: 3}
+    labels_es: {1: "Lengua indígena u originaria", 2: "Castellano", 3: "Otra / no habla"}
+  etnia6:
+    from: etnia_raw
+    map: {1: 1, 2: 2, 3: 3, 9: 3, 4: 4, 5: 5, 6: 5, 7: 6, 8: 6}
+    labels_es: {1: "Quechua", 2: "Aimara", 3: "Amazónico / otro pueblo indígena", 4: "Afroperuano", 5: "Blanco / mestizo", 6: "Otro / no sabe"}
+  region_nat:
+    from: dominio
+    map: {1: 1, 2: 1, 3: 1, 4: 2, 5: 2, 6: 2, 7: 3, 8: 4}
+    labels_es: {1: "Costa", 2: "Sierra", 3: "Selva", 4: "Lima Metropolitana"}
+  area:
+    from: estrato
+    map: {1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 2, 7: 2, 8: 2}
+    labels_es: {1: "Urbano", 2: "Rural"}

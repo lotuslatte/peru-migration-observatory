@@ -1,0 +1,9 @@
+{
+  "site": "Peru Labour Observatory",
+  "tagline": "Open ENAHO microdata on participation, informality, earnings and gaps, 2014–2024",
+  "nav": {"home": "Home", "atlas": "Atlas", "stories": "Stories", "compendium": "Compendium", "methodology": "Methodology", "school": "Survey school", "data": "Data", "about": "About"},
+  "grade": {"A": "Publish (RSE < 15%)", "B": "Review (RSE 15–30%)", "S": "Suppressed (RSE ≥ 30% or n < 30)"},
+  "suppressed": "—",
+  "export": {"csv": "CSV", "png": "PNG", "svg": "SVG"},
+  "ci": "95% CI"
+}

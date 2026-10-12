@@ -1,0 +1,716 @@
+wave,grupo,indicador,estimate,se,ci_lo,ci_hi,n,grade
+2018,Total,Ocupados (14+),82.2,0.65,80.9,83.5,7939,A
+2018,Total,Empleo informal,90.9,0.69,89.6,92.3,6826,A
+2018,Total,Con permiso migratorio,96.8,0.41,96.0,97.6,9487,A
+2018,Total,Educación superior (técnica o universitaria),50.3,1.1,48.1,52.4,9128,A
+2018,Total,Con seguro de salud,8.5,0.57,7.4,9.6,9487,A
+2018,Total,Envía remesas,66.3,1.23,63.9,68.7,7939,A
+2018,Total,Sufrió discriminación,35.6,1.25,33.1,38.0,8836,A
+2018,Total,Discriminación en el trabajo,17.1,0.86,15.4,18.8,8836,A
+2018,Total,Discriminación en la calle / espacios públicos,23.1,1.09,20.9,25.2,8836,A
+2018,Total,Piensa quedarse en el Perú,94.7,0.54,93.6,95.7,9487,A
+2018,Total,Ingreso laboral mediano (S/ corrientes),1000.0,2.6,1000.0,1010.0,6816,A
+2018,Total,Horas semanales promedio,59.2,0.41,58.4,60.0,6761,A
+2018,Total,Edad promedio,27.1,0.22,26.7,27.6,9487,A
+2018,Sexo: Hombres,Ocupados (14+),91.1,0.68,89.7,92.4,4200,A
+2018,Sexo: Hombres,Empleo informal,90.4,0.79,88.8,91.9,3927,A
+2018,Sexo: Hombres,Con permiso migratorio,96.9,0.44,96.1,97.8,5001,A
+2018,Sexo: Hombres,Educación superior (técnica o universitaria),46.6,1.26,44.1,49.1,4814,A
+2018,Sexo: Hombres,Con seguro de salud,7.8,0.69,6.4,9.1,5001,A
+2018,Sexo: Hombres,Envía remesas,72.9,1.19,70.6,75.3,4200,A
+2018,Sexo: Hombres,Sufrió discriminación,34.6,1.37,31.9,37.3,4666,A
+2018,Sexo: Hombres,Discriminación en el trabajo,17.8,1.07,15.7,19.9,4666,A
+2018,Sexo: Hombres,Discriminación en la calle / espacios públicos,21.7,1.24,19.3,24.1,4666,A
+2018,Sexo: Hombres,Piensa quedarse en el Perú,94.7,0.6,93.5,95.8,5001,A
+2018,Sexo: Hombres,Ingreso laboral mediano (S/ corrientes),1083.0,5.6,1061.0,1083.0,3929,A
+2018,Sexo: Hombres,Horas semanales promedio,61.9,0.46,61.0,62.8,3864,A
+2018,Sexo: Hombres,Edad promedio,26.8,0.27,26.3,27.4,5001,A
+2018,Sexo: Mujeres,Ocupados (14+),72.4,1.09,70.3,74.6,3739,A
+2018,Sexo: Mujeres,Empleo informal,91.7,0.96,89.8,93.5,2899,A
+2018,Sexo: Mujeres,Con permiso migratorio,96.7,0.56,95.5,97.8,4486,A
+2018,Sexo: Mujeres,Educación superior (técnica o universitaria),54.3,1.37,51.6,56.9,4314,A
+2018,Sexo: Mujeres,Con seguro de salud,9.3,0.7,7.9,10.7,4486,A
+2018,Sexo: Mujeres,Envía remesas,59.0,1.66,55.7,62.2,3739,A
+2018,Sexo: Mujeres,Sufrió discriminación,36.6,1.54,33.6,39.6,4170,A
+2018,Sexo: Mujeres,Discriminación en el trabajo,16.3,0.97,14.4,18.2,4170,A
+2018,Sexo: Mujeres,Discriminación en la calle / espacios públicos,24.6,1.28,22.1,27.1,4170,A
+2018,Sexo: Mujeres,Piensa quedarse en el Perú,94.7,0.6,93.5,95.8,4486,A
+2018,Sexo: Mujeres,Ingreso laboral mediano (S/ corrientes),950.0,7.7,930.0,960.0,2887,A
+2018,Sexo: Mujeres,Horas semanales promedio,55.6,0.63,54.3,56.8,2897,A
+2018,Sexo: Mujeres,Edad promedio,27.5,0.28,26.9,28.0,4486,A
+2018,Llegada: Hasta 2017,Ocupados (14+),83.5,1.24,81.1,86.0,1584,A
+2018,Llegada: Hasta 2017,Empleo informal,84.9,1.57,81.8,87.9,1379,A
+2018,Llegada: Hasta 2017,Con permiso migratorio,98.7,0.41,97.9,99.4,1848,A
+2018,Llegada: Hasta 2017,Educación superior (técnica o universitaria),55.8,1.85,52.2,59.4,1809,A
+2018,Llegada: Hasta 2017,Con seguro de salud,15.3,1.45,12.4,18.1,1848,A
+2018,Llegada: Hasta 2017,Envía remesas,66.7,2.27,62.2,71.1,1584,A
+2018,Llegada: Hasta 2017,Sufrió discriminación,41.8,2.05,37.8,45.8,1760,A
+2018,Llegada: Hasta 2017,Discriminación en el trabajo,21.5,1.67,18.3,24.8,1760,A
+2018,Llegada: Hasta 2017,Discriminación en la calle / espacios públicos,24.6,1.72,21.2,28.0,1760,A
+2018,Llegada: Hasta 2017,Piensa quedarse en el Perú,94.6,0.94,92.8,96.5,1848,A
+2018,Llegada: Hasta 2017,Ingreso laboral mediano (S/ corrientes),1083.0,30.9,1009.0,1130.0,1380,A
+2018,Llegada: Hasta 2017,Horas semanales promedio,58.5,0.71,57.1,59.9,1362,A
+2018,Llegada: Hasta 2017,Edad promedio,29.0,0.43,28.2,29.8,1848,A
+2018,Llegada: 2018–2019,Ocupados (14+),81.8,0.76,80.3,83.3,6355,A
+2018,Llegada: 2018–2019,Empleo informal,92.9,0.71,91.5,94.3,5447,A
+2018,Llegada: 2018–2019,Con permiso migratorio,96.2,0.5,95.3,97.2,7639,A
+2018,Llegada: 2018–2019,Educación superior (técnica o universitaria),48.6,1.16,46.3,50.8,7319,A
+2018,Llegada: 2018–2019,Con seguro de salud,6.5,0.53,5.4,7.5,7639,A
+2018,Llegada: 2018–2019,Envía remesas,66.2,1.33,63.6,68.8,6355,A
+2018,Llegada: 2018–2019,Sufrió discriminación,33.6,1.41,30.9,36.4,7076,A
+2018,Llegada: 2018–2019,Discriminación en el trabajo,15.7,0.98,13.8,17.7,7076,A
+2018,Llegada: 2018–2019,Discriminación en la calle / espacios públicos,22.6,1.26,20.1,25.1,7076,A
+2018,Llegada: 2018–2019,Piensa quedarse en el Perú,94.7,0.6,93.5,95.8,7639,A
+2018,Llegada: 2018–2019,Ingreso laboral mediano (S/ corrientes),1000.0,0.0,1000.0,1000.0,5436,A
+2018,Llegada: 2018–2019,Horas semanales promedio,59.4,0.46,58.5,60.3,5399,A
+2018,Llegada: 2018–2019,Edad promedio,26.6,0.23,26.1,27.0,7639,A
+2018,Llegada: 2020 en adelante,Ocupados (14+),,,,,0,S
+2018,Llegada: 2020 en adelante,Empleo informal,,,,,0,S
+2018,Llegada: 2020 en adelante,Con permiso migratorio,,,,,0,S
+2018,Llegada: 2020 en adelante,Educación superior (técnica o universitaria),,,,,0,S
+2018,Llegada: 2020 en adelante,Con seguro de salud,,,,,0,S
+2018,Llegada: 2020 en adelante,Envía remesas,,,,,0,S
+2018,Llegada: 2020 en adelante,Sufrió discriminación,,,,,0,S
+2018,Llegada: 2020 en adelante,Discriminación en el trabajo,,,,,0,S
+2018,Llegada: 2020 en adelante,Discriminación en la calle / espacios públicos,,,,,0,S
+2018,Llegada: 2020 en adelante,Piensa quedarse en el Perú,,,,,0,S
+2018,Llegada: 2020 en adelante,Ingreso laboral mediano (S/ corrientes),,,,,0,S
+2018,Llegada: 2020 en adelante,Horas semanales promedio,,,,,0,S
+2018,Llegada: 2020 en adelante,Edad promedio,,,,,0,S
+2018,Situación: PTP,Ocupados (14+),84.8,0.67,83.5,86.1,6148,A
+2018,Situación: PTP,Empleo informal,91.7,0.69,90.4,93.1,5442,A
+2018,Situación: PTP,Con permiso migratorio,100.0,0.0,100.0,100.0,7038,A
+2018,Situación: PTP,Educación superior (técnica o universitaria),53.2,1.22,50.8,55.6,6859,A
+2018,Situación: PTP,Con seguro de salud,7.1,0.58,5.9,8.2,7038,A
+2018,Situación: PTP,Envía remesas,69.6,1.27,67.1,72.1,6148,A
+2018,Situación: PTP,Sufrió discriminación,36.3,1.4,33.6,39.1,6694,A
+2018,Situación: PTP,Discriminación en el trabajo,18.2,0.99,16.3,20.2,6694,A
+2018,Situación: PTP,Discriminación en la calle / espacios públicos,23.7,1.24,21.3,26.2,6694,A
+2018,Situación: PTP,Piensa quedarse en el Perú,94.0,0.65,92.7,95.3,7038,A
+2018,Situación: PTP,Ingreso laboral mediano (S/ corrientes),1000.0,8.2,1000.0,1032.0,5431,A
+2018,Situación: PTP,Horas semanales promedio,59.7,0.45,58.8,60.6,5386,A
+2018,Situación: PTP,Edad promedio,27.6,0.22,27.1,28.0,7038,A
+2018,Situación: Carné de extranjería,Ocupados (14+),80.6,2.98,74.8,86.4,304,A
+2018,Situación: Carné de extranjería,Empleo informal,69.0,5.05,59.1,78.9,255,A
+2018,Situación: Carné de extranjería,Con permiso migratorio,100.0,0.0,100.0,100.0,352,A
+2018,Situación: Carné de extranjería,Educación superior (técnica o universitaria),66.9,3.65,59.8,74.1,346,A
+2018,Situación: Carné de extranjería,Con seguro de salud,26.7,3.93,19.0,34.5,352,A
+2018,Situación: Carné de extranjería,Envía remesas,71.9,3.9,64.3,79.6,304,A
+2018,Situación: Carné de extranjería,Sufrió discriminación,38.4,4.56,29.5,47.3,331,A
+2018,Situación: Carné de extranjería,Discriminación en el trabajo,15.3,2.98,9.5,21.2,331,B
+2018,Situación: Carné de extranjería,Discriminación en la calle / espacios públicos,23.6,3.4,16.9,30.2,331,A
+2018,Situación: Carné de extranjería,Piensa quedarse en el Perú,96.0,1.35,93.4,98.6,352,A
+2018,Situación: Carné de extranjería,Ingreso laboral mediano (S/ corrientes),1200.0,33.2,1083.0,1213.0,255,A
+2018,Situación: Carné de extranjería,Horas semanales promedio,56.4,1.44,53.6,59.3,251,A
+2018,Situación: Carné de extranjería,Edad promedio,28.9,0.69,27.5,30.2,352,A
+2018,Situación: Sin permiso,Ocupados (14+),57.7,5.97,46.0,69.4,166,A
+2018,Situación: Sin permiso,Empleo informal,97.3,1.91,93.5,101.0,119,A
+2018,Situación: Sin permiso,Con permiso migratorio,,,,,289,S
+2018,Situación: Sin permiso,Educación superior (técnica o universitaria),21.3,3.41,14.7,28.0,250,B
+2018,Situación: Sin permiso,Con seguro de salud,,,,,289,S
+2018,Situación: Sin permiso,Envía remesas,49.4,6.07,37.5,61.3,166,A
+2018,Situación: Sin permiso,Sufrió discriminación,37.1,6.25,24.9,49.4,225,B
+2018,Situación: Sin permiso,Discriminación en el trabajo,13.6,3.48,6.8,20.4,225,B
+2018,Situación: Sin permiso,Discriminación en la calle / espacios públicos,29.4,5.35,18.9,39.9,225,B
+2018,Situación: Sin permiso,Piensa quedarse en el Perú,98.4,1.06,96.3,100.4,289,A
+2018,Situación: Sin permiso,Ingreso laboral mediano (S/ corrientes),996.0,54.6,866.0,1080.0,119,A
+2018,Situación: Sin permiso,Horas semanales promedio,57.6,2.66,52.4,62.8,120,A
+2018,Situación: Sin permiso,Edad promedio,20.2,1.46,17.4,23.1,289,A
+2018,Situación: Refugio,Ocupados (14+),77.2,3.63,70.1,84.3,622,A
+2018,Situación: Refugio,Empleo informal,99.0,0.51,98.0,100.0,516,A
+2018,Situación: Refugio,Con permiso migratorio,100.0,0.0,100.0,100.0,801,A
+2018,Situación: Refugio,Educación superior (técnica o universitaria),35.0,3.89,27.4,42.7,738,A
+2018,Situación: Refugio,Con seguro de salud,4.1,1.08,2.0,6.3,801,B
+2018,Situación: Refugio,Envía remesas,55.8,5.58,44.9,66.7,622,A
+2018,Situación: Refugio,Sufrió discriminación,36.7,4.43,28.0,45.4,708,A
+2018,Situación: Refugio,Discriminación en el trabajo,18.0,3.5,11.1,24.9,708,B
+2018,Situación: Refugio,Discriminación en la calle / espacios públicos,24.0,3.99,16.2,31.8,708,B
+2018,Situación: Refugio,Piensa quedarse en el Perú,97.4,1.12,95.2,99.6,801,A
+2018,Situación: Refugio,Ingreso laboral mediano (S/ corrientes),950.0,25.5,900.0,1000.0,517,A
+2018,Situación: Refugio,Horas semanales promedio,58.7,1.71,55.3,62.0,507,A
+2018,Situación: Refugio,Edad promedio,23.8,1.07,21.7,25.9,801,A
+2018,Situación: Otro,Ocupados (14+),67.0,2.73,61.7,72.4,699,A
+2018,Situación: Otro,Empleo informal,87.8,1.9,84.1,91.6,494,A
+2018,Situación: Otro,Con permiso migratorio,100.0,0.0,100.0,100.0,1007,A
+2018,Situación: Otro,Educación superior (técnica o universitaria),35.5,2.58,30.4,40.5,935,A
+2018,Situación: Otro,Con seguro de salud,15.6,1.98,11.8,19.5,1007,A
+2018,Situación: Otro,Envía remesas,41.5,3.19,35.2,47.7,699,A
+2018,Situación: Otro,Sufrió discriminación,26.7,2.3,22.2,31.2,878,A
+2018,Situación: Otro,Discriminación en el trabajo,9.2,1.53,6.2,12.2,878,B
+2018,Situación: Otro,Discriminación en la calle / espacios públicos,15.2,1.85,11.6,18.8,878,A
+2018,Situación: Otro,Piensa quedarse en el Perú,96.5,0.84,94.9,98.2,1007,A
+2018,Situación: Otro,Ingreso laboral mediano (S/ corrientes),996.0,23.0,910.0,1000.0,494,A
+2018,Situación: Otro,Horas semanales promedio,55.2,1.53,52.2,58.2,497,A
+2018,Situación: Otro,Edad promedio,27.1,1.04,25.1,29.1,1007,A
+2018,Ciudad/dpto: Arequipa,Ocupados (14+),84.1,1.21,81.7,86.5,1168,A
+2018,Ciudad/dpto: Arequipa,Empleo informal,87.5,1.31,85.0,90.1,1026,A
+2018,Ciudad/dpto: Arequipa,Con permiso migratorio,95.6,1.2,93.3,98.0,1418,A
+2018,Ciudad/dpto: Arequipa,Educación superior (técnica o universitaria),53.7,1.85,50.1,57.4,1373,A
+2018,Ciudad/dpto: Arequipa,Con seguro de salud,7.5,1.03,5.5,9.5,1418,A
+2018,Ciudad/dpto: Arequipa,Envía remesas,66.5,2.01,62.5,70.4,1168,A
+2018,Ciudad/dpto: Arequipa,Sufrió discriminación,37.7,2.22,33.4,42.1,1324,A
+2018,Ciudad/dpto: Arequipa,Discriminación en el trabajo,16.6,1.55,13.6,19.6,1324,A
+2018,Ciudad/dpto: Arequipa,Discriminación en la calle / espacios públicos,24.3,1.66,21.1,27.6,1324,A
+2018,Ciudad/dpto: Arequipa,Piensa quedarse en el Perú,94.9,0.98,93.0,96.8,1418,A
+2018,Ciudad/dpto: Arequipa,Ingreso laboral mediano (S/ corrientes),1000.0,16.3,980.0,1044.0,1026,A
+2018,Ciudad/dpto: Arequipa,Horas semanales promedio,57.0,0.75,55.5,58.4,1017,A
+2018,Ciudad/dpto: Arequipa,Edad promedio,27.3,0.35,26.6,28.0,1418,A
+2018,Ciudad/dpto: Callao,Ocupados (14+),82.5,1.25,80.0,84.9,921,A
+2018,Ciudad/dpto: Callao,Empleo informal,88.8,1.32,86.2,91.4,783,A
+2018,Ciudad/dpto: Callao,Con permiso migratorio,99.5,0.22,99.1,99.9,1102,A
+2018,Ciudad/dpto: Callao,Educación superior (técnica o universitaria),47.9,2.1,43.8,52.0,1064,A
+2018,Ciudad/dpto: Callao,Con seguro de salud,11.3,1.6,8.2,14.5,1102,A
+2018,Ciudad/dpto: Callao,Envía remesas,60.0,2.53,55.0,65.0,921,A
+2018,Ciudad/dpto: Callao,Sufrió discriminación,30.9,2.29,26.4,35.4,1028,A
+2018,Ciudad/dpto: Callao,Discriminación en el trabajo,14.6,1.67,11.4,17.9,1028,A
+2018,Ciudad/dpto: Callao,Discriminación en la calle / espacios públicos,19.5,1.84,15.9,23.1,1028,A
+2018,Ciudad/dpto: Callao,Piensa quedarse en el Perú,91.8,1.7,88.5,95.1,1102,A
+2018,Ciudad/dpto: Callao,Ingreso laboral mediano (S/ corrientes),1000.0,4.1,1000.0,1016.0,783,A
+2018,Ciudad/dpto: Callao,Horas semanales promedio,59.1,0.85,57.4,60.7,782,A
+2018,Ciudad/dpto: Callao,Edad promedio,27.7,0.47,26.8,28.6,1102,A
+2018,Ciudad/dpto: Cusco,Ocupados (14+),87.6,1.75,84.1,91.0,545,A
+2018,Ciudad/dpto: Cusco,Empleo informal,92.3,1.42,89.5,95.1,486,A
+2018,Ciudad/dpto: Cusco,Con permiso migratorio,97.8,1.15,95.5,100.0,648,A
+2018,Ciudad/dpto: Cusco,Educación superior (técnica o universitaria),53.0,2.53,48.0,57.9,616,A
+2018,Ciudad/dpto: Cusco,Con seguro de salud,7.2,1.38,4.5,10.0,648,B
+2018,Ciudad/dpto: Cusco,Envía remesas,68.2,2.81,62.7,73.7,545,A
+2018,Ciudad/dpto: Cusco,Sufrió discriminación,44.9,4.08,36.9,52.9,596,A
+2018,Ciudad/dpto: Cusco,Discriminación en el trabajo,19.3,2.54,14.4,24.3,596,A
+2018,Ciudad/dpto: Cusco,Discriminación en la calle / espacios públicos,35.6,3.67,28.4,42.8,596,A
+2018,Ciudad/dpto: Cusco,Piensa quedarse en el Perú,91.2,1.44,88.3,94.0,648,A
+2018,Ciudad/dpto: Cusco,Ingreso laboral mediano (S/ corrientes),1000.0,21.4,996.0,1080.0,485,A
+2018,Ciudad/dpto: Cusco,Horas semanales promedio,57.8,0.93,56.0,59.7,481,A
+2018,Ciudad/dpto: Cusco,Edad promedio,26.0,0.46,25.1,26.9,648,A
+2018,Ciudad/dpto: Trujillo,Ocupados (14+),85.5,1.19,83.1,87.8,1100,A
+2018,Ciudad/dpto: Trujillo,Empleo informal,95.1,0.97,93.2,97.0,979,A
+2018,Ciudad/dpto: Trujillo,Con permiso migratorio,95.3,1.07,93.2,97.4,1299,A
+2018,Ciudad/dpto: Trujillo,Educación superior (técnica o universitaria),51.8,1.81,48.3,55.4,1246,A
+2018,Ciudad/dpto: Trujillo,Con seguro de salud,6.0,0.87,4.3,7.7,1299,A
+2018,Ciudad/dpto: Trujillo,Envía remesas,68.5,2.36,63.9,73.1,1100,A
+2018,Ciudad/dpto: Trujillo,Sufrió discriminación,31.9,2.02,27.9,35.8,1206,A
+2018,Ciudad/dpto: Trujillo,Discriminación en el trabajo,18.3,1.52,15.3,21.3,1206,A
+2018,Ciudad/dpto: Trujillo,Discriminación en la calle / espacios públicos,21.3,1.56,18.2,24.3,1206,A
+2018,Ciudad/dpto: Trujillo,Piensa quedarse en el Perú,93.8,0.94,92.0,95.7,1299,A
+2018,Ciudad/dpto: Trujillo,Ingreso laboral mediano (S/ corrientes),909.0,7.7,900.0,930.0,975,A
+2018,Ciudad/dpto: Trujillo,Horas semanales promedio,57.8,0.79,56.3,59.3,962,A
+2018,Ciudad/dpto: Trujillo,Edad promedio,27.2,0.43,26.3,28.0,1299,A
+2018,Ciudad/dpto: Lima,Ocupados (14+),82.1,0.71,80.7,83.5,3807,A
+2018,Ciudad/dpto: Lima,Empleo informal,91.0,0.75,89.5,92.5,3229,A
+2018,Ciudad/dpto: Lima,Con permiso migratorio,96.6,0.46,95.8,97.5,4502,A
+2018,Ciudad/dpto: Lima,Educación superior (técnica o universitaria),50.4,1.22,48.0,52.8,4340,A
+2018,Ciudad/dpto: Lima,Con seguro de salud,8.4,0.62,7.1,9.6,4502,A
+2018,Ciudad/dpto: Lima,Envía remesas,66.7,1.34,64.1,69.3,3807,A
+2018,Ciudad/dpto: Lima,Sufrió discriminación,35.9,1.38,33.2,38.6,4214,A
+2018,Ciudad/dpto: Lima,Discriminación en el trabajo,17.3,0.95,15.4,19.1,4214,A
+2018,Ciudad/dpto: Lima,Discriminación en la calle / espacios públicos,23.3,1.2,21.0,25.7,4214,A
+2018,Ciudad/dpto: Lima,Piensa quedarse en el Perú,94.9,0.58,93.7,96.0,4502,A
+2018,Ciudad/dpto: Lima,Ingreso laboral mediano (S/ corrientes),1000.0,9.9,1000.0,1039.0,3227,A
+2018,Ciudad/dpto: Lima,Horas semanales promedio,59.2,0.45,58.3,60.1,3204,A
+2018,Ciudad/dpto: Lima,Edad promedio,27.1,0.24,26.6,27.6,4502,A
+2018,Ciudad/dpto: Tumbes,Ocupados (14+),78.0,1.84,74.3,81.6,398,A
+2018,Ciudad/dpto: Tumbes,Empleo informal,96.2,1.16,93.9,98.5,323,A
+2018,Ciudad/dpto: Tumbes,Con permiso migratorio,98.2,0.87,96.5,99.9,518,A
+2018,Ciudad/dpto: Tumbes,Educación superior (técnica o universitaria),25.6,2.08,21.6,29.7,489,A
+2018,Ciudad/dpto: Tumbes,Con seguro de salud,8.9,2.36,4.3,13.6,518,B
+2018,Ciudad/dpto: Tumbes,Envía remesas,59.3,3.51,52.4,66.2,398,A
+2018,Ciudad/dpto: Tumbes,Sufrió discriminación,23.2,3.84,15.7,30.7,468,B
+2018,Ciudad/dpto: Tumbes,Discriminación en el trabajo,9.9,2.05,5.8,13.9,468,B
+2018,Ciudad/dpto: Tumbes,Discriminación en la calle / espacios públicos,13.7,2.47,8.9,18.6,468,B
+2018,Ciudad/dpto: Tumbes,Piensa quedarse en el Perú,95.4,1.51,92.4,98.3,518,A
+2018,Ciudad/dpto: Tumbes,Ingreso laboral mediano (S/ corrientes),779.0,23.0,750.0,840.0,320,A
+2018,Ciudad/dpto: Tumbes,Horas semanales promedio,59.5,1.53,56.5,62.5,315,A
+2018,Ciudad/dpto: Tumbes,Edad promedio,24.4,0.53,23.3,25.4,518,A
+2022,Total,Ocupados (14+),72.9,0.67,71.6,74.2,8310,A
+2022,Total,Empleo informal,85.8,0.73,84.3,87.2,6344,A
+2022,Total,Con permiso migratorio,64.3,0.92,62.5,66.1,11605,A
+2022,Total,Educación superior (técnica o universitaria),42.4,0.92,40.6,44.2,8384,A
+2022,Total,Con seguro de salud,27.0,0.81,25.4,28.6,11605,A
+2022,Total,Envía remesas,54.8,0.93,52.9,56.6,8310,A
+2022,Total,Sufrió discriminación,29.6,0.79,28.0,31.1,10227,A
+2022,Total,Discriminación en el trabajo,11.3,0.49,10.4,12.3,10227,A
+2022,Total,Discriminación en la calle / espacios públicos,19.9,0.65,18.7,21.2,10227,A
+2022,Total,Piensa quedarse en el Perú,77.4,0.91,75.6,79.2,11605,A
+2022,Total,Ingreso laboral mediano (S/ corrientes),1200.0,7.9,1169.0,1200.0,6239,A
+2022,Total,Horas semanales promedio,54.8,0.34,54.1,55.4,6325,A
+2022,Total,Edad promedio,26.0,0.19,25.6,26.4,11395,A
+2022,Sexo: Hombres,Ocupados (14+),85.7,0.7,84.3,87.1,4057,A
+2022,Sexo: Hombres,Empleo informal,85.4,0.86,83.7,87.1,3569,A
+2022,Sexo: Hombres,Con permiso migratorio,65.3,1.06,63.2,67.4,5709,A
+2022,Sexo: Hombres,Educación superior (técnica o universitaria),37.4,1.1,35.3,39.6,4087,A
+2022,Sexo: Hombres,Con seguro de salud,26.2,0.95,24.4,28.1,5709,A
+2022,Sexo: Hombres,Envía remesas,60.0,1.13,57.8,62.2,4057,A
+2022,Sexo: Hombres,Sufrió discriminación,28.1,0.92,26.3,29.9,5024,A
+2022,Sexo: Hombres,Discriminación en el trabajo,11.1,0.61,9.9,12.3,5024,A
+2022,Sexo: Hombres,Discriminación en la calle / espacios públicos,19.4,0.8,17.9,21.0,5024,A
+2022,Sexo: Hombres,Piensa quedarse en el Perú,78.5,1.02,76.5,80.5,5709,A
+2022,Sexo: Hombres,Ingreso laboral mediano (S/ corrientes),1299.0,4.8,1280.0,1299.0,3528,A
+2022,Sexo: Hombres,Horas semanales promedio,58.7,0.4,57.9,59.5,3546,A
+2022,Sexo: Hombres,Edad promedio,25.0,0.25,24.5,25.5,5596,A
+2022,Sexo: Mujeres,Ocupados (14+),60.7,1.02,58.8,62.7,4253,A
+2022,Sexo: Mujeres,Empleo informal,86.2,0.98,84.3,88.1,2775,A
+2022,Sexo: Mujeres,Con permiso migratorio,63.3,1.06,61.2,65.3,5896,A
+2022,Sexo: Mujeres,Educación superior (técnica o universitaria),47.3,1.12,45.1,49.4,4297,A
+2022,Sexo: Mujeres,Con seguro de salud,27.8,0.94,26.0,29.7,5896,A
+2022,Sexo: Mujeres,Envía remesas,49.7,1.11,47.6,51.9,4253,A
+2022,Sexo: Mujeres,Sufrió discriminación,31.0,1.0,29.0,32.9,5203,A
+2022,Sexo: Mujeres,Discriminación en el trabajo,11.5,0.65,10.3,12.8,5203,A
+2022,Sexo: Mujeres,Discriminación en la calle / espacios públicos,20.4,0.82,18.8,22.0,5203,A
+2022,Sexo: Mujeres,Piensa quedarse en el Perú,76.3,1.05,74.2,78.3,5896,A
+2022,Sexo: Mujeres,Ingreso laboral mediano (S/ corrientes),1000.0,10.0,1000.0,1039.0,2711,A
+2022,Sexo: Mujeres,Horas semanales promedio,49.8,0.53,48.7,50.8,2779,A
+2022,Sexo: Mujeres,Edad promedio,27.0,0.26,26.5,27.5,5799,A
+2022,Llegada: Hasta 2017,Ocupados (14+),78.7,1.99,74.8,82.6,681,A
+2022,Llegada: Hasta 2017,Empleo informal,73.3,2.45,68.5,78.1,559,A
+2022,Llegada: Hasta 2017,Con permiso migratorio,91.5,1.32,89.0,94.1,803,A
+2022,Llegada: Hasta 2017,Educación superior (técnica o universitaria),61.2,2.42,56.4,65.9,618,A
+2022,Llegada: Hasta 2017,Con seguro de salud,45.8,2.94,40.1,51.6,803,A
+2022,Llegada: Hasta 2017,Envía remesas,55.4,2.78,50.0,60.9,681,A
+2022,Llegada: Hasta 2017,Sufrió discriminación,34.2,2.2,29.9,38.5,796,A
+2022,Llegada: Hasta 2017,Discriminación en el trabajo,14.1,1.57,11.0,17.2,796,A
+2022,Llegada: Hasta 2017,Discriminación en la calle / espacios públicos,22.7,1.87,19.0,26.4,796,A
+2022,Llegada: Hasta 2017,Piensa quedarse en el Perú,81.7,2.13,77.5,85.8,803,A
+2022,Llegada: Hasta 2017,Ingreso laboral mediano (S/ corrientes),1299.0,25.5,1200.0,1300.0,551,A
+2022,Llegada: Hasta 2017,Horas semanales promedio,55.2,0.9,53.4,56.9,556,A
+2022,Llegada: Hasta 2017,Edad promedio,29.9,0.54,28.9,31.0,803,A
+2022,Llegada: 2018–2019,Ocupados (14+),74.6,0.78,73.1,76.2,5425,A
+2022,Llegada: 2018–2019,Empleo informal,85.8,0.84,84.1,87.4,4256,A
+2022,Llegada: 2018–2019,Con permiso migratorio,71.0,0.96,69.1,72.9,7152,A
+2022,Llegada: 2018–2019,Educación superior (técnica o universitaria),47.3,1.1,45.2,49.5,5224,A
+2022,Llegada: 2018–2019,Con seguro de salud,26.8,0.89,25.0,28.5,7152,A
+2022,Llegada: 2018–2019,Envía remesas,57.8,1.03,55.8,59.8,5425,A
+2022,Llegada: 2018–2019,Sufrió discriminación,31.7,0.98,29.8,33.6,6625,A
+2022,Llegada: 2018–2019,Discriminación en el trabajo,12.5,0.62,11.3,13.7,6625,A
+2022,Llegada: 2018–2019,Discriminación en la calle / espacios públicos,21.2,0.8,19.6,22.7,6625,A
+2022,Llegada: 2018–2019,Piensa quedarse en el Perú,78.2,1.02,76.2,80.2,7152,A
+2022,Llegada: 2018–2019,Ingreso laboral mediano (S/ corrientes),1200.0,7.9,1169.0,1200.0,4201,A
+2022,Llegada: 2018–2019,Horas semanales promedio,54.6,0.41,53.8,55.4,4243,A
+2022,Llegada: 2018–2019,Edad promedio,26.8,0.22,26.4,27.3,7152,A
+2022,Llegada: 2020 en adelante,Ocupados (14+),66.1,1.38,63.4,68.8,2204,A
+2022,Llegada: 2020 en adelante,Empleo informal,91.2,1.12,89.0,93.4,1529,A
+2022,Llegada: 2020 en adelante,Con permiso migratorio,42.3,1.47,39.4,45.2,3650,A
+2022,Llegada: 2020 en adelante,Educación superior (técnica o universitaria),25.9,1.41,23.1,28.7,2542,A
+2022,Llegada: 2020 en adelante,Con seguro de salud,22.5,1.12,20.3,24.7,3650,A
+2022,Llegada: 2020 en adelante,Envía remesas,46.4,1.65,43.1,49.6,2204,A
+2022,Llegada: 2020 en adelante,Sufrió discriminación,22.4,1.24,20.0,24.8,2806,A
+2022,Llegada: 2020 en adelante,Discriminación en el trabajo,7.4,0.72,6.0,8.8,2806,A
+2022,Llegada: 2020 en adelante,Discriminación en la calle / espacios públicos,15.8,1.04,13.7,17.8,2806,A
+2022,Llegada: 2020 en adelante,Piensa quedarse en el Perú,74.3,1.48,71.4,77.2,3650,A
+2022,Llegada: 2020 en adelante,Ingreso laboral mediano (S/ corrientes),1126.0,30.0,1082.0,1200.0,1487,A
+2022,Llegada: 2020 en adelante,Horas semanales promedio,55.2,0.73,53.8,56.6,1526,A
+2022,Llegada: 2020 en adelante,Edad promedio,23.0,0.39,22.2,23.8,3424,A
+2022,Situación: Carné de extranjería,Ocupados (14+),80.1,0.91,78.4,81.9,2925,A
+2022,Situación: Carné de extranjería,Empleo informal,77.5,1.18,75.2,79.9,2443,A
+2022,Situación: Carné de extranjería,Con permiso migratorio,100.0,0.0,100.0,100.0,3203,A
+2022,Situación: Carné de extranjería,Educación superior (técnica o universitaria),58.9,1.34,56.3,61.5,2830,A
+2022,Situación: Carné de extranjería,Con seguro de salud,39.8,1.4,37.0,42.5,3203,A
+2022,Situación: Carné de extranjería,Envía remesas,62.7,1.27,60.2,65.2,2925,A
+2022,Situación: Carné de extranjería,Sufrió discriminación,34.3,1.32,31.7,36.9,3180,A
+2022,Situación: Carné de extranjería,Discriminación en el trabajo,15.2,0.88,13.5,17.0,3180,A
+2022,Situación: Carné de extranjería,Discriminación en la calle / espacios públicos,23.8,1.17,21.5,26.1,3180,A
+2022,Situación: Carné de extranjería,Piensa quedarse en el Perú,78.2,1.31,75.7,80.8,3203,A
+2022,Situación: Carné de extranjería,Ingreso laboral mediano (S/ corrientes),1200.0,12.8,1200.0,1250.0,2416,A
+2022,Situación: Carné de extranjería,Horas semanales promedio,55.4,0.46,54.5,56.3,2428,A
+2022,Situación: Carné de extranjería,Edad promedio,32.2,0.27,31.7,32.8,3203,A
+2022,Situación: DNI,Ocupados (14+),64.6,4.59,55.6,73.6,192,A
+2022,Situación: DNI,Empleo informal,64.4,5.91,52.8,76.0,139,A
+2022,Situación: DNI,Con permiso migratorio,100.0,0.0,100.0,100.0,1013,A
+2022,Situación: DNI,Educación superior (técnica o universitaria),69.6,5.55,58.8,80.5,108,A
+2022,Situación: DNI,Con seguro de salud,87.1,1.58,84.0,90.2,1013,A
+2022,Situación: DNI,Envía remesas,23.7,4.43,15.1,32.4,192,B
+2022,Situación: DNI,Sufrió discriminación,29.6,3.84,22.1,37.1,271,A
+2022,Situación: DNI,Discriminación en el trabajo,,,,,271,S
+2022,Situación: DNI,Discriminación en la calle / espacios públicos,16.7,3.1,10.6,22.7,271,B
+2022,Situación: DNI,Piensa quedarse en el Perú,83.0,1.71,79.6,86.3,1013,A
+2022,Situación: DNI,Ingreso laboral mediano (S/ corrientes),1030.0,88.6,953.0,1300.0,134,A
+2022,Situación: DNI,Horas semanales promedio,49.8,2.05,45.8,53.9,139,A
+2022,Situación: DNI,Edad promedio,11.5,0.92,9.7,13.3,836,A
+2022,Situación: Sin permiso,Ocupados (14+),63.1,1.26,60.7,65.6,3205,A
+2022,Situación: Sin permiso,Empleo informal,96.4,0.52,95.4,97.4,2207,A
+2022,Situación: Sin permiso,Con permiso migratorio,,,,,4979,S
+2022,Situación: Sin permiso,Educación superior (técnica o universitaria),22.6,1.12,20.4,24.8,3496,A
+2022,Situación: Sin permiso,Con seguro de salud,10.2,0.67,8.9,11.5,4979,A
+2022,Situación: Sin permiso,Envía remesas,46.1,1.38,43.4,48.8,3205,A
+2022,Situación: Sin permiso,Sufrió discriminación,24.7,1.1,22.6,26.9,4442,A
+2022,Situación: Sin permiso,Discriminación en el trabajo,7.8,0.64,6.5,9.0,4442,A
+2022,Situación: Sin permiso,Discriminación en la calle / espacios públicos,16.2,0.91,14.4,18.0,4442,A
+2022,Situación: Sin permiso,Piensa quedarse en el Perú,75.0,1.26,72.5,77.5,4979,A
+2022,Situación: Sin permiso,Ingreso laboral mediano (S/ corrientes),1083.0,14.7,1082.0,1140.0,2160,A
+2022,Situación: Sin permiso,Horas semanales promedio,54.1,0.67,52.8,55.5,2213,A
+2022,Situación: Sin permiso,Edad promedio,22.4,0.3,21.8,23.0,4930,A
+2022,Situación: CPP,Ocupados (14+),73.8,1.36,71.2,76.5,1640,A
+2022,Situación: CPP,Empleo informal,90.2,1.22,87.8,92.6,1284,A
+2022,Situación: CPP,Con permiso migratorio,100.0,0.0,100.0,100.0,1988,A
+2022,Situación: CPP,Educación superior (técnica o universitaria),40.3,1.68,37.0,43.6,1611,A
+2022,Situación: CPP,Con seguro de salud,10.3,1.15,8.0,12.5,1988,A
+2022,Situación: CPP,Envía remesas,54.4,1.81,50.8,57.9,1640,A
+2022,Situación: CPP,Sufrió discriminación,28.2,1.47,25.3,31.1,1924,A
+2022,Situación: CPP,Discriminación en el trabajo,10.5,0.95,8.7,12.4,1924,A
+2022,Situación: CPP,Discriminación en la calle / espacios públicos,19.7,1.3,17.2,22.3,1924,A
+2022,Situación: CPP,Piensa quedarse en el Perú,78.6,1.72,75.2,81.9,1988,A
+2022,Situación: CPP,Ingreso laboral mediano (S/ corrientes),1130.0,30.0,1082.0,1200.0,1259,A
+2022,Situación: CPP,Horas semanales promedio,54.8,0.74,53.4,56.3,1279,A
+2022,Situación: CPP,Edad promedio,27.1,0.42,26.2,27.9,1988,A
+2022,Situación: PTP,Ocupados (14+),74.2,3.24,67.8,80.6,337,A
+2022,Situación: PTP,Empleo informal,97.0,1.08,94.9,99.1,265,A
+2022,Situación: PTP,Con permiso migratorio,100.0,0.0,100.0,100.0,409,A
+2022,Situación: PTP,Educación superior (técnica o universitaria),42.2,4.25,33.8,50.5,327,A
+2022,Situación: PTP,Con seguro de salud,10.0,2.13,5.8,14.2,409,B
+2022,Situación: PTP,Envía remesas,60.2,3.58,53.2,67.2,337,A
+2022,Situación: PTP,Sufrió discriminación,33.9,3.31,27.4,40.4,397,A
+2022,Situación: PTP,Discriminación en el trabajo,13.9,2.36,9.3,18.6,397,B
+2022,Situación: PTP,Discriminación en la calle / espacios públicos,20.5,2.81,14.9,26.0,397,A
+2022,Situación: PTP,Piensa quedarse en el Perú,73.9,3.55,66.9,80.8,409,A
+2022,Situación: PTP,Ingreso laboral mediano (S/ corrientes),1200.0,45.3,1082.0,1260.0,264,A
+2022,Situación: PTP,Horas semanales promedio,55.8,1.48,52.9,58.7,260,A
+2022,Situación: PTP,Edad promedio,28.5,1.01,26.5,30.5,409,A
+2022,Ciudad/dpto: Chimbote,Ocupados (14+),70.3,2.46,65.5,75.1,567,A
+2022,Ciudad/dpto: Chimbote,Empleo informal,93.6,1.47,90.7,96.5,427,A
+2022,Ciudad/dpto: Chimbote,Con permiso migratorio,37.0,3.17,30.8,43.2,836,A
+2022,Ciudad/dpto: Chimbote,Educación superior (técnica o universitaria),30.4,3.23,24.1,36.7,582,A
+2022,Ciudad/dpto: Chimbote,Con seguro de salud,23.3,2.3,18.8,27.8,836,A
+2022,Ciudad/dpto: Chimbote,Envía remesas,47.9,3.85,40.4,55.4,567,A
+2022,Ciudad/dpto: Chimbote,Sufrió discriminación,29.7,2.93,23.9,35.4,713,A
+2022,Ciudad/dpto: Chimbote,Discriminación en el trabajo,12.8,2.2,8.5,17.1,713,B
+2022,Ciudad/dpto: Chimbote,Discriminación en la calle / espacios públicos,17.7,2.26,13.3,22.1,713,A
+2022,Ciudad/dpto: Chimbote,Piensa quedarse en el Perú,75.3,3.72,68.0,82.6,836,A
+2022,Ciudad/dpto: Chimbote,Ingreso laboral mediano (S/ corrientes),1100.0,42.0,1039.0,1204.0,426,A
+2022,Ciudad/dpto: Chimbote,Horas semanales promedio,57.9,1.13,55.7,60.1,425,A
+2022,Ciudad/dpto: Chimbote,Edad promedio,23.5,0.66,22.2,24.7,815,A
+2022,Ciudad/dpto: Arequipa,Ocupados (14+),75.9,1.99,72.0,79.8,458,A
+2022,Ciudad/dpto: Arequipa,Empleo informal,84.5,2.42,79.7,89.2,359,A
+2022,Ciudad/dpto: Arequipa,Con permiso migratorio,67.6,3.18,61.3,73.8,621,A
+2022,Ciudad/dpto: Arequipa,Educación superior (técnica o universitaria),57.3,3.1,51.3,63.4,449,A
+2022,Ciudad/dpto: Arequipa,Con seguro de salud,23.9,2.7,18.6,29.2,621,A
+2022,Ciudad/dpto: Arequipa,Envía remesas,52.4,3.33,45.9,59.0,458,A
+2022,Ciudad/dpto: Arequipa,Sufrió discriminación,44.5,3.51,37.6,51.4,554,A
+2022,Ciudad/dpto: Arequipa,Discriminación en el trabajo,18.8,2.06,14.8,22.8,554,A
+2022,Ciudad/dpto: Arequipa,Discriminación en la calle / espacios públicos,30.5,3.16,24.3,36.7,554,A
+2022,Ciudad/dpto: Arequipa,Piensa quedarse en el Perú,78.7,3.06,72.7,84.7,621,A
+2022,Ciudad/dpto: Arequipa,Ingreso laboral mediano (S/ corrientes),1200.0,50.8,1100.0,1299.0,346,A
+2022,Ciudad/dpto: Arequipa,Horas semanales promedio,53.6,1.38,50.9,56.3,355,A
+2022,Ciudad/dpto: Arequipa,Edad promedio,26.7,0.66,25.4,28.0,606,A
+2022,Ciudad/dpto: Lima,Ocupados (14+),72.9,0.79,71.4,74.4,4452,A
+2022,Ciudad/dpto: Lima,Empleo informal,85.0,0.86,83.3,86.7,3423,A
+2022,Ciudad/dpto: Lima,Con permiso migratorio,67.6,1.06,65.5,69.7,6046,A
+2022,Ciudad/dpto: Lima,Educación superior (técnica o universitaria),43.4,1.08,41.2,45.5,4457,A
+2022,Ciudad/dpto: Lima,Con seguro de salud,28.3,0.97,26.4,30.2,6046,A
+2022,Ciudad/dpto: Lima,Envía remesas,55.1,1.09,53.0,57.2,4452,A
+2022,Ciudad/dpto: Lima,Sufrió discriminación,28.7,0.92,26.9,30.5,5396,A
+2022,Ciudad/dpto: Lima,Discriminación en el trabajo,11.0,0.56,9.9,12.1,5396,A
+2022,Ciudad/dpto: Lima,Discriminación en la calle / espacios públicos,19.3,0.76,17.8,20.8,5396,A
+2022,Ciudad/dpto: Lima,Piensa quedarse en el Perú,77.5,1.08,75.4,79.6,6046,A
+2022,Ciudad/dpto: Lima,Ingreso laboral mediano (S/ corrientes),1200.0,7.9,1169.0,1200.0,3387,A
+2022,Ciudad/dpto: Lima,Horas semanales promedio,55.1,0.4,54.4,55.9,3412,A
+2022,Ciudad/dpto: Lima,Edad promedio,26.2,0.23,25.7,26.6,5955,A
+2022,Ciudad/dpto: Ica,Ocupados (14+),72.5,2.53,67.6,77.5,435,A
+2022,Ciudad/dpto: Ica,Empleo informal,85.5,3.03,79.6,91.4,326,A
+2022,Ciudad/dpto: Ica,Con permiso migratorio,47.6,3.46,40.8,54.4,630,A
+2022,Ciudad/dpto: Ica,Educación superior (técnica o universitaria),32.9,2.99,27.0,38.8,425,A
+2022,Ciudad/dpto: Ica,Con seguro de salud,25.1,3.06,19.1,31.1,630,A
+2022,Ciudad/dpto: Ica,Envía remesas,48.8,3.43,42.1,55.6,435,A
+2022,Ciudad/dpto: Ica,Sufrió discriminación,29.6,3.25,23.2,36.0,534,A
+2022,Ciudad/dpto: Ica,Discriminación en el trabajo,12.8,1.96,9.0,16.7,534,B
+2022,Ciudad/dpto: Ica,Discriminación en la calle / espacios públicos,18.3,2.18,14.0,22.6,534,A
+2022,Ciudad/dpto: Ica,Piensa quedarse en el Perú,69.7,3.24,63.3,76.0,630,A
+2022,Ciudad/dpto: Ica,Ingreso laboral mediano (S/ corrientes),1410.0,35.7,1360.0,1500.0,320,A
+2022,Ciudad/dpto: Ica,Horas semanales promedio,53.4,1.29,50.9,55.9,323,A
+2022,Ciudad/dpto: Ica,Edad promedio,24.1,0.71,22.7,25.5,616,A
+2022,Ciudad/dpto: Trujillo,Ocupados (14+),75.5,1.51,72.6,78.5,923,A
+2022,Ciudad/dpto: Trujillo,Empleo informal,91.1,1.75,87.7,94.5,726,A
+2022,Ciudad/dpto: Trujillo,Con permiso migratorio,48.1,2.82,42.6,53.7,1309,A
+2022,Ciudad/dpto: Trujillo,Educación superior (técnica o universitaria),36.9,2.45,32.0,41.7,931,A
+2022,Ciudad/dpto: Trujillo,Con seguro de salud,19.3,1.73,15.9,22.7,1309,A
+2022,Ciudad/dpto: Trujillo,Envía remesas,57.8,2.11,53.7,62.0,923,A
+2022,Ciudad/dpto: Trujillo,Sufrió discriminación,30.0,1.98,26.1,33.8,1138,A
+2022,Ciudad/dpto: Trujillo,Discriminación en el trabajo,11.4,1.42,8.7,14.2,1138,A
+2022,Ciudad/dpto: Trujillo,Discriminación en la calle / espacios públicos,21.1,1.64,17.9,24.3,1138,A
+2022,Ciudad/dpto: Trujillo,Piensa quedarse en el Perú,79.2,2.2,74.9,83.5,1309,A
+2022,Ciudad/dpto: Trujillo,Ingreso laboral mediano (S/ corrientes),1082.0,37.8,1032.0,1180.0,710,A
+2022,Ciudad/dpto: Trujillo,Horas semanales promedio,53.2,0.91,51.4,55.0,727,A
+2022,Ciudad/dpto: Trujillo,Edad promedio,26.0,0.48,25.0,26.9,1280,A
+2022,Ciudad/dpto: Chiclayo,Ocupados (14+),75.1,2.0,71.2,79.0,468,A
+2022,Ciudad/dpto: Chiclayo,Empleo informal,92.5,1.63,89.3,95.7,355,A
+2022,Ciudad/dpto: Chiclayo,Con permiso migratorio,44.0,3.44,37.2,50.7,684,A
+2022,Ciudad/dpto: Chiclayo,Educación superior (técnica o universitaria),38.7,3.0,32.8,44.6,490,A
+2022,Ciudad/dpto: Chiclayo,Con seguro de salud,17.6,1.68,14.3,20.9,684,A
+2022,Ciudad/dpto: Chiclayo,Envía remesas,51.6,3.02,45.7,57.5,468,A
+2022,Ciudad/dpto: Chiclayo,Sufrió discriminación,44.2,2.77,38.7,49.6,592,A
+2022,Ciudad/dpto: Chiclayo,Discriminación en el trabajo,14.6,1.73,11.2,18.0,592,A
+2022,Ciudad/dpto: Chiclayo,Discriminación en la calle / espacios públicos,33.3,2.71,28.0,38.6,592,A
+2022,Ciudad/dpto: Chiclayo,Piensa quedarse en el Perú,65.0,3.97,57.2,72.8,684,A
+2022,Ciudad/dpto: Chiclayo,Ingreso laboral mediano (S/ corrientes),1000.0,33.4,930.0,1061.0,355,A
+2022,Ciudad/dpto: Chiclayo,Horas semanales promedio,52.2,1.31,49.6,54.8,356,A
+2022,Ciudad/dpto: Chiclayo,Edad promedio,25.6,0.8,24.0,27.2,665,A
+2022,Ciudad/dpto: Piura,Ocupados (14+),70.4,2.2,66.1,74.7,470,A
+2022,Ciudad/dpto: Piura,Empleo informal,91.5,1.92,87.8,95.3,353,A
+2022,Ciudad/dpto: Piura,Con permiso migratorio,42.3,3.59,35.3,49.3,654,A
+2022,Ciudad/dpto: Piura,Educación superior (técnica o universitaria),31.1,3.19,24.9,37.4,504,A
+2022,Ciudad/dpto: Piura,Con seguro de salud,18.0,2.12,13.9,22.2,654,A
+2022,Ciudad/dpto: Piura,Envía remesas,55.4,3.66,48.2,62.6,470,A
+2022,Ciudad/dpto: Piura,Sufrió discriminación,30.9,2.82,25.3,36.4,593,A
+2022,Ciudad/dpto: Piura,Discriminación en el trabajo,9.8,1.43,7.0,12.6,593,A
+2022,Ciudad/dpto: Piura,Discriminación en la calle / espacios públicos,21.4,2.71,16.1,26.7,593,A
+2022,Ciudad/dpto: Piura,Piensa quedarse en el Perú,84.8,2.53,79.8,89.7,654,A
+2022,Ciudad/dpto: Piura,Ingreso laboral mediano (S/ corrientes),1200.0,76.3,1000.0,1299.0,351,A
+2022,Ciudad/dpto: Piura,Horas semanales promedio,51.5,1.34,48.8,54.1,351,A
+2022,Ciudad/dpto: Piura,Edad promedio,25.3,0.68,23.9,26.6,648,A
+2022,Ciudad/dpto: Tumbes,Ocupados (14+),58.5,2.42,53.7,63.2,537,A
+2022,Ciudad/dpto: Tumbes,Empleo informal,90.1,2.42,85.4,94.8,375,A
+2022,Ciudad/dpto: Tumbes,Con permiso migratorio,35.5,3.55,28.6,42.5,825,A
+2022,Ciudad/dpto: Tumbes,Educación superior (técnica o universitaria),19.1,2.07,15.1,23.2,546,A
+2022,Ciudad/dpto: Tumbes,Con seguro de salud,18.6,1.98,14.7,22.5,825,A
+2022,Ciudad/dpto: Tumbes,Envía remesas,47.1,2.33,42.6,51.7,537,A
+2022,Ciudad/dpto: Tumbes,Sufrió discriminación,21.8,2.02,17.8,25.7,707,A
+2022,Ciudad/dpto: Tumbes,Discriminación en el trabajo,6.3,0.99,4.4,8.2,707,B
+2022,Ciudad/dpto: Tumbes,Discriminación en la calle / espacios públicos,13.2,1.83,9.6,16.8,707,A
+2022,Ciudad/dpto: Tumbes,Piensa quedarse en el Perú,78.2,2.62,73.1,83.3,825,A
+2022,Ciudad/dpto: Tumbes,Ingreso laboral mediano (S/ corrientes),909.0,25.5,900.0,1000.0,344,A
+2022,Ciudad/dpto: Tumbes,Horas semanales promedio,45.7,1.97,41.8,49.5,376,A
+2022,Ciudad/dpto: Tumbes,Edad promedio,22.4,0.59,21.3,23.6,810,A
+2024,Total,Ocupados (14+),76.4,0.58,75.3,77.5,7539,A
+2024,Total,Empleo informal,88.7,0.61,87.5,89.9,5693,A
+2024,Total,Con permiso migratorio,85.9,0.72,84.5,87.3,9584,A
+2024,Total,Educación superior (técnica o universitaria),27.9,0.77,26.3,29.4,9545,A
+2024,Total,Con seguro de salud,,,,,0,S
+2024,Total,Envía remesas,,,,,0,S
+2024,Total,Sufrió discriminación,23.7,0.76,22.2,25.2,9361,A
+2024,Total,Discriminación en el trabajo,8.5,0.41,7.7,9.3,9361,A
+2024,Total,Discriminación en la calle / espacios públicos,13.7,0.6,12.5,14.9,9361,A
+2024,Total,Piensa quedarse en el Perú,92.8,0.5,91.9,93.8,9584,A
+2024,Total,Ingreso laboral mediano (S/ corrientes),,,,,0,S
+2024,Total,Horas semanales promedio,54.0,0.34,53.3,54.6,5718,A
+2024,Total,Edad promedio,28.5,0.21,28.1,28.9,9613,A
+2024,Sexo: Hombres,Ocupados (14+),87.8,0.72,86.4,89.2,3562,A
+2024,Sexo: Hombres,Empleo informal,86.3,0.88,84.5,88.0,3122,A
+2024,Sexo: Hombres,Con permiso migratorio,85.9,0.81,84.3,87.5,4599,A
+2024,Sexo: Hombres,Educación superior (técnica o universitaria),24.2,0.91,22.5,26.0,4585,A
+2024,Sexo: Hombres,Con seguro de salud,,,,,0,S
+2024,Sexo: Hombres,Envía remesas,,,,,0,S
+2024,Sexo: Hombres,Sufrió discriminación,22.8,0.92,21.0,24.6,4481,A
+2024,Sexo: Hombres,Discriminación en el trabajo,8.9,0.55,7.8,9.9,4481,A
+2024,Sexo: Hombres,Discriminación en la calle / espacios públicos,13.1,0.75,11.6,14.6,4481,A
+2024,Sexo: Hombres,Piensa quedarse en el Perú,92.9,0.59,91.8,94.1,4599,A
+2024,Sexo: Hombres,Ingreso laboral mediano (S/ corrientes),,,,,0,S
+2024,Sexo: Hombres,Horas semanales promedio,58.7,0.39,57.9,59.5,3135,A
+2024,Sexo: Hombres,Edad promedio,27.5,0.27,27.0,28.0,4616,A
+2024,Sexo: Mujeres,Ocupados (14+),66.3,0.97,64.4,68.2,3977,A
+2024,Sexo: Mujeres,Empleo informal,91.5,0.73,90.1,93.0,2571,A
+2024,Sexo: Mujeres,Con permiso migratorio,85.8,0.93,84.0,87.6,4985,A
+2024,Sexo: Mujeres,Educación superior (técnica o universitaria),31.2,0.95,29.3,33.0,4960,A
+2024,Sexo: Mujeres,Con seguro de salud,,,,,0,S
+2024,Sexo: Mujeres,Envía remesas,,,,,0,S
+2024,Sexo: Mujeres,Sufrió discriminación,24.5,0.92,22.7,26.3,4880,A
+2024,Sexo: Mujeres,Discriminación en el trabajo,8.1,0.52,7.1,9.2,4880,A
+2024,Sexo: Mujeres,Discriminación en la calle / espacios públicos,14.2,0.71,12.8,15.6,4880,A
+2024,Sexo: Mujeres,Piensa quedarse en el Perú,92.8,0.62,91.6,94.0,4985,A
+2024,Sexo: Mujeres,Ingreso laboral mediano (S/ corrientes),,,,,0,S
+2024,Sexo: Mujeres,Horas semanales promedio,48.4,0.51,47.4,49.4,2583,A
+2024,Sexo: Mujeres,Edad promedio,29.5,0.28,28.9,30.0,4997,A
+2024,Llegada: Hasta 2017,Ocupados (14+),84.8,1.85,81.2,88.4,568,A
+2024,Llegada: Hasta 2017,Empleo informal,79.4,2.37,74.8,84.1,478,A
+2024,Llegada: Hasta 2017,Con permiso migratorio,96.6,0.88,94.8,98.3,625,A
+2024,Llegada: Hasta 2017,Educación superior (técnica o universitaria),44.7,2.8,39.2,50.1,624,A
+2024,Llegada: Hasta 2017,Con seguro de salud,,,,,0,S
+2024,Llegada: Hasta 2017,Envía remesas,,,,,0,S
+2024,Llegada: Hasta 2017,Sufrió discriminación,25.4,2.58,20.3,30.4,625,A
+2024,Llegada: Hasta 2017,Discriminación en el trabajo,9.0,1.45,6.2,11.9,625,B
+2024,Llegada: Hasta 2017,Discriminación en la calle / espacios públicos,18.5,2.4,13.8,23.2,625,A
+2024,Llegada: Hasta 2017,Piensa quedarse en el Perú,96.1,0.94,94.2,97.9,625,A
+2024,Llegada: Hasta 2017,Ingreso laboral mediano (S/ corrientes),,,,,0,S
+2024,Llegada: Hasta 2017,Horas semanales promedio,53.8,0.92,51.9,55.6,478,A
+2024,Llegada: Hasta 2017,Edad promedio,33.9,0.66,32.6,35.2,625,A
+2024,Llegada: 2018–2019,Ocupados (14+),79.3,0.8,77.8,80.9,3721,A
+2024,Llegada: 2018–2019,Empleo informal,85.3,0.94,83.4,87.1,2906,A
+2024,Llegada: 2018–2019,Con permiso migratorio,94.4,0.57,93.2,95.5,4564,A
+2024,Llegada: 2018–2019,Educación superior (técnica o universitaria),33.4,1.04,31.4,35.4,4563,A
+2024,Llegada: 2018–2019,Con seguro de salud,,,,,0,S
+2024,Llegada: 2018–2019,Envía remesas,,,,,0,S
+2024,Llegada: 2018–2019,Sufrió discriminación,25.0,0.99,23.1,27.0,4564,A
+2024,Llegada: 2018–2019,Discriminación en el trabajo,9.5,0.62,8.2,10.7,4564,A
+2024,Llegada: 2018–2019,Discriminación en la calle / espacios públicos,14.4,0.82,12.8,16.0,4564,A
+2024,Llegada: 2018–2019,Piensa quedarse en el Perú,93.1,0.67,91.8,94.4,4564,A
+2024,Llegada: 2018–2019,Ingreso laboral mediano (S/ corrientes),,,,,0,S
+2024,Llegada: 2018–2019,Horas semanales promedio,52.9,0.46,52.0,53.8,2919,A
+2024,Llegada: 2018–2019,Edad promedio,29.9,0.27,29.4,30.5,4564,A
+2024,Llegada: 2020 en adelante,Ocupados (14+),71.0,1.0,69.0,73.0,3230,A
+2024,Llegada: 2020 en adelante,Empleo informal,95.5,0.55,94.4,96.5,2293,A
+2024,Llegada: 2020 en adelante,Con permiso migratorio,74.5,1.35,71.9,77.2,4395,A
+2024,Llegada: 2020 en adelante,Educación superior (técnica o universitaria),18.8,0.96,16.9,20.6,4330,A
+2024,Llegada: 2020 en adelante,Con seguro de salud,,,,,0,S
+2024,Llegada: 2020 en adelante,Envía remesas,,,,,0,S
+2024,Llegada: 2020 en adelante,Sufrió discriminación,21.8,1.14,19.6,24.1,4172,A
+2024,Llegada: 2020 en adelante,Discriminación en el trabajo,7.3,0.53,6.2,8.3,4172,A
+2024,Llegada: 2020 en adelante,Discriminación en la calle / espacios públicos,12.0,0.75,10.5,13.4,4172,A
+2024,Llegada: 2020 en adelante,Piensa quedarse en el Perú,92.0,0.69,90.6,93.3,4395,A
+2024,Llegada: 2020 en adelante,Ingreso laboral mediano (S/ corrientes),,,,,0,S
+2024,Llegada: 2020 en adelante,Horas semanales promedio,55.6,0.51,54.6,56.6,2305,A
+2024,Llegada: 2020 en adelante,Edad promedio,26.1,0.35,25.4,26.8,4395,A
+2024,Situación: Carné de extranjería,Ocupados (14+),80.8,0.67,79.5,82.1,4830,A
+2024,Situación: Carné de extranjería,Empleo informal,85.1,0.82,83.4,86.7,3851,A
+2024,Situación: Carné de extranjería,Con permiso migratorio,100.0,0.0,100.0,100.0,5590,A
+2024,Situación: Carné de extranjería,Educación superior (técnica o universitaria),36.2,1.0,34.3,38.2,5581,A
+2024,Situación: Carné de extranjería,Con seguro de salud,,,,,0,S
+2024,Situación: Carné de extranjería,Envía remesas,,,,,0,S
+2024,Situación: Carné de extranjería,Sufrió discriminación,25.0,0.95,23.1,26.8,5554,A
+2024,Situación: Carné de extranjería,Discriminación en el trabajo,9.6,0.56,8.5,10.7,5554,A
+2024,Situación: Carné de extranjería,Discriminación en la calle / espacios públicos,15.3,0.78,13.8,16.8,5554,A
+2024,Situación: Carné de extranjería,Piensa quedarse en el Perú,93.7,0.55,92.6,94.7,5590,A
+2024,Situación: Carné de extranjería,Ingreso laboral mediano (S/ corrientes),,,,,0,S
+2024,Situación: Carné de extranjería,Horas semanales promedio,53.4,0.39,52.6,54.1,3867,A
+2024,Situación: Carné de extranjería,Edad promedio,31.7,0.25,31.2,32.2,5590,A
+2024,Situación: Otro permiso,Ocupados (14+),68.0,1.42,65.3,70.8,1527,A
+2024,Situación: Otro permiso,Empleo informal,97.2,0.64,95.9,98.4,1047,A
+2024,Situación: Otro permiso,Con permiso migratorio,100.0,0.0,100.0,100.0,2040,A
+2024,Situación: Otro permiso,Educación superior (técnica o universitaria),17.8,1.25,15.3,20.2,2032,A
+2024,Situación: Otro permiso,Con seguro de salud,,,,,0,S
+2024,Situación: Otro permiso,Envía remesas,,,,,0,S
+2024,Situación: Otro permiso,Sufrió discriminación,23.5,1.41,20.7,26.2,1999,A
+2024,Situación: Otro permiso,Discriminación en el trabajo,7.1,0.74,5.6,8.5,1999,A
+2024,Situación: Otro permiso,Discriminación en la calle / espacios públicos,12.8,1.05,10.7,14.8,1999,A
+2024,Situación: Otro permiso,Piensa quedarse en el Perú,90.8,1.18,88.4,93.1,2040,A
+2024,Situación: Otro permiso,Ingreso laboral mediano (S/ corrientes),,,,,0,S
+2024,Situación: Otro permiso,Horas semanales promedio,54.8,0.68,53.4,56.1,1050,A
+2024,Situación: Otro permiso,Edad promedio,25.7,0.44,24.8,26.5,2040,A
+2024,Situación: Otro,Ocupados (14+),73.2,3.1,67.1,79.3,352,A
+2024,Situación: Otro,Empleo informal,92.1,2.57,87.0,97.1,251,A
+2024,Situación: Otro,Con permiso migratorio,100.0,0.0,100.0,100.0,452,A
+2024,Situación: Otro,Educación superior (técnica o universitaria),16.7,2.34,12.1,21.3,479,A
+2024,Situación: Otro,Con seguro de salud,,,,,0,S
+2024,Situación: Otro,Envía remesas,,,,,0,S
+2024,Situación: Otro,Sufrió discriminación,23.4,2.92,17.7,29.1,442,A
+2024,Situación: Otro,Discriminación en el trabajo,7.0,1.45,4.2,9.8,442,B
+2024,Situación: Otro,Discriminación en la calle / espacios públicos,8.6,1.68,5.3,11.9,442,B
+2024,Situación: Otro,Piensa quedarse en el Perú,94.8,1.39,92.0,97.5,452,A
+2024,Situación: Otro,Ingreso laboral mediano (S/ corrientes),,,,,0,S
+2024,Situación: Otro,Horas semanales promedio,54.3,1.77,50.8,57.8,254,A
+2024,Situación: Otro,Edad promedio,25.7,1.16,23.4,27.9,481,A
+2024,Situación: Sin permiso,Ocupados (14+),65.5,2.41,60.8,70.2,830,A
+2024,Situación: Sin permiso,Empleo informal,98.7,0.55,97.7,99.8,544,A
+2024,Situación: Sin permiso,Con permiso migratorio,,,,,1502,S
+2024,Situación: Sin permiso,Educación superior (técnica o universitaria),10.1,1.22,7.7,12.5,1453,A
+2024,Situación: Sin permiso,Con seguro de salud,,,,,0,S
+2024,Situación: Sin permiso,Envía remesas,,,,,0,S
+2024,Situación: Sin permiso,Sufrió discriminación,18.2,1.77,14.7,21.6,1366,A
+2024,Situación: Sin permiso,Discriminación en el trabajo,6.3,0.92,4.5,8.1,1366,A
+2024,Situación: Sin permiso,Discriminación en la calle / espacios públicos,9.3,1.15,7.0,11.5,1366,A
+2024,Situación: Sin permiso,Piensa quedarse en el Perú,91.9,1.12,89.7,94.1,1502,A
+2024,Situación: Sin permiso,Ingreso laboral mediano (S/ corrientes),,,,,0,S
+2024,Situación: Sin permiso,Horas semanales promedio,57.0,1.18,54.6,59.3,547,A
+2024,Situación: Sin permiso,Edad promedio,20.1,0.58,19.0,21.2,1502,A
+2024,Ciudad/dpto: Tumbes,Ocupados (14+),72.3,2.43,67.5,77.1,449,A
+2024,Ciudad/dpto: Tumbes,Empleo informal,91.3,1.92,87.5,95.0,329,A
+2024,Ciudad/dpto: Tumbes,Con permiso migratorio,74.7,2.91,69.0,80.4,607,A
+2024,Ciudad/dpto: Tumbes,Educación superior (técnica o universitaria),20.4,2.12,16.3,24.6,610,A
+2024,Ciudad/dpto: Tumbes,Con seguro de salud,,,,,0,S
+2024,Ciudad/dpto: Tumbes,Envía remesas,,,,,0,S
+2024,Ciudad/dpto: Tumbes,Sufrió discriminación,19.0,2.07,14.9,23.1,587,A
+2024,Ciudad/dpto: Tumbes,Discriminación en el trabajo,6.6,1.33,4.0,9.2,587,B
+2024,Ciudad/dpto: Tumbes,Discriminación en la calle / espacios públicos,11.6,1.62,8.4,14.7,587,A
+2024,Ciudad/dpto: Tumbes,Piensa quedarse en el Perú,95.9,1.12,93.7,98.1,607,A
+2024,Ciudad/dpto: Tumbes,Ingreso laboral mediano (S/ corrientes),,,,,0,S
+2024,Ciudad/dpto: Tumbes,Horas semanales promedio,44.2,1.56,41.1,47.2,337,A
+2024,Ciudad/dpto: Tumbes,Edad promedio,26.2,0.73,24.7,27.6,615,A
+2024,Ciudad/dpto: Piura,Ocupados (14+),75.0,1.81,71.5,78.6,453,A
+2024,Ciudad/dpto: Piura,Empleo informal,90.5,1.88,86.8,94.2,340,A
+2024,Ciudad/dpto: Piura,Con permiso migratorio,88.5,1.99,84.5,92.4,570,A
+2024,Ciudad/dpto: Piura,Educación superior (técnica o universitaria),21.5,2.09,17.4,25.6,568,A
+2024,Ciudad/dpto: Piura,Con seguro de salud,,,,,0,S
+2024,Ciudad/dpto: Piura,Envía remesas,,,,,0,S
+2024,Ciudad/dpto: Piura,Sufrió discriminación,25.2,2.42,20.4,29.9,560,A
+2024,Ciudad/dpto: Piura,Discriminación en el trabajo,6.6,1.22,4.2,9.0,560,B
+2024,Ciudad/dpto: Piura,Discriminación en la calle / espacios públicos,15.3,1.92,11.6,19.1,560,A
+2024,Ciudad/dpto: Piura,Piensa quedarse en el Perú,96.3,0.83,94.7,98.0,570,A
+2024,Ciudad/dpto: Piura,Ingreso laboral mediano (S/ corrientes),,,,,0,S
+2024,Ciudad/dpto: Piura,Horas semanales promedio,50.4,1.13,48.2,52.6,342,A
+2024,Ciudad/dpto: Piura,Edad promedio,28.6,0.71,27.2,30.0,570,A
+2024,Ciudad/dpto: Lambayeque,Ocupados (14+),72.5,2.01,68.6,76.4,436,A
+2024,Ciudad/dpto: Lambayeque,Empleo informal,92.3,2.13,88.2,96.5,318,A
+2024,Ciudad/dpto: Lambayeque,Con permiso migratorio,82.9,2.42,78.2,87.7,582,A
+2024,Ciudad/dpto: Lambayeque,Educación superior (técnica o universitaria),23.1,2.4,18.4,27.8,578,A
+2024,Ciudad/dpto: Lambayeque,Con seguro de salud,,,,,0,S
+2024,Ciudad/dpto: Lambayeque,Envía remesas,,,,,0,S
+2024,Ciudad/dpto: Lambayeque,Sufrió discriminación,29.1,2.79,23.7,34.6,569,A
+2024,Ciudad/dpto: Lambayeque,Discriminación en el trabajo,9.0,1.36,6.4,11.7,569,B
+2024,Ciudad/dpto: Lambayeque,Discriminación en la calle / espacios públicos,18.9,2.24,14.5,23.3,569,A
+2024,Ciudad/dpto: Lambayeque,Piensa quedarse en el Perú,84.0,2.5,79.1,88.9,582,A
+2024,Ciudad/dpto: Lambayeque,Ingreso laboral mediano (S/ corrientes),,,,,0,S
+2024,Ciudad/dpto: Lambayeque,Horas semanales promedio,49.4,1.43,46.5,52.2,321,A
+2024,Ciudad/dpto: Lambayeque,Edad promedio,27.1,0.71,25.7,28.5,582,A
+2024,Ciudad/dpto: La Libertad,Ocupados (14+),75.5,1.28,73.0,78.0,821,A
+2024,Ciudad/dpto: La Libertad,Empleo informal,93.8,1.17,91.5,96.1,615,A
+2024,Ciudad/dpto: La Libertad,Con permiso migratorio,86.6,1.65,83.4,89.8,1051,A
+2024,Ciudad/dpto: La Libertad,Educación superior (técnica o universitaria),25.8,1.95,22.0,29.6,1045,A
+2024,Ciudad/dpto: La Libertad,Con seguro de salud,,,,,0,S
+2024,Ciudad/dpto: La Libertad,Envía remesas,,,,,0,S
+2024,Ciudad/dpto: La Libertad,Sufrió discriminación,24.0,2.04,20.0,28.0,1021,A
+2024,Ciudad/dpto: La Libertad,Discriminación en el trabajo,10.1,1.16,7.8,12.3,1021,A
+2024,Ciudad/dpto: La Libertad,Discriminación en la calle / espacios públicos,13.3,1.51,10.3,16.3,1021,A
+2024,Ciudad/dpto: La Libertad,Piensa quedarse en el Perú,94.9,1.12,92.7,97.1,1051,A
+2024,Ciudad/dpto: La Libertad,Ingreso laboral mediano (S/ corrientes),,,,,0,S
+2024,Ciudad/dpto: La Libertad,Horas semanales promedio,52.0,0.82,50.4,53.6,616,A
+2024,Ciudad/dpto: La Libertad,Edad promedio,27.9,0.51,26.9,28.9,1053,A
+2024,Ciudad/dpto: Áncash,Ocupados (14+),67.9,2.12,63.7,72.0,497,A
+2024,Ciudad/dpto: Áncash,Empleo informal,95.0,1.37,92.3,97.7,336,A
+2024,Ciudad/dpto: Áncash,Con permiso migratorio,77.9,3.17,71.7,84.1,654,A
+2024,Ciudad/dpto: Áncash,Educación superior (técnica o universitaria),18.4,1.94,14.6,22.2,650,A
+2024,Ciudad/dpto: Áncash,Con seguro de salud,,,,,0,S
+2024,Ciudad/dpto: Áncash,Envía remesas,,,,,0,S
+2024,Ciudad/dpto: Áncash,Sufrió discriminación,31.4,3.3,24.9,37.8,641,A
+2024,Ciudad/dpto: Áncash,Discriminación en el trabajo,8.8,1.45,6.0,11.7,641,B
+2024,Ciudad/dpto: Áncash,Discriminación en la calle / espacios públicos,19.5,2.84,14.0,25.1,641,A
+2024,Ciudad/dpto: Áncash,Piensa quedarse en el Perú,97.4,0.73,96.0,98.8,654,A
+2024,Ciudad/dpto: Áncash,Ingreso laboral mediano (S/ corrientes),,,,,0,S
+2024,Ciudad/dpto: Áncash,Horas semanales promedio,55.3,1.31,52.7,57.9,336,A
+2024,Ciudad/dpto: Áncash,Edad promedio,26.8,0.73,25.4,28.3,654,A
+2024,Ciudad/dpto: Ica,Ocupados (14+),75.9,2.39,71.2,80.6,459,A
+2024,Ciudad/dpto: Ica,Empleo informal,93.2,1.47,90.4,96.1,358,A
+2024,Ciudad/dpto: Ica,Con permiso migratorio,77.9,2.7,72.6,83.2,591,A
+2024,Ciudad/dpto: Ica,Educación superior (técnica o universitaria),16.1,1.9,12.4,19.9,584,A
+2024,Ciudad/dpto: Ica,Con seguro de salud,,,,,0,S
+2024,Ciudad/dpto: Ica,Envía remesas,,,,,0,S
+2024,Ciudad/dpto: Ica,Sufrió discriminación,21.3,3.09,15.2,27.3,568,A
+2024,Ciudad/dpto: Ica,Discriminación en el trabajo,8.4,1.42,5.7,11.2,568,B
+2024,Ciudad/dpto: Ica,Discriminación en la calle / espacios públicos,10.3,2.02,6.3,14.2,568,B
+2024,Ciudad/dpto: Ica,Piensa quedarse en el Perú,95.3,1.44,92.5,98.1,591,A
+2024,Ciudad/dpto: Ica,Ingreso laboral mediano (S/ corrientes),,,,,0,S
+2024,Ciudad/dpto: Ica,Horas semanales promedio,54.0,1.27,51.5,56.5,362,A
+2024,Ciudad/dpto: Ica,Edad promedio,27.6,0.68,26.3,29.0,591,A
+2024,Ciudad/dpto: Arequipa,Ocupados (14+),79.5,2.13,75.3,83.6,430,A
+2024,Ciudad/dpto: Arequipa,Empleo informal,84.2,2.48,79.3,89.1,339,A
+2024,Ciudad/dpto: Arequipa,Con permiso migratorio,92.1,1.61,88.9,95.2,537,A
+2024,Ciudad/dpto: Arequipa,Educación superior (técnica o universitaria),31.9,2.33,27.3,36.4,533,A
+2024,Ciudad/dpto: Arequipa,Con seguro de salud,,,,,0,S
+2024,Ciudad/dpto: Arequipa,Envía remesas,,,,,0,S
+2024,Ciudad/dpto: Arequipa,Sufrió discriminación,30.6,3.11,24.5,36.7,527,A
+2024,Ciudad/dpto: Arequipa,Discriminación en el trabajo,12.5,1.91,8.8,16.3,527,B
+2024,Ciudad/dpto: Arequipa,Discriminación en la calle / espacios públicos,17.8,1.97,13.9,21.6,527,A
+2024,Ciudad/dpto: Arequipa,Piensa quedarse en el Perú,92.8,1.48,89.8,95.7,537,A
+2024,Ciudad/dpto: Arequipa,Ingreso laboral mediano (S/ corrientes),,,,,0,S
+2024,Ciudad/dpto: Arequipa,Horas semanales promedio,52.2,1.33,49.6,54.8,341,A
+2024,Ciudad/dpto: Arequipa,Edad promedio,29.2,0.71,27.8,30.6,537,A
+2024,Ciudad/dpto: Lima,Ocupados (14+),76.9,0.78,75.4,78.5,3147,A
+2024,Ciudad/dpto: Lima,Empleo informal,88.3,0.8,86.7,89.9,2412,A
+2024,Ciudad/dpto: Lima,Con permiso migratorio,85.9,0.93,84.1,87.7,3927,A
+2024,Ciudad/dpto: Lima,Educación superior (técnica o universitaria),29.7,1.04,27.7,31.7,3914,A
+2024,Ciudad/dpto: Lima,Con seguro de salud,,,,,0,S
+2024,Ciudad/dpto: Lima,Envía remesas,,,,,0,S
+2024,Ciudad/dpto: Lima,Sufrió discriminación,23.2,0.98,21.3,25.1,3843,A
+2024,Ciudad/dpto: Lima,Discriminación en el trabajo,8.1,0.52,7.1,9.1,3843,A
+2024,Ciudad/dpto: Lima,Discriminación en la calle / espacios públicos,13.3,0.78,11.8,14.9,3843,A
+2024,Ciudad/dpto: Lima,Piensa quedarse en el Perú,92.9,0.64,91.6,94.1,3927,A
+2024,Ciudad/dpto: Lima,Ingreso laboral mediano (S/ corrientes),,,,,0,S
+2024,Ciudad/dpto: Lima,Horas semanales promedio,54.1,0.44,53.3,55.0,2416,A
+2024,Ciudad/dpto: Lima,Edad promedio,28.6,0.27,28.1,29.1,3942,A
+2024,Ciudad/dpto: Callao,Ocupados (14+),75.7,1.34,73.1,78.3,847,A
+2024,Ciudad/dpto: Callao,Empleo informal,88.0,1.53,85.0,91.1,646,A
+2024,Ciudad/dpto: Callao,Con permiso migratorio,86.5,1.88,82.8,90.2,1065,A
+2024,Ciudad/dpto: Callao,Educación superior (técnica o universitaria),24.6,1.82,21.0,28.2,1063,A
+2024,Ciudad/dpto: Callao,Con seguro de salud,,,,,0,S
+2024,Ciudad/dpto: Callao,Envía remesas,,,,,0,S
+2024,Ciudad/dpto: Callao,Sufrió discriminación,23.3,1.98,19.4,27.2,1045,A
+2024,Ciudad/dpto: Callao,Discriminación en el trabajo,9.0,1.09,6.9,11.1,1045,A
+2024,Ciudad/dpto: Callao,Discriminación en la calle / espacios públicos,13.5,1.49,10.6,16.5,1045,A
+2024,Ciudad/dpto: Callao,Piensa quedarse en el Perú,92.0,1.33,89.4,94.6,1065,A
+2024,Ciudad/dpto: Callao,Ingreso laboral mediano (S/ corrientes),,,,,0,S
+2024,Ciudad/dpto: Callao,Horas semanales promedio,55.3,0.87,53.6,57.0,647,A
+2024,Ciudad/dpto: Callao,Edad promedio,28.8,0.54,27.8,29.9,1069,A

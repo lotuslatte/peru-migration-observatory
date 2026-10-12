@@ -1,0 +1,13 @@
+pool_years: [2020, 2021, 2022, 2023, 2024]
+indicators:
+  - {id: life_cross, required: true}
+  - {id: mig5_any, required: true}
+  - {id: mig5_intra, required: false}
+  - {id: mig5_cross, required: false, note: "p pequeño: muchas provincias S"}
+  - {id: mig5_intl, required: false}
+  - {id: native_here, required: false}
+  - {id: youth_share, required: false}
+  - {id: informality, required: false}
+  - {id: median_inc_real, required: false}
+  - {id: pobre, required: false}
+min_psu_for_A: 4

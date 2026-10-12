@@ -1,0 +1,53 @@
+# Indicadores del Observatorio de Migración. weight: w_pop (facpob07, toda la población) o w500 (fac500a, 14+ para resultados laborales)
+indicators:
+  mig5_any:    {type: prop, num: mig5_any, den: pop5, weight: w_pop, label_es: "Cambió de distrito en los últimos 5 años", label_en: "Changed district in last 5 years", unit: "%"}
+  mig5_cross:  {type: prop, num: mig5_cross, den: pop5, weight: w_pop, label_es: "Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)", label_en: "Recent inter-departmental in-migration rate", unit: "%"}
+  mig5_intl:   {type: prop, num: mig5_intl, den: pop5, weight: w_pop, label_es: "Llegaron del extranjero en los últimos 5 años", label_en: "Arrived from abroad in last 5 years", unit: "%"}
+  mig5_intra:  {type: prop, num: mig5_intra, den: pop5, weight: w_pop, label_es: "Se mudaron dentro del departamento", label_en: "Moved within department", unit: "%"}
+  mig5_ven:    {type: prop, num: mig5_ven, den: pop5, weight: w_pop, label_es: "Llegaron de Venezuela en los últimos 5 años", label_en: "Arrived from Venezuela in last 5 years", unit: "%"}
+  life_cross:  {type: prop, num: life_cross, den: pop_life, weight: w_pop, label_es: "Nacidos en otro departamento (migración de toda la vida)", label_en: "Born in another department (lifetime)", unit: "%"}
+  life_abroad: {type: prop, num: life_abroad, den: pop_life, weight: w_pop, label_es: "Nacidos en el extranjero", label_en: "Foreign-born", unit: "%"}
+  born_ven:    {type: prop, num: born_ven, den: pop_life, weight: w_pop, label_es: "Nacidos en Venezuela", label_en: "Born in Venezuela", unit: "%"}
+  native_here: {type: prop, num: native_here, den: pop_life, weight: w_pop, label_es: "Nacidos en el mismo departamento (retención)", label_en: "Born in same department", unit: "%"}
+  n_mig5_cross: {type: total, num: mig5_cross, den: pop5, weight: w_pop, label_es: "Inmigrantes interdepartamentales recientes (personas)", label_en: "Recent inter-departmental in-migrants (persons)", unit: "personas"}
+  n_mig5_intl: {type: total, num: mig5_intl, den: pop5, weight: w_pop, label_es: "Inmigrantes internacionales recientes (personas)", label_en: "Recent international in-migrants (persons)", unit: "personas"}
+  n_pop5:      {type: total, num: pop5, den: pop5, weight: w_pop, label_es: "Población de 5 y más años", label_en: "Population aged 5+", unit: "personas"}
+  youth_share: {type: prop, num: youth, den: pop_all, weight: w_pop, label_es: "Población de 15 a 29 años", label_en: "Population aged 15–29", unit: "%"}
+  # resultados laborales (14+)
+  lfpr:        {type: prop, num: pea, den: pet, weight: w500, label_es: "Tasa de actividad (14+)", label_en: "Labour force participation (14+)", unit: "%"}
+  ur:          {type: prop, num: desocupado, den: pea, weight: w500, label_es: "Tasa de desempleo", label_en: "Unemployment rate", unit: "%"}
+  informality: {type: prop, num: informal, den: ocupado, weight: w500, label_es: "Empleo informal", label_en: "Informal employment", unit: "%"}
+  median_inc_real: {type: median, var: inc_real_pos, den: has_income, weight: w500, label_es: "Ingreso laboral mediano (S/ 2024)", label_en: "Median labour income (2024 S/)", unit: "S/"}
+  contract_any: {type: prop, num: contract_any, den: wage_worker, weight: w500, label_es: "Asalariados con contrato", label_en: "Wage workers with contract", unit: "%"}
+  pension:     {type: prop, num: pension, den: ocupado, weight: w500, label_es: "Ocupados con pensión", label_en: "Employed with pension", unit: "%"}
+  seguro:      {type: prop, num: seguro, den: pet, weight: w500, label_es: "Con seguro de salud (14+)", label_en: "Health insurance (14+)", unit: "%"}
+  self_emp:    {type: prop, num: self_emp, den: ocupado, weight: w500, label_es: "Independientes", label_en: "Own-account", unit: "%"}
+  neet:        {type: prop, num: neet, den: youth, weight: w500, label_es: "NiNi 15–29", label_en: "NEET 15–29", unit: "%"}
+  pobre:       {type: prop, num: pobre, den: pop_all, weight: w_pop, label_es: "Pobreza monetaria", label_en: "Monetary poverty", unit: "%"}
+  educ_dist:   {type: dist, var: educ4, den: pet, weight: w500, label_es: "Nivel educativo (14+)", label_en: "Education (14+)", unit: "%", labels_es: {1: "Hasta primaria", 2: "Secundaria", 3: "Superior no universitaria", 4: "Universitaria y posgrado"}}
+  age_dist:    {type: dist, var: age5, den: pop5, weight: w_pop, label_es: "Grupo de edad", label_en: "Age group", unit: "%", labels_es: {0: "5–14", 1: "15–29", 2: "30–44", 3: "45–64", 4: "65 y más"}}
+  gap_inf_mig: {type: diff, base: informality, group: mig2, a: 2, b: 1, label_es: "Informalidad migrantes − no migrantes (pp)", label_en: "Informality migrants − non-migrants (pp)", unit: "pp"}
+  gap_ur_mig:  {type: diff, base: ur, group: mig2, a: 2, b: 1, label_es: "Desempleo migrantes − no migrantes (pp)", label_en: "Unemployment migrants − non-migrants (pp)", unit: "pp"}
+  gap_inc_mig: {type: ratio_median, base: median_inc_real, group: mig2, a: 2, b: 1, label_es: "Ingreso mediano migrantes / no migrantes", label_en: "Median income migrants / non-migrants", unit: "ratio"}
+
+domains:
+  national:  {vars: [], label_es: "Nacional"}
+  sex:       {vars: [sex], label_es: "Sexo", labels_es: {1: "Hombres", 2: "Mujeres"}}
+  age5:      {vars: [age5], label_es: "Grupo de edad", labels_es: {0: "5–14", 1: "15–29", 2: "30–44", 3: "45–64", 4: "65 y más"}}
+  age4:      {vars: [age4], label_es: "Edad (14+)", labels_es: {1: "14–24", 2: "25–44", 3: "45–64", 4: "65 y más"}}
+  educ4:     {vars: [educ4], label_es: "Nivel educativo", recode: educ4}
+  area:      {vars: [area], label_es: "Área", recode: area}
+  region_nat: {vars: [region_nat], label_es: "Región natural", recode: region_nat}
+  lengua3:   {vars: [lengua3], label_es: "Lengua materna", recode: lengua3}
+  mig2:      {vars: [mig2], label_es: "Condición migratoria (5 años)", labels_es: {1: "No migrante", 2: "Migrante reciente (otro dpto. o país)"}}
+  mig3:      {vars: [mig3], label_es: "Movilidad reciente", labels_es: {0: "No se mudó", 1: "Se mudó dentro del departamento", 2: "Llegó de otro departamento o país"}}
+  dept:      {vars: [dept], label_es: "Departamento de residencia"}
+  lima:      {vars: [lima], label_es: "Lima Metropolitana / Lima Región", labels_es: {"15M": "Lima Metropolitana (incl. Callao)", "15R": "Lima Región"}}
+  orig_dept: {vars: [orig_group], label_es: "Departamento de origen (hace 5 años)"}
+  dept_sex:  {vars: [dept, sex], label_es: "Departamento × sexo"}
+  dept_mig2: {vars: [dept, mig2], label_es: "Departamento × condición migratoria"}
+  sex_mig2:  {vars: [sex, mig2], label_es: "Sexo × condición migratoria"}
+  age4_mig2: {vars: [age4, mig2], label_es: "Edad × condición migratoria"}
+  educ4_mig2: {vars: [educ4, mig2], label_es: "Educación × condición migratoria"}
+  area_mig2: {vars: [area, mig2], label_es: "Área × condición migratoria"}
+  region_mig2: {vars: [region_nat, mig2], label_es: "Región natural × condición migratoria"}

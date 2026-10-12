@@ -1,0 +1,40 @@
+table_id,year,domain,row_key,row_label,indicator,category,col_label,estimate,se,rse,ci_lo,ci_hi,n,grade,unit
+T10,2024,area,1,Urbano,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.073,0.038,3.498,1.0,1.147,1205,A,ratio
+T10,2024,area,1,Urbano,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),7.009,1.718,24.506,3.642,10.375,1283,A,pp
+T10,2024,area,1,Urbano,gap_ur_mig,,Desempleo migrantes − no migrantes (pp),-0.384,0.839,218.67,-2.028,1.261,1354,A,pp
+T10,2024,area,2,Rural,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.306,0.086,6.568,1.138,1.474,470,A,ratio
+T10,2024,area,2,Rural,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-1.988,1.515,76.213,-4.957,0.981,566,A,pp
+T10,2024,area,2,Rural,gap_ur_mig,,Desempleo migrantes − no migrantes (pp),-0.12,0.703,586.755,-1.497,1.258,573,A,pp
+T10,2024,educ4,1,Hasta primaria,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.227,0.191,15.579,0.852,1.601,234,A,ratio
+T10,2024,educ4,1,Hasta primaria,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-1.185,2.718,229.432,-6.511,4.142,272,A,pp
+T10,2024,educ4,1,Hasta primaria,gap_ur_mig,,Desempleo migrantes − no migrantes (pp),0.549,1.383,251.996,-2.161,3.259,279,A,pp
+T10,2024,educ4,2,Secundaria,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.11,0.035,3.133,1.042,1.178,788,A,ratio
+T10,2024,educ4,2,Secundaria,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),1.281,1.808,141.19,-2.264,4.825,883,A,pp
+T10,2024,educ4,2,Secundaria,gap_ur_mig,,Desempleo migrantes − no migrantes (pp),-0.685,1.113,162.608,-2.867,1.497,919,A,pp
+T10,2024,educ4,3,Superior no universitaria,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,0.924,0.058,6.247,0.811,1.037,300,A,ratio
+T10,2024,educ4,3,Superior no universitaria,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),14.991,3.481,23.22,8.168,21.813,324,A,pp
+T10,2024,educ4,3,Superior no universitaria,gap_ur_mig,,Desempleo migrantes − no migrantes (pp),2.123,1.516,71.426,-0.849,5.095,348,A,pp
+T10,2024,educ4,4,Universitaria y posgrado,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,0.871,0.066,7.573,0.742,1.0,353,A,ratio
+T10,2024,educ4,4,Universitaria y posgrado,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),17.237,3.803,22.061,9.784,24.691,370,A,pp
+T10,2024,educ4,4,Universitaria y posgrado,gap_ur_mig,,Desempleo migrantes − no migrantes (pp),-3.434,1.346,39.193,-6.072,-0.796,381,A,pp
+T10,2024,national,all,Nacional,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.057,0.031,2.927,0.996,1.117,1675,A,ratio
+T10,2024,national,all,Nacional,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),4.854,1.435,29.564,2.041,7.666,1849,A,pp
+T10,2024,national,all,Nacional,gap_ur_mig,,Desempleo migrantes − no migrantes (pp),-0.266,0.703,264.942,-1.644,1.113,1927,A,pp
+T10,2024,region_nat,1,Costa,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.138,0.065,5.705,1.011,1.265,455,A,ratio
+T10,2024,region_nat,1,Costa,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),1.241,2.789,224.759,-4.226,6.708,480,A,pp
+T10,2024,region_nat,1,Costa,gap_ur_mig,,Desempleo migrantes − no migrantes (pp),1.567,1.374,87.71,-1.127,4.26,510,A,pp
+T10,2024,region_nat,2,Sierra,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.145,0.063,5.472,1.022,1.267,465,A,ratio
+T10,2024,region_nat,2,Sierra,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-0.99,2.209,223.255,-5.32,3.341,533,A,pp
+T10,2024,region_nat,2,Sierra,gap_ur_mig,,Desempleo migrantes − no migrantes (pp),-0.616,0.942,152.844,-2.463,1.23,558,A,pp
+T10,2024,region_nat,3,Selva,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.212,0.064,5.267,1.087,1.337,559,A,ratio
+T10,2024,region_nat,3,Selva,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-3.188,2.408,75.531,-7.909,1.532,633,A,pp
+T10,2024,region_nat,3,Selva,gap_ur_mig,,Desempleo migrantes − no migrantes (pp),-0.242,0.797,329.183,-1.803,1.319,645,A,pp
+T10,2024,region_nat,4,Lima Metropolitana,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,0.969,0.071,7.303,0.831,1.108,196,B,ratio
+T10,2024,region_nat,4,Lima Metropolitana,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),15.037,3.513,23.36,8.152,21.921,203,A,pp
+T10,2024,region_nat,4,Lima Metropolitana,gap_ur_mig,,Desempleo migrantes − no migrantes (pp),-0.459,1.869,406.893,-4.123,3.204,214,A,pp
+T10,2024,sex,1,Hombres,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.087,0.045,4.15,0.999,1.176,983,A,ratio
+T10,2024,sex,1,Hombres,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),3.898,1.967,50.473,0.042,7.754,1047,A,pp
+T10,2024,sex,1,Hombres,gap_ur_mig,,Desempleo migrantes − no migrantes (pp),0.06,0.961,1605.045,-1.824,1.943,1078,A,pp
+T10,2024,sex,2,Mujeres,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.016,0.049,4.859,0.919,1.112,692,A,ratio
+T10,2024,sex,2,Mujeres,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),6.507,2.084,32.029,2.422,10.591,802,A,pp
+T10,2024,sex,2,Mujeres,gap_ur_mig,,Desempleo migrantes − no migrantes (pp),-0.599,1.061,177.009,-2.678,1.48,849,A,pp

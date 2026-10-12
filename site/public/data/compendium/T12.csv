@@ -1,0 +1,201 @@
+table_id,year,domain,row_key,row_label,indicator,category,col_label,estimate,se,rse,ci_lo,ci_hi,n,grade,unit
+T12,2024,dept_mig2,01|1,Amazonas × No migrante,informality,,Empleo informal,85.526,1.445,1.69,82.694,88.359,2097,A,%
+T12,2024,dept_mig2,01|1,Amazonas × No migrante,lfpr,,Tasa de actividad (14+),76.654,1.028,1.342,74.638,78.669,2850,A,%
+T12,2024,dept_mig2,01|1,Amazonas × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),951.5,44.686,4.696,893.0,1068.167,1683,A,S/
+T12,2024,dept_mig2,01|1,Amazonas × No migrante,ur,,Tasa de desempleo,2.508,0.529,21.089,1.471,3.544,2134,B,%
+T12,2024,dept_mig2,01|2,Amazonas × Migrante reciente (otro dpto. o país),informality,,Empleo informal,90.517,4.647,5.134,81.41,99.625,101,A,%
+T12,2024,dept_mig2,01|2,Amazonas × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),82.074,3.21,3.911,75.783,88.366,134,A,%
+T12,2024,dept_mig2,01|2,Amazonas × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1165.583,139.331,11.954,1069.917,1616.083,78,A,S/
+T12,2024,dept_mig2,01|2,Amazonas × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,104,S,%
+T12,2024,dept_mig2,02|1,Áncash × No migrante,informality,,Empleo informal,79.18,1.29,1.63,76.65,81.709,2517,A,%
+T12,2024,dept_mig2,02|1,Áncash × No migrante,lfpr,,Tasa de actividad (14+),75.195,0.901,1.199,73.429,76.962,3528,A,%
+T12,2024,dept_mig2,02|1,Áncash × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1117.583,37.735,3.376,1047.167,1195.083,2111,A,S/
+T12,2024,dept_mig2,02|1,Áncash × No migrante,ur,,Tasa de desempleo,3.603,0.468,12.999,2.685,4.521,2602,A,%
+T12,2024,dept_mig2,02|2,Áncash × Migrante reciente (otro dpto. o país),informality,,Empleo informal,79.829,6.224,7.797,67.63,92.028,60,A,%
+T12,2024,dept_mig2,02|2,Áncash × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),70.602,6.678,9.459,57.513,83.691,91,A,%
+T12,2024,dept_mig2,02|2,Áncash × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1279.0,86.694,6.778,1123.333,1463.167,48,A,S/
+T12,2024,dept_mig2,02|2,Áncash × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,66,S,%
+T12,2024,dept_mig2,03|1,Apurímac × No migrante,informality,,Empleo informal,87.821,1.346,1.533,85.183,90.459,1590,A,%
+T12,2024,dept_mig2,03|1,Apurímac × No migrante,lfpr,,Tasa de actividad (14+),80.921,1.03,1.273,78.901,82.94,2026,A,%
+T12,2024,dept_mig2,03|1,Apurímac × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1026.167,42.922,4.183,958.917,1127.167,1246,A,S/
+T12,2024,dept_mig2,03|1,Apurímac × No migrante,ur,,Tasa de desempleo,2.618,0.56,21.398,1.52,3.715,1622,B,%
+T12,2024,dept_mig2,03|2,Apurímac × Migrante reciente (otro dpto. o país),informality,,Empleo informal,85.885,6.104,7.108,73.921,97.849,43,A,%
+T12,2024,dept_mig2,03|2,Apurímac × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),67.264,8.258,12.277,51.079,83.449,60,A,%
+T12,2024,dept_mig2,03|2,Apurímac × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1181.686,200.191,16.941,922.683,1707.417,37,B,S/
+T12,2024,dept_mig2,03|2,Apurímac × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,43,S,%
+T12,2024,dept_mig2,04|1,Arequipa × No migrante,informality,,Empleo informal,64.686,1.867,2.886,61.028,68.344,2406,A,%
+T12,2024,dept_mig2,04|1,Arequipa × No migrante,lfpr,,Tasa de actividad (14+),70.234,0.887,1.263,68.496,71.972,3629,A,%
+T12,2024,dept_mig2,04|1,Arequipa × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1410.333,47.492,3.367,1324.917,1511.083,2272,A,S/
+T12,2024,dept_mig2,04|1,Arequipa × No migrante,ur,,Tasa de desempleo,7.204,0.823,11.426,5.59,8.817,2558,A,%
+T12,2024,dept_mig2,04|2,Arequipa × Migrante reciente (otro dpto. o país),informality,,Empleo informal,62.258,6.902,11.086,48.73,75.785,76,A,%
+T12,2024,dept_mig2,04|2,Arequipa × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),70.976,5.635,7.939,59.932,82.02,113,A,%
+T12,2024,dept_mig2,04|2,Arequipa × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1408.75,158.889,11.279,1194.833,1817.667,72,A,S/
+T12,2024,dept_mig2,04|2,Arequipa × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,83,S,%
+T12,2024,dept_mig2,05|1,Ayacucho × No migrante,informality,,Empleo informal,89.423,1.379,1.542,86.72,92.126,1889,A,%
+T12,2024,dept_mig2,05|1,Ayacucho × No migrante,lfpr,,Tasa de actividad (14+),76.405,0.98,1.283,74.484,78.326,2614,A,%
+T12,2024,dept_mig2,05|1,Ayacucho × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),893.0,44.07,4.935,809.75,982.5,1536,A,S/
+T12,2024,dept_mig2,05|1,Ayacucho × No migrante,ur,,Tasa de desempleo,3.87,0.553,14.286,2.786,4.953,1939,A,%
+T12,2024,dept_mig2,05|2,Ayacucho × Migrante reciente (otro dpto. o país),informality,,Empleo informal,94.474,3.422,3.622,87.767,101.18,45,A,%
+T12,2024,dept_mig2,05|2,Ayacucho × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),80.438,7.325,9.107,66.081,94.796,60,A,%
+T12,2024,dept_mig2,05|2,Ayacucho × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),873.303,90.52,10.365,742.917,1097.75,39,A,S/
+T12,2024,dept_mig2,05|2,Ayacucho × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,45,S,%
+T12,2024,dept_mig2,06|1,Cajamarca × No migrante,informality,,Empleo informal,86.815,1.135,1.307,84.591,89.04,2479,A,%
+T12,2024,dept_mig2,06|1,Cajamarca × No migrante,lfpr,,Tasa de actividad (14+),75.218,0.982,1.306,73.292,77.143,3455,A,%
+T12,2024,dept_mig2,06|1,Cajamarca × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),716.083,31.74,4.432,656.417,780.833,2096,A,S/
+T12,2024,dept_mig2,06|1,Cajamarca × No migrante,ur,,Tasa de desempleo,3.106,0.49,15.783,2.145,4.067,2540,B,%
+T12,2024,dept_mig2,06|2,Cajamarca × Migrante reciente (otro dpto. o país),informality,,Empleo informal,,,,,,29,S,%
+T12,2024,dept_mig2,06|2,Cajamarca × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),84.246,6.586,7.818,71.338,97.154,37,A,%
+T12,2024,dept_mig2,06|2,Cajamarca × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),,,,,,26,S,S/
+T12,2024,dept_mig2,06|2,Cajamarca × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,29,S,%
+T12,2024,dept_mig2,07|1,Callao × No migrante,informality,,Empleo informal,57.962,1.691,2.917,54.647,61.276,1566,A,%
+T12,2024,dept_mig2,07|1,Callao × No migrante,lfpr,,Tasa de actividad (14+),65.325,1.062,1.626,63.243,67.407,2730,A,%
+T12,2024,dept_mig2,07|1,Callao × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1434.083,32.994,2.301,1371.583,1500.917,1542,A,S/
+T12,2024,dept_mig2,07|1,Callao × No migrante,ur,,Tasa de desempleo,5.815,0.693,11.911,4.457,7.172,1659,A,%
+T12,2024,dept_mig2,07|2,Callao × Migrante reciente (otro dpto. o país),informality,,Empleo informal,58.608,7.221,12.321,44.456,72.761,61,A,%
+T12,2024,dept_mig2,07|2,Callao × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),60.853,5.657,9.296,49.765,71.941,111,A,%
+T12,2024,dept_mig2,07|2,Callao × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1297.917,149.748,11.538,1038.917,1625.917,59,A,S/
+T12,2024,dept_mig2,07|2,Callao × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,65,S,%
+T12,2024,dept_mig2,08|1,Cusco × No migrante,informality,,Empleo informal,81.557,1.296,1.589,79.018,84.096,2257,A,%
+T12,2024,dept_mig2,08|1,Cusco × No migrante,lfpr,,Tasa de actividad (14+),76.555,0.998,1.304,74.599,78.511,3054,A,%
+T12,2024,dept_mig2,08|1,Cusco × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1118.75,41.093,3.673,1045.167,1206.25,1812,A,S/
+T12,2024,dept_mig2,08|1,Cusco × No migrante,ur,,Tasa de desempleo,3.889,0.604,15.534,2.705,5.073,2325,B,%
+T12,2024,dept_mig2,08|2,Cusco × Migrante reciente (otro dpto. o país),informality,,Empleo informal,77.096,7.242,9.393,62.903,91.289,43,A,%
+T12,2024,dept_mig2,08|2,Cusco × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),82.096,6.378,7.769,69.596,94.597,57,A,%
+T12,2024,dept_mig2,08|2,Cusco × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1641.583,470.119,28.638,559.5,2402.333,33,B,S/
+T12,2024,dept_mig2,08|2,Cusco × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,45,S,%
+T12,2024,dept_mig2,09|1,Huancavelica × No migrante,informality,,Empleo informal,89.601,1.113,1.243,87.418,91.783,2014,A,%
+T12,2024,dept_mig2,09|1,Huancavelica × No migrante,lfpr,,Tasa de actividad (14+),80.429,1.012,1.259,78.444,82.413,2508,A,%
+T12,2024,dept_mig2,09|1,Huancavelica × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),793.583,42.518,5.358,705.667,872.333,1525,A,S/
+T12,2024,dept_mig2,09|1,Huancavelica × No migrante,ur,,Tasa de desempleo,2.267,0.577,25.451,1.136,3.398,2048,B,%
+T12,2024,dept_mig2,09|2,Huancavelica × Migrante reciente (otro dpto. o país),informality,,Empleo informal,76.517,5.356,6.999,66.02,87.013,62,A,%
+T12,2024,dept_mig2,09|2,Huancavelica × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),84.664,4.772,5.636,75.311,94.016,80,A,%
+T12,2024,dept_mig2,09|2,Huancavelica × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1025.667,186.504,18.184,903.083,1634.167,55,B,S/
+T12,2024,dept_mig2,09|2,Huancavelica × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,67,S,%
+T12,2024,dept_mig2,10|1,Huánuco × No migrante,informality,,Empleo informal,87.231,1.679,1.925,83.94,90.521,2064,A,%
+T12,2024,dept_mig2,10|1,Huánuco × No migrante,lfpr,,Tasa de actividad (14+),72.18,1.393,1.93,69.45,74.91,2864,A,%
+T12,2024,dept_mig2,10|1,Huánuco × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),728.002,41.157,5.653,658.583,819.917,1735,A,S/
+T12,2024,dept_mig2,10|1,Huánuco × No migrante,ur,,Tasa de desempleo,1.808,0.416,23.012,0.992,2.623,2115,B,%
+T12,2024,dept_mig2,10|2,Huánuco × Migrante reciente (otro dpto. o país),informality,,Empleo informal,90.462,5.314,5.874,80.048,100.877,96,A,%
+T12,2024,dept_mig2,10|2,Huánuco × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),83.473,4.473,5.359,74.705,92.24,126,A,%
+T12,2024,dept_mig2,10|2,Huánuco × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),651.833,153.872,23.606,389.917,993.083,85,B,S/
+T12,2024,dept_mig2,10|2,Huánuco × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,97,S,%
+T12,2024,dept_mig2,11|1,Ica × No migrante,informality,,Empleo informal,63.947,1.416,2.215,61.17,66.723,2479,A,%
+T12,2024,dept_mig2,11|1,Ica × No migrante,lfpr,,Tasa de actividad (14+),72.892,0.902,1.237,71.125,74.659,3648,A,%
+T12,2024,dept_mig2,11|1,Ica × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1710.5,30.124,1.761,1651.583,1769.667,2341,A,S/
+T12,2024,dept_mig2,11|1,Ica × No migrante,ur,,Tasa de desempleo,2.833,0.421,14.864,2.008,3.658,2544,A,%
+T12,2024,dept_mig2,11|2,Ica × Migrante reciente (otro dpto. o país),informality,,Empleo informal,56.192,5.551,9.879,45.312,67.072,96,A,%
+T12,2024,dept_mig2,11|2,Ica × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),80.663,3.231,4.005,74.331,86.995,130,A,%
+T12,2024,dept_mig2,11|2,Ica × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1874.75,61.821,3.298,1686.667,1929.0,91,A,S/
+T12,2024,dept_mig2,11|2,Ica × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,101,S,%
+T12,2024,dept_mig2,12|1,Junín × No migrante,informality,,Empleo informal,80.886,1.275,1.576,78.388,83.384,2579,A,%
+T12,2024,dept_mig2,12|1,Junín × No migrante,lfpr,,Tasa de actividad (14+),75.884,0.896,1.18,74.129,77.64,3609,A,%
+T12,2024,dept_mig2,12|1,Junín × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1151.667,33.44,2.904,1073.917,1205.0,2228,A,S/
+T12,2024,dept_mig2,12|1,Junín × No migrante,ur,,Tasa de desempleo,2.562,0.454,17.704,1.673,3.451,2640,B,%
+T12,2024,dept_mig2,12|2,Junín × Migrante reciente (otro dpto. o país),informality,,Empleo informal,94.338,2.588,2.744,89.265,99.411,93,A,%
+T12,2024,dept_mig2,12|2,Junín × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),77.125,4.29,5.562,68.718,85.533,129,A,%
+T12,2024,dept_mig2,12|2,Junín × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1209.917,100.555,8.311,1004.833,1399.0,87,A,S/
+T12,2024,dept_mig2,12|2,Junín × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,96,S,%
+T12,2024,dept_mig2,13|1,La Libertad × No migrante,informality,,Empleo informal,69.508,1.345,1.935,66.872,72.144,2434,A,%
+T12,2024,dept_mig2,13|1,La Libertad × No migrante,lfpr,,Tasa de actividad (14+),68.439,0.806,1.178,66.859,70.019,3851,A,%
+T12,2024,dept_mig2,13|1,La Libertad × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1281.0,25.468,1.988,1206.417,1306.25,2284,A,S/
+T12,2024,dept_mig2,13|1,La Libertad × No migrante,ur,,Tasa de desempleo,4.196,0.439,10.46,3.336,5.057,2533,A,%
+T12,2024,dept_mig2,13|2,La Libertad × Migrante reciente (otro dpto. o país),informality,,Empleo informal,75.918,7.82,10.301,60.59,91.245,46,A,%
+T12,2024,dept_mig2,13|2,La Libertad × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),71.936,5.68,7.895,60.805,83.068,73,A,%
+T12,2024,dept_mig2,13|2,La Libertad × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1212.667,190.714,15.727,1089.167,1836.75,46,B,S/
+T12,2024,dept_mig2,13|2,La Libertad × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,49,S,%
+T12,2024,dept_mig2,14|1,Lambayeque × No migrante,informality,,Empleo informal,75.953,1.533,2.018,72.949,78.957,2144,A,%
+T12,2024,dept_mig2,14|1,Lambayeque × No migrante,lfpr,,Tasa de actividad (14+),66.529,0.939,1.411,64.688,68.369,3416,A,%
+T12,2024,dept_mig2,14|1,Lambayeque × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1155.083,31.017,2.685,1106.083,1227.667,1991,A,S/
+T12,2024,dept_mig2,14|1,Lambayeque × No migrante,ur,,Tasa de desempleo,3.894,0.523,13.426,2.869,4.918,2211,A,%
+T12,2024,dept_mig2,14|2,Lambayeque × Migrante reciente (otro dpto. o país),informality,,Empleo informal,66.865,6.468,9.673,54.188,79.541,66,A,%
+T12,2024,dept_mig2,14|2,Lambayeque × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),86.414,3.876,4.486,78.816,94.011,84,A,%
+T12,2024,dept_mig2,14|2,Lambayeque × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1402.0,175.705,12.532,1068.0,1756.75,64,A,S/
+T12,2024,dept_mig2,14|2,Lambayeque × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,68,S,%
+T12,2024,dept_mig2,15|1,Lima × No migrante,informality,,Empleo informal,60.735,1.011,1.664,58.753,62.716,7376,A,%
+T12,2024,dept_mig2,15|1,Lima × No migrante,lfpr,,Tasa de actividad (14+),67.239,0.505,0.751,66.249,68.229,11912,A,%
+T12,2024,dept_mig2,15|1,Lima × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1468.833,24.809,1.689,1401.833,1499.083,7148,A,S/
+T12,2024,dept_mig2,15|1,Lima × No migrante,ur,,Tasa de desempleo,5.832,0.349,5.993,5.147,6.517,7776,A,%
+T12,2024,dept_mig2,15|2,Lima × Migrante reciente (otro dpto. o país),informality,,Empleo informal,77.011,3.494,4.538,70.162,83.86,174,A,%
+T12,2024,dept_mig2,15|2,Lima × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),67.405,3.228,4.788,61.079,73.731,273,A,%
+T12,2024,dept_mig2,15|2,Lima × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1449.083,107.272,7.403,1311.0,1731.5,167,A,S/
+T12,2024,dept_mig2,15|2,Lima × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,183,S,%
+T12,2024,dept_mig2,16|1,Loreto × No migrante,informality,,Empleo informal,81.628,1.382,1.693,78.92,84.335,2414,A,%
+T12,2024,dept_mig2,16|1,Loreto × No migrante,lfpr,,Tasa de actividad (14+),68.378,0.845,1.235,66.723,70.033,3783,A,%
+T12,2024,dept_mig2,16|1,Loreto × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1087.583,40.03,3.681,1021.75,1178.667,2101,A,S/
+T12,2024,dept_mig2,16|1,Loreto × No migrante,ur,,Tasa de desempleo,3.089,0.426,13.794,2.254,3.925,2475,A,%
+T12,2024,dept_mig2,16|2,Loreto × Migrante reciente (otro dpto. o país),informality,,Empleo informal,77.578,5.002,6.448,67.773,87.382,90,A,%
+T12,2024,dept_mig2,16|2,Loreto × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),74.496,4.264,5.724,66.138,82.855,130,A,%
+T12,2024,dept_mig2,16|2,Loreto × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1304.167,191.075,14.651,1076.333,1825.333,81,A,S/
+T12,2024,dept_mig2,16|2,Loreto × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,93,S,%
+T12,2024,dept_mig2,17|1,Madre de Dios × No migrante,informality,,Empleo informal,81.185,2.647,3.26,75.998,86.373,921,A,%
+T12,2024,dept_mig2,17|1,Madre de Dios × No migrante,lfpr,,Tasa de actividad (14+),76.907,1.686,2.193,73.602,80.212,1301,A,%
+T12,2024,dept_mig2,17|1,Madre de Dios × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1751.583,92.008,5.253,1580.75,1941.417,829,A,S/
+T12,2024,dept_mig2,17|1,Madre de Dios × No migrante,ur,,Tasa de desempleo,,,,,,935,S,%
+T12,2024,dept_mig2,17|2,Madre de Dios × Migrante reciente (otro dpto. o país),informality,,Empleo informal,83.954,6.038,7.192,72.119,95.788,86,A,%
+T12,2024,dept_mig2,17|2,Madre de Dios × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),74.994,5.905,7.875,63.42,86.569,119,A,%
+T12,2024,dept_mig2,17|2,Madre de Dios × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1841.833,272.752,14.809,1445.417,2514.583,77,A,S/
+T12,2024,dept_mig2,17|2,Madre de Dios × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,86,S,%
+T12,2024,dept_mig2,18|1,Moquegua × No migrante,informality,,Empleo informal,66.473,1.985,2.987,62.581,70.364,1404,A,%
+T12,2024,dept_mig2,18|1,Moquegua × No migrante,lfpr,,Tasa de actividad (14+),73.616,1.087,1.477,71.486,75.747,2043,A,%
+T12,2024,dept_mig2,18|1,Moquegua × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1592.917,69.261,4.348,1476.333,1747.833,1272,A,S/
+T12,2024,dept_mig2,18|1,Moquegua × No migrante,ur,,Tasa de desempleo,4.85,0.773,15.931,3.336,6.365,1470,B,%
+T12,2024,dept_mig2,18|2,Moquegua × Migrante reciente (otro dpto. o país),informality,,Empleo informal,68.609,7.917,11.539,53.092,84.125,45,A,%
+T12,2024,dept_mig2,18|2,Moquegua × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),77.327,5.275,6.821,66.989,87.665,59,A,%
+T12,2024,dept_mig2,18|2,Moquegua × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1338.917,239.63,17.897,856.0,1795.333,43,B,S/
+T12,2024,dept_mig2,18|2,Moquegua × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,45,S,%
+T12,2024,dept_mig2,19|1,Pasco × No migrante,informality,,Empleo informal,77.567,1.989,2.564,73.669,81.465,1406,A,%
+T12,2024,dept_mig2,19|1,Pasco × No migrante,lfpr,,Tasa de actividad (14+),75.341,1.517,2.013,72.368,78.313,1995,A,%
+T12,2024,dept_mig2,19|1,Pasco × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1001.0,49.168,4.912,870.5,1063.235,1184,A,S/
+T12,2024,dept_mig2,19|1,Pasco × No migrante,ur,,Tasa de desempleo,4.713,0.896,19.019,2.956,6.469,1467,B,%
+T12,2024,dept_mig2,19|2,Pasco × Migrante reciente (otro dpto. o país),informality,,Empleo informal,71.574,7.411,10.355,57.048,86.1,72,A,%
+T12,2024,dept_mig2,19|2,Pasco × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),75.816,4.791,6.319,66.425,85.206,104,A,%
+T12,2024,dept_mig2,19|2,Pasco × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1785.667,286.379,16.038,1184.5,2307.083,62,B,S/
+T12,2024,dept_mig2,19|2,Pasco × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,75,S,%
+T12,2024,dept_mig2,20|1,Piura × No migrante,informality,,Empleo informal,77.981,1.193,1.53,75.642,80.32,2983,A,%
+T12,2024,dept_mig2,20|1,Piura × No migrante,lfpr,,Tasa de actividad (14+),74.182,0.748,1.008,72.717,75.647,4371,A,%
+T12,2024,dept_mig2,20|1,Piura × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1061.25,22.088,2.081,1036.0,1122.583,2782,A,S/
+T12,2024,dept_mig2,20|1,Piura × No migrante,ur,,Tasa de desempleo,4.871,0.495,10.166,3.9,5.841,3115,A,%
+T12,2024,dept_mig2,20|2,Piura × Migrante reciente (otro dpto. o país),informality,,Empleo informal,84.115,5.012,5.959,74.292,93.939,64,A,%
+T12,2024,dept_mig2,20|2,Piura × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),69.777,4.504,6.454,60.95,78.604,97,A,%
+T12,2024,dept_mig2,20|2,Piura × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1113.833,168.647,15.141,841.833,1502.917,60,B,S/
+T12,2024,dept_mig2,20|2,Piura × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,67,S,%
+T12,2024,dept_mig2,21|1,Puno × No migrante,informality,,Empleo informal,88.748,1.169,1.318,86.456,91.04,1856,A,%
+T12,2024,dept_mig2,21|1,Puno × No migrante,lfpr,,Tasa de actividad (14+),75.62,1.048,1.386,73.566,77.675,2571,A,%
+T12,2024,dept_mig2,21|1,Puno × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),801.792,31.91,3.98,744.333,869.417,1596,A,S/
+T12,2024,dept_mig2,21|1,Puno × No migrante,ur,,Tasa de desempleo,9.967,0.875,8.78,8.252,11.682,2000,A,%
+T12,2024,dept_mig2,21|2,Puno × Migrante reciente (otro dpto. o país),informality,,Empleo informal,83.064,6.808,8.196,69.72,96.408,36,A,%
+T12,2024,dept_mig2,21|2,Puno × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),72.464,7.756,10.703,57.263,87.666,55,A,%
+T12,2024,dept_mig2,21|2,Puno × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1192.333,177.2,14.862,1080.358,1774.969,33,A,S/
+T12,2024,dept_mig2,21|2,Puno × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,38,S,%
+T12,2024,dept_mig2,22|1,San Martín × No migrante,informality,,Empleo informal,83.745,1.173,1.4,81.447,86.043,2393,A,%
+T12,2024,dept_mig2,22|1,San Martín × No migrante,lfpr,,Tasa de actividad (14+),77.249,0.939,1.216,75.408,79.09,3296,A,%
+T12,2024,dept_mig2,22|1,San Martín × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1070.667,30.974,2.893,1008.0,1129.417,2091,A,S/
+T12,2024,dept_mig2,22|1,San Martín × No migrante,ur,,Tasa de desempleo,2.1,0.458,21.802,1.203,2.998,2447,B,%
+T12,2024,dept_mig2,22|2,San Martín × Migrante reciente (otro dpto. o país),informality,,Empleo informal,76.664,4.898,6.389,67.064,86.264,131,A,%
+T12,2024,dept_mig2,22|2,San Martín × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),77.085,3.536,4.587,70.154,84.016,177,A,%
+T12,2024,dept_mig2,22|2,San Martín × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1324.167,94.942,7.17,1089.583,1461.75,116,A,S/
+T12,2024,dept_mig2,22|2,San Martín × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,132,S,%
+T12,2024,dept_mig2,23|1,Tacna × No migrante,informality,,Empleo informal,75.925,2.288,3.013,71.441,80.409,1845,A,%
+T12,2024,dept_mig2,23|1,Tacna × No migrante,lfpr,,Tasa de actividad (14+),69.442,1.413,2.035,66.672,72.211,2832,A,%
+T12,2024,dept_mig2,23|1,Tacna × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1312.333,34.992,2.666,1212.333,1349.5,1751,A,S/
+T12,2024,dept_mig2,23|1,Tacna × No migrante,ur,,Tasa de desempleo,5.375,0.8,14.881,3.808,6.943,1942,A,%
+T12,2024,dept_mig2,23|2,Tacna × Migrante reciente (otro dpto. o país),informality,,Empleo informal,83.801,6.968,8.314,70.145,97.457,84,A,%
+T12,2024,dept_mig2,23|2,Tacna × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),68.24,7.852,11.506,52.851,83.628,129,A,%
+T12,2024,dept_mig2,23|2,Tacna × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1502.667,101.277,6.74,1207.75,1604.75,78,A,S/
+T12,2024,dept_mig2,23|2,Tacna × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,94,S,%
+T12,2024,dept_mig2,24|1,Tumbes × No migrante,informality,,Empleo informal,78.904,1.635,2.072,75.699,82.109,1351,A,%
+T12,2024,dept_mig2,24|1,Tumbes × No migrante,lfpr,,Tasa de actividad (14+),69.53,1.151,1.655,67.275,71.785,2102,A,%
+T12,2024,dept_mig2,24|1,Tumbes × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1215.167,42.709,3.515,1146.75,1314.167,1284,A,S/
+T12,2024,dept_mig2,24|1,Tumbes × No migrante,ur,,Tasa de desempleo,3.167,0.667,21.069,1.859,4.475,1391,B,%
+T12,2024,dept_mig2,24|2,Tumbes × Migrante reciente (otro dpto. o país),informality,,Empleo informal,92.713,5.404,5.828,82.122,103.304,40,A,%
+T12,2024,dept_mig2,24|2,Tumbes × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),78.02,5.713,7.322,66.823,89.216,57,A,%
+T12,2024,dept_mig2,24|2,Tumbes × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1601.167,130.104,8.126,1341.75,1851.75,38,A,S/
+T12,2024,dept_mig2,24|2,Tumbes × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,43,S,%
+T12,2024,dept_mig2,25|1,Ucayali × No migrante,informality,,Empleo informal,83.754,1.213,1.449,81.376,86.132,2025,A,%
+T12,2024,dept_mig2,25|1,Ucayali × No migrante,lfpr,,Tasa de actividad (14+),76.697,0.956,1.247,74.822,78.572,2843,A,%
+T12,2024,dept_mig2,25|1,Ucayali × No migrante,median_inc_real,,Ingreso laboral mediano (S/ 2024),1068.083,32.122,3.007,1008.917,1134.833,1796,A,S/
+T12,2024,dept_mig2,25|1,Ucayali × No migrante,ur,,Tasa de desempleo,2.752,0.471,17.13,1.828,3.675,2082,B,%
+T12,2024,dept_mig2,25|2,Ucayali × Migrante reciente (otro dpto. o país),informality,,Empleo informal,84.281,4.919,5.836,74.64,93.922,110,A,%
+T12,2024,dept_mig2,25|2,Ucayali × Migrante reciente (otro dpto. o país),lfpr,,Tasa de actividad (14+),72.315,3.59,4.965,65.278,79.352,162,A,%
+T12,2024,dept_mig2,25|2,Ucayali × Migrante reciente (otro dpto. o país),median_inc_real,,Ingreso laboral mediano (S/ 2024),1177.917,122.387,10.39,964.333,1444.083,100,A,S/
+T12,2024,dept_mig2,25|2,Ucayali × Migrante reciente (otro dpto. o país),ur,,Tasa de desempleo,,,,,,113,S,%

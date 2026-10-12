@@ -1,0 +1,4 @@
+year,indicator,domain,official,observatorio,tolerance,source,diff,ok
+2018,life_cross,national,20.3,19.58,2.5,"Censo 2017 (INEI): 20,3 % de la población nació en un departamento distinto al de residencia (referencial: censo vs encuesta, 2017 vs 2018)",-0.72,True
+2018,mig5_cross,national,2.9,2.35,1.0,"Censo 2017 (INEI): migración interdepartamental reciente (2012–2017) ≈ 2,9 % de la población de 5+ (referencial)",-0.55,True
+2024,born_ven,national,4.5,0.55,5.0,"Superintendencia Nacional de Migraciones / R4V (2024): ~1,5 millones de venezolanos ≈ 4,5 % de la población; la ENAHO capta 0,55 % (subcobertura documentada)",-3.95,True

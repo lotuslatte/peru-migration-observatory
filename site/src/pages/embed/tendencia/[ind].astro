@@ -1,0 +1,8 @@
+---
+import Embed from '../../../layouts/Embed.astro';
+import TrendLine from '../../../components/charts/TrendLine';
+import { loadHeadline, loadTrends, loadMeta } from '../../../data/loaders';
+export async function getStaticPaths() { return Object.keys(loadTrends().series.national).map(k => ({ params: { ind: k } })); }
+const { ind } = Astro.params; const h = loadHeadline(); const tr = loadTrends(); const m = loadMeta(); const lab = m.indicators[ind!]?.label_es ?? ind;
+---
+<Embed title={`${lab}, 2014–2024`}><TrendLine client:load years={h.years} unit={m.indicators[ind!]?.unit ?? '%'} title={lab} series={[{ label: 'Nacional', cells: tr.series.national[ind!] }]} smooth={[tr.smooth.national[ind!]]} /></Embed>

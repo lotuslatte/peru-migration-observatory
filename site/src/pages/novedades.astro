@@ -1,0 +1,22 @@
+---
+import Base from '../layouts/Base.astro';
+import GradeLegend from '../components/ui/GradeLegend.astro';
+import { loadDigest } from '../data/loaders';
+const dg = loadDigest();
+const f = (v: number | null, n = 1) => v == null ? '—' : v.toLocaleString('es-PE', { minimumFractionDigits: n, maximumFractionDigits: n });
+const cls = (it: any) => it.good == null ? 'flat' : it.good ? 'good' : 'badv';
+const grp = (it: any) => it.domain_label === 'Nacional' ? 'Nacional' : `${it.domain_label}: ${it.row_label}`;
+const un = (it: any) => it.unit === '%' ? ' pp' : it.unit === 'S/' ? ' S/' : '';
+---
+<Base title="Qué cambió" wide>
+  <div class="eyebrow" style="margin-top:28px">Novedades · cambios estadísticamente significativos</div>
+  <h1>Qué cambió <em>de verdad</em></h1>
+  <p class="lede">De los cientos de indicadores y desagregaciones que publica el observatorio, sólo una minoría cambió más de lo que explica el error muestral. Esta página los ordena por la fuerza de la evidencia (z), primero frente a {dg.year - 1} y luego frente a 2014. Verde: mejora; carmín: deterioro; gris: sin dirección normativa.</p>
+  <GradeLegend compact />
+  <section class="card"><h2>{dg.year - 1} → {dg.year}: {dg.y1.length} cambios significativos de {dg.n_tested.y1.toLocaleString('es-PE')} celdas comparables</h2>
+    <div class="scroll-x"><table class="data"><thead><tr><th style="text-align:left">Indicador</th><th style="text-align:left">Grupo</th><th>{dg.year - 1}</th><th>{dg.year}</th><th>Cambio</th><th>z</th></tr></thead><tbody>{dg.y1.map((it: any) => <tr><td style="text-align:left">{it.label}</td><td style="text-align:left">{grp(it)}</td><td>{f(it.v0)}</td><td>{f(it.v1)}</td><td><span class={`delta ${cls(it)}`}>{it.d > 0 ? '▲ +' : '▼ '}{f(it.d)}{un(it)}</span><span class="bar" style={`width:${Math.min(100, Math.abs(it.z) * 6)}px`}></span></td><td class="mono">{f(it.z, 1)}</td></tr>)}</tbody></table></div></section>
+  <section class="card" style="margin-top:20px"><h2>2014 → {dg.year}: una década</h2>
+    <div class="scroll-x"><table class="data"><thead><tr><th style="text-align:left">Indicador</th><th style="text-align:left">Grupo</th><th>2014</th><th>{dg.year}</th><th>Cambio</th><th>z</th></tr></thead><tbody>{dg.y10.slice(0, 40).map((it: any) => <tr><td style="text-align:left">{it.label}</td><td style="text-align:left">{grp(it)}</td><td>{f(it.v0)}</td><td>{f(it.v1)}</td><td><span class={`delta ${cls(it)}`}>{it.d > 0 ? '▲ +' : '▼ '}{f(it.d)}{un(it)}</span><span class="bar" style={`width:${Math.min(100, Math.abs(it.z) * 6)}px`}></span></td><td class="mono">{f(it.z, 1)}</td></tr>)}</tbody></table></div></section>
+  <p class="small muted" style="margin-top:14px">{dg.note} Descarga: <a href="/data/digest.json">digest.json</a>.</p>
+  <style>.bar { display: inline-block; height: 6px; background: var(--panel-2); border-radius: 3px; margin-left: 8px; vertical-align: middle; }</style>
+</Base>

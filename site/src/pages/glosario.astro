@@ -1,0 +1,10 @@
+---
+import Base from '../layouts/Base.astro';
+import { loadIndex } from '../data/loaders';
+const ix = loadIndex();
+---
+<Base title="Glosario">
+  <div class="eyebrow" style="margin-top:28px">Glosario</div><h1>Las palabras, <em>definidas.</em></h1>
+  <div class="prose"><dl>{ix.glossary.map((g: any) => <><dt id={g.term.toLowerCase().replace(/\W+/g, '-')}><strong>{g.term}</strong></dt><dd>{g.def}</dd></>)}</dl></div>
+  <style>dt { margin-top: 14px; font-family: var(--font-serif); font-size: 1.1rem; } dd { margin: 4px 0 0; color: var(--ink-2); }</style>
+</Base>

@@ -1,0 +1,31 @@
+sections:
+  1: "Titulares"
+  2: "Flujos origen–destino"
+  3: "Quién migra"
+  4: "Migrantes en el mercado laboral"
+  5: "Departamentos"
+  6: "Migración internacional y población venezolana"
+  7: "Clima y migración"
+  8: "Tendencias 2014–2024"
+  9: "Metodología y validación"
+tables:
+  - {id: T01, section: 1, title: "Indicadores titulares de movilidad, 2024", domains: [national], indicators: [mig5_any, mig5_cross, mig5_intra, mig5_intl, mig5_ven, life_cross, life_abroad, born_ven, native_here], years: [2024]}
+  - {id: T02, section: 1, title: "Movilidad reciente por sexo, edad y área, 2024", domains: [sex, age5, area, region_nat], indicators: [mig5_any, mig5_cross, mig5_intl, life_cross], years: [2024]}
+  - {id: T03, section: 2, title: "Inmigración, emigración y saldo por departamento, 2024", special: dept_flows}
+  - {id: T04, section: 2, title: "Matriz origen–destino de migrantes interdepartamentales, 2020–2024 (personas por año)", special: od_matrix}
+  - {id: T05, section: 3, title: "Estructura de edad de migrantes y no migrantes, 2024", domains: [mig3], indicators: [age_dist], years: [2024]}
+  - {id: T06, section: 3, title: "Nivel educativo de migrantes y no migrantes (14+), 2024", domains: [mig3, sex_mig2], indicators: [educ_dist], years: [2024]}
+  - {id: T07, section: 3, title: "Movilidad por lengua materna y nivel educativo, 2024", domains: [lengua3, educ4], indicators: [mig5_cross, mig5_intl, life_cross], years: [2024]}
+  - {id: T08, section: 3, title: "Pobreza y seguro de salud por condición migratoria, 2024", domains: [mig3, area_mig2], indicators: [pobre, seguro], years: [2024]}
+  - {id: T09, section: 4, title: "Resultados laborales de migrantes recientes vs no migrantes, 2024", domains: [mig2, sex_mig2, age4_mig2, educ4_mig2, area_mig2, region_mig2], indicators: [lfpr, ur, informality, median_inc_real, contract_any, pension, self_emp, neet], years: [2024]}
+  - {id: T10, section: 4, title: "Brechas laborales migrante − local, 2024", domains: [national, sex, area, region_nat, educ4], indicators: [gap_inf_mig, gap_ur_mig, gap_inc_mig], years: [2024]}
+  - {id: T11, section: 5, title: "Dimensiones del Atlas por departamento, 2024", domains: [dept, lima], indicators: [mig5_cross, life_cross, mig5_intl, native_here, gap_inf_mig, gap_inc_mig, youth_share], years: [2024]}
+  - {id: T12, section: 5, title: "Resultados laborales por departamento y condición migratoria, 2024", domains: [dept_mig2], indicators: [lfpr, ur, informality, median_inc_real], years: [2024]}
+  - {id: T13, section: 5, title: "Población por departamento de origen (hace 5 años) de los migrantes recientes, 2024", domains: [orig_dept], indicators: [lfpr, informality, median_inc_real], years: [2024]}
+  - {id: T14, section: 6, title: "Población venezolana en ENAHO, 2018–2024", domains: [national, region_nat], indicators: [mig5_ven, born_ven, mig5_intl, life_abroad], years: all}
+  - {id: T15, section: 6, title: "ENPOVE 2018 y 2022: perfil y condiciones de la población venezolana", special: enpove}
+  - {id: T16, section: 7, title: "Exposición climática y emigración por departamento-año, 2014–2023", special: climate}
+  - {id: T17, section: 8, title: "Indicadores nacionales de movilidad, 2014–2024", domains: [national, sex, area], indicators: [mig5_any, mig5_cross, mig5_intl, mig5_intra], years: all}
+  - {id: T18, section: 8, title: "Inmigración y emigración por departamento, 2014–2024", special: dept_flows_all}
+  - {id: T19, section: 8, title: "Brechas laborales migrante − local, 2014–2024", domains: [national, sex], indicators: [gap_inf_mig, gap_ur_mig, gap_inc_mig], years: all}
+  - {id: T20, section: 9, title: "Tamaños de muestra: migrantes recientes por departamento y año", special: sample_sizes}

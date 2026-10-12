@@ -1,0 +1,14 @@
+primary:
+  - {id: net_rate,    label_es: "Saldo migratorio neto (por mil, 5 años)", label_en: "Net migration (per 1,000, 5 yrs)", unit: "‰", higher_better: true}
+  - {id: mig5_cross,  label_es: "Tasa de inmigración reciente", label_en: "Recent in-migration rate", unit: "%", higher_better: true}
+  - {id: out_rate,    label_es: "Tasa de emigración reciente", label_en: "Recent out-migration rate", unit: "%", higher_better: false}
+  - {id: life_cross,  label_es: "Nacidos en otro departamento", label_en: "Born elsewhere (lifetime)", unit: "%", higher_better: true}
+  - {id: gap_inf_mig, label_es: "Brecha de informalidad migrante − local (pp)", label_en: "Informality gap migrant − local (pp)", unit: "pp", higher_better: false}
+  - {id: gap_inc_mig, label_es: "Ingreso mediano migrante / local", label_en: "Median income migrant / local", unit: "ratio", higher_better: true}
+secondary:
+  - {id: mig5_intl,   label_es: "Llegaron del extranjero (5 años)", label_en: "Arrived from abroad", unit: "%", higher_better: true}
+  - {id: mig5_intra,  label_es: "Se mudaron dentro del departamento", label_en: "Moved within department", unit: "%", higher_better: true}
+  - {id: native_here, label_es: "Retención de nacidos", label_en: "Retention of natives", unit: "%", higher_better: true}
+  - {id: life_abroad, label_es: "Nacidos en el extranjero", label_en: "Foreign-born", unit: "%", higher_better: true}
+  - {id: youth_share, label_es: "Población de 15 a 29 años", label_en: "Population 15–29", unit: "%", higher_better: true}
+  - {id: gap_ur_mig,  label_es: "Brecha de desempleo migrante − local (pp)", label_en: "Unemployment gap (pp)", unit: "pp", higher_better: false}

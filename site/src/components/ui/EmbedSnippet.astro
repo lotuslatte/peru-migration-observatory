@@ -1,0 +1,7 @@
+---
+const { path: p, height = 520 } = Astro.props;
+const site = (Astro.site?.toString() ?? '').replace(/\/$/, '');
+const src = `${site}/embed${p}`;
+const code = `<iframe src="${src}" width="100%" height="${height}" style="border:0" loading="lazy" title="Observatorio"></iframe>`;
+---
+<details class="embed"><summary class="small muted">Insertar este gráfico en tu sitio</summary><pre class="small mono" style="white-space:pre-wrap;user-select:all">{code}</pre><p class="small muted">Licencia CC BY 4.0. Cita: Samillan Flores, F. (2026), Observatorio.</p></details>

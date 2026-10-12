@@ -1,0 +1,9 @@
+{
+  "site": "Observatorio Laboral del Perú",
+  "tagline": "Microdatos ENAHO abiertos sobre participación, informalidad, ingresos y brechas, 2014–2024",
+  "nav": {"home": "Inicio", "atlas": "Atlas", "stories": "Historias", "compendium": "Compendio", "methodology": "Metodología", "school": "Escuela de encuestas", "data": "Datos", "about": "Acerca de"},
+  "grade": {"A": "Publicable (RSE < 15 %)", "B": "Revisar (RSE 15–30 %)", "S": "Suprimido (RSE ≥ 30 % o n < 30)"},
+  "suppressed": "—",
+  "export": {"csv": "CSV", "png": "PNG", "svg": "SVG"},
+  "ci": "IC 95 %"
+}

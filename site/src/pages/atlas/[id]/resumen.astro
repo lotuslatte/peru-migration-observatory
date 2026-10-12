@@ -1,0 +1,36 @@
+---
+import Base from '../../../layouts/Base.astro';
+import KpiTile from '../../../components/ui/KpiTile.astro';
+import PrintBar from '../../../components/ui/PrintBar.astro';
+import Sparkline from '../../../components/charts/Sparkline';
+import { loadAtlas, loadProfile, loadHeadline } from '../../../data/loaders';
+export async function getStaticPaths() { return loadAtlas().regions.map(r => ({ params: { id: r.id } })); }
+const { id } = Astro.params; const p: any = loadProfile(id!); const a = loadAtlas(); const h = loadHeadline();
+const dims = a.dims.filter(d => d.primary);
+const f = (c: any, n = 1) => c?.v == null ? '—' : c.v.toLocaleString('es-PE', { minimumFractionDigits: n, maximumFractionDigits: n });
+const nat = (k: string) => h.kpis[k];
+const netCells = p.od?.net_rate_cells ?? [];
+---
+<Base title={`${p.name} · resumen migratorio`} image={`/share/${p.id}.png`}>
+  <PrintBar />
+  <article class="brief">
+    <header><div class="eyebrow">Resumen de una página · Observatorio de Migración del Perú · ENAHO {p.year}</div><h1>{p.name}</h1><p class="lede">{p.summary?.[0]}</p></header>
+    <section class="grid grid-3">{dims.map(d => <KpiTile label={d.label_es} cell={p.dims[d.id]} unit={d.unit === '%' ? '%' : d.unit === 'pp' ? ' pp' : d.unit === '‰' ? ' ‰' : ''} decimals={d.unit === 'ratio' ? 2 : d.id === 'mig5_cross' ? 2 : 1} note={nat(d.id) ? `Nacional: ${f(nat(d.id), d.unit === 'ratio' ? 2 : d.id === 'mig5_cross' ? 2 : 1)} · puesto ${p.rank?.[d.id] ?? '—'}/25` : `Puesto ${p.rank?.[d.id] ?? '—'}/25`} kind={['net_rate', 'mig5_cross', 'out_rate', 'life_cross'].includes(d.id) ? 'informal' : 'formal'} />)}</section>
+    <section class="grid grid-2" style="margin-top:14px">
+      <div class="card"><h3>Qué dicen los datos</h3><ol style="padding-left:18px;margin:0">{p.summary?.slice(1).map((t: string) => <li>{t}</li>)}</ol></div>
+      <div class="card"><h3>Para la decisión</h3><ul style="padding-left:18px;margin:0">
+        {p.od?.top_origins?.length > 0 && <li>Orígenes principales: {p.od.top_origins.slice(0, 3).map((x: any) => `${x.name} (~${x.flow.toLocaleString('es-PE')}/año)`).join(', ')}.</li>}
+        {p.od?.top_destinations?.length > 0 && <li>Destinos principales de quienes se van: {p.od.top_destinations.slice(0, 3).map((x: any) => x.name).join(', ')}.</li>}
+        <li>{(p.dims.net_rate.v ?? 0) > 0 ? 'Departamento receptor: la presión recae en vivienda, servicios y empleo formal para recién llegados.' : 'Departamento expulsor: la pérdida se concentra en jóvenes; prioridad en oportunidades locales y retención de capital humano.'}</li>
+        {p.labour_mig?.informality && <li>Migrantes recientes con {f(p.labour_mig.informality['2'])} % de informalidad vs {f(p.labour_mig.informality['1'])} % de residentes; ingreso mediano S/ {f(p.labour_mig.median_inc_real['2'], 0)} vs S/ {f(p.labour_mig.median_inc_real['1'], 0)}.</li>}
+        <li>Llegaron del extranjero (5 años): {f(p.mobility.mig5_intl, 2)} %; de Venezuela: {f(p.mobility.mig5_ven, 2)} % (subestimado en ENAHO; ver ENPOVE).</li>
+      </ul></div>
+    </section>
+    <section class="card" style="margin-top:14px"><h3>Serie 2014–2024</h3><div class="grid grid-3">
+      <div><div class="eyebrow">Inmigración reciente (%)</div><Sparkline cells={p.trend.mig5_cross} w={220} h={48} color="var(--informal)" /><div class="small mono">{f(p.trend.mig5_cross[0], 2)} → {f(p.trend.mig5_cross.at(-1), 2)}</div></div>
+      <div><div class="eyebrow">Nacidos en otro dpto. (%)</div><Sparkline cells={p.trend.life_cross} w={220} h={48} color="var(--formal)" /><div class="small mono">{f(p.trend.life_cross[4])} → {f(p.trend.life_cross.at(-1))}</div></div>
+      {netCells.length > 0 && <div><div class="eyebrow">Saldo neto (‰)</div><Sparkline cells={netCells} w={220} h={48} color="var(--informal)" /><div class="small mono">{f(netCells[0])} → {f(netCells.at(-1))}</div></div>}
+    </div></section>
+    <footer class="small muted" style="margin-top:12px">Fuente: INEI – ENAHO {p.year} (flujos promediados 2020–2024). Estimaciones del Observatorio de Migración del Perú (Favio Samillan Flores). Perfil completo: /atlas/{p.id}/. CC BY 4.0.</footer>
+  </article>
+</Base>

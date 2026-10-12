@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro';
+import CompendiumTable from '../../components/charts/CompendiumTable';
+import { loadCompendiumIndex } from '../../data/loaders';
+const idx = loadCompendiumIndex();
+const bySection = Object.entries(idx.sections).map(([n, title]) => ({ n: +n, title, tables: idx.tables.filter((t: any) => t.section === +n) }));
+---
+<Base title="Compendio estadístico" wide>
+  <div class="eyebrow" style="margin-top:28px">Banco de datos · {idx.tables.length} tablas · CSV</div>
+  <h1>Compendio estadístico</h1>
+  <p class="lede">Tablas en formato tidy con estimación, error estándar, IC 95 %, n y sello. Listas para R, Stata o Python.</p>
+  <div class="grid grid-2">{bySection.map(s => <div class="card"><h3>{s.n}. {s.title}</h3><ul class="small">{s.tables.map((t: any) => <li><a href={`#${t.id}`}>{t.id}</a> {t.title} <a class="muted" href={`/data/${t.file}`} download>↓</a></li>)}</ul></div>)}</div>
+  {bySection.map(s => <section style="margin-top:36px"><h2>{s.n}. {s.title}</h2>{s.tables.map((t: any) => <div class="card" style="margin-top:16px" id={t.id}><h3>{t.id} · {t.title}</h3><CompendiumTable client:visible file={t.file} title={t.title} id={t.id} /></div>)}</section>)}
+</Base>

@@ -1,0 +1,15 @@
+---
+import Base from '../../layouts/Base.astro';
+import { loadHeadline } from '../../data/loaders';
+const h = loadHeadline();
+---
+<Base title="Acerca de">
+  <div class="eyebrow" style="margin-top:28px">Acerca del Observatorio</div><h1>Infraestructura abierta para ver el movimiento</h1>
+  <div class="prose">
+    <p class="lede">El Observatorio de Migración del Perú convierte microdatos públicos del INEI en indicadores de migración interna e internacional con incertidumbre explícita y descarga libre. Es el proyecto hermano del <a href="https://observatoriolaboral.pe">Observatorio Laboral del Perú</a>, con el mismo pipeline y las mismas reglas.</p>
+    <h2>Quién</h2><p>Creado y mantenido por <strong><a href="https://lotuslatte.github.io/" rel="author">Favio Samillan Flores</a></strong>, economista (PUCP) e investigador en migración, cambio climático y desarrollo rural. Página personal: <a href="https://lotuslatte.github.io/">lotuslatte.github.io</a> · <a href="https://www.linkedin.com/in/favio-samillan-flores-367054295/">LinkedIn</a> · <a href="mailto:samillanf.f@pucp.edu.pe">samillanf.f@pucp.edu.pe</a>.</p>
+    <h2>Cómo citar</h2><p>Samillan Flores, F. (2026). <em>Observatorio de Migración del Perú</em>. Generado el {h.generated}. CC BY 4.0.</p>
+    <h2>Fuentes</h2><p>INEI: ENAHO 2014–2024 (módulos 200, 300, 400, 500, Sumaria); ENPOVE 2018 y 2022; ENAHO población venezolana 2024. Clima: ERA5 y CHIRPS agregados a distrito en <em>peru_climate_integrated</em>. Límites: INEI. Deflactor: BCRP.</p>
+    <h2 id="contact">Contacto</h2><p>Correcciones y solicitudes: al correo indicado; cada tabla lleva su identificador (T01–T20).</p>
+  </div>
+</Base>

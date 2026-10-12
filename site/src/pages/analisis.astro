@@ -1,0 +1,33 @@
+---
+import Base from '../layouts/Base.astro';
+import HowToRead from '../components/ui/HowToRead.astro';
+import CoefPlot from '../components/charts/CoefPlot';
+import DecompBars from '../components/charts/DecompBars';
+import { loadModels, loadDecomp, loadDrought } from '../data/loaders';
+const M = loadModels(); const D = loadDecomp(); const dr = loadDrought();
+const f = (c: any, n = 1) => c?.v == null ? '—' : c.v.toLocaleString('es-PE', { minimumFractionDigits: n, maximumFractionDigits: n });
+const ms = M.models; const ox = D.oaxaca;
+const dm = (s: any) => ({ ...s, label_es: s.label, key: s.exposure, key_label: s.label, raw_gap: s.raw, adj_gap: s.adj, unit: 'pp', controls: ['edad', 'sexo', 'educación', 'área', 'región', 'año'], n: s.n, r2: s.r2 });
+---
+<Base title="Análisis con controles" wide>
+  <div class="eyebrow" style="margin-top:28px">Para investigadores y policymakers · modelos descriptivos</div>
+  <h1>¿Migrar paga? <em>Con y sin controles.</em></h1>
+  <p class="lede">Los migrantes recientes son más jóvenes y más educados que quienes no se movieron; comparar promedios mezcla ese efecto de composición con el de migrar. Aquí cada brecha se muestra cruda y ajustada por edad, sexo, educación, área y región (modelo lineal de probabilidad ponderado, errores estándar de diseño), y se descompone.</p>
+  <HowToRead />
+  <section class="grid grid-2">
+    <div class="card"><h2>Más informales, incluso a igual perfil</h2><p class="takeaway">La brecha de informalidad migrante−residente es {f(ms.inf_mig.raw_gap)} pp cruda y <b>{f(ms.inf_mig.adj_gap)} pp</b> ajustada: la composición explica sólo una parte; el resto es la inserción precaria de quien llega.</p><CoefPlot client:visible model={ms.inf_mig} /></div>
+    <div class="card"><h2>…pero ganan más</h2><p class="takeaway">El ingreso laboral de los migrantes recientes es {f(ms.inc_mig.raw_gap)} % mayor en bruto y <b>{f(ms.inc_mig.adj_gap)} %</b> mayor a igual edad, sexo, educación y lugar. Migrar es una inversión que rinde en ingreso y se paga en protección.</p><CoefPlot client:visible model={ms.inc_mig} /></div>
+  </section>
+  <section class="grid grid-2" style="margin-top:20px">
+    <div class="card"><h2>Desempleo y pobreza</h2><p class="takeaway">Ajustado, el migrante reciente tiene {f(ms.ur_mig.adj_gap)} pp de desempleo respecto al residente y {f(ms.pobre_mig.adj_gap)} pp de pobreza monetaria. Ninguna de las dos brechas es grande; la migración interna no produce un grupo excluido, produce un grupo desprotegido.</p><CoefPlot client:visible model={ms.ur_mig} /><CoefPlot client:visible model={ms.pobre_mig} /></div>
+    <div class="card"><h2>Descomposición de la brecha de ingreso</h2><p class="takeaway">De la ventaja de {f({ v: ox.inc_mig_2024.gap.v * 100 })} log-puntos, {f({ v: ox.inc_mig_2024.explained.v * 100 })} se explican por características (más jóvenes, más educados, más urbanos) y <b>{f({ v: ox.inc_mig_2024.unexplained.v * 100 })}</b> por retornos distintos.</p><DecompBars client:visible data={ox.inc_mig_2024} mode="oaxaca" unit="log-pp" /><DecompBars client:visible data={ox.inf_mig_2024} mode="oaxaca" /></div>
+  </section>
+  <section class="card" style="margin-top:20px"><h2>¿Empuja el clima? La respuesta honesta: no de forma detectable</h2>
+    <p class="takeaway">Sin controles, un año seco adicional en el departamento de origen se asocia a {f(dr.specs.dry.raw, 2)} pp en la probabilidad de haber emigrado; con controles, <b>{f(dr.specs.dry.adj, 2)} pp</b> (IC {f({ v: dr.specs.dry.adj.lo }, 2)} a {f({ v: dr.specs.dry.adj.hi }, 2)}); con errores agrupados por departamento de origen el intervalo es aún más ancho (SE {dr.specs.dry.adj_cluster_orig.se}). La tasa media de emigración es {dr.mean_out_rate} %. Anomalía térmica y de lluvia: tampoco significativas.</p>
+    <div class="grid grid-3">{['dry', 'temp', 'precip'].map(k => <CoefPlot client:visible model={dm(dr.specs[k])} title={dr.specs[k].label} />)}</div>
+    <p class="small muted">{dr.note}</p></section>
+  <section class="card" style="margin-top:20px"><h2>Brechas ajustadas por submuestra</h2><div class="scroll-x"><table class="data"><thead><tr><th style="text-align:left">Modelo</th><th style="text-align:left">Submuestra</th><th>Cruda</th><th>Ajustada</th><th>n</th></tr></thead><tbody>
+    {Object.entries(ms).flatMap(([mid, m]: any) => Object.entries(m.by_subsample).flatMap(([sv, groups]: any) => Object.entries(groups).map(([k, g]: any) => <tr><td style="text-align:left">{m.label_es}</td><td style="text-align:left">{g.label}</td><td>{f(g.raw_gap)} <span class={`badge compact ${g.raw_gap.g}`} /></td><td><b>{f(g.adj_gap)}</b> <span class={`badge compact ${g.adj_gap.g}`} /></td><td class="mono">{g.adj_gap.n.toLocaleString('es-PE')}</td></tr>)))}
+  </tbody></table></div></section>
+  <p class="small muted" style="margin-top:16px">{M.design.note} {M.design.se}. Descarga: <a href="/data/models.json">models.json</a>, <a href="/data/decompositions.json">decompositions.json</a>, <a href="/data/drought_model.json">drought_model.json</a>.</p>
+</Base>
