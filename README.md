@@ -17,7 +17,7 @@ según la ENPOVE 2018 y 2022, y la relación entre choques climáticos y (in)mov
 cd site && npm ci && npm run build
 ```
 
-Prototipo en desarrollo, abierto a colaboración y financiamiento:
+Prototipo en desarrollo, abierto a colaboración:
 [Favio Samillan](https://lotuslatte.github.io).
 
 Licencia de datos y sitio: CC-BY 4.0. Fuentes: INEI – ENAHO, ENPOVE.
