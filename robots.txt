@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /peru-migration-observatory/embed/
+
+Sitemap: https://lotuslatte.github.io/peru-migration-observatory/sitemap-index.xml
