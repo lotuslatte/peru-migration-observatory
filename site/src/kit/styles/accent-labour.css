@@ -1,0 +1,11 @@
+/* Labour observatory: terracotta. Darker always means a higher value. */
+:root {
+  --accent: #b5411a; --accent-ink: #ffffff; --accent-soft: #f8e6dd;
+  --seq-1: #f7e3d9; --seq-2: #edc1ab; --seq-3: #df9876; --seq-4: #cb6c42; --seq-5: #b0461a; --seq-6: #762b0c;
+  --div-1: #8f3511; --div-2: #cb6c42; --div-3: #edc1ab; --div-4: #ececea; --div-5: #b9c3cd; --div-6: #7b8b9b; --div-7: #44546a;
+}
+:root[data-theme="dark"] {
+  --accent: #f08a5d; --accent-ink: #0e0f10; --accent-soft: #3a2015;
+  --seq-1: #3a1e12; --seq-2: #5f2e17; --seq-3: #8c431f; --seq-4: #bb5f30; --seq-5: #e38556; --seq-6: #f8bfa3;
+  --div-1: #f8bfa3; --div-2: #bb5f30; --div-3: #5f2e17; --div-4: #26282a; --div-5: #3b4756; --div-6: #6f8298; --div-7: #a9bbcf;
+}

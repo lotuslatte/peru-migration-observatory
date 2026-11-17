@@ -1,6 +1,6 @@
 ---
 import Embed from '../../../layouts/Embed.astro';
-import TrendLine from '../../../components/charts/TrendLine';
+import TrendLine from '../../../kit/charts/TrendLine';
 import { loadHeadline, loadTrends, loadMeta } from '../../../data/loaders';
 export async function getStaticPaths() { return Object.keys(loadTrends().series.national).map(k => ({ params: { ind: k } })); }
 const { ind } = Astro.params; const h = loadHeadline(); const tr = loadTrends(); const m = loadMeta(); const lab = m.indicators[ind!]?.label_es ?? ind;

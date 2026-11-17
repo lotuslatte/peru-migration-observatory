@@ -2,12 +2,11 @@
 import Base from '../../layouts/Base.astro';
 import KpiTile from '../../components/ui/KpiTile.astro';
 import GradeLegend from '../../components/ui/GradeLegend.astro';
-import PrintBar from '../../components/ui/PrintBar.astro';
 import EmbedSnippet from '../../components/ui/EmbedSnippet.astro';
-import BarDist from '../../components/charts/BarDist';
-import Dumbbell from '../../components/charts/Dumbbell';
-import TrendLine from '../../components/charts/TrendLine';
-import RadarComparator from '../../components/charts/RadarComparator';
+import BarDist from '../../kit/charts/BarDist';
+import Dumbbell from '../../kit/charts/Dumbbell';
+import TrendLine from '../../kit/charts/TrendLine';
+import RadarComparator from '../../kit/charts/RadarComparator';
 import ODMatrix from '../../components/charts/ODMatrix';
 import { loadAtlas, loadProfile, loadHeadline, loadFlows } from '../../data/loaders';
 export async function getStaticPaths() { return loadAtlas().regions.map(r => ({ params: { id: r.id } })); }
@@ -24,7 +23,7 @@ const dests = (p.od?.top_destinations ?? []).map((x: any) => ({ k: x.id, label: 
 <Base title={`${p.name} · perfil migratorio`} wide image={`/share/${p.id}.png`}>
   <div class="eyebrow" style="margin-top:28px"><a href="/atlas/">Atlas</a> › {p.region_nat} · ENAHO {p.year} · n = {p.n.toLocaleString('es-PE')} personas 5+ · {(p.pop5_weighted / 1e6).toFixed(2)} M representadas</div>
   <div class="toolbar" style="justify-content:space-between"><h1 style="margin:0">{p.name}</h1><span><a class="btn primary" href={`/atlas/${p.id}/resumen/`}>Resumen de una página (PDF)</a></span></div>
-  {p.summary?.length > 0 && <div class="card summary"><div class="eyebrow">En cinco frases · generado desde las estimaciones</div><ol>{p.summary.map((t: string) => <li>{t}</li>)}</ol></div>}
+  {p.summary?.length > 0 && <div class="card summary"><div class="eyebrow">En resumen, generado desde las estimaciones</div><ol>{p.summary.map((t: string) => <li>{t}</li>)}</ol></div>}
   <div class="grid grid-3">
     {dims.map(d => <KpiTile label={d.label_es} cell={p.dims[d.id]} unit={d.unit === '%' ? '%' : d.unit === 'pp' ? ' pp' : d.unit === '‰' ? ' ‰' : ''} decimals={d.unit === 'ratio' ? 2 : d.id === 'mig5_cross' ? 2 : 1} note={p.rank?.[d.id] ? `Puesto ${p.rank[d.id]} de 25 · percentil ${p.pct[d.id]}` : undefined} kind={['net_rate', 'mig5_cross', 'out_rate', 'life_cross'].includes(d.id) ? 'informal' : 'formal'} />)}
   </div>

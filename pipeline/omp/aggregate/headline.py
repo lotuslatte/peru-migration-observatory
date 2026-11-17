@@ -16,7 +16,14 @@ def build(est):
     y = HEADLINE_YEAR
     K = ["mig5_any", "mig5_cross", "mig5_intra", "mig5_intl", "mig5_ven", "life_cross", "life_abroad", "born_ven", "native_here", "gap_inf_mig", "gap_ur_mig", "gap_inc_mig"]
     kpis = {k: cell(pick(est, k, "national"), nd_for(k)) for k in K}
-    deltas = {k: {"d1": delta(pick(est, k, "national"), pick(est, k, "national", "all", y - 1)), "d10": delta(pick(est, k, "national"), pick(est, k, "national", "all", 2014))} for k in K}
+    def change(k, y0):
+        # A change that crosses a method break keeps its value but is never reported as significant.
+        d = delta(pick(est, k, "national"), pick(est, k, "national", "all", y0))
+        brk = crossed_break(k, y0, y)
+        if d is not None and brk:
+            d.update({"sig": False, "break": brk})
+        return d
+    deltas = {k: {"d1": change(k, y - 1), "d10": change(k, 2014)} for k in K}
     n = int(pick(est, "mig5_any", "national")["n"]); pop = float(pick(est, "n_pop5", "national")["est"])
     tot = {k: cell(pick(est, k, "national"), 0) for k in ["n_mig5_cross", "n_mig5_intl", "n_pop5"]}
     by = {}

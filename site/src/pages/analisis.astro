@@ -1,8 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
 import HowToRead from '../components/ui/HowToRead.astro';
-import CoefPlot from '../components/charts/CoefPlot';
-import DecompBars from '../components/charts/DecompBars';
+import CoefPlot from '../kit/charts/CoefPlot';
+import DecompBars from '../kit/charts/DecompBars';
 import { loadModels, loadDecomp, loadDrought } from '../data/loaders';
 const M = loadModels(); const D = loadDecomp(); const dr = loadDrought();
 const f = (c: any, n = 1) => c?.v == null ? '—' : c.v.toLocaleString('es-PE', { minimumFractionDigits: n, maximumFractionDigits: n });

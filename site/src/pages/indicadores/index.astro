@@ -1,0 +1,12 @@
+---
+import Base from '../../layouts/Base.astro';
+import { INDICATORS, GROUPS, YEAR, indicatorData } from '../../data/indicators';
+import { fmtUnit } from '../../kit/charts/lib/format';
+const latest = (id: string) => indicatorData(id).national.at(-1);
+---
+<Base title="Indicadores" description="Indicadores de migración interna e internacional en el Perú, con tendencia, grupos, departamentos y descarga.">
+  <div class="r-page r-list">
+    <section class="r-hero"><h1>Indicadores</h1><p class="r-src">{INDICATORS.length} indicadores con serie anual. Cada uno tiene su página: tendencia, mapa, grupos, cómo se mide y descarga. Valores de {YEAR}. Las tablas cruzadas están en el <a href="/compendio/">compendio</a>.</p></section>
+    {GROUPS.map(g => <section><h2>{g}</h2><ul>{INDICATORS.filter(i => i.group === g).map(i => <li><a href={`/indicadores/${i.id}/`}><span>{i.name}</span><span>{fmtUnit(latest(i.id).v, i.unit)}</span></a></li>)}</ul></section>)}
+  </div>
+</Base>

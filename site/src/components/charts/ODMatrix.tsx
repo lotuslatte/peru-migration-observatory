@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
 import * as d3 from 'd3';
-import { seq, onThemeChange } from './lib/theme';
-import ExportBar from './lib/ExportBar';
+import { seq, onThemeChange } from '../../kit/charts/lib/theme';
+import ExportBar from '../../kit/charts/lib/ExportBar';
 type Cellf = { o: string; d: string; flow: number; n: number; g: string };
 export default function ODMatrix({ matrix, names, focus }: { matrix: Cellf[]; names: Record<string, string>; focus?: string }) {
   const ref = useRef<SVGSVGElement>(null); const [tick, setTick] = useState(0); const [mode, setMode] = useState<'abs' | 'row'>('abs'); const [sel, setSel] = useState<string | null>(focus ?? null);

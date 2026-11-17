@@ -1,0 +1,69 @@
+---
+import Base from '../../layouts/Base.astro';
+import IndicatorViews from '../../kit/charts/IndicatorViews';
+import { peruMap } from '../../kit/data/peruMap';
+import { fmtUnit } from '../../kit/charts/lib/format';
+import { INDICATORS, YEAR, YEARS, indicatorData } from '../../data/indicators';
+import { loadMeta, loadTrends } from '../../data/loaders';
+import { SITE_NAME, SOURCE_SPAN } from '../../data/site';
+
+export const getStaticPaths = () => INDICATORS.map(i => ({ params: { id: i.id } }));
+const { id } = Astro.params as { id: string };
+const { ind, national, domains, regions } = indicatorData(id);
+const meta = loadMeta(); const notes: Record<string, string> = loadTrends().notes ?? {};
+const last = national.at(-1);
+const say = last.v != null ? ind.say?.(last.v) : undefined;
+const data = { id, name: ind.name, unit: ind.unit, type: 'prop', year: YEAR, years: YEARS, breaks: (loadTrends().breaks ?? []).filter((b: any) => b.indicators.includes(id)), national, domains, regions, map: regions ? peruMap() : null };
+const pos = INDICATORS.findIndex(i => i.id === id);
+const prevInd = INDICATORS[pos - 1], nextInd = INDICATORS[pos + 1];
+const SITE = 'https://lotuslatte.github.io/peru-migration-observatory';
+const year = new Date().getFullYear();
+const citeText = `Samillan Flores, F. (${year}). ${ind.name}, ${SOURCE_SPAN}. ${SITE_NAME}, datos generados el ${meta.generated}. A partir de INEI, ENAHO. ${SITE}/indicadores/${id}/`;
+const defs = meta.migration_defs;
+const lifetime = id.startsWith('life_'), gap = id.startsWith('gap_');
+const firstYear = YEARS[national.findIndex((c: any) => c.v != null)];
+const jsonLd = { '@context': 'https://schema.org', '@type': 'Dataset', name: `${ind.name}, ${SOURCE_SPAN}`, description: ind.def, license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Person', name: 'Favio Samillan Flores' }, spatialCoverage: 'Perú', isAccessibleForFree: true };
+---
+<Base title={ind.name} description={ind.def} jsonLd={jsonLd}>
+  <div class="r-page">
+    <a class="r-back" href="/indicadores/">Todos los indicadores</a>
+    <section class="r-head">
+      <p class="r-kicker">{ind.group}</p>
+      <h1>{ind.name}</h1>
+      {last.v != null && <div class="r-num">{fmtUnit(last.v, ind.unit)}</div>}
+      {say && <p class="r-say">{say}</p>}
+      {last.v != null && <p class="r-src">ENAHO {YEAR}. IC 95%: {fmtUnit(last.lo, ind.unit)} a {fmtUnit(last.hi, ind.unit)}.</p>}
+    </section>
+    <IndicatorViews client:load data={data} seriesSrc={regions ? `/data/series/${id}.json` : undefined} filePrefix="omp" />
+    <noscript><p class="r-src">Los gráficos necesitan JavaScript. Las cifras completas están en <a href="/datos/">Datos</a>.</p></noscript>
+
+    <section class="r-doc" id="metodo">
+      <h2>Cómo se mide</h2>
+      <p>{ind.def}.</p>
+      <dl class="r-rules">
+        <dt>Población</dt><dd>{defs.population}</dd>
+        {!lifetime && !gap && <><dt>Migración reciente</dt><dd>{defs.recent}</dd></>}
+        {lifetime && <><dt>Migración de toda la vida</dt><dd>{defs.lifetime}</dd></>}
+        {gap && <><dt>Comparación</dt><dd>Migrantes recientes (llegaron de otro departamento o país en los últimos cinco años) frente a quienes no migraron, entre los ocupados de 14 años a más. Las brechas se califican por tamaño de muestra, no por error relativo.</dd></>}
+      </dl>
+      {firstYear > YEARS[0] && <p>La serie empieza en {firstYear}. {notes[String(firstYear)]}</p>}
+      {notes['2020'] && <p><strong>2020.</strong> {notes['2020']} Comparar con cautela.</p>}
+      <p class="r-src">Error estándar por linealización de Taylor con conglomerados y estratos del diseño muestral. Sello A si el error relativo es menor que 15%, B de 15% a 30%; con 30% o más, o menos de 30 casos, la cifra no se publica. Detalle en <a href="/acerca/metodologia/">Metodología</a>.</p>
+    </section>
+
+    <section class="r-doc" id="descargar">
+      <h2>Descargar y citar</h2>
+      <p>La serie completa de este indicador, por grupo y departamento: <a href={`/data/series/${id}.json`} download><code>{id}.json</code></a>. Todas las tablas y archivos están en <a href="/datos/">Datos</a>.</p>
+      <p class="r-cite" id="cite-text">{citeText}</p>
+      <div class="r-actions"><button class="r-btn" data-copy="cite-text">Copiar cita</button></div>
+    </section>
+    <nav class="r-pn-nav" aria-label="Otros indicadores">
+      {prevInd ? <a href={`/indicadores/${prevInd.id}/`}><span class="muted small">Anterior</span>{prevInd.name}</a> : <span />}
+      {nextInd && <a class="next" href={`/indicadores/${nextInd.id}/`}><span class="muted small">Siguiente</span>{nextInd.name}</a>}
+    </nav>
+  </div>
+  <script>
+    import { copyText } from '../../kit/charts/lib/export';
+    document.querySelectorAll<HTMLElement>('[data-copy]').forEach(b => b.addEventListener('click', () => copyText(b, document.getElementById(b.dataset.copy!)!.textContent ?? '')));
+  </script>
+</Base>

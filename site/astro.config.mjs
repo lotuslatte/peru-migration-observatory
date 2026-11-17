@@ -9,7 +9,7 @@ export default defineConfig({
   base: process.env.SITE_BASE || '/',
   output: 'static',
   trailingSlash: 'always',
-  integrations: [preact({ compat: false }), mdx(), sitemap()],
+  integrations: [preact({ compat: false }), mdx(), sitemap({ filter: page => !page.includes('/embed/') })],
   i18n: { defaultLocale: 'es', locales: ['es', 'en'], routing: { prefixDefaultLocale: false } },
   vite: { build: { chunkSizeWarningLimit: 900 } },
 });

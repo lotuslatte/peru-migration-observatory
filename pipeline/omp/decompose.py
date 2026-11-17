@@ -1,7 +1,7 @@
 """Oaxaca–Blinder (two-fold, β de referencia = muestra agrupada con dummy) y shift-share; varianza por bootstrap Rao–Wu."""
 import numpy as np
 import pandas as pd
-from .survey import Design, as_mask
+from .survey import Design, Estimate, as_mask
 from .design_matrix import Spec
 
 
@@ -37,12 +37,17 @@ def oaxaca(D: Design, d: pd.DataFrame, outcome: str, group_var: str, a, b, spec:
     for w in D.bootstrap_weights(R, seed):
         try:
             r = oaxaca_once(X, y, w, ga, gb, groups); reps.append([r["gap"], r["explained"], r["unexplained"]] + [v for k in base["by"] for v in r["by"][k]])
-        except Exception:
+        except np.linalg.LinAlgError:
             continue
+    if len(reps) < 0.95 * R:
+        raise RuntimeError(f"oaxaca {outcome}: only {len(reps)} of {R} bootstrap replicates converged")
     reps = np.array(reps); se = reps.std(axis=0, ddof=1)
     def cell(v, s, n):
-        rse = abs(s / v) if v else np.inf
-        return {"v": float(v), "se": float(s), "lo": float(v - 1.96 * s), "hi": float(v + 1.96 * s), "n": int(n), "g": "S" if n < 30 else ("A" if rse < .15 else ("B" if rse < .30 else "S"))}
+        # componentes de una brecha: sello por n, no por RSE (un componente cercano a cero tiene RSE enorme sin ser impreciso)
+        c = {"v": float(v), "se": float(s), "lo": float(v - 1.96 * s), "hi": float(v + 1.96 * s), "n": int(n), "g": Estimate(float(v), float(s), int(n), 0.0, kind="diff").grade}
+        if c["g"] != "S" and c["lo"] <= 0 <= c["hi"]:
+            c["ns"] = True   # el IC incluye el cero
+        return c
     n = int(min(ga.sum(), gb.sum()))
     out = {"outcome": outcome, "a": {"n": int(ga.sum()), "mean": float(np.average(y[ga], weights=D.w[ga]))}, "b": {"n": int(gb.sum()), "mean": float(np.average(y[gb], weights=D.w[gb]))},
            "gap": cell(base["gap"], se[0], n), "explained": cell(base["explained"], se[1], n), "unexplained": cell(base["unexplained"], se[2], n), "by_var": [], "R": int(len(reps)), "reference": "pooled"}

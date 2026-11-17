@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
 import * as d3 from 'd3';
-import { onThemeChange } from './lib/theme';
-import ExportBar from './lib/ExportBar';
+import { onThemeChange } from '../../kit/charts/lib/theme';
+import ExportBar from '../../kit/charts/lib/ExportBar';
 interface Props { chord: any; net?: Record<string, number | null>; focus?: string }
 export default function FlowChord({ chord, net = {}, focus }: Props) {
   const ref = useRef<SVGSVGElement>(null); const [tick, setTick] = useState(0); const [sel, setSel] = useState<string | null>(focus ?? null); const [minFlow, setMinFlow] = useState(1500);

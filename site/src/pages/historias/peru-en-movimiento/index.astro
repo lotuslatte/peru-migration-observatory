@@ -1,8 +1,8 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import HowToRead from '../../../components/ui/HowToRead.astro';
-import ScrollyScene from '../../../components/charts/ScrollyScene';
-import AtlasMap from '../../../components/charts/AtlasMap';
+import ScrollyScene from '../../../kit/charts/ScrollyScene';
+import AtlasMap from '../../../kit/charts/AtlasMap';
 import { loadHeadline, loadAtlas, loadFlows, loadVenezuela, loadClimate } from '../../../data/loaders';
 const h = loadHeadline(); const a = loadAtlas(); const fl = loadFlows(); const vz = loadVenezuela(); const cl = loadClimate();
 const k = h.kpis; const f = (c: any, n = 1) => c?.v == null ? '—' : c.v.toLocaleString('es-PE', { minimumFractionDigits: n, maximumFractionDigits: n });
@@ -38,5 +38,5 @@ const steps = [
   <p class="lede">Siete capítulos sobre quién se mueve, hacia dónde y con qué resultado. Cada cifra lleva su tabla del compendio.</p>
   <HowToRead />
   <ScrollyScene client:load steps={steps} mapNames={fl.dept_names} />
-  <section class="card" style="margin-top:32px"><div class="eyebrow">Epílogo</div><h2>El mapa del saldo</h2><AtlasMap client:visible regions={a.regions} dims={a.dims} year={a.year} initial="net_rate" /></section>
+  <section class="card"><div class="eyebrow">Epílogo</div><h2>El mapa del saldo</h2><AtlasMap client:visible regions={a.regions} dims={a.dims} year={a.year} initial="net_rate" /></section>
 </Base>

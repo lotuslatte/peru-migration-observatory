@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
 import * as d3 from 'd3';
 import * as topojson from 'topojson-client';
-import { onThemeChange } from './lib/theme';
-import ExportBar from './lib/ExportBar';
+import { onThemeChange } from '../../kit/charts/lib/theme';
+import ExportBar from '../../kit/charts/lib/ExportBar';
 interface Props { chord: any; topN?: number }
 export default function FlowArrows({ chord, topN: n0 = 30 }: Props) {
   const ref = useRef<SVGSVGElement>(null); const [tick, setTick] = useState(0); const [topN, setTopN] = useState(n0); const [only, setOnly] = useState<string>(''); const [topo, setTopo] = useState<any>(null);

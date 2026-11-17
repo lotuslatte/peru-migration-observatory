@@ -1,8 +1,18 @@
 ---
 import '../styles/global.css';
+import Head from '../kit/ui/Head.astro';
+import { SITE_NAME } from '../data/site';
 interface Props { title: string }
 const { title } = Astro.props;
 ---
-<html lang="es"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>{title}</title><meta name="robots" content="noindex" />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" /></head>
-<body style="padding:10px"><div class="eyebrow">{title}</div><slot /><p class="small muted" style="margin-top:6px">Fuente: INEI · Observatorio · <a href="/" target="_blank" rel="noopener">observatorio</a> · CC BY 4.0</p></body></html>
+<html lang="es">
+  <head><Head title={title} siteName={SITE_NAME} description={title} noindex /></head>
+  <body class="embed">
+    <p class="eyebrow">{title}</p>
+    <slot />
+    <p class="small muted src">Fuente: INEI. <a href="/" target="_blank" rel="noopener">{SITE_NAME}</a>, CC BY 4.0.</p>
+    <style>
+      .embed { padding: 12px; } .src { margin-top: 8px; }
+    </style>
+  </body>
+</html>

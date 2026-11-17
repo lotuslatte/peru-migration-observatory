@@ -1,0 +1,16 @@
+<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Cambiar entre tema claro y oscuro" title="Tema claro u oscuro">
+  <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><circle cx="10" cy="10" r="7.25" fill="none" stroke="currentColor" stroke-width="1.5" /><path d="M10 2.75a7.25 7.25 0 0 1 0 14.5z" fill="currentColor" /></svg>
+</button>
+<style>
+  .theme-toggle { all: unset; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 999px; color: var(--ink-2); }
+  .theme-toggle:hover { background: var(--panel-2); color: var(--ink); }
+  .theme-toggle:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+</style>
+<script>
+  document.getElementById('theme-toggle')?.addEventListener('click', () => {
+    const root = document.documentElement;
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('obs-theme', next); } catch {}
+  });
+</script>

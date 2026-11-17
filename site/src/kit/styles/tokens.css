@@ -1,0 +1,53 @@
+/* Observatory kit: ink and one colour.
+   The interface is black, white and greys. Colour is reserved for data and comes
+   from the site's accent file (accent-labour.css, accent-migration.css), which
+   sets --accent, the sequential ramp --seq-1..6 and the diverging ramp --div-1..7.
+   Dark values are defined once, under [data-theme="dark"]; the inline script in
+   the Base layout always resolves the system preference into that attribute. */
+:root {
+  --bg: #ffffff; --paper: #fafaf9; --panel: #ffffff; --panel-2: #f2f2f0;
+  --ink: #111214; --ink-2: #3a3d42; --muted: #666a71; --line: #e2e2df; --rule: #b9b9b4;
+
+  /* Neutral data colours; the accent file overrides the first three groups. */
+  --accent: #111214; --accent-ink: #ffffff; --accent-soft: #f2f2f0;
+  --seq-1: #ececea; --seq-2: #cfcfcc; --seq-3: #a9a9a6; --seq-4: #7d7d7b; --seq-5: #4d4d4c; --seq-6: #1c1c1c;
+  --div-1: #1c1c1c; --div-2: #7d7d7b; --div-3: #cfcfcc; --div-4: #ececea; --div-5: #b9c3cd; --div-6: #7b8b9b; --div-7: #44546a;
+  --base: #44546a; --base-soft: #e6eaee;
+  --nodata: #f2f2f0;
+
+  /* Series colours for charts with several groups: accent first, then ink and muted hues. */
+  --cat-1: var(--accent); --cat-2: #111214; --cat-3: #5b6b7c; --cat-4: #a67c12; --cat-5: #1f8577;
+  --cat-6: #7a4fa3; --cat-7: #9a9ea4; --cat-8: #2f6fb0; --cat-9: #8a5a3c;
+
+  /* Quality seals: solid, caution, suppressed. */
+  --grade-a: #111214; --grade-a-soft: #ececea; --grade-b: #8a5a00; --grade-b-soft: #f6ecd4; --grade-s: #666a71; --grade-s-soft: #f2f2f0;
+  --ok: #111214; --warn: #8a5a00; --bad: #a3271f;
+
+  /* Aliases kept for components written against the older token names. */
+  --focal: var(--accent); --focal-soft: var(--accent-soft);
+  --informal: var(--accent); --informal-soft: var(--accent-soft); --formal: var(--base); --formal-soft: var(--base-soft);
+  --accent-2: var(--ink); --accent-2-soft: var(--panel-2);
+
+  --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --font-serif: var(--font-sans);
+
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px; --s-6: 32px; --s-7: 48px; --s-8: 72px; --s-9: 104px;
+  --text-xs: .8125rem; --text-sm: .875rem; --text-md: 1rem; --text-lg: 1.125rem; --text-xl: 1.375rem;
+  --radius: 4px; --shadow: none;
+  --maxw: 1200px; --measure: 66ch;
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  --bg: #0e0f10; --paper: #141516; --panel: #141516; --panel-2: #1f2123;
+  --ink: #f2f2f0; --ink-2: #c9cac8; --muted: #9b9da1; --line: #2a2c2f; --rule: #474a4e;
+  --accent: #f2f2f0; --accent-ink: #0e0f10; --accent-soft: #1f2123;
+  --seq-1: #26282a; --seq-2: #3d3f42; --seq-3: #5c5e61; --seq-4: #85878a; --seq-5: #b4b5b6; --seq-6: #ededeb;
+  --div-1: #ededeb; --div-2: #85878a; --div-3: #3d3f42; --div-4: #26282a; --div-5: #3b4756; --div-6: #6f8298; --div-7: #a9bbcf;
+  --base: #a9bbcf; --base-soft: #232a33;
+  --nodata: #1f2123;
+  --cat-2: #f2f2f0; --cat-3: #9fb0c2; --cat-4: #d6a93a; --cat-5: #4fc0ad; --cat-6: #b08ad6; --cat-7: #7d8187; --cat-8: #6aa6e0; --cat-9: #c79370;
+  --grade-a: #f2f2f0; --grade-a-soft: #26282a; --grade-b: #e2b04a; --grade-b-soft: #332a12; --grade-s: #9b9da1; --grade-s-soft: #1f2123;
+  --ok: #f2f2f0; --warn: #e2b04a; --bad: #f08a7c;
+  color-scheme: dark;
+}

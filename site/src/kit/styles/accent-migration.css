@@ -1,0 +1,11 @@
+/* Migration observatory: indigo. Darker always means a higher value. */
+:root {
+  --accent: #3a43c4; --accent-ink: #ffffff; --accent-soft: #e6e8fa;
+  --seq-1: #e4e6f9; --seq-2: #c1c5f1; --seq-3: #979de6; --seq-4: #6b72d8; --seq-5: #3f47c2; --seq-6: #23287f;
+  --div-1: #2a2f96; --div-2: #6b72d8; --div-3: #c1c5f1; --div-4: #ececea; --div-5: #e3c9a6; --div-6: #c2924f; --div-7: #8a5a14;
+}
+:root[data-theme="dark"] {
+  --accent: #9aa1f5; --accent-ink: #0e0f10; --accent-soft: #1c1f4a;
+  --seq-1: #1b1e45; --seq-2: #2b3070; --seq-3: #40479f; --seq-4: #6067cf; --seq-5: #8c93ee; --seq-6: #c9ccfb;
+  --div-1: #c9ccfb; --div-2: #6067cf; --div-3: #2b3070; --div-4: #26282a; --div-5: #4a3a1f; --div-6: #a67a3c; --div-7: #e3bf86;
+}

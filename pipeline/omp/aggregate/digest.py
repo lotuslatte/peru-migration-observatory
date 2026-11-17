@@ -15,6 +15,7 @@ def build(est, exclude_domains=("dept_sex", "dept_age4", "dept_lengua3", "dept_a
         prev = e[e.year == y0].set_index(["indicator", "domain", "key"])
         both = cur.join(prev, lsuffix="_1", rsuffix="_0", how="inner")
         for (ind, dom, key), r in both.iterrows():
+            if crossed_break(ind, y0, HEADLINE_YEAR): continue
             d = float(r.est_1 - r.est_0); se = math.sqrt(float(r.se_1) ** 2 + float(r.se_0) ** 2)
             if se != se or se == 0: continue
             z = d / se

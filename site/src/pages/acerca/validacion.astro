@@ -5,10 +5,11 @@ import * as d3 from 'd3';
 const rows = d3.csvParse(readCsv('validation.csv'));
 ---
 <Base title="Validación">
-  <div class="eyebrow" style="margin-top:28px">Validación frente a cifras oficiales</div><h1>Lo que coincide y lo que no</h1>
+  <p class="eyebrow">Validación frente a cifras oficiales</p><h1>Lo que coincide y lo que no</h1>
   <p class="lede">Cada indicador titular se compara con la cifra oficial más cercana. Cuando la fuente es otra (censo, registros administrativos), la comparación es referencial y se dice por qué difiere.</p>
-  <div class="card"><div class="scroll-x"><table class="data"><thead><tr><th>Año</th><th style="text-align:left">Indicador</th><th>Oficial</th><th>Observatorio</th><th>Dif.</th><th>Tol.</th><th>OK</th><th style="text-align:left">Fuente</th></tr></thead><tbody>
-    {rows.map((r: any) => <tr><td>{r.year}</td><td style="text-align:left">{r.indicator} · {r.domain}</td><td>{r.official}</td><td>{r.observatorio}</td><td class="mono">{r.diff}</td><td class="mono">{r.tolerance}</td><td>{r.ok === 'True' ? '✓' : '✗'}</td><td style="text-align:left" class="small">{r.source}</td></tr>)}
+  <div class="card"><div class="scroll-x"><table class="data"><thead><tr><th>Año</th><th style="text-align:left">Indicador</th><th>Oficial</th><th>Observatorio</th><th>Dif.</th><th>Tol.</th><th>Resultado</th><th style="text-align:left">Fuente</th></tr></thead><tbody>
+    {rows.map((r: any) => <tr><td>{r.year}</td><td style="text-align:left">{r.indicator} · {r.domain}</td><td>{r.official}</td><td>{r.observatorio}</td><td class="mono">{r.diff}</td><td class="mono">{r.tolerance}</td><td>{r.status === 'ok' ? 'Coincide' : r.status === 'known_gap' ? 'Brecha conocida' : 'No coincide'}</td><td style="text-align:left" class="small">{r.source}</td></tr>)}
   </tbody></table></div></div>
+  {rows.filter((r: any) => r.status === 'known_gap').map((r: any) => <p><strong>{r.indicator}, {r.year}: brecha conocida.</strong> {r.known_gap}</p>)}
   <p class="small muted" style="margin-top:12px">Descarga: <a href="/data/validation.csv">validation.csv</a>.</p>
 </Base>

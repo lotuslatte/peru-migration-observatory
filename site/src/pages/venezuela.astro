@@ -1,8 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
 import GradeLegend from '../components/ui/GradeLegend.astro';
-import BarDist from '../components/charts/BarDist';
-import Dumbbell from '../components/charts/Dumbbell';
+import BarDist from '../kit/charts/BarDist';
+import Dumbbell from '../kit/charts/Dumbbell';
 import { loadVenezuela } from '../data/loaders';
 const vz = loadVenezuela(); const W = vz.waves; const w18 = W['2018'], w22 = W['2022'], w24 = W['2024'];
 const f = (c: any, n = 1) => c?.v == null ? '—' : c.v.toLocaleString('es-PE', { minimumFractionDigits: n, maximumFractionDigits: n });

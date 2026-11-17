@@ -1,63 +1,114 @@
 ---
 import Base from '../layouts/Base.astro';
-import KpiTile from '../components/ui/KpiTile.astro';
-import HowToRead from '../components/ui/HowToRead.astro';
-import GradeLegend from '../components/ui/GradeLegend.astro';
-import Waffle from '../components/charts/Waffle';
-import AtlasMap from '../components/charts/AtlasMap';
-import TrendLine from '../components/charts/TrendLine';
-import { loadHeadline, loadAtlas, loadFlows, loadVenezuela } from '../data/loaders';
-const h = loadHeadline(); const a = loadAtlas(); const fl = loadFlows(); const vz = loadVenezuela();
-const k = h.kpis; const d = h.deltas;
-const f = (c: any, n = 1) => c?.v == null ? '—' : c.v.toLocaleString('es-PE', { minimumFractionDigits: n, maximumFractionDigits: n });
-const depts = a.regions.filter(r => !r.parent);
-const byNet = [...depts].filter(r => r.values.net_rate.v != null).sort((x, y) => (y.values.net_rate.v ?? 0) - (x.values.net_rate.v ?? 0));
+import MapPicker from '../kit/charts/MapPicker';
+import LineChart from '../kit/charts/LineChart';
+import { peruMap } from '../kit/data/peruMap';
+import { fmtUnit, fmtInt } from '../kit/charts/lib/format';
+import { loadHeadline, loadAtlas, loadFlows, loadVenezuela, loadTrends } from '../data/loaders';
+import { INDICATORS, YEAR, YEARS, slim } from '../data/indicators';
+import { SITE_NAME, SOURCE_SPAN } from '../data/site';
+
+const h = loadHeadline(); const a = loadAtlas(); const fl = loadFlows(); const vz = loadVenezuela(); const tr = loadTrends();
+const PREV = YEAR - 1;
+const lead = h.kpis.life_cross;
+const depts = a.regions.filter(r => !r.parent && r.id.length === 2);
+
+// Map layers: net migration first (signed, two hues), then the main rates.
+const layerIds = ['net_rate', 'mig5_cross', 'out_rate', 'life_cross'];
+const layerNames: Record<string, string> = { net_rate: 'Saldo migratorio (por mil, 2020–2024)', mig5_cross: 'Llegaron de otro departamento', out_rate: 'Se fueron a otro departamento', life_cross: 'Nacidos en otro departamento' };
+const layers = layerIds.map(id => { const d = a.dims.find(x => x.id === id)!; return { id, name: layerNames[id], unit: d.unit, scale: id === 'net_rate' ? 'div' as const : 'seq' as const, rows: depts.map(r => ({ id: r.id, name: r.name, c: slim(r.values[id]) })) }; });
+
+const byNet = [...depts].filter(r => r.values.net_rate.v != null).sort((x, y) => y.values.net_rate.v! - x.values.net_rate.v!);
+const signals = ['mig5_cross', 'mig5_intl', 'gap_inf_mig', 'gap_inc_mig', 'mig5_any'].map(id => INDICATORS.find(i => i.id === id)!).filter(Boolean);
+const what: Record<string, string> = { mig5_cross: 'vivía en otro departamento hace cinco años', mig5_intl: 'vivía en otro país hace cinco años', gap_inf_mig: 'más informalidad entre migrantes recientes', gap_inc_mig: 'gana el migrante por cada sol del no migrante', mig5_any: 'vivía en otro distrito hace cinco años' };
+function spark(id: string) {
+  const cells = tr.series.national[id]; const vs = cells.filter((c: any) => c.v != null).map((c: any) => c.v), lo = Math.min(...vs), hi = Math.max(...vs);
+  const X = (i: number) => 2 + i / (YEARS.length - 1) * 196, Y = (v: number) => 32 - (v - lo) / ((hi - lo) || 1) * 28;
+  const pts = cells.map((c: any, i: number) => c.v == null ? null : `${X(i)},${Y(c.v)}`).filter(Boolean);
+  return { points: pts.join(' '), end: [X(YEARS.length - 1), Y(cells.at(-1).v)] };
+}
+function change(id: string, unit: string) {
+  const d = h.deltas[id]?.d1;
+  return d?.sig ? `${d.d > 0 ? 'Sube' : 'Baja'} ${fmtUnit(Math.abs(d.d), unit === '%' ? 'pp' : unit)} frente a ${PREV}` : `Sin cambio significativo frente a ${PREV}`;
+}
 const top = fl.top_flows.slice(0, 6);
 const vz24 = vz.waves['2024'];
+const jsonLd = { '@context': 'https://schema.org', '@type': 'Dataset', name: `${SITE_NAME}, ${SOURCE_SPAN}`, description: 'Indicadores de migración interna e internacional en el Perú estimados con microdatos del INEI, con error estándar, intervalo de confianza y sello de calidad.', license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Person', name: 'Favio Samillan Flores' }, temporalCoverage: `2014/${YEAR}`, spatialCoverage: 'Perú', isAccessibleForFree: true };
 ---
-<Base title="Inicio" wide>
-  <section class="hero">
+<Base title="Inicio" jsonLd={jsonLd}>
+  <section class="home-hero">
     <div>
-      <div class="eyebrow">Observatorio de Migración del Perú · ENAHO {h.year} · {h.n_persons.toLocaleString('es-PE')} entrevistas · por <a href="https://lotuslatte.github.io/" rel="author">Favio Samillan Flores</a></div>
-      <h1>Un país que se mueve <em>en silencio.</em></h1>
-      <p class="lede">Uno de cada cinco peruanos vive en un departamento distinto al que nació. Cada año, cerca de {(fl.national.inm.at(-1) / 5 / 1000).toFixed(0)} mil personas cruzan una frontera departamental y otras llegan del extranjero —sobre todo de Venezuela— sin que exista un lugar donde ver hacia dónde van, quiénes son y cómo les va. Este observatorio lo reconstruye desde los microdatos públicos del INEI, con intervalos de confianza y descarga libre.</p>
-      <div class="toolbar"><a class="btn primary" href="/historias/peru-en-movimiento/">Leer la historia</a><a class="btn" href="/atlas/">Atlas de movilidad</a><a class="btn" href="/flujos/">Matriz origen–destino</a><a class="btn" href="/venezuela/">Población venezolana</a></div>
+      <p class="eyebrow">Migración en el Perú, {YEAR}</p>
+      <div class="big">{fmtUnit(lead.v, '%')}</div>
+      <h1>de las personas viven en un departamento distinto de aquel donde nacieron.</h1>
+      <p class="r-src">ENAHO {YEAR} del INEI, {fmtInt(h.n_persons)} personas de 5 años a más. IC 95%: {fmtUnit(lead.lo, '%')} a {fmtUnit(lead.hi, '%')}. <a href="/indicadores/life_cross/">Ver el indicador</a>.</p>
+      <button class="find" type="button" data-open-palette>
+        <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.75" fill="none" stroke="currentColor" stroke-width="1.6" /><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" /></svg>
+        <span>Buscar un indicador o un lugar</span><kbd>Ctrl K</kbd>
+      </button>
+      <p class="r-say">{byNet[0].name} y {byNet[1].name} ganan población ({fmtUnit(byNet[0].values.net_rate.v, '‰')} y {fmtUnit(byNet[1].values.net_rate.v, '‰')} en cinco años). {byNet.at(-1)!.name} y {byNet.at(-2)!.name} la pierden ({fmtUnit(byNet.at(-1)!.values.net_rate.v, '‰')} y {fmtUnit(byNet.at(-2)!.values.net_rate.v, '‰')}).</p>
     </div>
-    <div class="signature"><Waffle client:load cross={k.mig5_cross.v ?? 0} intl={k.mig5_intl.v ?? 0} intra={k.mig5_intra.v ?? 0} /></div>
+    <MapPicker client:load map={peruMap()} layers={layers} year={YEAR} />
   </section>
-  <HowToRead />
-  <section>
-    <div class="eyebrow">Cifras titulares {h.year} · con cambio frente a 2023</div>
-    <div class="grid grid-3">
-      <KpiTile label="Nacidos en otro departamento (migración de toda la vida)" cell={k.life_cross} code="p401g2" delta={d.life_cross.d1} kind="informal" spark={h.trend.life_cross} />
-      <KpiTile label="Llegaron de otro departamento en los últimos 5 años" cell={k.mig5_cross} decimals={2} code="p401g" delta={d.mig5_cross.d1} kind="informal" spark={h.trend.mig5_cross} />
-      <KpiTile label="Llegaron del extranjero en los últimos 5 años" cell={k.mig5_intl} decimals={2} code="00xxxx" delta={d.mig5_intl.d1} kind="informal" spark={h.trend.mig5_intl} note="La ENAHO subestima la población extranjera; ver ENPOVE" />
-      <KpiTile label="Nacidos en Venezuela" cell={k.born_ven} decimals={2} code="004037" delta={d.born_ven.d1} kind="informal" />
-      <KpiTile label="Brecha de informalidad migrante − local" cell={k.gap_inf_mig} unit=" pp" code="gap" delta={d.gap_inf_mig.d1} higherBetter={false} spark={h.trend.gap_inf_mig} />
-      <KpiTile label="Ingreso mediano migrante / local" cell={k.gap_inc_mig} unit="" decimals={2} code="ratio" delta={d.gap_inc_mig.d1} />
+
+  <section class="home-sec">
+    <h2>Cinco señales más</h2>
+    <div class="r-signals">
+      {signals.map(i => { const s = spark(i.id); return (
+        <a class="r-signal" href={`/indicadores/${i.id}/`}>
+          <span class="num">{fmtUnit(tr.series.national[i.id].at(-1).v, i.unit)}</span>
+          <span class="name">{i.name}</span><span class="what">{what[i.id]}</span>
+          <svg viewBox="0 0 200 36" aria-hidden="true"><polyline fill="none" stroke="var(--ink)" stroke-width="1.5" points={s.points} /><circle cx={s.end[0]} cy={s.end[1]} r="3.2" fill="var(--accent)" /></svg>
+          <span class="chg">{change(i.id, i.unit)}</span>
+        </a>); })}
+      <a class="r-signal all" href="/indicadores/"><span class="num">{INDICATORS.length}</span><span class="name">Todos los indicadores</span><span class="what">cada uno con tendencia, mapa, grupos, método y descarga</span></a>
     </div>
-    <GradeLegend />
   </section>
-  <section class="card" style="margin-top:20px">
-    <div class="eyebrow">Atlas de movilidad · saldo migratorio 2020–2024</div>
-    <h2>Quién gana y quién pierde población</h2>
-    <p class="takeaway">{byNet[0]?.name} y {byNet[1]?.name} atraen (+{f(byNet[0]?.values.net_rate)} y +{f(byNet[1]?.values.net_rate)} por mil en cinco años); {byNet.at(-1)?.name} y {byNet.at(-2)?.name} expulsan ({f(byNet.at(-1)?.values.net_rate)} y {f(byNet.at(-2)?.values.net_rate)} por mil). La selva sur y la costa central atraen; el sur andino y la costa norte extrema pierden.</p>
-    <AtlasMap client:visible regions={a.regions} dims={a.dims} year={a.year} initial="net_rate" />
+
+  <section class="home-sec">
+    <h2>Por dónde se mueve la gente</h2>
+    <div class="home-cols">
+      <div>
+        <h3>Los seis corredores más grandes</h3>
+        <table class="data"><thead><tr><th scope="col">De</th><th scope="col" style="text-align:left">A</th><th scope="col">Personas al año</th></tr></thead>
+          <tbody>{top.map((t: any) => <tr><td>{fl.dept_names[t.o]}</td><td style="text-align:left">{fl.dept_names[t.d]}</td><td>{fmtInt(t.flow)}{t.g === 'B' && <span class="r-grade"> B</span>}</td></tr>)}</tbody></table>
+        <p class="r-src">Promedio anual 2020–2024. B: estimación menos precisa. <a href="/flujos/">Ver todos los flujos</a>.</p>
+      </div>
+      <div>
+        <h3>Población venezolana, 2024</h3>
+        <p>Unos {(vz24.pop / 1e6).toFixed(2)} millones de personas según la ENAHO-PV: {fmtUnit(vz24.all.employed.v, '%')} ocupadas, {fmtUnit(vz24.all.informal.v, '%')} en la informalidad y {fmtUnit(vz24.all.regular.v, '%')} con permiso migratorio.</p>
+        <LineChart client:visible years={YEARS} unit="%" title="Llegadas del extranjero y desde Venezuela en los últimos cinco años" name="omp_llegadas_extranjero" yTitle="Porcentaje de la población de 5 años a más"
+          series={[{ label: 'Del extranjero', cells: tr.series.national.mig5_intl.map(slim), color: 'var(--ink)' }, { label: 'De Venezuela', cells: tr.series.national.mig5_ven.map(slim), color: 'var(--accent)' }]} yZero exportBar={false} />
+        <p class="r-src">La ENAHO subestima a la población extranjera; las encuestas especializadas la miden mejor. <a href="/venezuela/">Tres encuestas, 2018–2024</a>.</p>
+      </div>
+    </div>
   </section>
-  <section class="grid grid-2" style="margin-top:20px">
-    <div class="card"><h2>Los seis corredores</h2><p class="takeaway">Casi todos los grandes flujos pasan por Lima: <b>{top[0].o === '15' ? 'sale' : 'llega'}</b> hacia {fl.dept_names[top[0].o === '15' ? top[0].d : top[0].o]} el mayor corredor del país (~{top[0].flow.toLocaleString('es-PE')} personas al año).</p>
-      <table class="data"><thead><tr><th style="text-align:left">Origen → destino</th><th>Personas / año</th><th>Sello</th></tr></thead><tbody>{top.map(t => <tr><td style="text-align:left">{fl.dept_names[t.o]} → {fl.dept_names[t.d]}</td><td>{t.flow.toLocaleString('es-PE')}</td><td><span class={`badge compact ${t.g}`} /></td></tr>)}</tbody></table><p class="small muted">Promedio anual 2020–2024. <a href="/flujos/">Ver la matriz completa →</a></p></div>
-    <div class="card"><h2>Población venezolana, 2024</h2><p class="takeaway">Unas <b>{(vz24.pop / 1e6).toFixed(2)} millones</b> de personas según ENAHO-PV: {f(vz24.all.employed)} % ocupadas, <b>{f(vz24.all.informal)} % en la informalidad</b>, {f(vz24.all.regular)} % con permiso migratorio y {f(vz24.all.discrim)} % con experiencias de discriminación.</p>
-      <TrendLine client:visible years={h.years} unit="%" title="Llegadas del extranjero y desde Venezuela (% de la población, 5 años)" series={[{ label: 'Del extranjero', cells: h.trend.mig5_intl }, { label: 'De Venezuela', cells: h.trend.mig5_ven }]} height={230} yZero /><p class="small"><a href="/venezuela/">Tres encuestas, 2018–2024 →</a></p></div>
+
+  <section class="home-sec">
+    <h2>Cómo usar el observatorio</h2>
+    <div class="home-cols">
+      <div>
+        <h3>Cada cifra trae su precisión</h3>
+        <p>Toda estimación se publica con su intervalo de confianza de 95% y un sello.</p>
+        <dl class="seals">
+          <div><dt><span class="badge A"></span></dt><dd>Error relativo menor que 15%.</dd></div>
+          <div><dt><span class="badge B"></span></dt><dd>Entre 15% y 30%: leer con cautela.</dd></div>
+          <div><dt><span class="badge S"></span></dt><dd>30% o más, o menos de 30 casos: no se publica.</dd></div>
+        </dl>
+        <p style="margin-top:12px"><a href="/acerca/metodologia/">Metodología</a> · <a href="/acerca/validacion/">Validación</a></p>
+      </div>
+      <div>
+        <h3>Por territorio</h3>
+        <p>Perfiles de los 25 departamentos, Lima Metropolitana y Lima Región, y un atlas de 196 provincias.</p>
+        <p><a href="/atlas/">Departamentos</a> · <a href="/atlas/provincias/">Provincias</a></p>
+        <h3 style="margin-top:24px">Para leer</h3>
+        <p><a href="/historias/peru-en-movimiento/">Perú en movimiento</a> · <a href="/clima/">Clima y movilidad</a> · <a href="/analisis/">Análisis con controles</a></p>
+      </div>
+      <div>
+        <h3>Datos abiertos</h3>
+        <p>Todas las estimaciones y las tablas del compendio, con diccionario. Licencia CC BY 4.0.</p>
+        <p><a href="/datos/">Descargar y citar</a> · <a href="/compendio/">Compendio de tablas</a> · <a href="/novedades/">Qué cambió</a></p>
+      </div>
+    </div>
   </section>
-  <section class="grid grid-3" style="margin-top:20px">
-    <a class="card link" href="/historias/peru-en-movimiento/"><div class="eyebrow">Historia</div><h3>El Perú se mueve hacia la costa</h3><p class="small">Siete capítulos: escala del movimiento, Lima imán y expulsor, jóvenes, selva como frontera, venezolanos, clima, y a quién le va mejor.</p></a>
-    <a class="card link" href="/clima/"><div class="eyebrow">Clima y migración</div><h3>¿Expulsan las sequías?</h3><p class="small">Emigración departamental frente a anomalías de temperatura y años secos (ERA5/CHIRPS), 2014–2023.</p></a>
-    <a class="card link" href="/acerca/metodologia/"><div class="eyebrow">Metodología</div><h3>Cómo se mide un flujo</h3><p class="small">Migración reciente y de toda la vida, matriz origen–destino con pesos, por qué la ENAHO subestima a los extranjeros.</p></a>
-  </section>
-  <style>
-    .hero { display: grid; grid-template-columns: minmax(300px, 1.25fr) minmax(280px, .8fr); gap: 40px; align-items: center; padding: 44px 0 10px; }
-    .signature { justify-self: center; } .card.link { text-decoration: none; color: inherit; } .card.link:hover { border-color: var(--informal); }
-    @media (max-width: 860px) { .hero { grid-template-columns: 1fr; gap: 24px; } .signature { justify-self: start; } }
-  </style>
 </Base>

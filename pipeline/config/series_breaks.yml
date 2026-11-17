@@ -1,0 +1,11 @@
+# Method breaks in the published series.
+# A comparison between a year before `year` and `year` or later crosses the break:
+# it keeps its value but is never reported as significant.
+breaks:
+  - id: informality_rule_2024
+    year: 2024
+    indicators: [informality, gap_inf_mig]
+    before_es: "Variable ocupinf del INEI"
+    after_es: "Regla del Observatorio"
+    label_es: "Desde 2024 INEI no publica ocupinf: la informalidad usa la regla del Observatorio y no es comparable con años previos."
+    label_en: "INEI stopped publishing ocupinf in 2024: informality uses the Observatory rule and is not comparable with earlier years."

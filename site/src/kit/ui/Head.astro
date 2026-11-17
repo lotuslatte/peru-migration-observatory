@@ -1,0 +1,34 @@
+---
+// Shared <head>: metadata, share image and the theme resolver.
+interface Props { title: string; siteName: string; description: string; image?: string; author?: string; authorUrl?: string; noindex?: boolean; jsonLd?: object }
+const { title, siteName, description, image = '/share/default.png', author, authorUrl, noindex = false, jsonLd } = Astro.props;
+const origin = Astro.site ?? 'https://example.org';
+const canonical = new URL(Astro.url.pathname, origin).toString();
+const ogImage = new URL(image, origin).toString();
+const full = title === siteName ? siteName : `${title} · ${siteName}`;
+---
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{full}</title>
+<meta name="description" content={description} />
+{author && <meta name="author" content={author} />}
+{noindex && <meta name="robots" content="noindex" />}
+<meta property="og:type" content="website" /><meta property="og:site_name" content={siteName} /><meta property="og:title" content={full} /><meta property="og:description" content={description} /><meta property="og:url" content={canonical} /><meta property="og:image" content={ogImage} /><meta property="og:locale" content="es_PE" />
+<meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={full} /><meta name="twitter:description" content={description} /><meta name="twitter:image" content={ogImage} />
+<link rel="canonical" href={canonical} />
+{authorUrl && <link rel="author" href={authorUrl} />}
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+{jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+<script is:inline>
+  // Resolve the theme before first paint. The stored choice wins; otherwise follow the system.
+  (function () {
+    var root = document.documentElement, mq = matchMedia('(prefers-color-scheme: dark)'), stored = null;
+    try { stored = localStorage.getItem('obs-theme') || localStorage.getItem('olp-theme'); } catch (e) {}
+    var manual = stored === 'dark' || stored === 'light';
+    root.setAttribute('data-theme', manual ? stored : (mq.matches ? 'dark' : 'light'));
+    mq.addEventListener('change', function (e) {
+      var s = null; try { s = localStorage.getItem('obs-theme'); } catch (err) {}
+      if (s !== 'dark' && s !== 'light') root.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+    });
+  })();
+</script>

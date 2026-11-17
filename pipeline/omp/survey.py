@@ -42,6 +42,8 @@ class Estimate:
         r = self.rse
         if r != r:
             return "S"
+        if self.se == 0:  # all sampled units alike: zero SE does not prove precision
+            return "B"
         return "A" if r < RSE_A else ("B" if r < RSE_B else "S")
 
     def ci(self):
@@ -219,6 +221,62 @@ class Design:
                 cnt = np.bincount(draw, minlength=self.n_psu)[idx]
                 mult[idx] = cnt * nh / (nh - 1)
             yield self.w * mult[self.psu]
+
+    def replicate_weights(self, R: int = 100, seed: int = 0) -> np.ndarray:
+        """Matriz R×n de pesos réplica Rao–Wu, calculada una vez por diseño."""
+        key = (R, seed)
+        if getattr(self, "_reps_key", None) != key:
+            self._reps = np.array(list(self.bootstrap_weights(R, seed)))
+            self._reps_key = key
+        return self._reps
+
+    def quantile_ratio(self, y: np.ndarray, mask_a: np.ndarray, mask_b: np.ndarray, q: float = 0.5, R: int = 100, seed: int = 0) -> Estimate:
+        """Q_a / Q_b (cuantiles ponderados) con SE por bootstrap Rao–Wu. Es una brecha: se califica por n."""
+        ma, mb = as_mask(mask_a) & ~np.isnan(y), as_mask(mask_b) & ~np.isnan(y)
+        na, nb = int(ma.sum()), int(mb.sum())
+        if na == 0 or nb == 0:
+            return Estimate(np.nan, np.nan, 0, 0.0, kind="diff")
+        ia, ib = np.where(ma)[0], np.where(mb)[0]
+        ia, ib = ia[np.argsort(y[ia], kind="stable")], ib[np.argsort(y[ib], kind="stable")]
+
+        def wq(idx, w):
+            cw = np.cumsum(w[idx])
+            if cw[-1] <= 0:
+                return np.nan
+            return float(y[idx[min(np.searchsorted(cw / cw[-1], q), len(idx) - 1)]])
+
+        qa, qb = wq(ia, self.w), wq(ib, self.w)
+        est = qa / qb if qb else np.nan
+        N = float(self.w[ia].sum() + self.w[ib].sum())
+        n = min(na, nb)
+        if n < MIN_N or est != est:  # suprimida de todos modos: no gastar réplicas
+            return Estimate(est, np.nan, n, N, kind="diff")
+        reps = []
+        for w in self.replicate_weights(R, seed):
+            a, b = wq(ia, w), wq(ib, w)
+            if b == b and b != 0 and a == a:
+                reps.append(a / b)
+        se = float(np.std(reps, ddof=1)) if len(reps) >= 0.95 * R else np.nan
+        return Estimate(est, se, n, N, kind="diff")
+
+    def gini(self, y: np.ndarray, mask: np.ndarray, R: int = 100, seed: int = 0) -> Estimate:
+        """Índice de Gini ponderado (0–1) con SE por bootstrap Rao–Wu."""
+        m = as_mask(mask) & ~np.isnan(y) & (self.w > 0)
+        n = int(m.sum())
+        if n == 0:
+            return Estimate(np.nan, np.nan, 0, 0.0)
+        idx = np.where(m)[0]
+        idx = idx[np.argsort(y[idx], kind="stable")]
+        ys = y[idx]
+
+        def g(w):  # w: (..., n) en el orden de ys; 1 − Σ p_i (L_{i−1} + L_i)
+            wy = w * ys
+            return 1 - 2 * (w * (np.cumsum(wy, axis=-1) - wy / 2)).sum(axis=-1) / (w.sum(axis=-1) * wy.sum(axis=-1))
+
+        est, N = float(g(self.w[idx])), float(self.w[idx].sum())
+        if n < MIN_N:
+            return Estimate(est, np.nan, n, N)
+        return Estimate(est, float(np.nanstd(g(self.replicate_weights(R, seed)[:, idx]), ddof=1)), n, N)
 
     def diff(self, y: np.ndarray, x: np.ndarray, mask_a: np.ndarray, mask_b: np.ndarray) -> Estimate:
         """R_a - R_b con covarianza de diseño."""

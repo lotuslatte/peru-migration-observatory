@@ -1,9 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
-import BivariateScatter from '../components/charts/BivariateScatter';
-import BarDist from '../components/charts/BarDist';
+import BivariateScatter from '../kit/charts/BivariateScatter';
+import BarDist from '../kit/charts/BarDist';
 import { loadClimate, loadDrought } from '../data/loaders';
-import CoefPlot from '../components/charts/CoefPlot';
+import CoefPlot from '../kit/charts/CoefPlot';
 const c = loadClimate(); const dr = loadDrought();
 const dm = (s: any) => ({ ...s, label_es: s.label, key: s.exposure, key_label: s.label, raw_gap: s.raw, adj_gap: s.adj, unit: 'pp', controls: ['edad', 'sexo', 'educación', 'área', 'región', 'año'], n: s.n, r2: s.r2 });
 const terc = (v: string, k: string) => c.terciles[v].map((t: any) => ({ k: t.tercile, label: ['Tercil 1 (menor exposición)', 'Tercil 2', 'Tercil 3 (mayor exposición)'][t.tercile - 1], v: t[k], g: 'A' }));

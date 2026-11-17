@@ -1,6 +1,6 @@
 ---
 interface Delta { d: number; se: number | null; sig: boolean }
-import Sparkline from '../charts/Sparkline';
+import Sparkline from '../../kit/charts/Sparkline';
 interface Props { spark?: { v: number | null }[]; label: string; cell: { v: number | null; g: string; lo?: number; hi?: number; n?: number }; unit?: string; decimals?: number; note?: string; code?: string; delta?: Delta | null; deltaLabel?: string; higherBetter?: boolean; kind?: 'formal' | 'informal' }
 const { label, cell, unit = '%', decimals = 1, note, code, delta, deltaLabel = 'vs. 2023', higherBetter = true, kind = 'formal', spark } = Astro.props;
 const fmt = (x: number | null | undefined) => x == null ? '—' : x.toLocaleString('es-PE', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });

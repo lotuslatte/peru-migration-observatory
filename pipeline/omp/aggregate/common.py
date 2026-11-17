@@ -8,6 +8,13 @@ from ..harmonise import recode_labels
 CROSSWALK = pd.read_csv(CONFIG_DIR / "dept_crosswalk.csv", dtype=str).fillna("")
 DEPT_NAME = CROSSWALK.set_index("ubigeo2")["name"].to_dict()
 ATLAS = load_yaml("atlas_dims.yml")
+BREAKS = load_yaml("series_breaks.yml")["breaks"]
+
+
+def crossed_break(ind, y0, y1):
+    """Id of the method break between two years for this indicator, or None."""
+    lo, hi = sorted((y0, y1))
+    return next((b["id"] for b in BREAKS if ind in b["indicators"] and lo < b["year"] <= hi), None)
 
 
 def load_estimates() -> pd.DataFrame:

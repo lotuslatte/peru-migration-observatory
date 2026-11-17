@@ -2,9 +2,9 @@
 import Base from '../../layouts/Base.astro';
 import GradeLegend from '../../components/ui/GradeLegend.astro';
 import EmbedSnippet from '../../components/ui/EmbedSnippet.astro';
-import AtlasMap from '../../components/charts/AtlasMap';
-import RadarComparator from '../../components/charts/RadarComparator';
-import BivariateScatter from '../../components/charts/BivariateScatter';
+import AtlasMap from '../../kit/charts/AtlasMap';
+import RadarComparator from '../../kit/charts/RadarComparator';
+import BivariateScatter from '../../kit/charts/BivariateScatter';
 import { loadAtlas } from '../../data/loaders';
 const a = loadAtlas();
 const f = (c: any, n = 1) => c?.v == null ? '—' : c.v.toLocaleString('es-PE', { minimumFractionDigits: n, maximumFractionDigits: n });

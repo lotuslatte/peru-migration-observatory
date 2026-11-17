@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import CompendiumTable from '../../components/charts/CompendiumTable';
+import CompendiumTable from '../../kit/charts/CompendiumTable';
 import { loadCompendiumIndex } from '../../data/loaders';
 const idx = loadCompendiumIndex();
 const bySection = Object.entries(idx.sections).map(([n, title]) => ({ n: +n, title, tables: idx.tables.filter((t: any) => t.section === +n) }));

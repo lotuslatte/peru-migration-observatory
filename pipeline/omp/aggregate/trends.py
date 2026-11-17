@@ -13,5 +13,6 @@ def build(est):
     s["mig3"] = {k: {key: series(est, k, "mig3", key) for key in ["0", "1", "2"]} for k in ["lfpr", "ur", "informality", "median_inc_real", "pobre"]}
     s["dept"] = {rid: {k: series(est, k, "lima" if rid in ("15M", "15R") else "dept", rid) for k in ["mig5_cross", "mig5_intl", "life_cross"]} for rid in CROSSWALK.ubigeo2}
     obj = {"years": YEARS, "series": s, "smooth": add_smooth(s), "labels": {dom: {str(k): v for k, v in (DOM[dom].get("labels_es") or recode_labels(DOM[dom]["recode"])).items()} for dom in ["sex", "area", "region_nat", "age5", "educ4", "lengua3", "mig3"]},
-           "notes": {"2018": "Desde 2018 la ENAHO pregunta el lugar de residencia de la madre al nacer (migración de toda la vida).", "2020": "Pandemia: levantamiento parcialmente telefónico."}}
+           "notes": {"2018": "Desde 2018 la ENAHO pregunta el lugar de residencia de la madre al nacer (migración de toda la vida).", "2020": "Pandemia: levantamiento parcialmente telefónico."},
+           "breaks": BREAKS}
     return dump(obj, "trends.json")
