@@ -1,15 +1,15 @@
 table_id,year,domain,row_key,row_label,indicator,category,col_label,estimate,se,rse,ci_lo,ci_hi,n,grade,unit
-T08,2024,area_mig2,1|1,Urbano × No migrante,pobre,,Pobreza monetaria,23.829,0.598,2.512,22.656,25.002,66522,A,%
-T08,2024,area_mig2,1|1,Urbano × No migrante,seguro,,Con seguro de salud (14+),88.56,0.272,0.307,88.027,89.093,56000,A,%
-T08,2024,area_mig2,1|2,Urbano × Migrante reciente (otro dpto. o país),pobre,,Pobreza monetaria,27.326,2.289,8.376,22.84,31.812,2365,A,%
-T08,2024,area_mig2,1|2,Urbano × Migrante reciente (otro dpto. o país),seguro,,Con seguro de salud (14+),80.532,1.874,2.327,76.859,84.205,1912,A,%
-T08,2024,area_mig2,2|1,Rural × No migrante,pobre,,Pobreza monetaria,38.377,0.761,1.983,36.885,39.869,33156,A,%
-T08,2024,area_mig2,2|1,Rural × No migrante,seguro,,Con seguro de salud (14+),92.719,0.321,0.346,92.091,93.348,26831,A,%
-T08,2024,area_mig2,2|2,Rural × Migrante reciente (otro dpto. o país),pobre,,Pobreza monetaria,32.807,2.842,8.661,27.238,38.377,947,A,%
-T08,2024,area_mig2,2|2,Rural × Migrante reciente (otro dpto. o país),seguro,,Con seguro de salud (14+),88.291,1.552,1.757,85.25,91.332,735,A,%
-T08,2024,mig3,0,No se mudó,pobre,,Pobreza monetaria,26.851,0.508,1.894,25.855,27.848,96540,A,%
-T08,2024,mig3,0,No se mudó,seguro,,Con seguro de salud (14+),89.484,0.234,0.262,89.025,89.943,80295,A,%
-T08,2024,mig3,1,Se mudó dentro del departamento,pobre,,Pobreza monetaria,19.714,1.478,7.499,16.816,22.611,3138,A,%
-T08,2024,mig3,1,Se mudó dentro del departamento,seguro,,Con seguro de salud (14+),84.317,1.307,1.55,81.755,86.88,2536,A,%
-T08,2024,mig3,2,Llegó de otro departamento o país,pobre,,Pobreza monetaria,28.146,1.985,7.051,24.256,32.036,3312,A,%
-T08,2024,mig3,2,Llegó de otro departamento o país,seguro,,Con seguro de salud (14+),81.765,1.607,1.965,78.616,84.914,2647,A,%
+T08,2025,area_mig2,1|1,Urbano × No migrante,pobre,,Pobreza monetaria,22.76,0.599,2.632,21.586,23.934,65842,A,%
+T08,2025,area_mig2,1|1,Urbano × No migrante,seguro,,Con seguro de salud (14+),91.352,0.252,0.275,90.859,91.846,55786,A,%
+T08,2025,area_mig2,1|2,Urbano × Migrante reciente (otro dpto. o país),pobre,,Pobreza monetaria,17.767,1.913,10.765,14.018,21.515,2086,A,%
+T08,2025,area_mig2,1|2,Urbano × Migrante reciente (otro dpto. o país),seguro,,Con seguro de salud (14+),85.904,1.295,1.507,83.367,88.441,1713,A,%
+T08,2025,area_mig2,2|1,Rural × No migrante,pobre,,Pobreza monetaria,34.661,0.759,2.191,33.172,36.149,32292,A,%
+T08,2025,area_mig2,2|1,Rural × No migrante,seguro,,Con seguro de salud (14+),94.179,0.269,0.286,93.652,94.706,26382,A,%
+T08,2025,area_mig2,2|2,Rural × Migrante reciente (otro dpto. o país),pobre,,Pobreza monetaria,25.176,2.631,10.451,20.019,30.333,734,A,%
+T08,2025,area_mig2,2|2,Rural × Migrante reciente (otro dpto. o país),seguro,,Con seguro de salud (14+),81.361,2.321,2.853,76.812,85.91,588,A,%
+T08,2025,mig3,0,No se mudó,pobre,,Pobreza monetaria,25.121,0.51,2.032,24.12,26.121,95494,A,%
+T08,2025,mig3,0,No se mudó,seguro,,Con seguro de salud (14+),91.892,0.216,0.235,91.469,92.315,80000,A,%
+T08,2025,mig3,1,Se mudó dentro del departamento,pobre,,Pobreza monetaria,19.944,1.748,8.766,16.517,23.37,2640,A,%
+T08,2025,mig3,1,Se mudó dentro del departamento,seguro,,Con seguro de salud (14+),90.205,0.97,1.075,88.305,92.106,2168,A,%
+T08,2025,mig3,2,Llegó de otro departamento o país,pobre,,Pobreza monetaria,18.759,1.697,9.049,15.432,22.086,2820,A,%
+T08,2025,mig3,2,Llegó de otro departamento o país,seguro,,Con seguro de salud (14+),85.233,1.157,1.357,82.966,87.5,2301,A,%

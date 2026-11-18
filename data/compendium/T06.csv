@@ -1,29 +1,29 @@
 table_id,year,domain,row_key,row_label,indicator,category,col_label,estimate,se,rse,ci_lo,ci_hi,n,grade,unit
-T06,2024,mig3,0,No se mudó,educ_dist,1.0,Nivel educativo (14+): Hasta primaria,21.364,0.239,1.121,20.894,21.833,80268,A,%
-T06,2024,mig3,0,No se mudó,educ_dist,2.0,Nivel educativo (14+): Secundaria,46.437,0.361,0.777,45.73,47.145,80268,A,%
-T06,2024,mig3,0,No se mudó,educ_dist,3.0,Nivel educativo (14+): Superior no universitaria,14.849,0.223,1.499,14.413,15.286,80268,A,%
-T06,2024,mig3,0,No se mudó,educ_dist,4.0,Nivel educativo (14+): Universitaria y posgrado,17.35,0.316,1.821,16.73,17.969,80268,A,%
-T06,2024,mig3,1,Se mudó dentro del departamento,educ_dist,1.0,Nivel educativo (14+): Hasta primaria,12.348,0.922,7.469,10.54,14.156,2536,A,%
-T06,2024,mig3,1,Se mudó dentro del departamento,educ_dist,2.0,Nivel educativo (14+): Secundaria,44.693,1.486,3.324,41.781,47.605,2536,A,%
-T06,2024,mig3,1,Se mudó dentro del departamento,educ_dist,3.0,Nivel educativo (14+): Superior no universitaria,18.457,1.191,6.454,16.123,20.792,2536,A,%
-T06,2024,mig3,1,Se mudó dentro del departamento,educ_dist,4.0,Nivel educativo (14+): Universitaria y posgrado,24.502,1.465,5.981,21.63,27.374,2536,A,%
-T06,2024,mig3,2,Llegó de otro departamento o país,educ_dist,1.0,Nivel educativo (14+): Hasta primaria,12.618,0.957,7.587,10.742,14.495,2646,A,%
-T06,2024,mig3,2,Llegó de otro departamento o país,educ_dist,2.0,Nivel educativo (14+): Secundaria,53.512,1.579,2.951,50.417,56.607,2646,A,%
-T06,2024,mig3,2,Llegó de otro departamento o país,educ_dist,3.0,Nivel educativo (14+): Superior no universitaria,17.125,1.059,6.183,15.049,19.2,2646,A,%
-T06,2024,mig3,2,Llegó de otro departamento o país,educ_dist,4.0,Nivel educativo (14+): Universitaria y posgrado,16.745,1.137,6.79,14.517,18.974,2646,A,%
-T06,2024,sex_mig2,1|1,Hombres × No migrante,educ_dist,1.0,Nivel educativo (14+): Hasta primaria,17.385,0.274,1.573,16.849,17.922,39655,A,%
-T06,2024,sex_mig2,1|1,Hombres × No migrante,educ_dist,2.0,Nivel educativo (14+): Secundaria,49.911,0.453,0.908,49.023,50.799,39655,A,%
-T06,2024,sex_mig2,1|1,Hombres × No migrante,educ_dist,3.0,Nivel educativo (14+): Superior no universitaria,14.871,0.298,2.001,14.288,15.454,39655,A,%
-T06,2024,sex_mig2,1|1,Hombres × No migrante,educ_dist,4.0,Nivel educativo (14+): Universitaria y posgrado,17.833,0.382,2.142,17.084,18.581,39655,A,%
-T06,2024,sex_mig2,1|2,Hombres × Migrante reciente (otro dpto. o país),educ_dist,1.0,Nivel educativo (14+): Hasta primaria,10.262,1.15,11.204,8.008,12.515,1296,A,%
-T06,2024,sex_mig2,1|2,Hombres × Migrante reciente (otro dpto. o país),educ_dist,2.0,Nivel educativo (14+): Secundaria,56.376,2.029,3.599,52.4,60.352,1296,A,%
-T06,2024,sex_mig2,1|2,Hombres × Migrante reciente (otro dpto. o país),educ_dist,3.0,Nivel educativo (14+): Superior no universitaria,17.858,1.46,8.178,14.996,20.721,1296,A,%
-T06,2024,sex_mig2,1|2,Hombres × Migrante reciente (otro dpto. o país),educ_dist,4.0,Nivel educativo (14+): Universitaria y posgrado,15.504,1.335,8.611,12.888,18.121,1296,A,%
-T06,2024,sex_mig2,2|1,Mujeres × No migrante,educ_dist,1.0,Nivel educativo (14+): Hasta primaria,24.669,0.299,1.214,24.082,25.256,43149,A,%
-T06,2024,sex_mig2,2|1,Mujeres × No migrante,educ_dist,2.0,Nivel educativo (14+): Secundaria,42.851,0.403,0.942,42.06,43.641,43149,A,%
-T06,2024,sex_mig2,2|1,Mujeres × No migrante,educ_dist,3.0,Nivel educativo (14+): Superior no universitaria,15.091,0.274,1.814,14.554,15.627,43149,A,%
-T06,2024,sex_mig2,2|1,Mujeres × No migrante,educ_dist,4.0,Nivel educativo (14+): Universitaria y posgrado,17.39,0.352,2.022,16.701,18.079,43149,A,%
-T06,2024,sex_mig2,2|2,Mujeres × Migrante reciente (otro dpto. o país),educ_dist,1.0,Nivel educativo (14+): Hasta primaria,15.028,1.375,9.152,12.333,17.724,1350,A,%
-T06,2024,sex_mig2,2|2,Mujeres × Migrante reciente (otro dpto. o país),educ_dist,2.0,Nivel educativo (14+): Secundaria,50.583,2.232,4.413,46.208,54.958,1350,A,%
-T06,2024,sex_mig2,2|2,Mujeres × Migrante reciente (otro dpto. o país),educ_dist,3.0,Nivel educativo (14+): Superior no universitaria,16.375,1.454,8.88,13.525,19.225,1350,A,%
-T06,2024,sex_mig2,2|2,Mujeres × Migrante reciente (otro dpto. o país),educ_dist,4.0,Nivel educativo (14+): Universitaria y posgrado,18.014,1.609,8.932,14.86,21.168,1350,A,%
+T06,2025,mig3,0,No se mudó,educ_dist,1.0,Nivel educativo (14+): Hasta primaria,20.556,0.232,1.128,20.102,21.01,79967,A,%
+T06,2025,mig3,0,No se mudó,educ_dist,2.0,Nivel educativo (14+): Secundaria,47.085,0.358,0.76,46.384,47.787,79967,A,%
+T06,2025,mig3,0,No se mudó,educ_dist,3.0,Nivel educativo (14+): Superior no universitaria,14.407,0.216,1.499,13.984,14.831,79967,A,%
+T06,2025,mig3,0,No se mudó,educ_dist,4.0,Nivel educativo (14+): Universitaria y posgrado,17.951,0.325,1.808,17.315,18.587,79967,A,%
+T06,2025,mig3,1,Se mudó dentro del departamento,educ_dist,1.0,Nivel educativo (14+): Hasta primaria,11.56,0.896,7.75,9.804,13.316,2167,A,%
+T06,2025,mig3,1,Se mudó dentro del departamento,educ_dist,2.0,Nivel educativo (14+): Secundaria,47.558,1.763,3.706,44.103,51.012,2167,A,%
+T06,2025,mig3,1,Se mudó dentro del departamento,educ_dist,3.0,Nivel educativo (14+): Superior no universitaria,16.1,1.112,6.907,13.92,18.279,2167,A,%
+T06,2025,mig3,1,Se mudó dentro del departamento,educ_dist,4.0,Nivel educativo (14+): Universitaria y posgrado,24.783,1.668,6.731,21.513,28.052,2167,A,%
+T06,2025,mig3,2,Llegó de otro departamento o país,educ_dist,1.0,Nivel educativo (14+): Hasta primaria,11.4,0.937,8.218,9.564,13.236,2301,A,%
+T06,2025,mig3,2,Llegó de otro departamento o país,educ_dist,2.0,Nivel educativo (14+): Secundaria,50.366,1.71,3.396,47.014,53.718,2301,A,%
+T06,2025,mig3,2,Llegó de otro departamento o país,educ_dist,3.0,Nivel educativo (14+): Superior no universitaria,18.957,1.379,7.272,16.255,21.659,2301,A,%
+T06,2025,mig3,2,Llegó de otro departamento o país,educ_dist,4.0,Nivel educativo (14+): Universitaria y posgrado,19.277,1.423,7.383,16.488,22.067,2301,A,%
+T06,2025,sex_mig2,1|1,Hombres × No migrante,educ_dist,1.0,Nivel educativo (14+): Hasta primaria,16.418,0.258,1.57,15.913,16.924,39137,A,%
+T06,2025,sex_mig2,1|1,Hombres × No migrante,educ_dist,2.0,Nivel educativo (14+): Secundaria,51.066,0.455,0.891,50.174,51.958,39137,A,%
+T06,2025,sex_mig2,1|1,Hombres × No migrante,educ_dist,3.0,Nivel educativo (14+): Superior no universitaria,14.348,0.285,1.985,13.79,14.906,39137,A,%
+T06,2025,sex_mig2,1|1,Hombres × No migrante,educ_dist,4.0,Nivel educativo (14+): Universitaria y posgrado,18.168,0.378,2.08,17.427,18.908,39137,A,%
+T06,2025,sex_mig2,1|2,Hombres × Migrante reciente (otro dpto. o país),educ_dist,1.0,Nivel educativo (14+): Hasta primaria,8.665,1.136,13.113,6.438,10.892,1068,A,%
+T06,2025,sex_mig2,1|2,Hombres × Migrante reciente (otro dpto. o país),educ_dist,2.0,Nivel educativo (14+): Secundaria,52.196,2.239,4.289,47.808,56.584,1068,A,%
+T06,2025,sex_mig2,1|2,Hombres × Migrante reciente (otro dpto. o país),educ_dist,3.0,Nivel educativo (14+): Superior no universitaria,20.168,2.039,10.109,16.172,24.164,1068,A,%
+T06,2025,sex_mig2,1|2,Hombres × Migrante reciente (otro dpto. o país),educ_dist,4.0,Nivel educativo (14+): Universitaria y posgrado,18.97,1.714,9.035,15.611,22.329,1068,A,%
+T06,2025,sex_mig2,2|1,Mujeres × No migrante,educ_dist,1.0,Nivel educativo (14+): Hasta primaria,24.15,0.302,1.251,23.557,24.742,42997,A,%
+T06,2025,sex_mig2,2|1,Mujeres × No migrante,educ_dist,2.0,Nivel educativo (14+): Secundaria,43.149,0.418,0.969,42.329,43.969,42997,A,%
+T06,2025,sex_mig2,2|1,Mujeres × No migrante,educ_dist,3.0,Nivel educativo (14+): Superior no universitaria,14.566,0.276,1.897,14.024,15.108,42997,A,%
+T06,2025,sex_mig2,2|1,Mujeres × No migrante,educ_dist,4.0,Nivel educativo (14+): Universitaria y posgrado,18.136,0.374,2.061,17.403,18.868,42997,A,%
+T06,2025,sex_mig2,2|2,Mujeres × Migrante reciente (otro dpto. o país),educ_dist,1.0,Nivel educativo (14+): Hasta primaria,14.079,1.243,8.832,11.642,16.516,1233,A,%
+T06,2025,sex_mig2,2|2,Mujeres × Migrante reciente (otro dpto. o país),educ_dist,2.0,Nivel educativo (14+): Secundaria,48.573,2.278,4.689,44.109,53.037,1233,A,%
+T06,2025,sex_mig2,2|2,Mujeres × Migrante reciente (otro dpto. o país),educ_dist,3.0,Nivel educativo (14+): Superior no universitaria,17.77,1.774,9.982,14.294,21.247,1233,A,%
+T06,2025,sex_mig2,2|2,Mujeres × Migrante reciente (otro dpto. o país),educ_dist,4.0,Nivel educativo (14+): Universitaria y posgrado,19.578,1.913,9.77,15.829,23.327,1233,A,%

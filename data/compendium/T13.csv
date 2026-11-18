@@ -1,76 +1,76 @@
 table_id,year,domain,row_key,row_label,indicator,category,col_label,estimate,se,rse,ci_lo,ci_hi,n,grade,unit
-T13,2024,orig_dept,01,01,informality,,Empleo informal,,,,,,29,S,%
-T13,2024,orig_dept,01,01,lfpr,,Tasa de actividad (14+),67.382,9.249,13.726,49.255,85.509,42,A,%
-T13,2024,orig_dept,01,01,median_inc_real,,Ingreso laboral mediano (S/ 2024),,,,,,25,S,S/
-T13,2024,orig_dept,02,02,informality,,Empleo informal,,,,,,24,S,%
-T13,2024,orig_dept,02,02,lfpr,,Tasa de actividad (14+),74.456,9.83,13.203,55.189,93.724,40,A,%
-T13,2024,orig_dept,02,02,median_inc_real,,Ingreso laboral mediano (S/ 2024),,,,,,19,S,S/
-T13,2024,orig_dept,03,03,informality,,Empleo informal,,,,,,21,S,%
-T13,2024,orig_dept,03,03,lfpr,,Tasa de actividad (14+),41.017,8.469,20.647,24.418,57.616,39,B,%
-T13,2024,orig_dept,03,03,median_inc_real,,Ingreso laboral mediano (S/ 2024),,,,,,19,S,S/
-T13,2024,orig_dept,04,04,informality,,Empleo informal,77.689,6.906,8.89,64.153,91.226,69,A,%
-T13,2024,orig_dept,04,04,lfpr,,Tasa de actividad (14+),63.165,7.0,11.083,49.444,76.885,106,A,%
-T13,2024,orig_dept,04,04,median_inc_real,,Ingreso laboral mediano (S/ 2024),1365.667,178.554,13.075,1098.333,1798.254,62,A,S/
-T13,2024,orig_dept,05,05,informality,,Empleo informal,90.876,3.971,4.369,83.094,98.659,50,A,%
-T13,2024,orig_dept,05,05,lfpr,,Tasa de actividad (14+),85.649,6.201,7.24,73.494,97.803,63,A,%
-T13,2024,orig_dept,05,05,median_inc_real,,Ingreso laboral mediano (S/ 2024),1454.75,194.455,13.367,879.333,1641.583,45,A,S/
-T13,2024,orig_dept,06,06,informality,,Empleo informal,64.014,9.295,14.521,45.796,82.233,63,A,%
-T13,2024,orig_dept,06,06,lfpr,,Tasa de actividad (14+),62.835,9.93,15.804,43.372,82.298,95,B,%
-T13,2024,orig_dept,06,06,median_inc_real,,Ingreso laboral mediano (S/ 2024),1473.083,187.546,12.732,996.333,1731.5,56,A,S/
-T13,2024,orig_dept,07,07,informality,,Empleo informal,78.826,5.963,7.565,67.138,90.514,69,A,%
-T13,2024,orig_dept,07,07,lfpr,,Tasa de actividad (14+),69.27,6.191,8.937,57.136,81.404,101,A,%
-T13,2024,orig_dept,07,07,median_inc_real,,Ingreso laboral mediano (S/ 2024),1297.917,109.696,8.452,1019.083,1449.083,65,A,S/
-T13,2024,orig_dept,08,08,informality,,Empleo informal,73.855,10.547,14.281,53.183,94.527,65,A,%
-T13,2024,orig_dept,08,08,lfpr,,Tasa de actividad (14+),79.882,5.832,7.301,68.451,91.313,85,A,%
-T13,2024,orig_dept,08,08,median_inc_real,,Ingreso laboral mediano (S/ 2024),1293.167,166.776,12.897,927.917,1581.667,58,A,S/
-T13,2024,orig_dept,09,09,informality,,Empleo informal,,,,,,24,S,%
-T13,2024,orig_dept,09,09,lfpr,,Tasa de actividad (14+),66.297,8.243,12.433,50.141,82.453,38,A,%
-T13,2024,orig_dept,09,09,median_inc_real,,Ingreso laboral mediano (S/ 2024),,,,,,18,S,S/
-T13,2024,orig_dept,10,10,informality,,Empleo informal,72.234,8.538,11.819,55.5,88.967,55,A,%
-T13,2024,orig_dept,10,10,lfpr,,Tasa de actividad (14+),77.424,6.666,8.61,64.359,90.489,79,A,%
-T13,2024,orig_dept,10,10,median_inc_real,,Ingreso laboral mediano (S/ 2024),1196.417,205.233,17.154,778.25,1582.75,48,B,S/
-T13,2024,orig_dept,11,11,informality,,Empleo informal,82.921,8.998,10.851,65.286,100.556,35,A,%
-T13,2024,orig_dept,11,11,lfpr,,Tasa de actividad (14+),75.394,7.513,9.965,60.669,90.12,48,A,%
-T13,2024,orig_dept,11,11,median_inc_real,,Ingreso laboral mediano (S/ 2024),1277.917,238.29,18.647,792.754,1726.833,31,B,S/
-T13,2024,orig_dept,12,12,informality,,Empleo informal,71.41,7.817,10.947,56.089,86.731,76,A,%
-T13,2024,orig_dept,12,12,lfpr,,Tasa de actividad (14+),68.238,6.336,9.286,55.819,80.657,110,A,%
-T13,2024,orig_dept,12,12,median_inc_real,,Ingreso laboral mediano (S/ 2024),1194.917,227.938,19.076,877.917,1771.417,65,B,S/
-T13,2024,orig_dept,13,13,informality,,Empleo informal,74.905,8.621,11.509,58.008,91.802,47,A,%
-T13,2024,orig_dept,13,13,lfpr,,Tasa de actividad (14+),74.601,6.732,9.023,61.408,87.795,66,A,%
-T13,2024,orig_dept,13,13,median_inc_real,,Ingreso laboral mediano (S/ 2024),1553.417,279.384,17.985,1134.083,2229.25,43,B,S/
-T13,2024,orig_dept,14,14,informality,,Empleo informal,52.292,11.308,21.624,30.129,74.454,38,B,%
-T13,2024,orig_dept,14,14,lfpr,,Tasa de actividad (14+),81.293,6.09,7.491,69.357,93.228,53,A,%
-T13,2024,orig_dept,14,14,median_inc_real,,Ingreso laboral mediano (S/ 2024),2147.667,561.83,26.16,1293.167,3495.5,33,B,S/
-T13,2024,orig_dept,15,15,informality,,Empleo informal,75.688,2.329,3.077,71.124,80.252,654,A,%
-T13,2024,orig_dept,15,15,lfpr,,Tasa de actividad (14+),76.634,1.775,2.316,73.156,80.113,903,A,%
-T13,2024,orig_dept,15,15,median_inc_real,,Ingreso laboral mediano (S/ 2024),1223.167,61.672,5.042,1110.5,1352.25,602,A,S/
-T13,2024,orig_dept,16,16,informality,,Empleo informal,82.178,8.79,10.697,64.95,99.407,45,A,%
-T13,2024,orig_dept,16,16,lfpr,,Tasa de actividad (14+),55.207,7.105,12.869,41.282,69.133,87,A,%
-T13,2024,orig_dept,16,16,median_inc_real,,Ingreso laboral mediano (S/ 2024),966.833,242.692,25.102,585.583,1536.917,43,B,S/
-T13,2024,orig_dept,17,17,informality,,Empleo informal,,,,,,12,S,%
-T13,2024,orig_dept,17,17,lfpr,,Tasa de actividad (14+),,,,,,16,S,%
-T13,2024,orig_dept,17,17,median_inc_real,,Ingreso laboral mediano (S/ 2024),,,,,,12,S,S/
-T13,2024,orig_dept,18,18,informality,,Empleo informal,,,,,,23,S,%
-T13,2024,orig_dept,18,18,lfpr,,Tasa de actividad (14+),72.888,9.81,13.459,53.661,92.115,38,A,%
-T13,2024,orig_dept,18,18,median_inc_real,,Ingreso laboral mediano (S/ 2024),,,,,,22,S,S/
-T13,2024,orig_dept,19,19,informality,,Empleo informal,,,,,,24,S,%
-T13,2024,orig_dept,19,19,lfpr,,Tasa de actividad (14+),69.388,10.579,15.246,48.654,90.123,36,B,%
-T13,2024,orig_dept,19,19,median_inc_real,,Ingreso laboral mediano (S/ 2024),,,,,,23,S,S/
-T13,2024,orig_dept,20,20,informality,,Empleo informal,83.967,6.767,8.059,70.705,97.229,39,A,%
-T13,2024,orig_dept,20,20,lfpr,,Tasa de actividad (14+),63.772,10.244,16.063,43.694,83.849,60,B,%
-T13,2024,orig_dept,20,20,median_inc_real,,Ingreso laboral mediano (S/ 2024),1856.083,428.537,23.088,650.333,2330.167,37,B,S/
-T13,2024,orig_dept,21,21,informality,,Empleo informal,60.251,7.666,12.723,45.227,75.276,89,A,%
-T13,2024,orig_dept,21,21,lfpr,,Tasa de actividad (14+),73.028,6.263,8.576,60.753,85.303,127,A,%
-T13,2024,orig_dept,21,21,median_inc_real,,Ingreso laboral mediano (S/ 2024),1525.25,160.611,10.53,1206.167,1835.75,81,A,S/
-T13,2024,orig_dept,22,22,informality,,Empleo informal,93.237,5.535,5.937,82.389,104.086,70,A,%
-T13,2024,orig_dept,22,22,lfpr,,Tasa de actividad (14+),87.468,3.485,3.985,80.637,94.3,85,A,%
-T13,2024,orig_dept,22,22,median_inc_real,,Ingreso laboral mediano (S/ 2024),1201.815,237.759,19.783,866.917,1798.917,56,B,S/
-T13,2024,orig_dept,23,23,informality,,Empleo informal,,,,,,18,S,%
-T13,2024,orig_dept,23,23,lfpr,,Tasa de actividad (14+),,,,,,24,S,%
-T13,2024,orig_dept,23,23,median_inc_real,,Ingreso laboral mediano (S/ 2024),,,,,,17,S,S/
-T13,2024,orig_dept,24,24,informality,,Empleo informal,,,,,,14,S,%
-T13,2024,orig_dept,24,24,lfpr,,Tasa de actividad (14+),,,,,,21,S,%
-T13,2024,orig_dept,24,24,median_inc_real,,Ingreso laboral mediano (S/ 2024),,,,,,13,S,S/
-T13,2024,orig_dept,25,25,informality,,Empleo informal,79.866,8.461,10.593,63.284,96.448,40,A,%
-T13,2024,orig_dept,25,25,lfpr,,Tasa de actividad (14+),73.699,6.698,9.088,60.571,86.827,62,A,%
-T13,2024,orig_dept,25,25,median_inc_real,,Ingreso laboral mediano (S/ 2024),1324.167,124.109,9.373,1035.833,1522.333,38,A,S/
+T13,2025,orig_dept,01,01,informality,,Empleo informal,,,,,,23,S,%
+T13,2025,orig_dept,01,01,lfpr,,Tasa de actividad (14+),82.437,7.375,8.946,67.983,96.892,31,A,%
+T13,2025,orig_dept,01,01,median_inc_real,,Ingreso laboral mediano (S/ 2025),,,,,,22,S,S/
+T13,2025,orig_dept,02,02,informality,,Empleo informal,,,,,,25,S,%
+T13,2025,orig_dept,02,02,lfpr,,Tasa de actividad (14+),60.001,10.014,16.69,40.374,79.628,49,B,%
+T13,2025,orig_dept,02,02,median_inc_real,,Ingreso laboral mediano (S/ 2025),,,,,,21,S,S/
+T13,2025,orig_dept,03,03,informality,,Empleo informal,,,,,,25,S,%
+T13,2025,orig_dept,03,03,lfpr,,Tasa de actividad (14+),76.811,9.626,12.532,57.945,95.677,33,A,%
+T13,2025,orig_dept,03,03,median_inc_real,,Ingreso laboral mediano (S/ 2025),,,,,,22,S,S/
+T13,2025,orig_dept,04,04,informality,,Empleo informal,56.233,12.056,21.44,32.604,79.863,69,B,%
+T13,2025,orig_dept,04,04,lfpr,,Tasa de actividad (14+),75.438,5.346,7.087,64.961,85.916,99,A,%
+T13,2025,orig_dept,04,04,median_inc_real,,Ingreso laboral mediano (S/ 2025),2921.667,837.26,28.657,1059.917,4341.917,64,B,S/
+T13,2025,orig_dept,05,05,informality,,Empleo informal,80.444,7.329,9.11,66.08,94.807,39,A,%
+T13,2025,orig_dept,05,05,lfpr,,Tasa de actividad (14+),77.091,6.037,7.831,65.259,88.923,61,A,%
+T13,2025,orig_dept,05,05,median_inc_real,,Ingreso laboral mediano (S/ 2025),1690.333,396.819,23.476,1038.917,2594.417,36,B,S/
+T13,2025,orig_dept,06,06,informality,,Empleo informal,83.965,7.287,8.678,69.683,98.247,45,A,%
+T13,2025,orig_dept,06,06,lfpr,,Tasa de actividad (14+),71.582,6.569,9.177,58.707,84.458,64,A,%
+T13,2025,orig_dept,06,06,median_inc_real,,Ingreso laboral mediano (S/ 2025),1832.833,254.767,13.9,1286.917,2285.583,38,A,S/
+T13,2025,orig_dept,07,07,informality,,Empleo informal,77.203,8.007,10.371,61.51,92.896,50,A,%
+T13,2025,orig_dept,07,07,lfpr,,Tasa de actividad (14+),72.549,7.108,9.797,58.618,86.48,74,A,%
+T13,2025,orig_dept,07,07,median_inc_real,,Ingreso laboral mediano (S/ 2025),1253.0,230.383,18.386,1066.5,1969.583,48,B,S/
+T13,2025,orig_dept,08,08,informality,,Empleo informal,83.551,5.903,7.065,71.982,95.121,95,A,%
+T13,2025,orig_dept,08,08,lfpr,,Tasa de actividad (14+),78.617,3.707,4.715,71.351,85.883,134,A,%
+T13,2025,orig_dept,08,08,median_inc_real,,Ingreso laboral mediano (S/ 2025),1293.0,164.14,12.695,913.25,1556.667,82,A,S/
+T13,2025,orig_dept,09,09,informality,,Empleo informal,,,,,,29,S,%
+T13,2025,orig_dept,09,09,lfpr,,Tasa de actividad (14+),70.193,7.768,11.066,54.969,85.418,41,A,%
+T13,2025,orig_dept,09,09,median_inc_real,,Ingreso laboral mediano (S/ 2025),,,,,,27,S,S/
+T13,2025,orig_dept,10,10,informality,,Empleo informal,86.804,11.082,12.766,65.085,108.524,46,A,%
+T13,2025,orig_dept,10,10,lfpr,,Tasa de actividad (14+),55.283,7.821,14.146,39.955,70.611,71,A,%
+T13,2025,orig_dept,10,10,median_inc_real,,Ingreso laboral mediano (S/ 2025),1172.75,209.676,17.879,623.417,1445.333,37,B,S/
+T13,2025,orig_dept,11,11,informality,,Empleo informal,65.714,11.692,17.792,42.799,88.629,41,B,%
+T13,2025,orig_dept,11,11,lfpr,,Tasa de actividad (14+),63.19,7.704,12.191,48.091,78.289,58,A,%
+T13,2025,orig_dept,11,11,median_inc_real,,Ingreso laboral mediano (S/ 2025),2025.333,600.266,29.638,1202.667,3555.667,36,B,S/
+T13,2025,orig_dept,12,12,informality,,Empleo informal,66.209,10.671,16.117,45.294,87.124,62,B,%
+T13,2025,orig_dept,12,12,lfpr,,Tasa de actividad (14+),74.978,6.572,8.766,62.097,87.86,87,A,%
+T13,2025,orig_dept,12,12,median_inc_real,,Ingreso laboral mediano (S/ 2025),1404.417,169.37,12.06,1166.583,1830.5,54,A,S/
+T13,2025,orig_dept,13,13,informality,,Empleo informal,74.766,9.493,12.698,56.159,93.372,36,A,%
+T13,2025,orig_dept,13,13,lfpr,,Tasa de actividad (14+),68.391,8.64,12.633,51.457,85.324,57,A,%
+T13,2025,orig_dept,13,13,median_inc_real,,Ingreso laboral mediano (S/ 2025),1739.583,125.916,7.238,1739.583,2233.167,31,A,S/
+T13,2025,orig_dept,14,14,informality,,Empleo informal,79.848,9.446,11.83,61.335,98.361,45,A,%
+T13,2025,orig_dept,14,14,lfpr,,Tasa de actividad (14+),59.858,10.712,17.895,38.864,80.853,75,B,%
+T13,2025,orig_dept,14,14,median_inc_real,,Ingreso laboral mediano (S/ 2025),1663.417,204.0,12.264,1293.0,2092.667,44,A,S/
+T13,2025,orig_dept,15,15,informality,,Empleo informal,71.04,3.031,4.266,65.101,76.98,481,A,%
+T13,2025,orig_dept,15,15,lfpr,,Tasa de actividad (14+),71.059,2.26,3.18,66.63,75.488,702,A,%
+T13,2025,orig_dept,15,15,median_inc_real,,Ingreso laboral mediano (S/ 2025),1380.083,69.559,5.04,1252.75,1525.417,432,A,S/
+T13,2025,orig_dept,16,16,informality,,Empleo informal,59.892,11.954,19.959,36.463,83.321,55,B,%
+T13,2025,orig_dept,16,16,lfpr,,Tasa de actividad (14+),55.343,7.773,14.046,40.108,70.578,93,A,%
+T13,2025,orig_dept,16,16,median_inc_real,,Ingreso laboral mediano (S/ 2025),1501.083,158.974,10.591,1246.833,1870.0,52,A,S/
+T13,2025,orig_dept,17,17,informality,,Empleo informal,,,,,,16,S,%
+T13,2025,orig_dept,17,17,lfpr,,Tasa de actividad (14+),,,,,,24,S,%
+T13,2025,orig_dept,17,17,median_inc_real,,Ingreso laboral mediano (S/ 2025),,,,,,16,S,S/
+T13,2025,orig_dept,18,18,informality,,Empleo informal,,,,,,12,S,%
+T13,2025,orig_dept,18,18,lfpr,,Tasa de actividad (14+),,,,,,19,S,%
+T13,2025,orig_dept,18,18,median_inc_real,,Ingreso laboral mediano (S/ 2025),,,,,,10,S,S/
+T13,2025,orig_dept,19,19,informality,,Empleo informal,,,,,,19,S,%
+T13,2025,orig_dept,19,19,lfpr,,Tasa de actividad (14+),60.639,12.837,21.169,35.479,85.799,34,B,%
+T13,2025,orig_dept,19,19,median_inc_real,,Ingreso laboral mediano (S/ 2025),,,,,,17,S,S/
+T13,2025,orig_dept,20,20,informality,,Empleo informal,45.611,12.133,26.601,21.831,69.392,31,B,%
+T13,2025,orig_dept,20,20,lfpr,,Tasa de actividad (14+),60.409,8.986,14.876,42.796,78.021,53,A,%
+T13,2025,orig_dept,20,20,median_inc_real,,Ingreso laboral mediano (S/ 2025),,,,,,30,S,S/
+T13,2025,orig_dept,21,21,informality,,Empleo informal,82.57,8.432,10.212,66.044,99.096,74,A,%
+T13,2025,orig_dept,21,21,lfpr,,Tasa de actividad (14+),82.798,4.37,5.277,74.233,91.362,105,A,%
+T13,2025,orig_dept,21,21,median_inc_real,,Ingreso laboral mediano (S/ 2025),1187.543,157.72,13.281,908.167,1526.417,71,A,S/
+T13,2025,orig_dept,22,22,informality,,Empleo informal,75.743,10.091,13.323,55.964,95.522,40,A,%
+T13,2025,orig_dept,22,22,lfpr,,Tasa de actividad (14+),70.755,9.797,13.846,51.554,89.957,60,A,%
+T13,2025,orig_dept,22,22,median_inc_real,,Ingreso laboral mediano (S/ 2025),1998.917,547.905,27.41,1253.667,3401.417,38,B,S/
+T13,2025,orig_dept,23,23,informality,,Empleo informal,,,,,,17,S,%
+T13,2025,orig_dept,23,23,lfpr,,Tasa de actividad (14+),,,,,,25,S,%
+T13,2025,orig_dept,23,23,median_inc_real,,Ingreso laboral mediano (S/ 2025),,,,,,17,S,S/
+T13,2025,orig_dept,24,24,informality,,Empleo informal,,,,,,5,S,%
+T13,2025,orig_dept,24,24,lfpr,,Tasa de actividad (14+),,,,,,13,S,%
+T13,2025,orig_dept,24,24,median_inc_real,,Ingreso laboral mediano (S/ 2025),,,,,,5,S,S/
+T13,2025,orig_dept,25,25,informality,,Empleo informal,77.969,7.613,9.764,63.047,92.891,46,A,%
+T13,2025,orig_dept,25,25,lfpr,,Tasa de actividad (14+),65.571,11.586,17.669,42.863,88.279,65,B,%
+T13,2025,orig_dept,25,25,median_inc_real,,Ingreso laboral mediano (S/ 2025),1488.917,218.329,14.664,1016.75,1872.583,43,A,S/

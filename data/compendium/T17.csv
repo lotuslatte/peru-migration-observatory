@@ -219,3 +219,23 @@ T17,2024,sex,2,Mujeres,mig5_any,,Cambió de distrito en los últimos 5 años,6.2
 T17,2024,sex,2,Mujeres,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.471,0.123,4.974,2.23,2.712,53100,A,%
 T17,2024,sex,2,Mujeres,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.402,0.068,16.974,0.268,0.536,53100,B,%
 T17,2024,sex,2,Mujeres,mig5_intra,,Se mudaron dentro del departamento,3.345,0.158,4.719,3.036,3.654,53100,A,%
+T17,2025,area,1,Urbano,mig5_any,,Cambió de distrito en los últimos 5 años,5.505,0.194,3.522,5.125,5.885,67928,A,%
+T17,2025,area,1,Urbano,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.325,0.124,5.338,2.082,2.568,67928,A,%
+T17,2025,area,1,Urbano,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.277,0.042,15.162,0.195,0.359,67928,B,%
+T17,2025,area,1,Urbano,mig5_intra,,Se mudaron dentro del departamento,2.903,0.128,4.405,2.652,3.153,67928,A,%
+T17,2025,area,2,Rural,mig5_any,,Cambió de distrito en los últimos 5 años,3.133,0.149,4.763,2.841,3.426,33026,A,%
+T17,2025,area,2,Rural,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",1.719,0.105,6.102,1.513,1.925,33026,A,%
+T17,2025,area,2,Rural,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,33026,S,%
+T17,2025,area,2,Rural,mig5_intra,,Se mudaron dentro del departamento,1.365,0.1,7.354,1.168,1.562,33026,A,%
+T17,2025,national,all,Nacional,mig5_any,,Cambió de distrito en los últimos 5 años,5.065,0.16,3.164,4.751,5.379,100954,A,%
+T17,2025,national,all,Nacional,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.213,0.103,4.652,2.011,2.414,100954,A,%
+T17,2025,national,all,Nacional,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.235,0.034,14.638,0.167,0.302,100954,A,%
+T17,2025,national,all,Nacional,mig5_intra,,Se mudaron dentro del departamento,2.618,0.106,4.041,2.41,2.825,100954,A,%
+T17,2025,sex,1,Hombres,mig5_any,,Cambió de distrito en los últimos 5 años,4.95,0.186,3.753,4.586,5.314,48621,A,%
+T17,2025,sex,1,Hombres,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.195,0.117,5.313,1.966,2.424,48621,A,%
+T17,2025,sex,1,Hombres,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.222,0.039,17.596,0.145,0.298,48621,B,%
+T17,2025,sex,1,Hombres,mig5_intra,,Se mudaron dentro del departamento,2.533,0.127,5.001,2.285,2.782,48621,A,%
+T17,2025,sex,2,Mujeres,mig5_any,,Cambió de distrito en los últimos 5 años,5.171,0.185,3.577,4.809,5.534,52333,A,%
+T17,2025,sex,2,Mujeres,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.229,0.121,5.417,1.992,2.466,52333,A,%
+T17,2025,sex,2,Mujeres,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.246,0.039,15.835,0.17,0.323,52333,B,%
+T17,2025,sex,2,Mujeres,mig5_intra,,Se mudaron dentro del departamento,2.696,0.125,4.638,2.451,2.941,52333,A,%
