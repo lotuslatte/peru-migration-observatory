@@ -2,7 +2,7 @@
 import hashlib, json, os
 import pandas as pd
 from .common import *
-from ..config import load_yaml
+from ..config import load_yaml, DATA_VERSION, POOL_YEARS
 
 
 def build():
@@ -18,6 +18,6 @@ def build():
         rows.append({"id": k, "label_es": v.get("label_es"), "label_en": v.get("label_en"), "type": v["type"], "unit": v.get("unit"), "numerator": v.get("num") or v.get("var"), "denominator": v.get("den"), "note": v.get("note", "")})
     pd.DataFrame(rows).to_csv(SITE_DATA_DIR / "dictionary.csv", index=False)
     cellschema = {"v": "estimación (null si suprimida)", "se": "error estándar de diseño", "lo/hi": "IC 95 %", "rse": "error estándar relativo (%)", "n": "observaciones sin ponderar", "g": "sello: A sólido, B cautela, S suprimido"}
-    obj = {"schema_version": "1.1", "generated": pd.Timestamp.today().date().isoformat(), "license": "CC-BY-4.0", "cell": cellschema, "files": files, "n_files": len(files),
+    obj = {"schema_version": "1.1", "data_version": DATA_VERSION, "headline_year": HEADLINE_YEAR, "years": YEARS, "pool_years": POOL_YEARS, "generated": pd.Timestamp.today().date().isoformat(), "license": "CC-BY-4.0", "cell": cellschema, "files": files, "n_files": len(files),
            "glossary": load_yaml("glossary.yml"), "faq": load_yaml("faq.yml")}
     return dump(obj, "index.json")

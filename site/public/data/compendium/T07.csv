@@ -1,22 +1,22 @@
 table_id,year,domain,row_key,row_label,indicator,category,col_label,estimate,se,rse,ci_lo,ci_hi,n,grade,unit
-T07,2024,educ4,1,Hasta primaria,life_cross,,Nacidos en otro departamento (migración de toda la vida),17.678,0.361,2.044,16.97,18.386,42981,A,%
-T07,2024,educ4,1,Hasta primaria,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.149,0.125,5.829,1.904,2.395,40166,A,%
-T07,2024,educ4,1,Hasta primaria,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.27,0.068,25.155,0.137,0.403,40166,B,%
-T07,2024,educ4,2,Secundaria,life_cross,,Nacidos en otro departamento (migración de toda la vida),22.655,0.462,2.039,21.75,23.561,38076,A,%
-T07,2024,educ4,2,Secundaria,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.774,0.156,5.63,2.468,3.08,38332,A,%
-T07,2024,educ4,2,Secundaria,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.422,0.07,16.585,0.285,0.559,38332,B,%
-T07,2024,educ4,3,Superior no universitaria,life_cross,,Nacidos en otro departamento (migración de toda la vida),22.702,0.688,3.032,21.353,24.051,10999,A,%
-T07,2024,educ4,3,Superior no universitaria,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.867,0.209,7.299,2.457,3.277,11059,A,%
-T07,2024,educ4,3,Superior no universitaria,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.399,0.092,23.038,0.219,0.58,11059,B,%
-T07,2024,educ4,4,Universitaria y posgrado,life_cross,,Nacidos en otro departamento (migración de toda la vida),19.601,0.603,3.075,18.42,20.782,13303,A,%
-T07,2024,educ4,4,Universitaria y posgrado,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.342,0.177,7.571,1.995,2.69,13403,A,%
-T07,2024,educ4,4,Universitaria y posgrado,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.362,0.096,26.456,0.174,0.549,13403,B,%
-T07,2024,lengua3,1,Lengua indígena u originaria,life_cross,,Nacidos en otro departamento (migración de toda la vida),28.087,0.84,2.992,26.44,29.734,19673,A,%
-T07,2024,lengua3,1,Lengua indígena u originaria,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.294,0.188,8.178,1.927,2.662,19571,A,%
-T07,2024,lengua3,1,Lengua indígena u originaria,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,19571,S,%
-T07,2024,lengua3,2,Castellano,life_cross,,Nacidos en otro departamento (migración de toda la vida),18.946,0.299,1.577,18.36,19.531,85288,A,%
-T07,2024,lengua3,2,Castellano,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.546,0.113,4.428,2.325,2.767,83001,A,%
-T07,2024,lengua3,2,Castellano,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.42,0.059,14.156,0.303,0.536,83001,A,%
-T07,2024,lengua3,3,Otra / no habla,life_cross,,Nacidos en otro departamento (migración de toda la vida),8.783,1.861,21.185,5.136,12.43,398,B,%
-T07,2024,lengua3,3,Otra / no habla,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",,,,,,388,S,%
-T07,2024,lengua3,3,Otra / no habla,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,388,S,%
+T07,2025,educ4,1,Hasta primaria,life_cross,,Nacidos en otro departamento (migración de toda la vida),17.649,0.375,2.123,16.914,18.383,41605,A,%
+T07,2025,educ4,1,Hasta primaria,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",1.74,0.126,7.223,1.493,1.986,38774,A,%
+T07,2025,educ4,1,Hasta primaria,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.155,0.035,22.621,0.086,0.223,38774,B,%
+T07,2025,educ4,2,Secundaria,life_cross,,Nacidos en otro departamento (migración de toda la vida),23.059,0.455,1.975,22.166,23.951,37636,A,%
+T07,2025,educ4,2,Secundaria,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.35,0.132,5.6,2.092,2.608,37880,A,%
+T07,2025,educ4,2,Secundaria,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.265,0.055,20.708,0.158,0.373,37880,B,%
+T07,2025,educ4,3,Superior no universitaria,life_cross,,Nacidos en otro departamento (migración de toda la vida),22.773,0.739,3.245,21.325,24.221,10726,A,%
+T07,2025,educ4,3,Superior no universitaria,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.997,0.273,9.122,2.462,3.533,10774,A,%
+T07,2025,educ4,3,Superior no universitaria,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,10774,S,%
+T07,2025,educ4,4,Universitaria y posgrado,life_cross,,Nacidos en otro departamento (migración de toda la vida),18.988,0.617,3.252,17.778,20.198,13374,A,%
+T07,2025,educ4,4,Universitaria y posgrado,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.389,0.212,8.861,1.974,2.804,13481,A,%
+T07,2025,educ4,4,Universitaria y posgrado,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.329,0.075,22.757,0.182,0.475,13481,B,%
+T07,2025,lengua3,1,Lengua indígena u originaria,life_cross,,Nacidos en otro departamento (migración de toda la vida),27.576,0.79,2.865,26.027,29.124,19097,A,%
+T07,2025,lengua3,1,Lengua indígena u originaria,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.075,0.176,8.48,1.73,2.42,18965,A,%
+T07,2025,lengua3,1,Lengua indígena u originaria,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,18965,S,%
+T07,2025,lengua3,2,Castellano,life_cross,,Nacidos en otro departamento (migración de toda la vida),19.131,0.308,1.608,18.528,19.734,83802,A,%
+T07,2025,lengua3,2,Castellano,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.23,0.115,5.136,2.005,2.454,81512,A,%
+T07,2025,lengua3,2,Castellano,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.271,0.041,15.031,0.191,0.35,81512,B,%
+T07,2025,lengua3,3,Otra / no habla,life_cross,,Nacidos en otro departamento (migración de toda la vida),13.935,2.298,16.489,9.431,18.438,442,B,%
+T07,2025,lengua3,3,Otra / no habla,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",,,,,,432,S,%
+T07,2025,lengua3,3,Otra / no habla,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,432,S,%

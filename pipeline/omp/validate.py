@@ -1,5 +1,5 @@
 import pandas as pd
-from .config import load_yaml, OUT_DIR
+from .config import load_yaml, OUT_DIR, LABOUR_OUT, HEADLINE_YEAR
 from .aggregate.common import pick
 
 
@@ -25,3 +25,23 @@ def gate(df) -> int:
     for _, r in bad.iterrows():
         print(f"validation FAILED: {r.indicator} {r.year}: official {r.official}, observatory {r.observatorio}")
     return 1 if len(bad) else 0
+
+
+def labour_consistency(est, tol=0.01) -> int:
+    """Cross-check with the sister Labour Observatory: same ENAHO files and definitions, so national labour
+    indicators of the headline year must be equal. Not written to validation.csv (it is not an official figure)."""
+    f = LABOUR_OUT / "estimates.parquet"
+    if not f.exists():
+        print(f"labour consistency SKIPPED: {f} not found"); return 0
+    lab = pd.read_parquet(f); lab = lab[(lab.year == HEADLINE_YEAR) & (lab.domain == "national") & lab.category.isna()]
+    if lab.empty:
+        print(f"labour consistency SKIPPED: the Labour Observatory has no {HEADLINE_YEAR} estimates"); return 0
+    bad = 0
+    for ind in ("lfpr", "ur", "informality", "median_inc_real"):
+        r = pick(est, ind, "national"); b = lab[lab.indicator == ind]
+        if r is None or b.empty:
+            print(f"labour consistency FAILED: {ind} {HEADLINE_YEAR} missing"); bad += 1; continue
+        d = float(r["est"]) - float(b.est.iloc[0]); ok = abs(d) <= tol
+        print(f"labour consistency {'ok' if ok else 'FAILED'}: {ind} {HEADLINE_YEAR}: migration {float(r['est']):.3f}, labour {float(b.est.iloc[0]):.3f}")
+        bad += not ok
+    return 1 if bad else 0

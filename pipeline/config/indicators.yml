@@ -17,7 +17,7 @@ indicators:
   lfpr:        {type: prop, num: pea, den: pet, weight: w500, label_es: "Tasa de actividad (14+)", label_en: "Labour force participation (14+)", unit: "%"}
   ur:          {type: prop, num: desocupado, den: pea, weight: w500, label_es: "Tasa de desempleo", label_en: "Unemployment rate", unit: "%"}
   informality: {type: prop, num: informal, den: ocupado, weight: w500, label_es: "Empleo informal", label_en: "Informal employment", unit: "%"}
-  median_inc_real: {type: median, var: inc_real_pos, den: has_income, weight: w500, label_es: "Ingreso laboral mediano (S/ 2024)", label_en: "Median labour income (2024 S/)", unit: "S/"}
+  median_inc_real: {type: median, var: inc_real_pos, den: has_income, weight: w500, label_es: "Ingreso laboral mediano (S/ __YEAR__)", label_en: "Median labour income (__YEAR__ S/)", unit: "S/"}
   contract_any: {type: prop, num: contract_any, den: wage_worker, weight: w500, label_es: "Asalariados con contrato", label_en: "Wage workers with contract", unit: "%"}
   pension:     {type: prop, num: pension, den: ocupado, weight: w500, label_es: "Ocupados con pensión", label_en: "Employed with pension", unit: "%"}
   seguro:      {type: prop, num: seguro, den: pet, weight: w500, label_es: "Con seguro de salud (14+)", label_en: "Health insurance (14+)", unit: "%"}

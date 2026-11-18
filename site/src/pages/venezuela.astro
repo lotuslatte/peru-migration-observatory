@@ -3,8 +3,9 @@ import Base from '../layouts/Base.astro';
 import GradeLegend from '../components/ui/GradeLegend.astro';
 import BarDist from '../kit/charts/BarDist';
 import Dumbbell from '../kit/charts/Dumbbell';
-import { loadVenezuela } from '../data/loaders';
-const vz = loadVenezuela(); const W = vz.waves; const w18 = W['2018'], w22 = W['2022'], w24 = W['2024'];
+import { loadVenezuela, loadHeadline } from '../data/loaders';
+import { fmtUnit } from '../kit/charts/lib/format';
+const h = loadHeadline(); const vz = loadVenezuela(); const W = vz.waves; const w18 = W['2018'], w22 = W['2022'], w24 = W['2024'];
 const f = (c: any, n = 1) => c?.v == null ? '—' : c.v.toLocaleString('es-PE', { minimumFractionDigits: n, maximumFractionDigits: n });
 const inds = ['employed', 'informal', 'regular', 'superior', 'insured', 'remit', 'discrim', 'discrim_work', 'discrim_street', 'stay'];
 const row = (k: string) => ({ label: vz.indicators[k].label_es, a: { ...w24.all[k], label: '2024' }, b: { ...w18.all[k], label: '2018' } });
@@ -16,7 +17,7 @@ const arr = Object.entries(w24.arrival_dist).map(([y, v]: any) => ({ k: y, label
 <Base title="Población venezolana" wide>
   <div class="eyebrow" style="margin-top:28px">Migración internacional · ENPOVE 2018 · ENPOVE 2022 · ENAHO-PV 2024</div>
   <h1>Un millón de personas <em>en tres encuestas.</em></h1>
-  <p class="lede">La ENAHO general apenas capta a la población extranjera (0,4% llegó del exterior en cinco años). Para verla hace falta ir a las encuestas dirigidas a la población venezolana: ENPOVE 2018 (seis ciudades), ENPOVE 2022 (ocho ciudades) y la ENAHO de población venezolana 2024 (nacional). No son estrictamente comparables entre sí —cambia la cobertura— pero cuentan la misma trayectoria: llegada masiva, regularización a saltos, e inserción laboral casi enteramente informal.</p>
+  <p class="lede">La ENAHO general apenas capta a la población extranjera (en {h.year}, {fmtUnit(h.kpis.mig5_intl.v, '%', 2)} llegó del exterior en cinco años). Para verla hace falta ir a las encuestas dirigidas a la población venezolana: ENPOVE 2018 (seis ciudades), ENPOVE 2022 (ocho ciudades) y la ENAHO de población venezolana 2024 (nacional). No son estrictamente comparables entre sí —cambia la cobertura— pero cuentan la misma trayectoria: llegada masiva, regularización a saltos, e inserción laboral casi enteramente informal.</p>
   <div class="grid grid-3">
     {['2018', '2022', '2024'].map(y => <div class="card"><div class="eyebrow">{vz.sources[y]}</div><div class="kpi informal" style="border:0;padding:8px 0"><div class="n">{(W[y].pop / 1e6).toFixed(2)}<span class="u"> M</span></div><div class="l">personas representadas · n = {W[y].n.toLocaleString('es-PE')}</div></div>
       <table class="data"><tbody>{['employed', 'informal', 'regular', 'discrim', 'stay'].map(k => <tr><td style="text-align:left">{vz.indicators[k].label_es}</td><td>{f(W[y].all[k])}{W[y].all[k].v == null ? '' : ' %'}</td><td><span class={`badge compact ${W[y].all[k].g}`} /></td></tr>)}</tbody></table></div>)}

@@ -2,12 +2,13 @@
 import numpy as np, pandas as pd
 from .common import *
 from .common import _r
-from ..config import load_yaml, OUT_DIR, CONFIG_DIR
+from ..config import load_yaml, OUT_DIR, CONFIG_DIR, POOL_YEARS
 from ..pool import load_pooled
 from ..engine import run_year, DOM
 from ..survey import Design
 
 CFG = load_yaml("province_indicators.yml")
+CFG["pool_years"] = POOL_YEARS   # last five survey years, from omp/config.py
 
 
 def run(derive):

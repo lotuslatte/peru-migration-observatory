@@ -5,7 +5,7 @@ est = load_estimates()
 from omp import validate
 val = validate.run(est)
 print(val.to_string())
-VALIDATION_EXIT = validate.gate(val)
+VALIDATION_EXIT = validate.gate(val) | validate.labour_consistency(est)
 print("flows", flows_json.build()); print("climate", climate_json.build()); print("venezuela", enpove.build())
 print("headline", headline.build(est)); print("atlas", atlas.build(est)); print("trends", trends.build(est)); print("profiles", len(profiles.build(est)))
 print("compendium", len(compendium.build(est))); print("meta", meta.build(est))

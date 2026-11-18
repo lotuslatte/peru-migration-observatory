@@ -8,7 +8,7 @@ models:
   pobre_mig: {label_es: "Pobreza monetaria: migrante reciente vs residente", outcome: pobre, den: pop5, key: {var: mig2, val: 2, ref: 1, label: "Migrante reciente"}, family: lpm, weight: w_pop,
             controls: [{var: age, kind: num, square: true}, {var: sex}, {var: educ4, ref: 1}, {var: area}, {var: region_nat, ref: 4}], subsamples: [area, region_nat]}
 oaxaca:
-  inc_mig_2024: {label_es: "Brecha de ingreso (log) migrante − residente, 2024", outcome: log_inc, den: has_income, group: mig2, a: 2, b: 1, a_label: "Migrantes recientes", b_label: "Residentes",
+  inc_mig: {label_es: "Brecha de ingreso (log) migrante − residente, __YEAR__", outcome: log_inc, den: has_income, group: mig2, a: 2, b: 1, a_label: "Migrantes recientes", b_label: "Residentes",
                  vars: [{var: age, kind: num, square: true}, {var: sex, contrast: dev}, {var: educ4, contrast: dev}, {var: area, contrast: dev}, {var: region_nat, contrast: dev}]}
-  inf_mig_2024: {label_es: "Brecha de informalidad migrante − residente, 2024", outcome: informal, den: ocupado, group: mig2, a: 2, b: 1, a_label: "Migrantes recientes", b_label: "Residentes",
+  inf_mig: {label_es: "Brecha de informalidad migrante − residente, __YEAR__", outcome: informal, den: ocupado, group: mig2, a: 2, b: 1, a_label: "Migrantes recientes", b_label: "Residentes",
                  vars: [{var: age, kind: num, square: true}, {var: sex, contrast: dev}, {var: educ4, contrast: dev}, {var: area, contrast: dev}, {var: region_nat, contrast: dev}]}

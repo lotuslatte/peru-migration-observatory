@@ -1,9 +1,9 @@
 """Resultados laborales (14+, fac500a) reutilizando las definiciones del Observatorio Laboral."""
 import numpy as np
 import pandas as pd
-from .config import CONFIG_DIR
+from .config import deflators
 
-_IPC = pd.read_csv(CONFIG_DIR / "ipc_lima_2014_2024.csv", comment="#").set_index("year")["deflator_to_2024"]
+_IPC = deflators()   # to soles of the headline year
 INC = ["inc_main_annual", "inc_main_inkind", "inc_self_annual", "inc_self_autoconsumo", "inc_sec_annual", "inc_sec_inkind", "inc_sec_self", "inc_sec_autoconsumo", "inc_extra_annual"]
 
 

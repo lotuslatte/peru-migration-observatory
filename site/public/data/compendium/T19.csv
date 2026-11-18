@@ -98,3 +98,12 @@ T19,2024,sex,1,Hombres,gap_ur_mig,,Desempleo migrantes − no migrantes (pp),0.0
 T19,2024,sex,2,Mujeres,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.016,0.049,4.859,0.919,1.112,692,A,ratio
 T19,2024,sex,2,Mujeres,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),6.507,2.084,32.029,2.422,10.591,802,A,pp
 T19,2024,sex,2,Mujeres,gap_ur_mig,,Desempleo migrantes − no migrantes (pp),-0.599,1.061,177.009,-2.678,1.48,849,A,pp
+T19,2025,national,all,Nacional,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.118,0.036,3.216,1.048,1.189,1399,A,ratio
+T19,2025,national,all,Nacional,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),0.841,1.776,211.247,-2.64,4.322,1539,A,pp
+T19,2025,national,all,Nacional,gap_ur_mig,,Desempleo migrantes − no migrantes (pp),-1.523,0.605,39.7,-2.708,-0.338,1590,A,pp
+T19,2025,sex,1,Hombres,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.166,0.044,3.79,1.079,1.252,790,A,ratio
+T19,2025,sex,1,Hombres,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-1.045,2.37,226.725,-5.69,3.6,837,A,pp
+T19,2025,sex,1,Hombres,gap_ur_mig,,Desempleo migrantes − no migrantes (pp),-1.694,0.635,37.495,-2.938,-0.449,861,A,pp
+T19,2025,sex,2,Mujeres,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.064,0.049,4.627,0.968,1.161,609,A,ratio
+T19,2025,sex,2,Mujeres,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),3.859,2.285,59.211,-0.619,8.338,702,A,pp
+T19,2025,sex,2,Mujeres,gap_ur_mig,,Desempleo migrantes − no migrantes (pp),-1.172,1.137,96.991,-3.4,1.056,729,A,pp

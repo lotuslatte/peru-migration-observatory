@@ -1,6 +1,16 @@
 // Site identity and navigation, shared by the layout, the footer and the search palette.
 export const SITE_NAME = 'Observatorio de Migración del Perú';
-export const SOURCE_SPAN = '2014–2024';
+import { loadMeta } from './loaders';
+
+// Years come from the pipeline (meta.json): nothing here changes with a new release.
+const meta = loadMeta();
+export const YEAR: number = meta.headline_year;
+export const FIRST_YEAR: number = meta.years[0];
+export const SOURCE_SPAN = `${FIRST_YEAR}–${YEAR}`;
+/** Pooled window of the flows, the origin and destination matrix and the province atlas. */
+export const POOL_SPAN = `${meta.pool_years[0]}–${meta.pool_years.at(-1)}`;
+export const DATA_VERSION: string = meta.data_version;
+export const GENERATED: string = meta.generated;
 
 export const NAV: [string, string][] = [
   ['/indicadores/', 'Indicadores'],

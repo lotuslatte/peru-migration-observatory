@@ -14,8 +14,17 @@ VZ_DIR = Path("/home/xerox/gdrive-shared/VZ_regularization/2_Instruments_Data")
 ENAHO_DIR = Path("/home/xerox/Documents/03_data/inei/enaho/data")
 SHAPEFILE = Path("/home/xerox/Documents/03_data/gis/peru_admin_boundaries/departamentos/departamentos_peru_con_nombres.shp")
 
-YEARS = list(range(2014, 2025))
-HEADLINE_YEAR = 2024
+# Release year: the single place to change for a new ENAHO year.
+# A new year also needs its row in config/ipc_lima.csv and a bump of DATA_VERSION.
+FIRST_YEAR = 2014
+HEADLINE_YEAR = 2025
+DATA_VERSION = "2026.1"   # YYYY.N, raised whenever published data change
+YEARS = list(range(FIRST_YEAR, HEADLINE_YEAR + 1))
+POOL_YEARS = YEARS[-5:]   # pooled window for flows, the O-D matrix and provinces
+SPAN = f"{FIRST_YEAR}–{HEADLINE_YEAR}"
+POOL_SPAN = f"{POOL_YEARS[0]}–{POOL_YEARS[-1]}"
+# Tokens replaced in every config/*.yml so titles and labels follow the release year.
+YEAR_TOKENS = {"__POOL_FIRST__": POOL_YEARS[0], "__FIRST__": FIRST_YEAR, "__PREV__": HEADLINE_YEAR - 1, "__YEAR__": HEADLINE_YEAR}
 PET_AGE = 14
 YOUTH = (15, 29)
 RSE_A = 0.15   # publish
@@ -31,8 +40,26 @@ for d in (OUT_DIR, SITE_DATA_DIR):
 
 
 def load_yaml(name: str):
-    with open(CONFIG_DIR / name, encoding="utf-8") as f:
-        return yaml.safe_load(f)
+    text = (CONFIG_DIR / name).read_text(encoding="utf-8")
+    for token, year in YEAR_TOKENS.items():
+        text = text.replace(token, str(year))
+    return yaml.safe_load(text)
+
+
+def ipc_lima():
+    """Lima CPI, annual average, indexed by year (any base)."""
+    import pandas as pd
+    ipc = pd.read_csv(CONFIG_DIR / "ipc_lima.csv", comment="#").set_index("year")["ipc_lima"]
+    missing = [y for y in YEARS if y not in ipc.index]
+    if missing:
+        raise SystemExit(f"config/ipc_lima.csv has no CPI for {missing}")
+    return ipc
+
+
+def deflators():
+    """Multiplier from each year's soles to soles of HEADLINE_YEAR."""
+    ipc = ipc_lima()
+    return ipc[HEADLINE_YEAR] / ipc
 
 
 def variables():

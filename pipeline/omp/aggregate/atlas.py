@@ -1,16 +1,16 @@
 import numpy as np, pandas as pd
 from .common import *
 from .common import _r
-from ..config import OUT_DIR
+from ..config import OUT_DIR, POOL_YEARS
 
 DIMS = ATLAS["primary"] + ATLAS["secondary"]
 
 
-POOL = [2020, 2021, 2022, 2023, 2024]
+POOL = POOL_YEARS
 
 
 def flow_cells(year=HEADLINE_YEAR, pool=POOL):
-    """Tasas de flujo por departamento promediadas en 5 años (2020–2024) para reducir el ruido muestral; SE combinada."""
+    """Tasas de flujo por departamento promediadas en los últimos 5 años (POOL_YEARS) para reducir el ruido muestral; SE combinada."""
     f0 = pd.read_parquet(OUT_DIR / "dept_flows.parquet"); f0 = f0[f0.year.isin(pool)]
     k = len(pool)
     f = f0.groupby("dept").agg(pop5=("pop5", "mean"), inm=("inm", "mean"), emi=("emi", "mean"), intl=("intl", "mean"), inm_n=("inm_n", "sum"), emi_n=("emi_n", "sum"),
@@ -57,5 +57,5 @@ def region_rows(est, year=HEADLINE_YEAR):
 
 
 def build(est):
-    obj = {"year": HEADLINE_YEAR, "n_regions": 25, "dims": [{**d, "primary": d in ATLAS["primary"]} for d in DIMS], "regions": region_rows(est)}
+    obj = {"year": HEADLINE_YEAR, "pool_years": POOL, "n_regions": 25, "dims": [{**d, "primary": d in ATLAS["primary"]} for d in DIMS], "regions": region_rows(est)}
     return dump(obj, "atlas_regions.json")

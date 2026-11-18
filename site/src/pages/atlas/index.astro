@@ -6,14 +6,15 @@ import AtlasMap from '../../kit/charts/AtlasMap';
 import RadarComparator from '../../kit/charts/RadarComparator';
 import BivariateScatter from '../../kit/charts/BivariateScatter';
 import { loadAtlas } from '../../data/loaders';
+import { POOL_SPAN } from '../../data/site';
 const a = loadAtlas();
 const f = (c: any, n = 1) => c?.v == null ? '—' : c.v.toLocaleString('es-PE', { minimumFractionDigits: n, maximumFractionDigits: n });
 const depts = a.regions.filter(r => !r.parent);
 const top = (dim: string, hi = true) => [...depts].filter(r => r.values[dim].v != null).sort((x, y) => ((y.values[dim].v ?? 0) - (x.values[dim].v ?? 0)) * (hi ? 1 : -1))[0];
 const explain: Record<string, string> = {
-  net_rate: 'Inmigrantes menos emigrantes interdepartamentales de los últimos cinco años, por cada mil habitantes de 5+ años. Promedio 2020–2024. Positivo = atrae población.',
+  net_rate: `Inmigrantes menos emigrantes interdepartamentales de los últimos cinco años, por cada mil habitantes de 5+ años. Promedio ${POOL_SPAN}. Positivo = atrae población.`,
   mig5_cross: 'Porcentaje de residentes que hace cinco años vivían en otro departamento.',
-  out_rate: 'Porcentaje de quienes vivían en el departamento hace cinco años y hoy viven en otro. Se observa en destino; promedio 2020–2024.',
+  out_rate: `Porcentaje de quienes vivían en el departamento hace cinco años y hoy viven en otro. Se observa en destino; promedio ${POOL_SPAN}.`,
   life_cross: 'Porcentaje de residentes cuya madre vivía en otro departamento cuando nacieron (desde 2018).',
   gap_inf_mig: 'Informalidad de los migrantes recientes menos la de los residentes de siempre. Positivo = a los migrantes les va peor.',
   gap_inc_mig: 'Ingreso laboral mediano de los migrantes recientes dividido entre el de los locales. Mayor que 1 = los migrantes ganan más.',
@@ -22,7 +23,7 @@ const explain: Record<string, string> = {
 <Base title="Atlas de movilidad" wide>
   <div class="eyebrow" style="margin-top:28px">Atlas de movilidad · ENAHO {a.year}</div>
   <h1>Departamentos que atraen, <em>departamentos que expulsan.</em></h1>
-  <p class="lede">Seis dimensiones primarias —saldo, inmigración, emigración, nacidos fuera, y dos brechas laborales migrante/local— y seis secundarias. Las tasas de flujo se promedian sobre 2020–2024 porque una sola encuesta anual capta muy pocos migrantes por departamento.</p>
+  <p class="lede">Seis dimensiones primarias —saldo, inmigración, emigración, nacidos fuera, y dos brechas laborales migrante/local— y seis secundarias. Las tasas de flujo se promedian sobre {POOL_SPAN} porque una sola encuesta anual capta muy pocos migrantes por departamento.</p>
   <div class="grid grid-3" style="margin-bottom:18px">
     {a.dims.filter(d => d.primary).map(d => <div class="card dim"><div class="eyebrow">{d.label_es}</div><p class="small">{explain[d.id]}</p><p class="small"><span class="muted">Mayor:</span> <strong>{top(d.id, true)?.name}</strong> ({f(top(d.id, true)?.values[d.id], d.unit === 'ratio' ? 2 : 1)}) · <span class="muted">Menor:</span> <strong>{top(d.id, false)?.name}</strong> ({f(top(d.id, false)?.values[d.id], d.unit === 'ratio' ? 2 : 1)})</p></div>)}
   </div>

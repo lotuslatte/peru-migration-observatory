@@ -1,7 +1,7 @@
 import json
 import pandas as pd
 from .common import *
-from ..config import load_yaml, OUT_DIR
+from ..config import load_yaml, OUT_DIR, DATA_VERSION, POOL_YEARS
 
 TABLES = load_yaml("compendium_tables.yml")
 COLS = ["table_id", "year", "domain", "row_key", "row_label", "indicator", "category", "col_label", "estimate", "se", "rse", "ci_lo", "ci_hi", "n", "grade", "unit"]
@@ -60,5 +60,5 @@ def build(est):
         else:
             df = table_frame(est, t); df.to_csv(p, index=False)
         index.append({"id": t["id"], "section": t["section"], "section_title": TABLES["sections"][t["section"]], "title": t["title"], "file": fn, "rows": int(len(df))})
-    dump({"sections": TABLES["sections"], "tables": index}, "compendium_index.json")
+    dump({"data_version": DATA_VERSION, "generated": pd.Timestamp.today().date().isoformat(), "year": HEADLINE_YEAR, "years": YEARS, "pool_years": POOL_YEARS, "sections": TABLES["sections"], "tables": index}, "compendium_index.json")
     return index

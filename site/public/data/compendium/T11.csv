@@ -1,190 +1,190 @@
 table_id,year,domain,row_key,row_label,indicator,category,col_label,estimate,se,rse,ci_lo,ci_hi,n,grade,unit
-T11,2024,dept,01,Amazonas,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.225,0.157,12.843,0.917,1.533,78,B,ratio
-T11,2024,dept,01,Amazonas,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),4.991,4.686,93.893,-4.194,14.176,101,B,pp
-T11,2024,dept,01,Amazonas,life_cross,,Nacidos en otro departamento (migración de toda la vida),21.097,1.472,6.975,18.213,23.981,3999,A,%
-T11,2024,dept,01,Amazonas,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",4.505,0.547,12.146,3.433,5.578,3706,A,%
-T11,2024,dept,01,Amazonas,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,3706,S,%
-T11,2024,dept,01,Amazonas,native_here,,Nacidos en el mismo departamento (retención),78.733,1.492,1.895,75.809,81.658,3999,A,%
-T11,2024,dept,01,Amazonas,youth_share,,Población de 15 a 29 años,21.258,0.801,3.766,19.689,22.827,4004,A,%
-T11,2024,dept,02,Áncash,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.144,0.087,7.573,0.975,1.314,48,B,ratio
-T11,2024,dept,02,Áncash,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),0.649,6.261,964.504,-11.622,12.92,60,B,pp
-T11,2024,dept,02,Áncash,life_cross,,Nacidos en otro departamento (migración de toda la vida),9.827,0.695,7.075,8.464,11.19,4628,A,%
-T11,2024,dept,02,Áncash,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.263,0.383,16.921,1.513,3.014,4363,B,%
-T11,2024,dept,02,Áncash,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,4363,S,%
-T11,2024,dept,02,Áncash,native_here,,Nacidos en el mismo departamento (retención),89.806,0.701,0.781,88.432,91.18,4628,A,%
-T11,2024,dept,02,Áncash,youth_share,,Población de 15 a 29 años,21.339,0.699,3.277,19.968,22.71,4630,A,%
-T11,2024,dept,03,Apurímac,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.152,0.201,17.45,0.758,1.545,37,B,ratio
-T11,2024,dept,03,Apurímac,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-1.936,5.915,305.544,-13.528,9.657,43,B,pp
-T11,2024,dept,03,Apurímac,life_cross,,Nacidos en otro departamento (migración de toda la vida),6.351,0.757,11.916,4.868,7.835,2595,A,%
-T11,2024,dept,03,Apurímac,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.958,0.591,19.99,1.799,4.117,2463,B,%
-T11,2024,dept,03,Apurímac,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,2463,S,%
-T11,2024,dept,03,Apurímac,native_here,,Nacidos en el mismo departamento (retención),93.649,0.757,0.808,92.165,95.132,2595,A,%
-T11,2024,dept,03,Apurímac,youth_share,,Población de 15 a 29 años,20.395,0.941,4.612,18.551,22.238,2601,A,%
-T11,2024,dept,04,Arequipa,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,0.999,0.118,11.771,0.768,1.229,72,B,ratio
-T11,2024,dept,04,Arequipa,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-2.428,6.837,281.572,-15.829,10.973,76,B,pp
-T11,2024,dept,04,Arequipa,life_cross,,Nacidos en otro departamento (migración de toda la vida),26.949,1.414,5.248,24.177,29.72,4624,A,%
-T11,2024,dept,04,Arequipa,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.661,0.388,14.581,1.901,3.422,4431,A,%
-T11,2024,dept,04,Arequipa,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,4431,S,%
-T11,2024,dept,04,Arequipa,native_here,,Nacidos en el mismo departamento (retención),72.689,1.42,1.954,69.906,75.473,4624,A,%
-T11,2024,dept,04,Arequipa,youth_share,,Población de 15 a 29 años,22.984,0.996,4.333,21.032,24.936,4668,A,%
-T11,2024,dept,05,Ayacucho,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,0.978,0.112,11.48,0.758,1.198,39,B,ratio
-T11,2024,dept,05,Ayacucho,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),5.051,3.593,71.129,-1.991,12.092,45,B,pp
-T11,2024,dept,05,Ayacucho,life_cross,,Nacidos en otro departamento (migración de toda la vida),6.798,0.979,14.401,4.879,8.716,3396,A,%
-T11,2024,dept,05,Ayacucho,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.442,0.495,20.269,1.472,3.412,3216,B,%
-T11,2024,dept,05,Ayacucho,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,3216,S,%
-T11,2024,dept,05,Ayacucho,native_here,,Nacidos en el mismo departamento (retención),93.179,0.979,1.05,91.261,95.098,3396,A,%
-T11,2024,dept,05,Ayacucho,youth_share,,Población de 15 a 29 años,21.334,0.819,3.84,19.728,22.939,3404,A,%
-T11,2024,dept,06,Cajamarca,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,,,,,,26,S,ratio
-T11,2024,dept,06,Cajamarca,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),,,,,,29,S,pp
-T11,2024,dept,06,Cajamarca,life_cross,,Nacidos en otro departamento (migración de toda la vida),4.994,0.558,11.167,3.901,6.087,4472,A,%
-T11,2024,dept,06,Cajamarca,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",1.215,0.249,20.499,0.727,1.703,4193,B,%
-T11,2024,dept,06,Cajamarca,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,4193,S,%
-T11,2024,dept,06,Cajamarca,native_here,,Nacidos en el mismo departamento (retención),94.811,0.577,0.608,93.68,95.941,4472,A,%
-T11,2024,dept,06,Cajamarca,youth_share,,Población de 15 a 29 años,19.223,0.676,3.518,17.897,20.548,4480,A,%
-T11,2024,dept,07,Callao,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,0.905,0.106,11.765,0.696,1.114,59,B,ratio
-T11,2024,dept,07,Callao,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),0.647,7.464,1154.262,-13.982,15.275,61,B,pp
-T11,2024,dept,07,Callao,life_cross,,Nacidos en otro departamento (migración de toda la vida),39.361,1.542,3.918,36.338,42.384,3402,A,%
-T11,2024,dept,07,Callao,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",3.613,0.587,16.248,2.463,4.764,3280,B,%
-T11,2024,dept,07,Callao,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,3280,S,%
-T11,2024,dept,07,Callao,native_here,,Nacidos en el mismo departamento (retención),58.872,1.563,2.655,55.808,61.936,3402,A,%
-T11,2024,dept,07,Callao,youth_share,,Población de 15 a 29 años,21.835,0.854,3.913,20.161,23.51,3466,A,%
-T11,2024,dept,08,Cusco,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.467,0.424,28.873,0.637,2.298,33,B,ratio
-T11,2024,dept,08,Cusco,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-4.461,7.442,166.832,-19.047,10.126,43,B,pp
-T11,2024,dept,08,Cusco,life_cross,,Nacidos en otro departamento (migración de toda la vida),7.257,0.82,11.302,5.649,8.864,3843,A,%
-T11,2024,dept,08,Cusco,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",1.401,0.329,23.512,0.755,2.046,3692,B,%
-T11,2024,dept,08,Cusco,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,3692,S,%
-T11,2024,dept,08,Cusco,native_here,,Nacidos en el mismo departamento (retención),92.539,0.82,0.886,90.932,94.147,3843,A,%
-T11,2024,dept,08,Cusco,youth_share,,Población de 15 a 29 años,22.68,0.834,3.679,21.045,24.316,3862,A,%
-T11,2024,dept,09,Huancavelica,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.292,0.245,18.957,0.812,1.773,55,B,ratio
-T11,2024,dept,09,Huancavelica,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-13.084,5.021,38.379,-22.926,-3.242,62,B,pp
-T11,2024,dept,09,Huancavelica,life_cross,,Nacidos en otro departamento (migración de toda la vida),3.842,0.506,13.174,2.85,4.834,3346,A,%
-T11,2024,dept,09,Huancavelica,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",3.491,0.665,19.052,2.187,4.794,3138,B,%
-T11,2024,dept,09,Huancavelica,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,3138,S,%
-T11,2024,dept,09,Huancavelica,native_here,,Nacidos en el mismo departamento (retención),96.137,0.507,0.527,95.143,97.13,3346,A,%
-T11,2024,dept,09,Huancavelica,youth_share,,Población de 15 a 29 años,21.378,0.787,3.682,19.835,22.92,3350,A,%
-T11,2024,dept,10,Huánuco,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,0.895,0.217,24.274,0.469,1.321,85,B,ratio
-T11,2024,dept,10,Huánuco,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),3.231,5.357,165.775,-7.268,13.731,96,B,pp
-T11,2024,dept,10,Huánuco,life_cross,,Nacidos en otro departamento (migración de toda la vida),9.726,1.406,14.454,6.971,12.481,3932,A,%
-T11,2024,dept,10,Huánuco,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",4.74,0.815,17.196,3.142,6.337,3680,B,%
-T11,2024,dept,10,Huánuco,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,3680,S,%
-T11,2024,dept,10,Huánuco,native_here,,Nacidos en el mismo departamento (retención),90.002,1.417,1.575,87.223,92.78,3932,A,%
-T11,2024,dept,10,Huánuco,youth_share,,Población de 15 a 29 años,20.476,0.912,4.456,18.688,22.264,3957,A,%
-T11,2024,dept,11,Ica,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.096,0.041,3.738,1.016,1.176,91,B,ratio
-T11,2024,dept,11,Ica,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-7.754,5.703,73.544,-18.932,3.423,96,B,pp
-T11,2024,dept,11,Ica,life_cross,,Nacidos en otro departamento (migración de toda la vida),22.163,1.293,5.835,19.628,24.698,4826,A,%
-T11,2024,dept,11,Ica,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",3.767,0.545,14.469,2.698,4.835,4518,A,%
-T11,2024,dept,11,Ica,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,4518,S,%
-T11,2024,dept,11,Ica,native_here,,Nacidos en el mismo departamento (retención),77.116,1.314,1.703,74.541,79.691,4826,A,%
-T11,2024,dept,11,Ica,youth_share,,Población de 15 a 29 años,24.132,0.672,2.784,22.815,25.449,4831,A,%
-T11,2024,dept,12,Junín,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.051,0.092,8.804,0.869,1.232,87,B,ratio
-T11,2024,dept,12,Junín,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),13.452,2.811,20.899,7.942,18.963,93,B,pp
-T11,2024,dept,12,Junín,life_cross,,Nacidos en otro departamento (migración de toda la vida),16.823,1.002,5.959,14.858,18.788,4686,A,%
-T11,2024,dept,12,Junín,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",3.542,0.44,12.432,2.679,4.405,4422,A,%
-T11,2024,dept,12,Junín,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,4422,S,%
-T11,2024,dept,12,Junín,native_here,,Nacidos en el mismo departamento (retención),82.986,0.999,1.204,81.027,84.945,4686,A,%
-T11,2024,dept,12,Junín,youth_share,,Población de 15 a 29 años,24.253,0.695,2.864,22.892,25.614,4698,A,%
-T11,2024,dept,13,La Libertad,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,0.947,0.15,15.852,0.653,1.241,46,B,ratio
-T11,2024,dept,13,La Libertad,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),6.41,7.921,123.576,-9.115,21.934,46,B,pp
-T11,2024,dept,13,La Libertad,life_cross,,Nacidos en otro departamento (migración de toda la vida),14.301,0.898,6.279,12.541,16.061,5054,A,%
-T11,2024,dept,13,La Libertad,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",1.384,0.259,18.717,0.876,1.892,4770,B,%
-T11,2024,dept,13,La Libertad,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,4770,S,%
-T11,2024,dept,13,La Libertad,native_here,,Nacidos en el mismo departamento (retención),85.019,0.925,1.088,83.206,86.832,5054,A,%
-T11,2024,dept,13,La Libertad,youth_share,,Población de 15 a 29 años,21.456,0.642,2.993,20.197,22.714,5062,A,%
-T11,2024,dept,14,Lambayeque,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.214,0.156,12.817,0.909,1.519,64,B,ratio
-T11,2024,dept,14,Lambayeque,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-9.088,6.475,71.251,-21.78,3.603,66,B,pp
-T11,2024,dept,14,Lambayeque,life_cross,,Nacidos en otro departamento (migración de toda la vida),18.706,1.113,5.949,16.525,20.887,4404,A,%
-T11,2024,dept,14,Lambayeque,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.27,0.385,16.968,1.515,3.025,4154,B,%
-T11,2024,dept,14,Lambayeque,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,4154,S,%
-T11,2024,dept,14,Lambayeque,native_here,,Nacidos en el mismo departamento (retención),81.238,1.113,1.37,79.057,83.419,4404,A,%
-T11,2024,dept,14,Lambayeque,youth_share,,Población de 15 a 29 años,22.621,0.761,3.363,21.13,24.112,4409,A,%
-T11,2024,dept,15,Lima,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,0.987,0.075,7.593,0.84,1.133,167,B,ratio
-T11,2024,dept,15,Lima,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),16.276,3.614,22.201,9.194,23.359,174,B,pp
-T11,2024,dept,15,Lima,life_cross,,Nacidos en otro departamento (migración de toda la vida),30.204,0.691,2.288,28.85,31.559,14594,A,%
-T11,2024,dept,15,Lima,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",1.977,0.235,11.879,1.517,2.437,14130,A,%
-T11,2024,dept,15,Lima,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.695,0.141,20.248,0.419,0.971,14130,B,%
-T11,2024,dept,15,Lima,native_here,,Nacidos en el mismo departamento (retención),68.004,0.707,1.039,66.619,69.389,14594,A,%
-T11,2024,dept,15,Lima,youth_share,,Población de 15 a 29 años,22.7,0.464,2.044,21.79,23.61,14871,A,%
-T11,2024,dept,16,Loreto,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.199,0.181,15.106,0.844,1.554,81,B,ratio
-T11,2024,dept,16,Loreto,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-4.05,5.389,133.078,-14.613,6.513,90,B,pp
-T11,2024,dept,16,Loreto,life_cross,,Nacidos en otro departamento (migración de toda la vida),7.761,0.697,8.974,6.396,9.126,5664,A,%
-T11,2024,dept,16,Loreto,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",3.244,0.428,13.201,2.405,4.084,5154,A,%
-T11,2024,dept,16,Loreto,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,5154,S,%
-T11,2024,dept,16,Loreto,native_here,,Nacidos en el mismo departamento (retención),91.663,0.713,0.777,90.266,93.06,5664,A,%
-T11,2024,dept,16,Loreto,youth_share,,Población de 15 a 29 años,22.531,0.655,2.907,21.247,23.815,5699,A,%
-T11,2024,dept,17,Madre de Dios,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.052,0.165,15.713,0.728,1.375,77,B,ratio
-T11,2024,dept,17,Madre de Dios,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),2.768,5.693,205.635,-8.389,13.926,86,B,pp
-T11,2024,dept,17,Madre de Dios,life_cross,,Nacidos en otro departamento (migración de toda la vida),39.618,2.418,6.104,34.878,44.357,2029,A,%
-T11,2024,dept,17,Madre de Dios,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",8.385,1.407,16.775,5.628,11.142,1837,B,%
-T11,2024,dept,17,Madre de Dios,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,1837,S,%
-T11,2024,dept,17,Madre de Dios,native_here,,Nacidos en el mismo departamento (retención),59.783,2.416,4.041,55.049,64.518,2029,A,%
-T11,2024,dept,17,Madre de Dios,youth_share,,Población de 15 a 29 años,22.222,1.039,4.677,20.185,24.26,2049,A,%
-T11,2024,dept,18,Moquegua,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,0.841,0.155,18.418,0.537,1.144,43,B,ratio
-T11,2024,dept,18,Moquegua,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),2.136,7.798,365.069,-13.148,17.421,45,B,pp
-T11,2024,dept,18,Moquegua,life_cross,,Nacidos en otro departamento (migración de toda la vida),31.297,1.647,5.262,28.07,34.525,2519,A,%
-T11,2024,dept,18,Moquegua,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.512,0.467,18.579,1.597,3.427,2436,B,%
-T11,2024,dept,18,Moquegua,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,2436,S,%
-T11,2024,dept,18,Moquegua,native_here,,Nacidos en el mismo departamento (retención),68.433,1.667,2.436,65.166,71.701,2519,A,%
-T11,2024,dept,18,Moquegua,youth_share,,Población de 15 a 29 años,21.056,0.955,4.534,19.185,22.927,2535,A,%
-T11,2024,dept,19,Pasco,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.784,0.299,16.773,1.197,2.37,62,B,ratio
-T11,2024,dept,19,Pasco,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-5.993,7.12,118.804,-19.948,7.962,72,B,pp
-T11,2024,dept,19,Pasco,life_cross,,Nacidos en otro departamento (migración de toda la vida),14.386,1.049,7.293,12.33,16.443,2786,A,%
-T11,2024,dept,19,Pasco,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",5.059,0.73,14.427,3.628,6.489,2586,A,%
-T11,2024,dept,19,Pasco,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,2586,S,%
-T11,2024,dept,19,Pasco,native_here,,Nacidos en el mismo departamento (retención),85.614,1.049,1.225,83.557,87.67,2786,A,%
-T11,2024,dept,19,Pasco,youth_share,,Población de 15 a 29 años,22.56,0.934,4.14,20.729,24.39,2794,A,%
-T11,2024,dept,20,Piura,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.05,0.16,15.283,0.735,1.364,60,B,ratio
-T11,2024,dept,20,Piura,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),6.134,5.174,84.351,-4.007,16.275,64,B,pp
-T11,2024,dept,20,Piura,life_cross,,Nacidos en otro departamento (migración de toda la vida),4.344,0.389,8.957,3.582,5.107,5916,A,%
-T11,2024,dept,20,Piura,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",1.93,0.323,16.723,1.297,2.562,5509,B,%
-T11,2024,dept,20,Piura,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,5509,S,%
-T11,2024,dept,20,Piura,native_here,,Nacidos en el mismo departamento (retención),95.108,0.449,0.472,94.229,95.988,5916,A,%
-T11,2024,dept,20,Piura,youth_share,,Población de 15 a 29 años,23.527,0.639,2.714,22.276,24.779,5931,A,%
-T11,2024,dept,21,Puno,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.487,0.229,15.385,1.039,1.936,33,B,ratio
-T11,2024,dept,21,Puno,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-5.684,6.872,120.908,-19.153,7.786,36,B,pp
-T11,2024,dept,21,Puno,life_cross,,Nacidos en otro departamento (migración de toda la vida),3.107,0.626,20.163,1.879,4.334,3181,B,%
-T11,2024,dept,21,Puno,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",1.571,0.297,18.906,0.989,2.153,3076,B,%
-T11,2024,dept,21,Puno,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,3076,S,%
-T11,2024,dept,21,Puno,native_here,,Nacidos en el mismo departamento (retención),96.751,0.63,0.651,95.516,97.986,3181,A,%
-T11,2024,dept,21,Puno,youth_share,,Población de 15 a 29 años,21.306,0.848,3.978,19.644,22.967,3220,A,%
-T11,2024,dept,22,San Martín,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.237,0.096,7.732,1.049,1.424,116,B,ratio
-T11,2024,dept,22,San Martín,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-7.081,5.088,71.855,-17.053,2.891,131,B,pp
-T11,2024,dept,22,San Martín,life_cross,,Nacidos en otro departamento (migración de toda la vida),28.785,1.374,4.773,26.092,31.478,4647,A,%
-T11,2024,dept,22,San Martín,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",5.156,0.643,12.475,3.896,6.417,4315,A,%
-T11,2024,dept,22,San Martín,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,4315,S,%
-T11,2024,dept,22,San Martín,native_here,,Nacidos en el mismo departamento (retención),70.93,1.375,1.938,68.236,73.624,4647,A,%
-T11,2024,dept,22,San Martín,youth_share,,Población de 15 a 29 años,21.872,0.746,3.413,20.409,23.334,4652,A,%
-T11,2024,dept,23,Tacna,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.145,0.083,7.248,0.982,1.308,78,B,ratio
-T11,2024,dept,23,Tacna,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),7.876,7.162,90.937,-6.161,21.913,84,B,pp
-T11,2024,dept,23,Tacna,life_cross,,Nacidos en otro departamento (migración de toda la vida),37.908,1.536,4.052,34.897,40.919,3647,A,%
-T11,2024,dept,23,Tacna,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",3.887,0.686,17.651,2.542,5.231,3472,B,%
-T11,2024,dept,23,Tacna,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,3472,S,%
-T11,2024,dept,23,Tacna,native_here,,Nacidos en el mismo departamento (retención),61.406,1.522,2.479,58.423,64.389,3647,A,%
-T11,2024,dept,23,Tacna,youth_share,,Población de 15 a 29 años,24.197,1.091,4.507,22.059,26.334,3676,A,%
-T11,2024,dept,24,Tumbes,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.318,0.117,8.853,1.089,1.546,38,B,ratio
-T11,2024,dept,24,Tumbes,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),13.809,5.634,40.802,2.766,24.852,40,B,pp
-T11,2024,dept,24,Tumbes,life_cross,,Nacidos en otro departamento (migración de toda la vida),23.694,1.897,8.005,19.976,27.411,2761,A,%
-T11,2024,dept,24,Tumbes,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",1.153,0.302,26.231,0.56,1.745,2595,B,%
-T11,2024,dept,24,Tumbes,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,2595,S,%
-T11,2024,dept,24,Tumbes,native_here,,Nacidos en el mismo departamento (retención),74.479,1.93,2.592,70.695,78.263,2761,A,%
-T11,2024,dept,24,Tumbes,youth_share,,Población de 15 a 29 años,23.683,0.814,3.437,22.087,25.278,2764,A,%
-T11,2024,dept,25,Ucayali,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.103,0.119,10.817,0.869,1.337,100,B,ratio
-T11,2024,dept,25,Ucayali,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),0.527,5.111,969.699,-9.491,10.545,110,B,pp
-T11,2024,dept,25,Ucayali,life_cross,,Nacidos en otro departamento (migración de toda la vida),31.325,1.431,4.57,28.52,34.131,4224,A,%
-T11,2024,dept,25,Ucayali,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",6.6,0.824,12.488,4.985,8.216,3854,A,%
-T11,2024,dept,25,Ucayali,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,3854,S,%
-T11,2024,dept,25,Ucayali,native_here,,Nacidos en el mismo departamento (retención),68.35,1.435,2.1,65.537,71.164,4224,A,%
-T11,2024,dept,25,Ucayali,youth_share,,Población de 15 a 29 años,23.154,0.775,3.345,21.636,24.673,4229,A,%
-T11,2024,lima,15M,Lima Metropolitana,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,0.969,0.071,7.303,0.831,1.108,196,B,ratio
-T11,2024,lima,15M,Lima Metropolitana,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),15.037,3.513,23.36,8.152,21.921,203,A,pp
-T11,2024,lima,15M,Lima Metropolitana,life_cross,,Nacidos en otro departamento (migración de toda la vida),31.973,0.693,2.169,30.614,33.332,13294,A,%
-T11,2024,lima,15M,Lima Metropolitana,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.212,0.238,10.765,1.746,2.679,12946,A,%
-T11,2024,lima,15M,Lima Metropolitana,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.724,0.141,19.545,0.446,1.001,12946,B,%
-T11,2024,lima,15M,Lima Metropolitana,native_here,,Nacidos en el mismo departamento (retención),66.145,0.71,1.074,64.753,67.537,13294,A,%
-T11,2024,lima,15M,Lima Metropolitana,youth_share,,Población de 15 a 29 años,22.665,0.462,2.038,21.759,23.57,13587,A,%
-T11,2024,lima,15R,Lima Región,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.2,0.116,9.653,0.973,1.427,30,B,ratio
-T11,2024,lima,15R,Lima Región,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),8.766,8.571,97.784,-8.034,25.565,32,B,pp
-T11,2024,lima,15R,Lima Región,life_cross,,Nacidos en otro departamento (migración de toda la vida),20.497,1.193,5.82,18.159,22.835,4702,A,%
-T11,2024,lima,15R,Lima Región,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",1.131,0.258,22.795,0.626,1.636,4464,B,%
-T11,2024,lima,15R,Lima Región,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,4464,S,%
-T11,2024,lima,15R,Lima Región,native_here,,Nacidos en el mismo departamento (retención),78.775,1.201,1.525,76.421,81.13,4702,A,%
-T11,2024,lima,15R,Lima Región,youth_share,,Población de 15 a 29 años,22.111,0.706,3.194,20.727,23.495,4750,A,%
+T11,2025,dept,01,Amazonas,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.262,0.136,10.785,0.996,1.529,63,B,ratio
+T11,2025,dept,01,Amazonas,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),1.729,4.391,253.903,-6.877,10.336,73,B,pp
+T11,2025,dept,01,Amazonas,life_cross,,Nacidos en otro departamento (migración de toda la vida),21.878,1.505,6.878,18.928,24.827,3669,A,%
+T11,2025,dept,01,Amazonas,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",4.308,0.691,16.036,2.954,5.662,3401,B,%
+T11,2025,dept,01,Amazonas,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,3401,S,%
+T11,2025,dept,01,Amazonas,native_here,,Nacidos en el mismo departamento (retención),78.057,1.506,1.929,75.106,81.008,3669,A,%
+T11,2025,dept,01,Amazonas,youth_share,,Población de 15 a 29 años,20.605,0.847,4.111,18.945,22.266,3673,A,%
+T11,2025,dept,02,Áncash,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,,,,,,19,S,ratio
+T11,2025,dept,02,Áncash,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),,,,,,21,S,pp
+T11,2025,dept,02,Áncash,life_cross,,Nacidos en otro departamento (migración de toda la vida),10.737,0.788,7.336,9.193,12.281,4496,A,%
+T11,2025,dept,02,Áncash,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",0.799,0.153,19.106,0.5,1.098,4257,B,%
+T11,2025,dept,02,Áncash,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,4257,S,%
+T11,2025,dept,02,Áncash,native_here,,Nacidos en el mismo departamento (retención),89.041,0.795,0.892,87.483,90.598,4496,A,%
+T11,2025,dept,02,Áncash,youth_share,,Población de 15 a 29 años,20.416,0.732,3.587,18.98,21.851,4500,A,%
+T11,2025,dept,03,Apurímac,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.28,0.319,24.888,0.656,1.905,35,B,ratio
+T11,2025,dept,03,Apurímac,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),10.441,1.987,19.035,6.546,14.336,47,B,pp
+T11,2025,dept,03,Apurímac,life_cross,,Nacidos en otro departamento (migración de toda la vida),6.722,0.767,11.407,5.219,8.224,2618,A,%
+T11,2025,dept,03,Apurímac,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.774,0.555,20.02,1.685,3.862,2493,B,%
+T11,2025,dept,03,Apurímac,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,2493,S,%
+T11,2025,dept,03,Apurímac,native_here,,Nacidos en el mismo departamento (retención),93.249,0.769,0.824,91.742,94.755,2618,A,%
+T11,2025,dept,03,Apurímac,youth_share,,Población de 15 a 29 años,19.572,0.872,4.454,17.864,21.281,2622,A,%
+T11,2025,dept,04,Arequipa,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,0.895,0.12,13.445,0.659,1.131,98,B,ratio
+T11,2025,dept,04,Arequipa,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),8.287,6.582,79.431,-4.614,21.187,102,B,pp
+T11,2025,dept,04,Arequipa,life_cross,,Nacidos en otro departamento (migración de toda la vida),28.588,1.106,3.87,26.42,30.756,4782,A,%
+T11,2025,dept,04,Arequipa,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",3.172,0.447,14.093,2.296,4.048,4570,A,%
+T11,2025,dept,04,Arequipa,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,4570,S,%
+T11,2025,dept,04,Arequipa,native_here,,Nacidos en el mismo departamento (retención),71.074,1.109,1.56,68.9,73.247,4782,A,%
+T11,2025,dept,04,Arequipa,youth_share,,Población de 15 a 29 años,23.424,0.735,3.14,21.983,24.866,4825,A,%
+T11,2025,dept,05,Ayacucho,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.059,0.309,29.144,0.454,1.664,42,B,ratio
+T11,2025,dept,05,Ayacucho,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-5.572,7.884,141.494,-21.023,9.88,48,B,pp
+T11,2025,dept,05,Ayacucho,life_cross,,Nacidos en otro departamento (migración de toda la vida),7.551,1.011,13.393,5.569,9.533,3280,A,%
+T11,2025,dept,05,Ayacucho,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.084,0.455,21.808,1.194,2.975,3091,B,%
+T11,2025,dept,05,Ayacucho,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,3091,S,%
+T11,2025,dept,05,Ayacucho,native_here,,Nacidos en el mismo departamento (retención),92.37,1.011,1.094,90.389,94.351,3280,A,%
+T11,2025,dept,05,Ayacucho,youth_share,,Población de 15 a 29 años,21.792,0.885,4.06,20.058,23.527,3283,A,%
+T11,2025,dept,06,Cajamarca,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,,,,,,23,S,ratio
+T11,2025,dept,06,Cajamarca,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),,,,,,27,S,pp
+T11,2025,dept,06,Cajamarca,life_cross,,Nacidos en otro departamento (migración de toda la vida),5.826,0.676,11.601,4.501,7.15,4212,A,%
+T11,2025,dept,06,Cajamarca,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",,,,,,3987,S,%
+T11,2025,dept,06,Cajamarca,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,3987,S,%
+T11,2025,dept,06,Cajamarca,native_here,,Nacidos en el mismo departamento (retención),94.11,0.671,0.713,92.795,95.426,4212,A,%
+T11,2025,dept,06,Cajamarca,youth_share,,Población de 15 a 29 años,18.573,0.761,4.096,17.082,20.064,4213,A,%
+T11,2025,dept,07,Callao,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.035,0.079,7.627,0.88,1.189,88,B,ratio
+T11,2025,dept,07,Callao,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),2.673,5.152,192.768,-7.425,12.771,89,B,pp
+T11,2025,dept,07,Callao,life_cross,,Nacidos en otro departamento (migración de toda la vida),36.639,1.452,3.964,33.792,39.486,3364,A,%
+T11,2025,dept,07,Callao,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",4.091,0.611,14.941,2.893,5.29,3248,A,%
+T11,2025,dept,07,Callao,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,3248,S,%
+T11,2025,dept,07,Callao,native_here,,Nacidos en el mismo departamento (retención),61.621,1.478,2.399,58.724,64.519,3364,A,%
+T11,2025,dept,07,Callao,youth_share,,Población de 15 a 29 años,23.404,0.871,3.72,21.698,25.111,3434,A,%
+T11,2025,dept,08,Cusco,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,0.77,0.331,42.904,0.123,1.418,31,B,ratio
+T11,2025,dept,08,Cusco,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-7.538,10.116,134.2,-27.365,12.289,33,B,pp
+T11,2025,dept,08,Cusco,life_cross,,Nacidos en otro departamento (migración de toda la vida),7.529,0.945,12.55,5.677,9.381,3497,A,%
+T11,2025,dept,08,Cusco,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",1.199,0.274,22.835,0.662,1.736,3348,B,%
+T11,2025,dept,08,Cusco,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,3348,S,%
+T11,2025,dept,08,Cusco,native_here,,Nacidos en el mismo departamento (retención),92.275,0.942,1.021,90.428,94.122,3497,A,%
+T11,2025,dept,08,Cusco,youth_share,,Población de 15 a 29 años,22.424,0.897,4.002,20.665,24.183,3500,A,%
+T11,2025,dept,09,Huancavelica,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,,,,,,25,S,ratio
+T11,2025,dept,09,Huancavelica,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),,,,,,28,S,pp
+T11,2025,dept,09,Huancavelica,life_cross,,Nacidos en otro departamento (migración de toda la vida),2.437,0.409,16.787,1.635,3.238,3066,B,%
+T11,2025,dept,09,Huancavelica,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",1.509,0.308,20.432,0.905,2.114,2888,B,%
+T11,2025,dept,09,Huancavelica,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,2888,S,%
+T11,2025,dept,09,Huancavelica,native_here,,Nacidos en el mismo departamento (retención),97.563,0.409,0.419,96.762,98.365,3066,A,%
+T11,2025,dept,09,Huancavelica,youth_share,,Población de 15 a 29 años,20.391,0.831,4.077,18.761,22.02,3070,A,%
+T11,2025,dept,10,Huánuco,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.331,0.209,15.67,0.922,1.74,61,B,ratio
+T11,2025,dept,10,Huánuco,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),0.097,5.133,5296.76,-9.964,10.158,70,B,pp
+T11,2025,dept,10,Huánuco,life_cross,,Nacidos en otro departamento (migración de toda la vida),8.063,1.582,19.624,4.962,11.164,3698,B,%
+T11,2025,dept,10,Huánuco,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",3.651,0.902,24.704,1.883,5.419,3456,B,%
+T11,2025,dept,10,Huánuco,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,3456,S,%
+T11,2025,dept,10,Huánuco,native_here,,Nacidos en el mismo departamento (retención),91.885,1.597,1.738,88.756,95.015,3698,A,%
+T11,2025,dept,10,Huánuco,youth_share,,Población de 15 a 29 años,21.845,1.021,4.676,19.843,23.847,3702,A,%
+T11,2025,dept,11,Ica,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.171,0.064,5.492,1.045,1.297,67,B,ratio
+T11,2025,dept,11,Ica,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-4.668,7.131,152.765,-18.646,9.309,72,B,pp
+T11,2025,dept,11,Ica,life_cross,,Nacidos en otro departamento (migración de toda la vida),23.078,1.248,5.406,20.633,25.524,4707,A,%
+T11,2025,dept,11,Ica,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",3.682,0.635,17.245,2.438,4.927,4435,B,%
+T11,2025,dept,11,Ica,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,4435,S,%
+T11,2025,dept,11,Ica,native_here,,Nacidos en el mismo departamento (retención),75.788,1.265,1.669,73.31,78.267,4707,A,%
+T11,2025,dept,11,Ica,youth_share,,Población de 15 a 29 años,23.786,0.806,3.39,22.205,25.366,4727,A,%
+T11,2025,dept,12,Junín,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.176,0.14,11.938,0.901,1.452,54,B,ratio
+T11,2025,dept,12,Junín,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),3.008,5.88,195.454,-8.516,14.533,65,B,pp
+T11,2025,dept,12,Junín,life_cross,,Nacidos en otro departamento (migración de toda la vida),18.733,1.097,5.854,16.584,20.883,4583,A,%
+T11,2025,dept,12,Junín,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",3.069,0.541,17.619,2.009,4.129,4327,B,%
+T11,2025,dept,12,Junín,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,4327,S,%
+T11,2025,dept,12,Junín,native_here,,Nacidos en el mismo departamento (retención),80.95,1.145,1.415,78.705,83.195,4583,A,%
+T11,2025,dept,12,Junín,youth_share,,Población de 15 a 29 años,22.35,0.708,3.168,20.962,23.738,4587,A,%
+T11,2025,dept,13,La Libertad,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.453,0.171,11.759,1.118,1.787,36,B,ratio
+T11,2025,dept,13,La Libertad,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-10.004,8.693,86.892,-27.043,7.034,38,B,pp
+T11,2025,dept,13,La Libertad,life_cross,,Nacidos en otro departamento (migración de toda la vida),15.619,1.03,6.594,13.6,17.638,5207,A,%
+T11,2025,dept,13,La Libertad,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",1.217,0.247,20.29,0.733,1.701,4898,B,%
+T11,2025,dept,13,La Libertad,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,4898,S,%
+T11,2025,dept,13,La Libertad,native_here,,Nacidos en el mismo departamento (retención),83.761,1.052,1.256,81.7,85.822,5207,A,%
+T11,2025,dept,13,La Libertad,youth_share,,Población de 15 a 29 años,21.388,0.629,2.94,20.155,22.62,5218,A,%
+T11,2025,dept,14,Lambayeque,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,,,,,,21,S,ratio
+T11,2025,dept,14,Lambayeque,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),,,,,,21,S,pp
+T11,2025,dept,14,Lambayeque,life_cross,,Nacidos en otro departamento (migración de toda la vida),18.08,1.108,6.126,15.91,20.251,4682,A,%
+T11,2025,dept,14,Lambayeque,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",0.944,0.207,21.97,0.537,1.35,4406,B,%
+T11,2025,dept,14,Lambayeque,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,4406,S,%
+T11,2025,dept,14,Lambayeque,native_here,,Nacidos en el mismo departamento (retención),81.541,1.107,1.357,79.372,83.71,4682,A,%
+T11,2025,dept,14,Lambayeque,youth_share,,Población de 15 a 29 años,23.231,0.68,2.928,21.898,24.565,4686,A,%
+T11,2025,dept,15,Lima,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.046,0.069,6.567,0.912,1.181,150,B,ratio
+T11,2025,dept,15,Lima,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),6.169,4.531,73.448,-2.711,15.048,153,B,pp
+T11,2025,dept,15,Lima,life_cross,,Nacidos en otro departamento (migración de toda la vida),29.932,0.674,2.253,28.61,31.254,14385,A,%
+T11,2025,dept,15,Lima,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.024,0.241,11.893,1.552,2.496,14028,A,%
+T11,2025,dept,15,Lima,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.362,0.087,23.941,0.192,0.532,14028,B,%
+T11,2025,dept,15,Lima,native_here,,Nacidos en el mismo departamento (retención),68.547,0.673,0.982,67.228,69.866,14385,A,%
+T11,2025,dept,15,Lima,youth_share,,Población de 15 a 29 años,22.931,0.439,1.913,22.071,23.791,14686,A,%
+T11,2025,dept,16,Loreto,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.233,0.153,12.407,0.933,1.533,71,B,ratio
+T11,2025,dept,16,Loreto,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-11.426,6.808,59.584,-24.77,1.918,78,B,pp
+T11,2025,dept,16,Loreto,life_cross,,Nacidos en otro departamento (migración de toda la vida),6.808,0.672,9.874,5.491,8.126,5678,A,%
+T11,2025,dept,16,Loreto,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",3.404,0.509,14.964,2.406,4.402,5191,A,%
+T11,2025,dept,16,Loreto,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,5191,S,%
+T11,2025,dept,16,Loreto,native_here,,Nacidos en el mismo departamento (retención),92.458,0.685,0.741,91.115,93.801,5678,A,%
+T11,2025,dept,16,Loreto,youth_share,,Población de 15 a 29 años,23.681,0.637,2.692,22.431,24.93,5700,A,%
+T11,2025,dept,17,Madre de Dios,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.046,0.169,16.198,0.714,1.378,70,B,ratio
+T11,2025,dept,17,Madre de Dios,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),10.596,5.652,53.346,-0.483,21.674,80,B,pp
+T11,2025,dept,17,Madre de Dios,life_cross,,Nacidos en otro departamento (migración de toda la vida),44.649,2.801,6.273,39.159,50.138,1912,A,%
+T11,2025,dept,17,Madre de Dios,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",7.815,1.506,19.274,4.863,10.768,1760,B,%
+T11,2025,dept,17,Madre de Dios,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,1760,S,%
+T11,2025,dept,17,Madre de Dios,native_here,,Nacidos en el mismo departamento (retención),54.666,2.789,5.103,49.199,60.133,1912,A,%
+T11,2025,dept,17,Madre de Dios,youth_share,,Población de 15 a 29 años,22.855,1.281,5.606,20.344,25.367,1935,A,%
+T11,2025,dept,18,Moquegua,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,0.886,0.232,26.196,0.431,1.34,50,B,ratio
+T11,2025,dept,18,Moquegua,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-3.923,9.553,243.482,-22.647,14.8,53,B,pp
+T11,2025,dept,18,Moquegua,life_cross,,Nacidos en otro departamento (migración de toda la vida),31.675,1.68,5.303,28.382,34.967,2486,A,%
+T11,2025,dept,18,Moquegua,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.329,0.448,19.216,1.452,3.207,2411,B,%
+T11,2025,dept,18,Moquegua,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,2411,S,%
+T11,2025,dept,18,Moquegua,native_here,,Nacidos en el mismo departamento (retención),67.744,1.671,2.467,64.468,71.019,2486,A,%
+T11,2025,dept,18,Moquegua,youth_share,,Población de 15 a 29 años,20.834,0.979,4.698,18.915,22.753,2509,A,%
+T11,2025,dept,19,Pasco,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.14,0.144,12.598,0.858,1.421,48,B,ratio
+T11,2025,dept,19,Pasco,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),5.904,5.343,90.489,-4.567,16.375,55,B,pp
+T11,2025,dept,19,Pasco,life_cross,,Nacidos en otro departamento (migración de toda la vida),13.479,1.301,9.654,10.929,16.03,2656,A,%
+T11,2025,dept,19,Pasco,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",3.653,0.64,17.523,2.398,4.908,2452,B,%
+T11,2025,dept,19,Pasco,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,2452,S,%
+T11,2025,dept,19,Pasco,native_here,,Nacidos en el mismo departamento (retención),86.521,1.301,1.504,83.97,89.071,2656,A,%
+T11,2025,dept,19,Pasco,youth_share,,Población de 15 a 29 años,20.542,0.997,4.856,18.587,22.497,2660,A,%
+T11,2025,dept,20,Piura,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,0.985,0.25,25.355,0.495,1.474,44,B,ratio
+T11,2025,dept,20,Piura,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-1.695,7.275,429.235,-15.955,12.565,47,B,pp
+T11,2025,dept,20,Piura,life_cross,,Nacidos en otro departamento (migración de toda la vida),5.055,0.446,8.832,4.18,5.93,5806,A,%
+T11,2025,dept,20,Piura,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",1.495,0.254,16.98,0.998,1.993,5449,B,%
+T11,2025,dept,20,Piura,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,5449,S,%
+T11,2025,dept,20,Piura,native_here,,Nacidos en el mismo departamento (retención),94.243,0.518,0.55,93.227,95.259,5806,A,%
+T11,2025,dept,20,Piura,youth_share,,Población de 15 a 29 años,22.069,0.616,2.793,20.861,23.277,5820,A,%
+T11,2025,dept,21,Puno,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,,,,,,20,S,ratio
+T11,2025,dept,21,Puno,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),,,,,,21,S,pp
+T11,2025,dept,21,Puno,life_cross,,Nacidos en otro departamento (migración de toda la vida),3.013,0.437,14.501,2.156,3.869,2927,A,%
+T11,2025,dept,21,Puno,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",1.003,0.276,27.56,0.461,1.544,2835,B,%
+T11,2025,dept,21,Puno,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,2835,S,%
+T11,2025,dept,21,Puno,native_here,,Nacidos en el mismo departamento (retención),96.699,0.46,0.475,95.798,97.6,2927,A,%
+T11,2025,dept,21,Puno,youth_share,,Población de 15 a 29 años,21.746,0.96,4.413,19.865,23.627,2956,A,%
+T11,2025,dept,22,San Martín,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.073,0.116,10.817,0.846,1.301,92,B,ratio
+T11,2025,dept,22,San Martín,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),4.405,3.381,76.76,-2.222,11.031,113,B,pp
+T11,2025,dept,22,San Martín,life_cross,,Nacidos en otro departamento (migración de toda la vida),29.096,1.523,5.236,26.11,32.082,4551,A,%
+T11,2025,dept,22,San Martín,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",3.957,0.593,14.986,2.795,5.119,4251,A,%
+T11,2025,dept,22,San Martín,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,4251,S,%
+T11,2025,dept,22,San Martín,native_here,,Nacidos en el mismo departamento (retención),70.794,1.525,2.155,67.804,73.784,4551,A,%
+T11,2025,dept,22,San Martín,youth_share,,Población de 15 a 29 años,22.743,0.838,3.686,21.1,24.387,4557,A,%
+T11,2025,dept,23,Tacna,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,0.884,0.119,13.466,0.651,1.117,75,B,ratio
+T11,2025,dept,23,Tacna,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),5.824,8.728,149.876,-11.283,22.93,77,B,pp
+T11,2025,dept,23,Tacna,life_cross,,Nacidos en otro departamento (migración de toda la vida),38.917,1.408,3.619,36.157,41.677,3522,A,%
+T11,2025,dept,23,Tacna,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",3.229,0.589,18.254,2.074,4.384,3356,B,%
+T11,2025,dept,23,Tacna,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,3356,S,%
+T11,2025,dept,23,Tacna,native_here,,Nacidos en el mismo departamento (retención),60.013,1.39,2.315,57.29,62.737,3522,A,%
+T11,2025,dept,23,Tacna,youth_share,,Población de 15 a 29 años,20.926,0.936,4.475,19.091,22.761,3535,A,%
+T11,2025,dept,24,Tumbes,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,,,,,,19,S,ratio
+T11,2025,dept,24,Tumbes,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),,,,,,19,S,pp
+T11,2025,dept,24,Tumbes,life_cross,,Nacidos en otro departamento (migración de toda la vida),23.588,1.728,7.327,20.201,26.976,2732,A,%
+T11,2025,dept,24,Tumbes,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",1.435,0.397,27.646,0.658,2.213,2574,B,%
+T11,2025,dept,24,Tumbes,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,2574,S,%
+T11,2025,dept,24,Tumbes,native_here,,Nacidos en el mismo departamento (retención),75.185,1.767,2.351,71.721,78.649,2732,A,%
+T11,2025,dept,24,Tumbes,youth_share,,Población de 15 a 29 años,24.562,1.045,4.256,22.513,26.611,2735,A,%
+T11,2025,dept,25,Ucayali,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.073,0.074,6.862,0.929,1.217,97,B,ratio
+T11,2025,dept,25,Ucayali,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),-3.738,5.161,138.085,-13.854,6.378,109,B,pp
+T11,2025,dept,25,Ucayali,life_cross,,Nacidos en otro departamento (migración de toda la vida),29.739,1.158,3.893,27.47,32.008,4209,A,%
+T11,2025,dept,25,Ucayali,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",5.649,0.745,13.196,4.188,7.11,3842,A,%
+T11,2025,dept,25,Ucayali,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,3842,S,%
+T11,2025,dept,25,Ucayali,native_here,,Nacidos en el mismo departamento (retención),69.861,1.156,1.655,67.595,72.128,4209,A,%
+T11,2025,dept,25,Ucayali,youth_share,,Población de 15 a 29 años,22.707,0.625,2.754,21.481,23.933,4213,A,%
+T11,2025,lima,15M,Lima Metropolitana,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,1.006,0.066,6.581,0.877,1.136,217,A,ratio
+T11,2025,lima,15M,Lima Metropolitana,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),6.266,3.948,63.009,-1.472,14.004,220,A,pp
+T11,2025,lima,15M,Lima Metropolitana,life_cross,,Nacidos en otro departamento (migración de toda la vida),31.518,0.672,2.131,30.201,32.834,13277,A,%
+T11,2025,lima,15M,Lima Metropolitana,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",2.3,0.243,10.584,1.823,2.777,13014,A,%
+T11,2025,lima,15M,Lima Metropolitana,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.381,0.087,22.761,0.211,0.551,13014,B,%
+T11,2025,lima,15M,Lima Metropolitana,native_here,,Nacidos en el mismo departamento (retención),66.878,0.671,1.003,65.563,68.194,13277,A,%
+T11,2025,lima,15M,Lima Metropolitana,youth_share,,Población de 15 a 29 años,23.048,0.437,1.897,22.191,23.904,13601,A,%
+T11,2025,lima,15R,Lima Región,gap_inc_mig,,Ingreso mediano migrantes / no migrantes,,,,,,21,S,ratio
+T11,2025,lima,15R,Lima Región,gap_inf_mig,,Informalidad migrantes − no migrantes (pp),,,,,,22,S,pp
+T11,2025,lima,15R,Lima Región,life_cross,,Nacidos en otro departamento (migración de toda la vida),19.447,1.073,5.517,17.344,21.55,4472,A,%
+T11,2025,lima,15R,Lima Región,mig5_cross,,"Inmigrantes recientes de otro departamento (tasa de inmigración, 5 años)",1.179,0.321,27.215,0.55,1.808,4262,B,%
+T11,2025,lima,15R,Lima Región,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,4262,S,%
+T11,2025,lima,15R,Lima Región,native_here,,Nacidos en el mismo departamento (retención),79.731,1.087,1.363,77.601,81.862,4472,A,%
+T11,2025,lima,15R,Lima Región,youth_share,,Población de 15 a 29 años,22.122,0.681,3.076,20.788,23.456,4519,A,%

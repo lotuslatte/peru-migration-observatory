@@ -12,6 +12,7 @@ from .models import cell_from
 
 
 def build(years=(2019, 2020, 2021, 2022, 2023)):
+    # Fixed window: the district climate panel ends in 2023.
     clim = pd.read_parquet(OUT_DIR / "dept_climate.parquet")
     d = load_pooled(list(years), derive)
     d = d[(d["pop5"] == 1)].copy()
@@ -49,5 +50,5 @@ def build(years=(2019, 2020, 2021, 2022, 2023)):
                              "terms": [{"id": nm, "label": lb, "group": gr, "est": _r(fit.beta[k] * 100, 3), "se": _r(fit.se[k] * 100, 3), "lo": _r(fit.lo[k] * 100, 3), "hi": _r(fit.hi[k] * 100, 3), "p": _r(fit.p[k], 4)} for k, (nm, lb, gr) in enumerate(zip(names, labels, groups)) if nm != "const"]}
         print(f"  drought/{sid}: raw {out['specs'][sid]['raw']['v']} adj {out['specs'][sid]['adj']['v']} (cluster-orig se {out['specs'][sid]['adj_cluster_orig']['se']}) n={fit.n}", flush=True)
     out["mean_out_rate"] = _r(float(np.average(y[mask], weights=D.w[mask])) * 100, 2)
-    out["note"] = "Población de 5+ años observada en destino (ENAHO 2019–2023, agrupada; pesos /5). Exposición = media de los 5 años previos en el departamento de origen (para quienes no migraron, el departamento actual). Controles: edad, sexo, educación, área, región natural actual y año. Coeficientes ×100 = puntos porcentuales de probabilidad de haber emigrado. Dos errores estándar: por conglomerado (diseño) y por departamento de origen (25 clusters, conservador). Relación descriptiva."
+    out["note"] = f"Población de 5+ años observada en destino (ENAHO {years[0]}–{years[-1]}, agrupada; pesos /{len(years)}). Exposición = media de los 5 años previos en el departamento de origen (para quienes no migraron, el departamento actual). Controles: edad, sexo, educación, área, región natural actual y año. Coeficientes ×100 = puntos porcentuales de probabilidad de haber emigrado. Dos errores estándar: por conglomerado (diseño) y por departamento de origen (25 clusters, conservador). Relación descriptiva."
     return dump(out, "drought_model.json")

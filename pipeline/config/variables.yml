@@ -50,7 +50,7 @@ modules:
       ciuo: {src: p505r4}
       ciiu4: {src: p506r4}
       educ_raw_m05: {src: p301a}
-      ocupinf_inei: {src: ocupinf, optional: true, note: "presente 2014–2023; ausente 2024"}
+      ocupinf_inei: {src: ocupinf, optional: true, note: "presente 2014–2023; ausente desde 2024"}
       emplpsec_inei: {src: emplpsec, optional: true}
   m02:
     weight: facpob07

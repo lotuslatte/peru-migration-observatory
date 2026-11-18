@@ -1,9 +1,9 @@
 import pandas as pd, numpy as np
 from .common import *
 from .common import _r
-from ..config import OUT_DIR
+from ..config import OUT_DIR, POOL_YEARS, POOL_SPAN
 
-POOL = [2020, 2021, 2022, 2023, 2024]
+POOL = POOL_YEARS
 
 
 def build():
@@ -39,7 +39,7 @@ def build():
         else: M[i][j] = round(float(r.flow)); Gm[i][j] = r.grade; Nn[i][j] = int(r.n)
     chord = {"ids": ids, "names": {k: DEPT_NAME[k] for k in ids}, "matrix": M, "g": Gm, "n": Nn, "other_out": [round(v) for v in other_out], "other_in": [round(v) for v in other_in], "centroids": cent}
     nat = dep.groupby("year").agg(inm=("inm", "sum"), intl=("intl", "sum"), pop5=("pop5", "sum")).reset_index()
-    obj = {"pool_years": POOL, "note": "Flujos anuales promedio 2020–2024 (personas que hace 5 años vivían en otro departamento), suma ponderada / 5. Celdas con n<30 suprimidas.",
+    obj = {"pool_years": POOL, "note": f"Flujos anuales promedio {POOL_SPAN} (personas que hace 5 años vivían en otro departamento), suma ponderada / {len(POOL)}. Celdas con n<30 suprimidas.",
            "matrix": matrix, "top_flows": top, "by_dept": by_dept, "dept_names": DEPT_NAME, "chord": chord,
            "national": {"years": nat.year.tolist(), "inm": [_r(v, 0) for v in nat.inm], "intl": [_r(v, 0) for v in nat.intl], "pop5": [_r(v, 0) for v in nat.pop5]}}
     return dump(obj, "flows.json")

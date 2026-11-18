@@ -219,3 +219,23 @@ T14,2024,region_nat,4,Lima Metropolitana,born_ven,,Nacidos en Venezuela,1.389,0.
 T14,2024,region_nat,4,Lima Metropolitana,life_abroad,,Nacidos en el extranjero,1.833,0.236,12.898,1.37,2.297,13294,A,%
 T14,2024,region_nat,4,Lima Metropolitana,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.724,0.141,19.545,0.446,1.001,12946,B,%
 T14,2024,region_nat,4,Lima Metropolitana,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.455,0.115,25.26,0.23,0.68,12946,B,%
+T14,2025,national,all,Nacional,born_ven,,Nacidos en Venezuela,0.514,0.066,12.798,0.385,0.644,106725,A,%
+T14,2025,national,all,Nacional,life_abroad,,Nacidos en el extranjero,0.78,0.072,9.265,0.638,0.921,106725,A,%
+T14,2025,national,all,Nacional,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.235,0.034,14.638,0.167,0.302,100954,A,%
+T14,2025,national,all,Nacional,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.125,0.029,23.016,0.068,0.181,100954,B,%
+T14,2025,region_nat,1,Costa,born_ven,,Nacidos en Venezuela,0.395,0.068,17.232,0.262,0.529,33539,B,%
+T14,2025,region_nat,1,Costa,life_abroad,,Nacidos en el extranjero,0.729,0.089,12.185,0.555,0.903,33539,A,%
+T14,2025,region_nat,1,Costa,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.275,0.051,18.706,0.174,0.375,31724,B,%
+T14,2025,region_nat,1,Costa,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.097,0.027,27.836,0.044,0.15,31724,B,%
+T14,2025,region_nat,2,Sierra,born_ven,,Nacidos en Venezuela,,,,,,34998,S,%
+T14,2025,region_nat,2,Sierra,life_abroad,,Nacidos en el extranjero,0.177,0.049,27.863,0.081,0.274,34998,B,%
+T14,2025,region_nat,2,Sierra,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,33241,S,%
+T14,2025,region_nat,2,Sierra,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,33241,S,%
+T14,2025,region_nat,3,Selva,born_ven,,Nacidos en Venezuela,,,,,,24911,S,%
+T14,2025,region_nat,3,Selva,life_abroad,,Nacidos en el extranjero,0.298,0.049,16.474,0.202,0.394,24911,B,%
+T14,2025,region_nat,3,Selva,mig5_intl,,Llegaron del extranjero en los últimos 5 años,,,,,,22975,S,%
+T14,2025,region_nat,3,Selva,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,,,,,,22975,S,%
+T14,2025,region_nat,4,Lima Metropolitana,born_ven,,Nacidos en Venezuela,1.225,0.192,15.659,0.849,1.602,13277,B,%
+T14,2025,region_nat,4,Lima Metropolitana,life_abroad,,Nacidos en el extranjero,1.563,0.204,13.067,1.163,1.963,13277,A,%
+T14,2025,region_nat,4,Lima Metropolitana,mig5_intl,,Llegaron del extranjero en los últimos 5 años,0.381,0.087,22.761,0.211,0.551,13014,B,%
+T14,2025,region_nat,4,Lima Metropolitana,mig5_ven,,Llegaron de Venezuela en los últimos 5 años,0.267,0.078,29.182,0.114,0.42,13014,B,%

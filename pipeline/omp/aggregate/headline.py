@@ -23,7 +23,7 @@ def build(est):
         if d is not None and brk:
             d.update({"sig": False, "break": brk})
         return d
-    deltas = {k: {"d1": change(k, y - 1), "d10": change(k, 2014)} for k in K}
+    deltas = {k: {"d1": change(k, y - 1), "d10": change(k, YEARS[0])} for k in K}
     n = int(pick(est, "mig5_any", "national")["n"]); pop = float(pick(est, "n_pop5", "national")["est"])
     tot = {k: cell(pick(est, k, "national"), 0) for k in ["n_mig5_cross", "n_mig5_intl", "n_pop5"]}
     by = {}
@@ -36,6 +36,6 @@ def build(est):
     dist = {k: dist_cells(est, k, "mig3", key) for k in ["age_dist", "educ_dist"] for key in ["0", "2"] if False}
     dist = {f"{k}|{key}": dist_cells(est, k, "mig3", key) for k in ["age_dist", "educ_dist"] for key in ["0", "1", "2"]}
     trend = {k: series(est, k, "national", "all") for k in ["mig5_any", "mig5_cross", "mig5_intra", "mig5_intl", "mig5_ven", "life_cross", "gap_inf_mig", "gap_ur_mig", "gap_inc_mig"]}
-    obj = {"year": y, "generated": date.today().isoformat(), "source": f"INEI – ENAHO {y}, módulos 200/400/500 (facpob07, fac500a). Elaboración: Observatorio de Migración del Perú.",
+    obj = {"year": y, "prev_year": y - 1, "first_year": YEARS[0], "generated": date.today().isoformat(), "source": f"INEI – ENAHO {y}, módulos 200/400/500 (facpob07, fac500a). Elaboración: Observatorio de Migración del Perú.",
            "n_persons": n, "pop5_weighted": round(pop), "years": YEARS, "kpis": kpis, "deltas": deltas, "totals": tot, "by": by, "labour": lab, "labour_by": lab_by, "dist": dist, "trend": trend}
     return dump(obj, "headline.json")

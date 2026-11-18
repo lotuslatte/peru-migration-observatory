@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { loadMeta } from '../../data/loaders';
+import { YEAR, POOL_SPAN } from '../../data/site';
 const m = loadMeta(); const d = m.migration_defs;
 ---
 <Base title="Metodología">
@@ -9,7 +10,7 @@ const m = loadMeta(); const d = m.migration_defs;
     <h2 id="lectura">Guía de lectura en 60 segundos</h2>
     <ol><li><strong>Toda cifra es una estimación</strong> a partir de ~110 000 personas entrevistadas al año; lleva intervalo de confianza y sello: <span class="badge A"></span> error relativo &lt; 15%; <span class="badge B"></span> 15–30%; <span class="badge S"></span> ≥ 30% o menos de 30 casos.</li>
     <li>Las <strong>diferencias y saldos</strong> (brechas migrante–local, saldo neto) se gradúan por tamaño de muestra, no por error relativo: una diferencia cercana a cero tiene error relativo enorme aunque esté bien medida.</li>
-    <li>Los <strong>flujos por departamento</strong> se promedian sobre 2020–2024: una sola ENAHO capta entre 40 y 250 migrantes por departamento.</li>
+    <li>Los <strong>flujos por departamento</strong> se promedian sobre {POOL_SPAN}: una sola ENAHO capta entre 40 y 250 migrantes por departamento.</li>
     <li><strong>Carmín</strong> = personas que se movieron; <strong>jade</strong> = población que no migró o resultado favorable.</li></ol>
     <h2 id="definitions">Definiciones</h2>
     <table class="data"><tbody>
@@ -18,7 +19,7 @@ const m = loadMeta(); const d = m.migration_defs;
       <tr><td>Población base</td><td style="text-align:left">{d.population}</td></tr>
       <tr><td>Emigración</td><td style="text-align:left">{d.emigration}</td></tr>
       <tr><td>Saldo neto</td><td style="text-align:left">{d.net}</td></tr>
-      <tr><td>Resultados laborales</td><td style="text-align:left">Personas de 14+ con factor <code>fac500a</code>; mismas definiciones que el Observatorio Laboral (PEA, desempleo, <code>ocupinf</code> de INEI para 2014–2023 y regla validada para 2024, ingreso laboral INEI deflactado a soles de 2024).</td></tr>
+      <tr><td>Resultados laborales</td><td style="text-align:left">Personas de 14+ con factor <code>fac500a</code>; mismas definiciones que el Observatorio Laboral (PEA, desempleo, <code>ocupinf</code> de INEI para 2014–2023 y regla validada desde 2024, ingreso laboral INEI deflactado a soles de {YEAR}). Las comparaciones de informalidad entre un año anterior a 2024 y uno posterior cruzan ese cambio de método y no se reportan como significativas.</td></tr>
       <tr><td>Migrante reciente (laboral)</td><td style="text-align:left">Llegó de otro departamento o del extranjero en los últimos cinco años; "residente de siempre" = no cambió de distrito.</td></tr>
       <tr><td>Población venezolana</td><td style="text-align:left">ENPOVE 2018 (Lima, Callao, Arequipa, Cusco, Trujillo, Tumbes), ENPOVE 2022 (Lima, Trujillo, Tumbes, Chimbote, Chiclayo, Piura, Ica, Arequipa), ENAHO-PV 2024 (nacional). Informalidad ENPOVE: asalariados sin contrato + independientes y familiares no remunerados; 2024: <code>ocupinf</code>. Situación migratoria: "sin permiso" = código explícito de irregularidad en cada encuesta.</td></tr>
       <tr><td>Clima</td><td style="text-align:left">Promedios departamento-año ponderados por población de anomalías distritales (ERA5 temperatura, CHIRPS precipitación, referencia WMO 1991–2020), años secos/cálidos e índice de riesgo del panel <em>peru_climate_integrated</em>. Relación descriptiva, no causal.</td></tr>

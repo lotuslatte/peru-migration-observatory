@@ -1,4 +1,4 @@
-pool_years: [2020, 2021, 2022, 2023, 2024]
+# Pooled years are the last five survey years (POOL_YEARS in omp/config.py).
 indicators:
   - {id: life_cross, required: true}
   - {id: mig5_any, required: true}
