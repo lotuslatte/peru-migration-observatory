@@ -37,6 +37,6 @@ export default function DecompBars({ data, mode, scale = 100, unit = 'pp', title
   }, [data, mode, tick]);
   const rows = () => mode === 'oaxaca' ? data.by_var.map((b: any) => ({ variable: b.label, explicado: b.explained.v * scale, explicado_se: b.explained.se * scale, no_explicado: b.unexplained.v * scale })) : data.by_group.map((b: any) => ({ grupo: b.label, share_t0: b.share_t0, share_t1: b.share_t1, rate_t0: b.rate_t0, rate_t1: b.rate_t1, composicion: b.comp * scale, tasa: b.within * scale }));
   return (<div class="chart"><div class="eyebrow">{title ?? data.label_es}</div><svg ref={ref} role="img" aria-label={title ?? data.label_es} />
-    <p class="small muted">{mode === 'oaxaca' ? `Oaxaca–Blinder two-fold (coeficientes de referencia: muestra agrupada). Barras = IC 95 % bootstrap Rao–Wu (R = ${data.R}). Azul: componente que reduce la brecha; terracota: la amplía o no se explica.` : `Shift-share con pesos de punto medio; IC bootstrap (R = ${data.R}). Azul = cambio de composición; terracota = cambio de tasas dentro de los grupos.`}</p>
+    <p class="small muted">{mode === 'oaxaca' ? `Oaxaca–Blinder two-fold (coeficientes de referencia: muestra agrupada). Barras = IC 95% bootstrap Rao–Wu (R = ${data.R}). Azul: componente que reduce la brecha; terracota: la amplía o no se explica.` : `Shift-share con pesos de punto medio; IC bootstrap (R = ${data.R}). Azul = cambio de composición; terracota = cambio de tasas dentro de los grupos.`}</p>
     <ExportBar svgRef={ref} rows={rows} name={mode === 'oaxaca' ? 'oaxaca' : 'shift_share'} /></div>);
 }

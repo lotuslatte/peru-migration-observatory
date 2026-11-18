@@ -22,8 +22,8 @@ const netCells = p.od?.net_rate_cells ?? [];
         {p.od?.top_origins?.length > 0 && <li>Orígenes principales: {p.od.top_origins.slice(0, 3).map((x: any) => `${x.name} (~${x.flow.toLocaleString('es-PE')}/año)`).join(', ')}.</li>}
         {p.od?.top_destinations?.length > 0 && <li>Destinos principales de quienes se van: {p.od.top_destinations.slice(0, 3).map((x: any) => x.name).join(', ')}.</li>}
         <li>{(p.dims.net_rate.v ?? 0) > 0 ? 'Departamento receptor: la presión recae en vivienda, servicios y empleo formal para recién llegados.' : 'Departamento expulsor: la pérdida se concentra en jóvenes; prioridad en oportunidades locales y retención de capital humano.'}</li>
-        {p.labour_mig?.informality && <li>Migrantes recientes con {f(p.labour_mig.informality['2'])} % de informalidad vs {f(p.labour_mig.informality['1'])} % de residentes; ingreso mediano S/ {f(p.labour_mig.median_inc_real['2'], 0)} vs S/ {f(p.labour_mig.median_inc_real['1'], 0)}.</li>}
-        <li>Llegaron del extranjero (5 años): {f(p.mobility.mig5_intl, 2)} %; de Venezuela: {f(p.mobility.mig5_ven, 2)} % (subestimado en ENAHO; ver ENPOVE).</li>
+        {p.labour_mig?.informality && <li>Migrantes recientes con {f(p.labour_mig.informality['2'])}% de informalidad vs {f(p.labour_mig.informality['1'])}% de residentes; ingreso mediano S/ {f(p.labour_mig.median_inc_real['2'], 0)} vs S/ {f(p.labour_mig.median_inc_real['1'], 0)}.</li>}
+        <li>Llegaron del extranjero (5 años): {f(p.mobility.mig5_intl, 2)}%; de Venezuela: {f(p.mobility.mig5_ven, 2)}% (subestimado en ENAHO; ver ENPOVE).</li>
       </ul></div>
     </section>
     <section class="card" style="margin-top:14px"><h3>Serie 2014–2024</h3><div class="grid grid-3">

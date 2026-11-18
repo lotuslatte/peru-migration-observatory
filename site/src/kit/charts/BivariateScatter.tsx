@@ -47,5 +47,5 @@ function ScatterInner({ regions, dims, x0 = 'formality', y0 = 'median_inc_real' 
   const sel = (v: string, set: (s: string) => void) => <select value={v} onChange={e => set((e.target as HTMLSelectElement).value)}>{dims.map(d => <option value={d.id}>{d.label_es}</option>)}</select>;
   const rows = () => pts.map(p => ({ departamento: p.name, region_natural: p.region_nat, [dx.label_es]: p.values[xd].v, [dy.label_es]: p.values[yd].v }));
   return (<div class="chart"><div class="toolbar"><span class="eyebrow">Dispersión</span><label class="small muted">Eje X {sel(xd, setX)}</label><label class="small muted">Eje Y {sel(yd, setY)}</label></div>
-    <svg ref={ref} role="img" aria-label="Diagrama de dispersión entre dos dimensiones" /><p class="small muted">Líneas punteadas = medianas departamentales (cuadrantes). Barras = IC 95 %.</p><ExportBar svgRef={ref} rows={rows} name={`dispersion_${xd}_${yd}`} /></div>);
+    <svg ref={ref} role="img" aria-label="Diagrama de dispersión entre dos dimensiones" /><p class="small muted">Líneas punteadas = medianas departamentales (cuadrantes). Barras = IC 95%.</p><ExportBar svgRef={ref} rows={rows} name={`dispersion_${xd}_${yd}`} /></div>);
 }

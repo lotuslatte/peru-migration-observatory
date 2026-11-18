@@ -17,6 +17,8 @@ export function peruMap(topoFile = 'public/data/departamentos.topo.json') {
   const zoom = geoPath(geoMercator().fitExtent([[I.x, I.y], [I.x + I.s, I.y + I.s]], metro as any)).digits(1);
   const paths = fc.features.map((f: any) => ({ id: idOf(f), d: main(f) }));
   const inset = fc.features.filter((f: any) => ['07', '15'].includes(idOf(f))).map((f: any) => ({ id: idOf(f), d: zoom(f) }));
+  // Projected centre of each department, for flow lines and labels.
+  const centroids = Object.fromEntries(fc.features.map((f: any) => [idOf(f), main.centroid(f).map((v: number) => +v.toFixed(1))]));
   const edge: any = mesh(t, obj, (a: any, b: any) => a === b);
-  return { box: `0 0 ${W} ${H}`, paths, inset, I, outline: main(edge), insetOutline: zoom(edge) };
+  return { box: `0 0 ${W} ${H}`, W, H, paths, inset, I, centroids, outline: main(edge), insetOutline: zoom(edge) };
 }

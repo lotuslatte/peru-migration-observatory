@@ -130,7 +130,7 @@ function AtlasMapInner({ regions, dims, initial, mode: mode0 = 'map', compact = 
         </select>
         {showModeToggle && <span class="seg"><button class={`btn ${mode === 'map' ? 'active' : ''}`} onClick={() => setMode('map')}>Mapa</button><button class={`btn ${mode === 'matrix' ? 'active' : ''}`} onClick={() => setMode('matrix')}>Matriz</button></span>}
         {mode === 'matrix' && <span class="seg"><button class={`btn ${scaleMode === 'abs' ? 'active' : ''}`} onClick={() => setScaleMode('abs')}>Valor</button><button class={`btn ${scaleMode === 'pct' ? 'active' : ''}`} onClick={() => setScaleMode('pct')}>Percentil</button></span>}
-        {mode === 'map' && !compact && <label class="small muted"><input type="checkbox" checked={whiskers} onChange={e => setWhiskers((e.target as HTMLInputElement).checked)} /> IC 95 %</label>}
+        {mode === 'map' && !compact && <label class="small muted"><input type="checkbox" checked={whiskers} onChange={e => setWhiskers((e.target as HTMLInputElement).checked)} /> IC 95%</label>}
         {mode === 'map' && !compact && nat != null && <label class="small muted"><input type="checkbox" checked={versus} onChange={e => setVersus((e.target as HTMLInputElement).checked)} /> Frente al Perú</label>}
       </div>
       <div class={`layout ${compact ? 'compact' : ''}`}>
@@ -146,7 +146,7 @@ function AtlasMapInner({ regions, dims, initial, mode: mode0 = 'map', compact = 
             </ol>
           </div>)}
       </div>
-      {hover && <div id="atlas-tt" class="tooltip" role="status" style={{ left: tt.current.x + 'px', top: tt.current.y + 'px' }}><strong>{hover.name}</strong><br />{d.label_es}: {fmtUnit(hover.values[dim]?.v, d.unit, decimalsFor(d.unit))} <span class="mono">[{hover.values[dim]?.g}]</span>{hover.values[dim]?.lo != null && <><br /><span class="small">IC 95 %: {fmtUnit(hover.values[dim].lo, d.unit, decimalsFor(d.unit))} – {fmtUnit(hover.values[dim].hi, d.unit, decimalsFor(d.unit))} · n={hover.values[dim].n}</span></>}{hover.values[dim]?.ns && <><br /><span class="small">Brecha no concluyente (el IC incluye la ausencia de brecha)</span></>}<br /><span class="small">Percentil {hover.pct[dim] ?? '—'}{level === 'dept' ? ' · clic para ver perfil' : ` · ${(hover as any).dept_name ?? ''}`}</span></div>}
+      {hover && <div id="atlas-tt" class="tooltip" role="status" style={{ left: tt.current.x + 'px', top: tt.current.y + 'px' }}><strong>{hover.name}</strong><br />{d.label_es}: {fmtUnit(hover.values[dim]?.v, d.unit, decimalsFor(d.unit))} <span class="mono">[{hover.values[dim]?.g}]</span>{hover.values[dim]?.lo != null && <><br /><span class="small">IC 95%: {fmtUnit(hover.values[dim].lo, d.unit, decimalsFor(d.unit))} – {fmtUnit(hover.values[dim].hi, d.unit, decimalsFor(d.unit))} · n={hover.values[dim].n}</span></>}{hover.values[dim]?.ns && <><br /><span class="small">Brecha no concluyente (el IC incluye la ausencia de brecha)</span></>}<br /><span class="small">Percentil {hover.pct[dim] ?? '—'}{level === 'dept' ? ' · clic para ver perfil' : ` · ${(hover as any).dept_name ?? ''}`}</span></div>}
       <ExportBar svgRef={svgRef} rows={rows} name={`atlas_${dim}_${year}`} />
       <style>{`.atlas .layout{display:grid;grid-template-columns:minmax(280px,1fr) minmax(260px,.9fr);gap:18px;align-items:start}.atlas .layout.compact{grid-template-columns:1fr}
         .atlas .seg{display:inline-flex;gap:2px}.atlas .rank ol{list-style:none;margin:8px 0 0;padding:0;font-size:.85rem}

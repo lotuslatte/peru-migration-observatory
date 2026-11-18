@@ -33,6 +33,6 @@ export default function CoefPlot({ model, showAll: s0 = false, title }: Props) {
   const rows = () => model.terms.map((t: Term) => ({ termino: t.label, coef: t.est, se: t.se, ic_lo: t.lo, ic_hi: t.hi, p: t.p }));
   return (<div class="chart"><div class="toolbar"><span class="eyebrow">{title ?? model.label_es}</span><button class={`btn ${showAll ? 'active' : ''}`} onClick={() => setShowAll(s => !s)}>{showAll ? 'Sólo la brecha' : 'Todos los términos'}</button></div>
     <svg ref={ref} role="img" aria-label={model.label_es} />
-    <p class="small muted">Puntos = coeficientes; barras = IC 95 % con errores de diseño (PSU = conglomerado). n = {model.n.toLocaleString('es-PE')}, R² = {model.r2}. Controles: {model.controls.join(', ')}.{model.logit_ame ? ` Efecto marginal logit: ${fmtNum(model.logit_ame.v, 1)}${unit}.` : ''}</p>
+    <p class="small muted">Puntos = coeficientes; barras = IC 95% con errores de diseño (PSU = conglomerado). n = {model.n.toLocaleString('es-PE')}, R² = {model.r2}. Controles: {model.controls.join(', ')}.{model.logit_ame ? ` Efecto marginal logit: ${fmtNum(model.logit_ame.v, 1)}${unit}.` : ''}</p>
     <ExportBar svgRef={ref} rows={rows} name={`modelo_${model.key}`} /></div>);
 }

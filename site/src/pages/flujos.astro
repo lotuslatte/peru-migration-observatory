@@ -1,29 +1,54 @@
 ---
 import Base from '../layouts/Base.astro';
 import ODMatrix from '../components/charts/ODMatrix';
-import FlowChord from '../components/charts/FlowChord';
-import FlowArrows from '../components/charts/FlowArrows';
-import TrendLine from '../kit/charts/TrendLine';
-import { loadFlows, loadHeadline, loadAtlas } from '../data/loaders';
-const fl = loadFlows(); const h = loadHeadline(); const a = loadAtlas();
-const net = Object.fromEntries(a.regions.filter(r => !r.parent).map(r => [r.id, r.values.net_rate.v]));
-const top = fl.top_flows.slice(0, 15);
-const lima_in = fl.by_dept['15'].top_origins, lima_out = fl.by_dept['15'].top_destinations;
+import FlowExplorer from '../kit/charts/FlowExplorer';
+import LineChart from '../kit/charts/LineChart';
+import { peruMap } from '../kit/data/peruMap';
+import { fmtInt, fmtUnit } from '../kit/charts/lib/format';
+import { loadFlows, loadTrends } from '../data/loaders';
+import { YEARS, slim } from '../data/indicators';
+
+const fl = loadFlows(); const tr = loadTrends();
+const names = Object.fromEntries(Object.entries(fl.dept_names).filter(([id]) => id.length === 2)) as Record<string, string>;
+const period = `${fl.pool_years[0]}–${fl.pool_years.at(-1)}`;
+const facts = Object.fromEntries(Object.keys(names).map(id => { const d = fl.by_dept[id]; return [id, { in_rate: d?.in_rate.at(-1) ?? null, out_rate: d?.out_rate.at(-1) ?? null, net_rate: d?.net_rate.at(-1) ?? null }]; }));
+const m = peruMap(); const map = { box: m.box, W: m.W, H: m.H, paths: m.paths, outline: m.outline, centroids: m.centroids };
+const first = fl.top_flows[0];
+const moved = fl.national.inm.at(-1);
+const published = fl.matrix.filter((c: any) => c.g !== 'S' && c.flow > 0).length;
 ---
-<Base title="Flujos origen–destino" wide>
-  <div class="eyebrow" style="margin-top:28px">Flujos · ENAHO 2020–2024 (promedio anual)</div>
-  <h1>De dónde <em>a dónde.</em></h1>
-  <p class="lede">La ENAHO pregunta a cada persona dónde vivía hace cinco años. Sumando con los factores de expansión se obtiene una matriz de 25 × 25 departamentos: pequeña en cada celda, pero suficiente para ver los corredores del país cuando se promedian cinco años.</p>
-  <section class="grid grid-2">
-    <div class="card"><h2>Las cuerdas</h2><p class="takeaway">Cada cinta es un corredor; el grosor, su volumen. Los arcos jade son departamentos que ganan población; los carmín, los que la pierden.</p><FlowChord client:load chord={fl.chord} net={net} /></div>
-    <div class="card"><h2>El mapa</h2><p class="takeaway">Los mismos flujos sobre el territorio: la costa y Lima concentran las flechas gruesas; la selva recibe desde la sierra.</p><FlowArrows client:visible chord={fl.chord} /></div>
-  </section>
-  <section class="card" style="margin-top:20px"><h2>La matriz completa</h2><ODMatrix client:visible matrix={fl.matrix} names={fl.dept_names} /></section>
-  <section class="grid grid-2" style="margin-top:20px">
-    <div class="card"><h2>Los 15 corredores mayores</h2><table class="data"><thead><tr><th style="text-align:left">#</th><th style="text-align:left">Origen → destino</th><th>Personas / año</th><th>n</th><th></th></tr></thead><tbody>{top.map((t, i) => <tr><td style="text-align:left">{i + 1}</td><td style="text-align:left"><a href={`/atlas/${t.o}/`}>{fl.dept_names[t.o]}</a> → <a href={`/atlas/${t.d}/`}>{fl.dept_names[t.d]}</a></td><td>{t.flow.toLocaleString('es-PE')}</td><td class="mono">{t.n}</td><td><span class={`badge compact ${t.g}`} /></td></tr>)}</tbody></table></div>
-    <div class="card"><h2>Lima: imán y expulsor</h2><p class="takeaway">Lima recibe de todo el país y a la vez envía población a la costa y la selva: los flujos de salida no son menores que los de entrada.</p>
-      <div class="grid grid-2"><div><div class="eyebrow">Llegan a Lima desde</div><table class="data"><tbody>{lima_in.map((x: any) => <tr><td style="text-align:left">{x.name}</td><td>{x.flow.toLocaleString('es-PE')}</td></tr>)}</tbody></table></div><div><div class="eyebrow">Salen de Lima hacia</div><table class="data"><tbody>{lima_out.map((x: any) => <tr><td style="text-align:left">{x.name}</td><td>{x.flow.toLocaleString('es-PE')}</td></tr>)}</tbody></table></div></div>
-      <TrendLine client:visible years={h.years} unit="%" title="Tasa de inmigración reciente, nacional" series={[{ label: 'Nacional', cells: h.trend.mig5_cross }]} height={220} yZero /></div>
-  </section>
-  <p class="small muted" style="margin-top:16px">{fl.note} Descarga: <a href="/data/compendium/T04.csv">T04 (matriz)</a>, <a href="/data/compendium/T03.csv">T03 (saldos por departamento)</a>, <a href="/data/flows.json">flows.json</a>.</p>
+<Base title="Flujos entre departamentos" description={`De qué departamento a cuál se muda la gente en el Perú: flujos de origen y destino estimados con la ENAHO ${period}.`}>
+  <div class="r-page">
+    <section class="r-head">
+      <p class="r-kicker">Flujos, ENAHO {period}</p>
+      <h1>De dónde a dónde se muda la gente</h1>
+      <div class="r-num">{fmtInt(moved)}</div>
+      <p class="r-say">personas de 5 años a más vivían en {YEARS.at(-1)} en un departamento distinto del de cinco años antes. El corredor más grande va de {names[first.o]} a {names[first.d]}: {fmtInt(first.flow)} personas al año.</p>
+      <p class="r-src">La ENAHO pregunta a cada persona dónde vivía hace cinco años. Con esa respuesta se arma una matriz de 25 por 25 departamentos; se promedian cinco años para que cada par tenga muestra. Se publican {published} pares.</p>
+    </section>
+
+    <section class="r-doc" id="explorar">
+      <h2>Elige un departamento</h2>
+      <FlowExplorer client:load matrix={fl.matrix} names={names} map={map} facts={facts} period={period} placeBase="/atlas/" />
+      <noscript><p class="r-src">El explorador necesita JavaScript. La matriz completa está en <a href="/data/compendium/T04.csv">T04.csv</a>.</p></noscript>
+    </section>
+
+    <section class="r-doc" id="matriz">
+      <h2>La matriz completa</h2>
+      <ODMatrix client:visible matrix={fl.matrix.filter((c: any) => c.o.length === 2 && c.d.length === 2)} names={names} />
+    </section>
+
+    <section class="r-doc" id="tendencia">
+      <h2>Cuánta gente cambia de departamento</h2>
+      <LineChart client:visible years={YEARS} unit="%" title="Personas que vivían en otro departamento hace cinco años" name="omp_migracion_interdepartamental" yTitle="Porcentaje de la población de 5 años a más"
+        series={[{ label: 'Nacional', cells: tr.series.national.mig5_cross.map(slim), color: 'var(--accent)' }]} band yZero />
+      <p class="r-src">Último valor: {fmtUnit(tr.series.national.mig5_cross.at(-1).v, '%')}. <a href="/indicadores/mig5_cross/">Ver el indicador</a>.</p>
+    </section>
+
+    <section class="r-doc" id="descargar">
+      <h2>Descargar</h2>
+      <p><a href="/data/compendium/T04.csv" download>Matriz de origen y destino (T04)</a> · <a href="/data/compendium/T03.csv" download>Saldos por departamento (T03)</a> · <a href="/data/flows.json" download>flows.json</a></p>
+      <p class="r-src">{fl.note}</p>
+    </section>
+  </div>
 </Base>

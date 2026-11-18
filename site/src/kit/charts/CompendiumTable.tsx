@@ -29,12 +29,12 @@ export default function CompendiumTable({ file, title, id }: Props) {
   return (<div class="ctab">
     <div class="toolbar"><input type="search" placeholder="Filtrar filas…" aria-label={`Filtrar filas de la tabla ${id}`} value={q} onInput={e => setQ((e.target as HTMLInputElement).value)} />
       {years.length > 1 && <select aria-label="Año" value={year} onChange={e => setYear((e.target as HTMLSelectElement).value)}>{years.map(y => <option value={y}>{y}</option>)}</select>}
-      {tidy && <label class="small muted"><input type="checkbox" checked={ci} onChange={e => setCi((e.target as HTMLInputElement).checked)} /> IC 95 % y n</label>}
+      {tidy && <label class="small muted"><input type="checkbox" checked={ci} onChange={e => setCi((e.target as HTMLInputElement).checked)} /> IC 95% y n</label>}
       <span style="flex:1" /><button class="btn" onClick={() => toCSV(rows, `${id}.csv`)}>CSV (tidy)</button><a class="btn" href={'/data/' + file} download>Archivo</a></div>
     <div class="scroll-x" style="max-height:70vh;overflow:auto"><table class="data"><thead><tr>{view.cols.map(c => <th scope="col" aria-sort={sort.k === c ? (sort.d === 1 ? 'ascending' : 'descending') : 'none'}><button class="th-sort" onClick={() => hdr(c)}>{c}{sort.k === c ? (sort.d === 1 ? ' ▲' : ' ▼') : ''}</button></th>)}</tr></thead>
       <tbody>{filtered.map(r => <tr>{view.cols.map((c, i) => { const v = r[c]; const g = r[c + ' (grado)'];
         if (i < 2 || !tidy) return <td>{v == null || v === '' ? '—' : typeof v === 'number' ? fmtNum(v, Number.isInteger(v) ? 0 : 1) : v}</td>;
         return <td>{g === 'S' || v == null ? <span class="muted">—</span> : <>{fmtNum(v, 1)} <span class={`badge compact ${g}`}></span>{r[c + ' (ns)'] && <NsMark compact />}{ci && <div class="small muted mono">{r[c + ' (IC)']} · n={r[c + ' (n)']}</div>}</>}</td>; })}</tr>)}</tbody></table></div>
-    <p class="small muted">{filtered.length} filas · {title}. Grados: A publicable (RSE&lt;15 %), B revisar (15–30 %), S suprimido (≥30 % o n&lt;30). Las brechas se califican por tamaño de muestra; «n.c.» marca las no concluyentes (su IC incluye la ausencia de brecha).</p>
+    <p class="small muted">{filtered.length} filas · {title}. Grados: A publicable (RSE&lt;15%), B revisar (15–30%), S suprimido (≥30% o n&lt;30). Las brechas se califican por tamaño de muestra; «n.c.» marca las no concluyentes (su IC incluye la ausencia de brecha).</p>
   </div>);
 }

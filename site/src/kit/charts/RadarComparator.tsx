@@ -46,6 +46,6 @@ function RadarInner({ regions, dims, a: a0, b: b0 }: Props & { regions: Region[]
     <div class="scroll-x"><table class="data"><thead><tr><th scope="col">Dimensión</th><th>{ra?.name}</th><th>pct</th><th>{rb?.name}</th><th>pct</th><th>Diferencia</th></tr></thead><tbody>
       {prim.map(d => { const va = ra?.values[d.id], vb = rb?.values[d.id]; const diff = va?.v != null && vb?.v != null ? va.v - vb.v : null; const sig = va?.se != null && vb?.se != null && diff != null ? Math.abs(diff) / Math.sqrt(va.se ** 2 + vb.se ** 2) > 1.96 : false;
         return <tr><td>{d.label_es}</td><td>{fmtUnit(va?.v, d.unit, decimalsFor(d.unit))} <span class={`badge compact ${va?.g}`}></span>{va?.ns && <NsMark compact />}</td><td class="mono">{ra?.pct[d.id]}</td><td>{fmtUnit(vb?.v, d.unit, decimalsFor(d.unit))} <span class={`badge compact ${vb?.g}`}></span>{vb?.ns && <NsMark compact />}</td><td class="mono">{rb?.pct[d.id]}</td><td class="mono">{diff == null ? '—' : (diff > 0 ? '+' : '') + fmtUnit(diff, d.unit === 'S/' ? 'S/' : 'pp', decimalsFor(d.unit))}{sig ? ' *' : ''}</td></tr>; })}
-    </tbody></table></div><p class="small muted">* diferencia significativa al 95 % (prueba z con errores estándar de diseño). Percentil entre los 25 departamentos; 100 = mejor posición.</p>
+    </tbody></table></div><p class="small muted">* diferencia significativa al 95% (prueba z con errores estándar de diseño). Percentil entre los 25 departamentos; 100 = mejor posición.</p>
     <ExportBar svgRef={ref} rows={rows} name={`radar_${a}_${b}`} table={false} /></div>);
 }

@@ -24,7 +24,7 @@ const lifetime = id.startsWith('life_'), gap = id.startsWith('gap_');
 const firstYear = YEARS[national.findIndex((c: any) => c.v != null)];
 const jsonLd = { '@context': 'https://schema.org', '@type': 'Dataset', name: `${ind.name}, ${SOURCE_SPAN}`, description: ind.def, license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Person', name: 'Favio Samillan Flores' }, spatialCoverage: 'Perú', isAccessibleForFree: true };
 ---
-<Base title={ind.name} description={ind.def} jsonLd={jsonLd}>
+<Base title={ind.name} description={ind.def} image={`/share/ind/${id}.png`} jsonLd={jsonLd}>
   <div class="r-page">
     <a class="r-back" href="/indicadores/">Todos los indicadores</a>
     <section class="r-head">
